@@ -1,0 +1,5 @@
+- kind: symbol
+  scope_path: Hello
+  header: Hello › function Hello() { return <div />; }
+  line_start: 1
+  line_end: 1

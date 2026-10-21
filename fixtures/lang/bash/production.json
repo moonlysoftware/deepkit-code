@@ -1,0 +1,29 @@
+{
+  "edges": [
+    {
+      "kind": "Ref",
+      "line": 1,
+      "name": "test",
+      "owner": 0
+    }
+  ],
+  "symbols": [
+    {
+      "end": 1,
+      "kind": "function",
+      "name": "should_retry",
+      "qualified": "should_retry",
+      "start": 1
+    }
+  ],
+  "units": [
+    {
+      "end": 1,
+      "header": "should_retry › should_retry() { test \"$1\" -gt 0; }",
+      "kind": "Symbol",
+      "scope": "should_retry",
+      "start": 1,
+      "text": "should_retry() { test \"$1\" -gt 0; }"
+    }
+  ]
+}

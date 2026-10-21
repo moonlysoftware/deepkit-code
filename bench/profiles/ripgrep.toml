@@ -1,0 +1,14 @@
+# The encoding list is shell-expansion data, not an executable source file.
+[[treatments]]
+name = "completion-data"
+match = ["crates/core/flags/complete/encodings.sh"]
+chunker = "none"
+max_level = 0
+
+# ripgrep's maintained completion is Zsh, which the Bash grammar does not parse.
+# Keep it searchable as lines without claiming an AST or graph for another shell.
+[[treatments]]
+name = "zsh-completion"
+match = ["crates/core/flags/complete/rg.zsh"]
+chunker = "lines"
+max_level = 1

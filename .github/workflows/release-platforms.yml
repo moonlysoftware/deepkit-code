@@ -1,0 +1,82 @@
+name: Native release platforms
+
+on:
+  workflow_call:
+    inputs:
+      plan:
+        required: true
+        type: string
+
+permissions:
+  contents: read
+
+jobs:
+  native-build:
+    name: Native build (${{ matrix.target }})
+    runs-on: ${{ matrix.runner }}
+    timeout-minutes: 90
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - runner: ubuntu-22.04
+            target: x86_64-unknown-linux-gnu
+            features: ""
+          - runner: macos-14
+            target: aarch64-apple-darwin
+            features: --features metal
+          - runner: windows-2022
+            target: x86_64-pc-windows-msvc
+            features: ""
+    env:
+      CARGO_INCREMENTAL: "0"
+      CARGO_BUILD_JOBS: "2"
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+          submodules: recursive
+
+      - name: Install Rust toolchain
+        uses: dtolnay/rust-toolchain@stable
+
+      - name: Set the supported macOS deployment target
+        if: matrix.target == 'aarch64-apple-darwin'
+        shell: bash
+        run: echo "MACOSX_DEPLOYMENT_TARGET=13.0" >> "$GITHUB_ENV"
+
+      - name: Build native release
+        shell: bash
+        run: cargo build --release --locked ${{ matrix.features }}
+
+      - name: Assert rustls-only dependency graph
+        if: runner.os == 'Linux'
+        shell: bash
+        run: scripts/release/assert-rustls.sh
+
+      - name: Smoke-test the native Unix binary
+        if: runner.os != 'Windows'
+        shell: bash
+        run: scripts/release/smoke.sh target/release/dkc
+
+      - name: Smoke-test the native Windows binary
+        if: runner.os == 'Windows'
+        shell: pwsh
+        run: scripts/release/smoke.ps1 -DkcPath target/release/dkc.exe
+
+      - name: Download verified embedding model
+        if: matrix.target == 'aarch64-apple-darwin'
+        shell: bash
+        env:
+          DKC_MODELS_DIR: ${{ runner.temp }}/dkc-models
+        run: target/release/dkc models pull qwen3-embedding-0.6b-q8_0 --json
+
+      - name: Run Metal embedding sanity test
+        if: matrix.target == 'aarch64-apple-darwin'
+        shell: bash
+        env:
+          DKC_MODELS_DIR: ${{ runner.temp }}/dkc-models
+        run: >-
+          cargo test --release --locked --features metal
+          models::llama::tests::embed_sanity -- --exact --ignored --nocapture

@@ -1,0 +1,834 @@
+{
+  "source_commit": "ae9f1bea535c1a92985344fb77ffa47d7776ca57",
+  "pull_request_merge_commit": "41efee5b879fb2353a5407516aa90a957fba78ee",
+  "scope": "All runs terminal success. Release workflow is planning only; its skipped native/acceptance/publication jobs confer no qualification. Native Homebrew details are in native-homebrew.json. Final follow-up changes evidence/docs only.",
+  "cpu_test_counts": [
+    {
+      "run_id": 38604704620,
+      "passed": 1399,
+      "failed": 0,
+      "ignored": 17,
+      "full_groups": 42
+    },
+    {
+      "run_id": 38604671146,
+      "passed": 1399,
+      "failed": 0,
+      "ignored": 17,
+      "full_groups": 42
+    }
+  ],
+  "runs": [
+    {
+      "databaseId": 38604704711,
+      "status": "completed",
+      "conclusion": "success",
+      "event": "pull_request",
+      "headSha": "ae9f1bea535c1a92985344fb77ffa47d7776ca57",
+      "createdAt": "2026-10-14T17:12:40Z",
+      "updatedAt": "2026-10-14T17:28:43Z",
+      "url": "https://github.com/bartscheffer/deepkit-code/actions/runs/38604704711",
+      "jobs": [
+        {
+          "databaseId": 115992487290,
+          "name": "Homebrew (Linux GNU diagnostic)",
+          "status": "completed",
+          "conclusion": "success",
+          "startedAt": "2026-10-14T17:12:42Z",
+          "completedAt": "2026-10-14T17:28:42Z",
+          "url": "https://github.com/bartscheffer/deepkit-code/actions/runs/38604704711/job/115992487290",
+          "steps": [
+            {
+              "name": "Set up job",
+              "status": "completed",
+              "conclusion": "success",
+              "startedAt": "2026-10-14T17:12:43Z",
+              "completedAt": "2026-10-14T17:12:51Z"
+            },
+            {
+              "name": "Check out the tested source",
+              "status": "completed",
+              "conclusion": "success",
+              "startedAt": "2026-10-14T17:12:51Z",
+              "completedAt": "2026-10-14T17:12:53Z"
+            },
+            {
+              "name": "Install Rust toolchain",
+              "status": "completed",
+              "conclusion": "success",
+              "startedAt": "2026-10-14T17:12:53Z",
+              "completedAt": "2026-10-14T17:12:55Z"
+            },
+            {
+              "name": "Install packaging Python",
+              "status": "completed",
+              "conclusion": "success",
+              "startedAt": "2026-10-14T17:12:55Z",
+              "completedAt": "2026-10-14T17:12:55Z"
+            },
+            {
+              "name": "Set the supported macOS deployment target",
+              "status": "completed",
+              "conclusion": "skipped",
+              "startedAt": "2026-10-14T17:12:55Z",
+              "completedAt": "2026-10-14T17:12:55Z"
+            },
+            {
+              "name": "Build native release from clean source",
+              "status": "completed",
+              "conclusion": "success",
+              "startedAt": "2026-10-14T17:12:55Z",
+              "completedAt": "2026-10-14T17:26:26Z"
+            },
+            {
+              "name": "Package the actual native binary and licenses",
+              "status": "completed",
+              "conclusion": "success",
+              "startedAt": "2026-10-14T17:26:26Z",
+              "completedAt": "2026-10-14T17:26:35Z"
+            },
+            {
+              "name": "Set up native Homebrew",
+              "status": "completed",
+              "conclusion": "success",
+              "startedAt": "2026-10-14T17:26:35Z",
+              "completedAt": "2026-10-14T17:26:42Z"
+            },
+            {
+              "name": "Install, test, remove and reinstall the local formula",
+              "status": "completed",
+              "conclusion": "success",
+              "startedAt": "2026-10-14T17:26:42Z",
+              "completedAt": "2026-10-14T17:28:32Z"
+            },
+            {
+              "name": "Record coverage scope",
+              "status": "completed",
+              "conclusion": "success",
+              "startedAt": "2026-10-14T17:28:32Z",
+              "completedAt": "2026-10-14T17:28:32Z"
+            },
+            {
+              "name": "Retain immutable archives, checksums, formula and logs",
+              "status": "completed",
+              "conclusion": "success",
+              "startedAt": "2026-10-14T17:28:32Z",
+              "completedAt": "2026-10-14T17:28:39Z"
+            },
+            {
+              "name": "Post Set up native Homebrew",
+              "status": "completed",
+              "conclusion": "success",
+              "startedAt": "2026-10-14T17:28:39Z",
+              "completedAt": "2026-10-14T17:28:39Z"
+            },
+            {
+              "name": "Post Install packaging Python",
+              "status": "completed",
+              "conclusion": "success",
+              "startedAt": "2026-10-14T17:28:39Z",
+              "completedAt": "2026-10-14T17:28:39Z"
+            },
+            {
+              "name": "Post Check out the tested source",
+              "status": "completed",
+              "conclusion": "success",
+              "startedAt": "2026-10-14T17:28:39Z",
+              "completedAt": "2026-10-14T17:28:39Z"
+            },
+            {
+              "name": "Complete job",
+              "status": "completed",
+              "conclusion": "success",
+              "startedAt": "2026-10-14T17:28:39Z",
+              "completedAt": "2026-10-14T17:28:39Z"
+            }
+          ]
+        },
+        {
+          "databaseId": 115992487780,
+          "name": "Homebrew (native macOS ARM)",
+          "status": "completed",
+          "conclusion": "success",
+          "startedAt": "2026-10-14T17:12:45Z",
+          "completedAt": "2026-10-14T17:25:37Z",
+          "url": "https://github.com/bartscheffer/deepkit-code/actions/runs/38604704711/job/115992487780",
+          "steps": [
+            {
+              "name": "Set up job",
+              "status": "completed",
+              "conclusion": "success",
+              "startedAt": "2026-10-14T17:12:45Z",
+              "completedAt": "2026-10-14T17:12:48Z"
+            },
+            {
+              "name": "Check out the tested source",
+              "status": "completed",
+              "conclusion": "success",
+              "startedAt": "2026-10-14T17:12:48Z",
+              "completedAt": "2026-10-14T17:12:50Z"
+            },
+            {
+              "name": "Install Rust toolchain",
+              "status": "completed",
+              "conclusion": "success",
+              "startedAt": "2026-10-14T17:12:50Z",
+              "completedAt": "2026-10-14T17:12:57Z"
+            },
+            {
+              "name": "Install packaging Python",
+              "status": "completed",
+              "conclusion": "success",
+              "startedAt": "2026-10-14T17:12:57Z",
+              "completedAt": "2026-10-14T17:12:57Z"
+            },
+            {
+              "name": "Set the supported macOS deployment target",
+              "status": "completed",
+              "conclusion": "success",
+              "startedAt": "2026-10-14T17:12:57Z",
+              "completedAt": "2026-10-14T17:12:57Z"
+            },
+            {
+              "name": "Build native release from clean source",
+              "status": "completed",
+              "conclusion": "success",
+              "startedAt": "2026-10-14T17:12:57Z",
+              "completedAt": "2026-10-14T17:22:31Z"
+            },
+            {
+              "name": "Package the actual native binary and licenses",
+              "status": "completed",
+              "conclusion": "success",
+              "startedAt": "2026-10-14T17:22:31Z",
+              "completedAt": "2026-10-14T17:22:40Z"
+            },
+            {
+              "name": "Set up native Homebrew",
+              "status": "completed",
+              "conclusion": "success",
+              "startedAt": "2026-10-14T17:22:40Z",
+              "completedAt": "2026-10-14T17:25:10Z"
+            },
+            {
+              "name": "Install, test, remove and reinstall the local formula",
+              "status": "completed",
+              "conclusion": "success",
+              "startedAt": "2026-10-14T17:25:10Z",
+              "completedAt": "2026-10-14T17:25:32Z"
+            },
+            {
+              "name": "Record coverage scope",
+              "status": "completed",
+              "conclusion": "success",
+              "startedAt": "2026-10-14T17:25:32Z",
+              "completedAt": "2026-10-14T17:25:32Z"
+            },
+            {
+              "name": "Retain immutable archives, checksums, formula and logs",
+              "status": "completed",
+              "conclusion": "success",
+              "startedAt": "2026-10-14T17:25:32Z",
+              "completedAt": "2026-10-14T17:25:33Z"
+            },
+            {
+              "name": "Post Set up native Homebrew",
+              "status": "completed",
+              "conclusion": "success",
+              "startedAt": "2026-10-14T17:25:33Z",
+              "completedAt": "2026-10-14T17:25:33Z"
+            },
+            {
+              "name": "Post Install packaging Python",
+              "status": "completed",
+              "conclusion": "success",
+              "startedAt": "2026-10-14T17:25:33Z",
+              "completedAt": "2026-10-14T17:25:33Z"
+            },
+            {
+              "name": "Post Check out the tested source",
+              "status": "completed",
+              "conclusion": "success",
+              "startedAt": "2026-10-14T17:25:33Z",
+              "completedAt": "2026-10-14T17:25:34Z"
+            },
+            {
+              "name": "Complete job",
+              "status": "completed",
+              "conclusion": "success",
+              "startedAt": "2026-10-14T17:25:34Z",
+              "completedAt": "2026-10-14T17:25:35Z"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "databaseId": 38604704620,
+      "status": "completed",
+      "conclusion": "success",
+      "event": "pull_request",
+      "headSha": "ae9f1bea535c1a92985344fb77ffa47d7776ca57",
+      "createdAt": "2026-10-14T17:12:40Z",
+      "updatedAt": "2026-10-14T17:52:37Z",
+      "url": "https://github.com/bartscheffer/deepkit-code/actions/runs/38604704620",
+      "jobs": [
+        {
+          "databaseId": 115992487449,
+          "name": "Rust quality gates",
+          "status": "completed",
+          "conclusion": "success",
+          "startedAt": "2026-10-14T17:12:42Z",
+          "completedAt": "2026-10-14T17:52:36Z",
+          "url": "https://github.com/bartscheffer/deepkit-code/actions/runs/38604704620/job/115992487449",
+          "steps": [
+            {
+              "name": "Set up job",
+              "status": "completed",
+              "conclusion": "success",
+              "startedAt": "2026-10-14T17:12:44Z",
+              "completedAt": "2026-10-14T17:12:47Z"
+            },
+            {
+              "name": "Check out repository",
+              "status": "completed",
+              "conclusion": "success",
+              "startedAt": "2026-10-14T17:12:47Z",
+              "completedAt": "2026-10-14T17:12:51Z"
+            },
+            {
+              "name": "Install Rust toolchain",
+              "status": "completed",
+              "conclusion": "success",
+              "startedAt": "2026-10-14T17:12:51Z",
+              "completedAt": "2026-10-14T17:12:52Z"
+            },
+            {
+              "name": "Check benchmark and release scripts",
+              "status": "completed",
+              "conclusion": "success",
+              "startedAt": "2026-10-14T17:12:52Z",
+              "completedAt": "2026-10-14T17:12:53Z"
+            },
+            {
+              "name": "Cache Rust build artifacts",
+              "status": "completed",
+              "conclusion": "success",
+              "startedAt": "2026-10-14T17:12:53Z",
+              "completedAt": "2026-10-14T17:12:54Z"
+            },
+            {
+              "name": "Check formatting",
+              "status": "completed",
+              "conclusion": "success",
+              "startedAt": "2026-10-14T17:12:54Z",
+              "completedAt": "2026-10-14T17:12:57Z"
+            },
+            {
+              "name": "Run Clippy",
+              "status": "completed",
+              "conclusion": "success",
+              "startedAt": "2026-10-14T17:12:57Z",
+              "completedAt": "2026-10-14T17:22:01Z"
+            },
+            {
+              "name": "Run tests",
+              "status": "completed",
+              "conclusion": "success",
+              "startedAt": "2026-10-14T17:22:01Z",
+              "completedAt": "2026-10-14T17:51:47Z"
+            },
+            {
+              "name": "Test benchmark and nightly tooling",
+              "status": "completed",
+              "conclusion": "success",
+              "startedAt": "2026-10-14T17:51:47Z",
+              "completedAt": "2026-10-14T17:51:59Z"
+            },
+            {
+              "name": "Install cargo-deny",
+              "status": "completed",
+              "conclusion": "success",
+              "startedAt": "2026-10-14T17:51:59Z",
+              "completedAt": "2026-10-14T17:52:00Z"
+            },
+            {
+              "name": "Check dependencies",
+              "status": "completed",
+              "conclusion": "success",
+              "startedAt": "2026-10-14T17:52:00Z",
+              "completedAt": "2026-10-14T17:52:03Z"
+            },
+            {
+              "name": "Guard agent-owned files on push",
+              "status": "completed",
+              "conclusion": "skipped",
+              "startedAt": "2026-10-14T17:52:03Z",
+              "completedAt": "2026-10-14T17:52:03Z"
+            },
+            {
+              "name": "Guard agent-owned files on pull request",
+              "status": "completed",
+              "conclusion": "success",
+              "startedAt": "2026-10-14T17:52:03Z",
+              "completedAt": "2026-10-14T17:52:12Z"
+            },
+            {
+              "name": "Report build disk usage",
+              "status": "completed",
+              "conclusion": "success",
+              "startedAt": "2026-10-14T17:52:12Z",
+              "completedAt": "2026-10-14T17:52:12Z"
+            },
+            {
+              "name": "Post Cache Rust build artifacts",
+              "status": "completed",
+              "conclusion": "success",
+              "startedAt": "2026-10-14T17:52:12Z",
+              "completedAt": "2026-10-14T17:52:33Z"
+            },
+            {
+              "name": "Post Check out repository",
+              "status": "completed",
+              "conclusion": "success",
+              "startedAt": "2026-10-14T17:52:33Z",
+              "completedAt": "2026-10-14T17:52:34Z"
+            },
+            {
+              "name": "Complete job",
+              "status": "completed",
+              "conclusion": "success",
+              "startedAt": "2026-10-14T17:52:34Z",
+              "completedAt": "2026-10-14T17:52:34Z"
+            }
+          ],
+          "log_path": "/tmp/dkc-beta-ci-terminal-20261014/115992487449.log",
+          "log_bytes": 697188,
+          "log_sha256": "4618a4ef7accc06986c553638caeb5786a3898f1972455fb0ce84d4252546c86",
+          "test_results": [
+            "2026-10-14T17:32:40.6788317Z test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 1178 filtered out; finished in 0.02s",
+            "2026-10-14T17:36:27.6967502Z test result: ok. 1163 passed; 0 failed; 16 ignored; 0 measured; 0 filtered out; finished in 262.69s",
+            "2026-10-14T17:37:15.0209556Z test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 47.30s",
+            "2026-10-14T17:38:13.1199465Z test result: ok. 7 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 58.09s",
+            "2026-10-14T17:38:37.0157165Z test result: ok. 11 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 23.88s",
+            "2026-10-14T17:38:43.8104082Z test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 6.78s",
+            "2026-10-14T17:38:47.9006088Z test result: ok. 8 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 4.08s",
+            "2026-10-14T17:38:48.0102825Z test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.10s",
+            "2026-10-14T17:38:48.3332139Z test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.32s",
+            "2026-10-14T17:38:49.7894301Z test result: ok. 3 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 1.45s",
+            "2026-10-14T17:38:51.0770093Z test result: ok. 7 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.28s",
+            "2026-10-14T17:38:58.4091978Z test result: ok. 12 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 7.32s",
+            "2026-10-14T17:39:04.6201988Z test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 6.20s",
+            "2026-10-14T17:39:42.2860785Z test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 37.65s",
+            "2026-10-14T17:39:49.1904315Z test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 6.90s",
+            "2026-10-14T17:39:59.3790446Z test result: ok. 11 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 10.18s",
+            "2026-10-14T17:40:00.9500909Z test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.56s",
+            "2026-10-14T17:40:08.9507064Z test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 7.99s",
+            "2026-10-14T17:40:33.7799846Z test result: ok. 9 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 24.82s",
+            "2026-10-14T17:40:34.7185608Z test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.92s",
+            "2026-10-14T17:40:51.0396492Z test result: ok. 7 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 16.31s",
+            "2026-10-14T17:40:56.8822158Z test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 5.83s",
+            "2026-10-14T17:49:06.5470079Z test result: ok. 46 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 489.64s",
+            "2026-10-14T17:49:10.7104476Z test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 4.15s",
+            "2026-10-14T17:49:11.6991759Z test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.98s",
+            "2026-10-14T17:49:11.7540321Z test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.05s",
+            "2026-10-14T17:49:24.4419256Z test result: ok. 10 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 12.67s",
+            "2026-10-14T17:49:28.1497242Z test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 3.70s",
+            "2026-10-14T17:49:34.6174769Z test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 6.46s",
+            "2026-10-14T17:49:37.7907357Z test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 3.17s",
+            "2026-10-14T17:49:43.4597669Z test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 5.66s",
+            "2026-10-14T17:49:45.9125120Z test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 2.44s",
+            "2026-10-14T17:50:13.2919562Z test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 27.37s",
+            "2026-10-14T17:50:40.2349277Z test result: ok. 9 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 26.93s",
+            "2026-10-14T17:50:52.2363104Z test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 11.99s",
+            "2026-10-14T17:50:59.9774331Z test result: ok. 10 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 7.73s",
+            "2026-10-14T17:51:00.9580804Z test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.97s",
+            "2026-10-14T17:51:00.9673866Z test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s",
+            "2026-10-14T17:51:01.9737757Z test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.00s",
+            "2026-10-14T17:51:03.1943488Z test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.21s",
+            "2026-10-14T17:51:17.6229665Z test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 14.42s",
+            "2026-10-14T17:51:23.0802623Z test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 5.45s",
+            "2026-10-14T17:51:47.7244485Z test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 24.63s"
+          ],
+          "test_build_completion": [
+            "2026-10-14T17:32:03.3224235Z     Finished `test` profile [unoptimized] target(s) in 10m 01s"
+          ],
+          "failure_lines": []
+        }
+      ]
+    },
+    {
+      "databaseId": 38604671146,
+      "status": "completed",
+      "conclusion": "success",
+      "event": "push",
+      "headSha": "ae9f1bea535c1a92985344fb77ffa47d7776ca57",
+      "createdAt": "2026-10-14T17:12:26Z",
+      "updatedAt": "2026-10-14T17:54:28Z",
+      "url": "https://github.com/bartscheffer/deepkit-code/actions/runs/38604671146",
+      "jobs": [
+        {
+          "databaseId": 115992371365,
+          "name": "Rust quality gates",
+          "status": "completed",
+          "conclusion": "success",
+          "startedAt": "2026-10-14T17:12:29Z",
+          "completedAt": "2026-10-14T17:54:27Z",
+          "url": "https://github.com/bartscheffer/deepkit-code/actions/runs/38604671146/job/115992371365",
+          "steps": [
+            {
+              "name": "Set up job",
+              "status": "completed",
+              "conclusion": "success",
+              "startedAt": "2026-10-14T17:12:30Z",
+              "completedAt": "2026-10-14T17:12:33Z"
+            },
+            {
+              "name": "Check out repository",
+              "status": "completed",
+              "conclusion": "success",
+              "startedAt": "2026-10-14T17:12:33Z",
+              "completedAt": "2026-10-14T17:12:36Z"
+            },
+            {
+              "name": "Install Rust toolchain",
+              "status": "completed",
+              "conclusion": "success",
+              "startedAt": "2026-10-14T17:12:36Z",
+              "completedAt": "2026-10-14T17:12:36Z"
+            },
+            {
+              "name": "Check benchmark and release scripts",
+              "status": "completed",
+              "conclusion": "success",
+              "startedAt": "2026-10-14T17:12:36Z",
+              "completedAt": "2026-10-14T17:12:38Z"
+            },
+            {
+              "name": "Cache Rust build artifacts",
+              "status": "completed",
+              "conclusion": "success",
+              "startedAt": "2026-10-14T17:12:38Z",
+              "completedAt": "2026-10-14T17:12:38Z"
+            },
+            {
+              "name": "Check formatting",
+              "status": "completed",
+              "conclusion": "success",
+              "startedAt": "2026-10-14T17:12:38Z",
+              "completedAt": "2026-10-14T17:12:42Z"
+            },
+            {
+              "name": "Run Clippy",
+              "status": "completed",
+              "conclusion": "success",
+              "startedAt": "2026-10-14T17:12:42Z",
+              "completedAt": "2026-10-14T17:19:44Z"
+            },
+            {
+              "name": "Run tests",
+              "status": "completed",
+              "conclusion": "success",
+              "startedAt": "2026-10-14T17:19:44Z",
+              "completedAt": "2026-10-14T17:53:20Z"
+            },
+            {
+              "name": "Test benchmark and nightly tooling",
+              "status": "completed",
+              "conclusion": "success",
+              "startedAt": "2026-10-14T17:53:20Z",
+              "completedAt": "2026-10-14T17:53:34Z"
+            },
+            {
+              "name": "Install cargo-deny",
+              "status": "completed",
+              "conclusion": "success",
+              "startedAt": "2026-10-14T17:53:34Z",
+              "completedAt": "2026-10-14T17:53:34Z"
+            },
+            {
+              "name": "Check dependencies",
+              "status": "completed",
+              "conclusion": "success",
+              "startedAt": "2026-10-14T17:53:34Z",
+              "completedAt": "2026-10-14T17:53:40Z"
+            },
+            {
+              "name": "Guard agent-owned files on push",
+              "status": "completed",
+              "conclusion": "success",
+              "startedAt": "2026-10-14T17:53:40Z",
+              "completedAt": "2026-10-14T17:53:49Z"
+            },
+            {
+              "name": "Guard agent-owned files on pull request",
+              "status": "completed",
+              "conclusion": "skipped",
+              "startedAt": "2026-10-14T17:53:49Z",
+              "completedAt": "2026-10-14T17:53:49Z"
+            },
+            {
+              "name": "Report build disk usage",
+              "status": "completed",
+              "conclusion": "success",
+              "startedAt": "2026-10-14T17:53:49Z",
+              "completedAt": "2026-10-14T17:53:49Z"
+            },
+            {
+              "name": "Post Cache Rust build artifacts",
+              "status": "completed",
+              "conclusion": "success",
+              "startedAt": "2026-10-14T17:53:49Z",
+              "completedAt": "2026-10-14T17:54:24Z"
+            },
+            {
+              "name": "Post Check out repository",
+              "status": "completed",
+              "conclusion": "success",
+              "startedAt": "2026-10-14T17:54:24Z",
+              "completedAt": "2026-10-14T17:54:24Z"
+            },
+            {
+              "name": "Complete job",
+              "status": "completed",
+              "conclusion": "success",
+              "startedAt": "2026-10-14T17:54:24Z",
+              "completedAt": "2026-10-14T17:54:24Z"
+            }
+          ],
+          "log_path": "/tmp/dkc-beta-ci-terminal-20261014/115992371365.log",
+          "log_bytes": 696211,
+          "log_sha256": "7c883fe656ef3c00b971f90971e52cd0f8496ae2790ab8f9f1a4c6b428eec768",
+          "test_results": [
+            "2026-10-14T17:31:05.1504108Z test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 1178 filtered out; finished in 0.01s",
+            "2026-10-14T17:37:46.5297653Z test result: ok. 1163 passed; 0 failed; 16 ignored; 0 measured; 0 filtered out; finished in 419.79s",
+            "2026-10-14T17:38:44.0197223Z test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 57.46s",
+            "2026-10-14T17:39:27.6130743Z test result: ok. 7 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 43.59s",
+            "2026-10-14T17:39:49.6965829Z test result: ok. 11 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 22.07s",
+            "2026-10-14T17:39:57.7553962Z test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 8.05s",
+            "2026-10-14T17:40:04.9107228Z test result: ok. 8 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 7.14s",
+            "2026-10-14T17:40:05.0402486Z test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.12s",
+            "2026-10-14T17:40:05.4019700Z test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.36s",
+            "2026-10-14T17:40:06.6278749Z test result: ok. 3 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 1.22s",
+            "2026-10-14T17:40:08.2256310Z test result: ok. 7 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.58s",
+            "2026-10-14T17:40:15.7193037Z test result: ok. 12 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 7.38s",
+            "2026-10-14T17:40:21.4278019Z test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 5.69s",
+            "2026-10-14T17:41:04.3552435Z test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 42.87s",
+            "2026-10-14T17:41:10.5257091Z test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 6.14s",
+            "2026-10-14T17:41:19.0774189Z test result: ok. 11 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 8.40s",
+            "2026-10-14T17:41:20.8106058Z test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.63s",
+            "2026-10-14T17:41:29.1361420Z test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 8.31s",
+            "2026-10-14T17:41:55.3099460Z test result: ok. 9 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 25.93s",
+            "2026-10-14T17:41:56.0673671Z test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.74s",
+            "2026-10-14T17:42:12.9119503Z test result: ok. 7 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 16.84s",
+            "2026-10-14T17:42:17.4452012Z test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 4.53s",
+            "2026-10-14T17:50:37.3056395Z test result: ok. 46 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 499.84s",
+            "2026-10-14T17:50:41.7679682Z test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 4.36s",
+            "2026-10-14T17:50:42.6620324Z test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.89s",
+            "2026-10-14T17:50:42.7191425Z test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s",
+            "2026-10-14T17:50:57.1219001Z test result: ok. 10 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 14.32s",
+            "2026-10-14T17:50:59.9608137Z test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 2.83s",
+            "2026-10-14T17:51:06.5324609Z test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 6.39s",
+            "2026-10-14T17:51:10.1855157Z test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 3.48s",
+            "2026-10-14T17:51:14.7150921Z test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 4.52s",
+            "2026-10-14T17:51:17.0840566Z test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 2.36s",
+            "2026-10-14T17:51:43.4364166Z test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 26.34s",
+            "2026-10-14T17:52:07.3912904Z test result: ok. 9 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 23.94s",
+            "2026-10-14T17:52:19.5140992Z test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 12.11s",
+            "2026-10-14T17:52:28.6855997Z test result: ok. 10 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 9.16s",
+            "2026-10-14T17:52:31.3935484Z test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 2.08s",
+            "2026-10-14T17:52:31.4011400Z test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s",
+            "2026-10-14T17:52:32.3476671Z test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.94s",
+            "2026-10-14T17:52:34.3992885Z test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.93s",
+            "2026-10-14T17:52:46.5652077Z test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 12.13s",
+            "2026-10-14T17:52:51.7122245Z test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 5.14s",
+            "2026-10-14T17:53:20.5998157Z test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 28.84s"
+          ],
+          "test_build_completion": [
+            "2026-10-14T17:30:45.3866890Z     Finished `test` profile [unoptimized] target(s) in 11m 00s"
+          ],
+          "failure_lines": []
+        }
+      ]
+    },
+    {
+      "databaseId": 38604704675,
+      "status": "completed",
+      "conclusion": "success",
+      "event": "pull_request",
+      "headSha": "ae9f1bea535c1a92985344fb77ffa47d7776ca57",
+      "createdAt": "2026-10-14T17:12:40Z",
+      "updatedAt": "2026-10-14T17:13:06Z",
+      "url": "https://github.com/bartscheffer/deepkit-code/actions/runs/38604704675",
+      "jobs": [
+        {
+          "databaseId": 115992486645,
+          "name": "plan",
+          "status": "completed",
+          "conclusion": "success",
+          "startedAt": "2026-10-14T17:12:42Z",
+          "completedAt": "2026-10-14T17:13:03Z",
+          "url": "https://github.com/bartscheffer/deepkit-code/actions/runs/38604704675/job/115992486645",
+          "steps": [
+            {
+              "name": "Set up job",
+              "status": "completed",
+              "conclusion": "success",
+              "startedAt": "2026-10-14T17:12:44Z",
+              "completedAt": "2026-10-14T17:12:45Z"
+            },
+            {
+              "name": "Run actions/checkout@v6",
+              "status": "completed",
+              "conclusion": "success",
+              "startedAt": "2026-10-14T17:12:45Z",
+              "completedAt": "2026-10-14T17:12:46Z"
+            },
+            {
+              "name": "Install dist",
+              "status": "completed",
+              "conclusion": "success",
+              "startedAt": "2026-10-14T17:12:46Z",
+              "completedAt": "2026-10-14T17:12:47Z"
+            },
+            {
+              "name": "Cache dist",
+              "status": "completed",
+              "conclusion": "success",
+              "startedAt": "2026-10-14T17:12:47Z",
+              "completedAt": "2026-10-14T17:12:50Z"
+            },
+            {
+              "name": "Run dist plan --output-format=json > plan-dist-manifest.json",
+              "status": "completed",
+              "conclusion": "success",
+              "startedAt": "2026-10-14T17:12:50Z",
+              "completedAt": "2026-10-14T17:12:59Z"
+            },
+            {
+              "name": "Upload dist-manifest.json",
+              "status": "completed",
+              "conclusion": "success",
+              "startedAt": "2026-10-14T17:12:59Z",
+              "completedAt": "2026-10-14T17:13:00Z"
+            },
+            {
+              "name": "Post Run actions/checkout@v6",
+              "status": "completed",
+              "conclusion": "success",
+              "startedAt": "2026-10-14T17:13:00Z",
+              "completedAt": "2026-10-14T17:13:01Z"
+            },
+            {
+              "name": "Complete job",
+              "status": "completed",
+              "conclusion": "success",
+              "startedAt": "2026-10-14T17:13:01Z",
+              "completedAt": "2026-10-14T17:13:01Z"
+            }
+          ]
+        },
+        {
+          "databaseId": 115992678181,
+          "name": "custom-release-platforms",
+          "status": "completed",
+          "conclusion": "skipped",
+          "startedAt": "2026-10-14T17:13:04Z",
+          "completedAt": "2026-10-14T17:13:03Z",
+          "url": "https://github.com/bartscheffer/deepkit-code/actions/runs/38604704675/job/115992678181",
+          "steps": []
+        },
+        {
+          "databaseId": 115992679490,
+          "name": "build-local-artifacts (${{ join(matrix.targets, ', ') }})",
+          "status": "completed",
+          "conclusion": "skipped",
+          "startedAt": "2026-10-14T17:13:04Z",
+          "completedAt": "2026-10-14T17:13:03Z",
+          "url": "https://github.com/bartscheffer/deepkit-code/actions/runs/38604704675/job/115992679490",
+          "steps": []
+        },
+        {
+          "databaseId": 115992679762,
+          "name": "build-global-artifacts",
+          "status": "completed",
+          "conclusion": "skipped",
+          "startedAt": "2026-10-14T17:13:04Z",
+          "completedAt": "2026-10-14T17:13:04Z",
+          "url": "https://github.com/bartscheffer/deepkit-code/actions/runs/38604704675/job/115992679762",
+          "steps": []
+        },
+        {
+          "databaseId": 115992679823,
+          "name": "host",
+          "status": "completed",
+          "conclusion": "skipped",
+          "startedAt": "2026-10-14T17:13:04Z",
+          "completedAt": "2026-10-14T17:13:04Z",
+          "url": "https://github.com/bartscheffer/deepkit-code/actions/runs/38604704675/job/115992679823",
+          "steps": []
+        },
+        {
+          "databaseId": 115992680108,
+          "name": "custom-release-acceptance",
+          "status": "completed",
+          "conclusion": "skipped",
+          "startedAt": "2026-10-14T17:13:04Z",
+          "completedAt": "2026-10-14T17:13:04Z",
+          "url": "https://github.com/bartscheffer/deepkit-code/actions/runs/38604704675/job/115992680108",
+          "steps": []
+        },
+        {
+          "databaseId": 115992680316,
+          "name": "custom-release-sizes",
+          "status": "completed",
+          "conclusion": "skipped",
+          "startedAt": "2026-10-14T17:13:04Z",
+          "completedAt": "2026-10-14T17:13:04Z",
+          "url": "https://github.com/bartscheffer/deepkit-code/actions/runs/38604704675/job/115992680316",
+          "steps": []
+        },
+        {
+          "databaseId": 115992680725,
+          "name": "publish-npm",
+          "status": "completed",
+          "conclusion": "skipped",
+          "startedAt": "2026-10-14T17:13:04Z",
+          "completedAt": "2026-10-14T17:13:04Z",
+          "url": "https://github.com/bartscheffer/deepkit-code/actions/runs/38604704675/job/115992680725",
+          "steps": []
+        },
+        {
+          "databaseId": 115992681258,
+          "name": "publish-homebrew-formula",
+          "status": "completed",
+          "conclusion": "skipped",
+          "startedAt": "2026-10-14T17:13:04Z",
+          "completedAt": "2026-10-14T17:13:04Z",
+          "url": "https://github.com/bartscheffer/deepkit-code/actions/runs/38604704675/job/115992681258",
+          "steps": []
+        },
+        {
+          "databaseId": 115992681555,
+          "name": "announce",
+          "status": "completed",
+          "conclusion": "skipped",
+          "startedAt": "2026-10-14T17:13:04Z",
+          "completedAt": "2026-10-14T17:13:04Z",
+          "url": "https://github.com/bartscheffer/deepkit-code/actions/runs/38604704675/job/115992681555",
+          "steps": []
+        },
+        {
+          "databaseId": 115992683084,
+          "name": "custom-release-checksums",
+          "status": "completed",
+          "conclusion": "skipped",
+          "startedAt": "2026-10-14T17:13:04Z",
+          "completedAt": "2026-10-14T17:13:04Z",
+          "url": "https://github.com/bartscheffer/deepkit-code/actions/runs/38604704675/job/115992683084",
+          "steps": []
+        }
+      ]
+    }
+  ]
+}

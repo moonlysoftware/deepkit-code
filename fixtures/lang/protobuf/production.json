@@ -1,0 +1,30 @@
+{
+  "edges": [],
+  "symbols": [
+    {
+      "end": 2,
+      "kind": "class",
+      "name": "Retry",
+      "qualified": "Retry",
+      "start": 2
+    }
+  ],
+  "units": [
+    {
+      "end": 1,
+      "header": "chunk",
+      "kind": "Chunk",
+      "scope": "",
+      "start": 1,
+      "text": "syntax = \"proto3\";"
+    },
+    {
+      "end": 2,
+      "header": "Retry › message Retry { int32 count = 1; }",
+      "kind": "Symbol",
+      "scope": "Retry",
+      "start": 2,
+      "text": "message Retry { int32 count = 1; }"
+    }
+  ]
+}

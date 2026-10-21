@@ -1,0 +1,45 @@
+[
+  {
+    "kind": "describe_symbol",
+    "fields": {
+      "signature": "fn normalize_name(value: &str) -> String",
+      "code": "value.trim().to_lowercase()",
+      "callers": "insert_person\nlookup_person",
+      "docs": "Names use lower case for lookup."
+    },
+    "output_tokens": 120,
+    "expected": "Describe what this symbol does and why it matters in at most 120 tokens. Use only the supplied code and context. Do not invent callers or behavior. Return the description without a preamble.\n\nSignature:\nfn normalize_name(value: &str) -> String\n\nCode:\nvalue.trim().to_lowercase()\n\nCaller names:\ninsert_person\nlookup_person\n\nDocumentation mentions:\nNames use lower case for lookup.\n"
+  },
+  {
+    "kind": "summarize_pr",
+    "fields": {
+      "collation": "PR #12: Normalize person names",
+      "hunks": "- value.to_owned()\n+ value.trim().to_lowercase()"
+    },
+    "output_tokens": 300,
+    "expected": "Summarize this pull request in at most 300 tokens. Explain the concrete changes and their purpose using only the supplied collation and hunks. Return the summary without a preamble.\n\nPull request:\nPR #12: Normalize person names\n\nSelected member hunks:\n- value.to_owned()\n+ value.trim().to_lowercase()\n"
+  },
+  {
+    "kind": "summarize_module",
+    "fields": {
+      "collation": "people/ contains 5 files for storing and finding people.",
+      "summaries": "normalize_name: Trims and lowercases a name."
+    },
+    "output_tokens": 200,
+    "expected": "Describe the responsibility of this module in at most 200 tokens. Use only its collation and member symbol summaries. Return the description without a preamble.\n\nModule:\npeople/ contains 5 files for storing and finding people.\n\nMember symbol summaries:\nnormalize_name: Trims and lowercases a name.\n"
+  },
+  {
+    "kind": "describe_image",
+    "fields": {
+      "references": "Heading: Sign-in flow\nCaption: The user confirms an email address."
+    },
+    "output_tokens": 200,
+    "expected": "Describe the supplied image in at most 200 tokens. Include visible information useful for finding it in this repository. Use surrounding text only as context and distinguish it from what is visible. Return the description without a preamble.\n\nReferencing document context:\nHeading: Sign-in flow\nCaption: The user confirms an email address.\n"
+  },
+  {
+    "kind": "vlm_page",
+    "fields": {},
+    "output_tokens": null,
+    "expected": "Transcribe the supplied document page into Markdown in reading order. Preserve headings, lists and tables where visible. Do not invent unreadable text or add a preamble.\n"
+  }
+]

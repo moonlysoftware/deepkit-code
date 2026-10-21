@@ -1,0 +1,17 @@
+[
+  {
+    "file": "llama.cpp-LICENSE",
+    "upstream_url": "https://raw.githubusercontent.com/ggml-org/llama.cpp/e79e4bf660e19f2ad851e06c6913f7a8c5852621/LICENSE",
+    "sha256": "94f29bbed6a22c35b992c5c6ebf0e7c92f13b836b90f36f461c9cf2f0f1d010d"
+  },
+  {
+    "file": "llama.cpp-jsonhpp-LICENSE",
+    "upstream_url": "https://raw.githubusercontent.com/ggml-org/llama.cpp/e79e4bf660e19f2ad851e06c6913f7a8c5852621/licenses/LICENSE-jsonhpp",
+    "sha256": "c0d068392ea65358b798b8c165103560f06e9e3b38c4ab4e2d8810a7b931af86"
+  },
+  {
+    "file": "FP16-LICENSE",
+    "upstream_url": "https://raw.githubusercontent.com/Maratyszcza/FP16/782eea126dc5c755827be751a099eb01826175cf/LICENSE",
+    "sha256": "17e4f539024be2749ee729d1e2f01d24cef12ece8c9bf18e91a4349be29c80bf"
+  }
+]

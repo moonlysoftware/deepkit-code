@@ -1,0 +1,12 @@
+[Unit]
+Description=Deepkit Code full corpus regression
+
+[Service]
+Type=oneshot
+WorkingDirectory=@ROOT@
+ExecStart=@ROOT@/scripts/bench/nightly.sh
+Environment=PATH=%h/.cargo/bin:/usr/local/bin:/usr/bin:/bin
+Environment=DKC_CORPUS_DIR=/data/dkc-corpus
+Environment=DKC_MODELS_DIR=/data/dkc-models
+TimeoutStartSec=6h
+KillMode=control-group

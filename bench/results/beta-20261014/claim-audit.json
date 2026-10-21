@@ -1,0 +1,599 @@
+{
+  "audited_at_utc": "2026-10-14T16:13:01.935554+00:00",
+  "product_head_at_audit": "a7e45b06ce1c40c7648c44359bb248c83f7b232b",
+  "new_search_runs": 0,
+  "vague_cohort": {
+    "kind_filter": "vague",
+    "source": "frozen September25 development queries;10 per repo",
+    "human_review": "ripgrep approved;Laravel/Django/Hugo unreviewed",
+    "mode": "public CLI lexical,source scope,no rerank,k10;default graph contribution except arm8 guard",
+    "arm_meanings": {
+      "0": "baseline",
+      "8": "disable neighbor graph votes on natural queries without explicit identifiers",
+      "9": "remove grammar words only in natural lexical OR fallback"
+    },
+    "metrics": {
+      "0": {
+        "all": {
+          "n": 40,
+          "hit_file_at5_count": 16,
+          "hit_file_at5": 0.4,
+          "recall_at10": 0.3375,
+          "errors": 0,
+          "partials": 0,
+          "query_ids": [
+            "rg-001",
+            "rg-002",
+            "rg-003",
+            "rg-004",
+            "rg-005",
+            "rg-006",
+            "rg-007",
+            "rg-008",
+            "rg-009",
+            "rg-010",
+            "laravel-001",
+            "laravel-002",
+            "laravel-003",
+            "laravel-004",
+            "laravel-005",
+            "laravel-006",
+            "laravel-007",
+            "laravel-008",
+            "laravel-009",
+            "laravel-010",
+            "django-001",
+            "django-002",
+            "django-003",
+            "django-004",
+            "django-005",
+            "django-006",
+            "django-007",
+            "django-008",
+            "django-009",
+            "django-010",
+            "hugo-001",
+            "hugo-002",
+            "hugo-003",
+            "hugo-004",
+            "hugo-005",
+            "hugo-006",
+            "hugo-007",
+            "hugo-008",
+            "hugo-009",
+            "hugo-010"
+          ]
+        },
+        "ripgrep": {
+          "n": 10,
+          "hit_file_at5_count": 6,
+          "hit_file_at5": 0.6,
+          "recall_at10": 0.5,
+          "errors": 0,
+          "partials": 0,
+          "query_ids": [
+            "rg-001",
+            "rg-002",
+            "rg-003",
+            "rg-004",
+            "rg-005",
+            "rg-006",
+            "rg-007",
+            "rg-008",
+            "rg-009",
+            "rg-010"
+          ]
+        },
+        "laravel": {
+          "n": 10,
+          "hit_file_at5_count": 4,
+          "hit_file_at5": 0.4,
+          "recall_at10": 0.25,
+          "errors": 0,
+          "partials": 0,
+          "query_ids": [
+            "laravel-001",
+            "laravel-002",
+            "laravel-003",
+            "laravel-004",
+            "laravel-005",
+            "laravel-006",
+            "laravel-007",
+            "laravel-008",
+            "laravel-009",
+            "laravel-010"
+          ]
+        },
+        "django": {
+          "n": 10,
+          "hit_file_at5_count": 3,
+          "hit_file_at5": 0.3,
+          "recall_at10": 0.25,
+          "errors": 0,
+          "partials": 0,
+          "query_ids": [
+            "django-001",
+            "django-002",
+            "django-003",
+            "django-004",
+            "django-005",
+            "django-006",
+            "django-007",
+            "django-008",
+            "django-009",
+            "django-010"
+          ]
+        },
+        "hugo": {
+          "n": 10,
+          "hit_file_at5_count": 3,
+          "hit_file_at5": 0.3,
+          "recall_at10": 0.35,
+          "errors": 0,
+          "partials": 0,
+          "query_ids": [
+            "hugo-001",
+            "hugo-002",
+            "hugo-003",
+            "hugo-004",
+            "hugo-005",
+            "hugo-006",
+            "hugo-007",
+            "hugo-008",
+            "hugo-009",
+            "hugo-010"
+          ]
+        }
+      },
+      "8": {
+        "all": {
+          "n": 40,
+          "hit_file_at5_count": 14,
+          "hit_file_at5": 0.35,
+          "recall_at10": 0.3375,
+          "errors": 0,
+          "partials": 0,
+          "query_ids": [
+            "rg-001",
+            "rg-002",
+            "rg-003",
+            "rg-004",
+            "rg-005",
+            "rg-006",
+            "rg-007",
+            "rg-008",
+            "rg-009",
+            "rg-010",
+            "laravel-001",
+            "laravel-002",
+            "laravel-003",
+            "laravel-004",
+            "laravel-005",
+            "laravel-006",
+            "laravel-007",
+            "laravel-008",
+            "laravel-009",
+            "laravel-010",
+            "django-001",
+            "django-002",
+            "django-003",
+            "django-004",
+            "django-005",
+            "django-006",
+            "django-007",
+            "django-008",
+            "django-009",
+            "django-010",
+            "hugo-001",
+            "hugo-002",
+            "hugo-003",
+            "hugo-004",
+            "hugo-005",
+            "hugo-006",
+            "hugo-007",
+            "hugo-008",
+            "hugo-009",
+            "hugo-010"
+          ]
+        },
+        "ripgrep": {
+          "n": 10,
+          "hit_file_at5_count": 5,
+          "hit_file_at5": 0.5,
+          "recall_at10": 0.5,
+          "errors": 0,
+          "partials": 0,
+          "query_ids": [
+            "rg-001",
+            "rg-002",
+            "rg-003",
+            "rg-004",
+            "rg-005",
+            "rg-006",
+            "rg-007",
+            "rg-008",
+            "rg-009",
+            "rg-010"
+          ]
+        },
+        "laravel": {
+          "n": 10,
+          "hit_file_at5_count": 4,
+          "hit_file_at5": 0.4,
+          "recall_at10": 0.25,
+          "errors": 0,
+          "partials": 0,
+          "query_ids": [
+            "laravel-001",
+            "laravel-002",
+            "laravel-003",
+            "laravel-004",
+            "laravel-005",
+            "laravel-006",
+            "laravel-007",
+            "laravel-008",
+            "laravel-009",
+            "laravel-010"
+          ]
+        },
+        "django": {
+          "n": 10,
+          "hit_file_at5_count": 2,
+          "hit_file_at5": 0.2,
+          "recall_at10": 0.25,
+          "errors": 0,
+          "partials": 0,
+          "query_ids": [
+            "django-001",
+            "django-002",
+            "django-003",
+            "django-004",
+            "django-005",
+            "django-006",
+            "django-007",
+            "django-008",
+            "django-009",
+            "django-010"
+          ]
+        },
+        "hugo": {
+          "n": 10,
+          "hit_file_at5_count": 3,
+          "hit_file_at5": 0.3,
+          "recall_at10": 0.35,
+          "errors": 0,
+          "partials": 0,
+          "query_ids": [
+            "hugo-001",
+            "hugo-002",
+            "hugo-003",
+            "hugo-004",
+            "hugo-005",
+            "hugo-006",
+            "hugo-007",
+            "hugo-008",
+            "hugo-009",
+            "hugo-010"
+          ]
+        }
+      },
+      "9": {
+        "all": {
+          "n": 40,
+          "hit_file_at5_count": 17,
+          "hit_file_at5": 0.425,
+          "recall_at10": 0.45,
+          "errors": 0,
+          "partials": 0,
+          "query_ids": [
+            "rg-001",
+            "rg-002",
+            "rg-003",
+            "rg-004",
+            "rg-005",
+            "rg-006",
+            "rg-007",
+            "rg-008",
+            "rg-009",
+            "rg-010",
+            "laravel-001",
+            "laravel-002",
+            "laravel-003",
+            "laravel-004",
+            "laravel-005",
+            "laravel-006",
+            "laravel-007",
+            "laravel-008",
+            "laravel-009",
+            "laravel-010",
+            "django-001",
+            "django-002",
+            "django-003",
+            "django-004",
+            "django-005",
+            "django-006",
+            "django-007",
+            "django-008",
+            "django-009",
+            "django-010",
+            "hugo-001",
+            "hugo-002",
+            "hugo-003",
+            "hugo-004",
+            "hugo-005",
+            "hugo-006",
+            "hugo-007",
+            "hugo-008",
+            "hugo-009",
+            "hugo-010"
+          ]
+        },
+        "ripgrep": {
+          "n": 10,
+          "hit_file_at5_count": 6,
+          "hit_file_at5": 0.6,
+          "recall_at10": 0.65,
+          "errors": 0,
+          "partials": 0,
+          "query_ids": [
+            "rg-001",
+            "rg-002",
+            "rg-003",
+            "rg-004",
+            "rg-005",
+            "rg-006",
+            "rg-007",
+            "rg-008",
+            "rg-009",
+            "rg-010"
+          ]
+        },
+        "laravel": {
+          "n": 10,
+          "hit_file_at5_count": 4,
+          "hit_file_at5": 0.4,
+          "recall_at10": 0.4,
+          "errors": 0,
+          "partials": 0,
+          "query_ids": [
+            "laravel-001",
+            "laravel-002",
+            "laravel-003",
+            "laravel-004",
+            "laravel-005",
+            "laravel-006",
+            "laravel-007",
+            "laravel-008",
+            "laravel-009",
+            "laravel-010"
+          ]
+        },
+        "django": {
+          "n": 10,
+          "hit_file_at5_count": 4,
+          "hit_file_at5": 0.4,
+          "recall_at10": 0.3,
+          "errors": 0,
+          "partials": 0,
+          "query_ids": [
+            "django-001",
+            "django-002",
+            "django-003",
+            "django-004",
+            "django-005",
+            "django-006",
+            "django-007",
+            "django-008",
+            "django-009",
+            "django-010"
+          ]
+        },
+        "hugo": {
+          "n": 10,
+          "hit_file_at5_count": 3,
+          "hit_file_at5": 0.3,
+          "recall_at10": 0.45,
+          "errors": 0,
+          "partials": 0,
+          "query_ids": [
+            "hugo-001",
+            "hugo-002",
+            "hugo-003",
+            "hugo-004",
+            "hugo-005",
+            "hugo-006",
+            "hugo-007",
+            "hugo-008",
+            "hugo-009",
+            "hugo-010"
+          ]
+        }
+      }
+    },
+    "limitations": [
+      "Agent/prototype-selected seen questions;no vector inference in these results.",
+      "Graph ablation changes graph-neighbor votes,not all structural PageRank signals.",
+      "No graph benefit on Recall@10 for this vague subset;2 additional top-five hits with graph.",
+      "Arm9 original prototype predates CAN identifier correction;shipping parity pending."
+    ]
+  },
+  "older_moonly_ripgrep": {
+    "date": "2026-09-21",
+    "source_commit": "572a0ed712365a70620fd1e459fd10550de7111d",
+    "machine": {
+      "os": "linux",
+      "arch": "x86_64",
+      "preflight": {
+        "captured_at": 1789967087,
+        "cpu_model": "Intel(R) Core(TM) i7-14700K",
+        "logical_cpus": 28,
+        "memory_total_kib": 131591148,
+        "load_average": [
+          0.64,
+          0.87,
+          1.0
+        ],
+        "gpu_inventory": null,
+        "gpu_compute_processes": null,
+        "idle": null
+      }
+    },
+    "repo_rev": "3fce3b5bb0236da2df6d99672afb8a719642eca7",
+    "queries": 200,
+    "repeats": 3,
+    "kind": "commit-derived,not vague human-authored",
+    "embedder": "qwen3-embedding-8b",
+    "dims": 1024,
+    "reranker": "qwen3-reranker-4b",
+    "candidates": 50,
+    "provider": "Moonly gateway",
+    "scores": {
+      "capacity_pauses": {
+        "identities_blake3": "69bb73faabe5b8e2f72c59417cfa82b571ea900d949cbf45dc4a47d3cddc32b3",
+        "jobs": 7,
+        "reasons": {
+          "token_cap": 7
+        }
+      },
+      "goldens": 200,
+      "hybrid_hit_file_at_5": 0.765,
+      "hybrid_p95_ms": 84.319433,
+      "hybrid_recall_at_10": 0.7247499999999998,
+      "lexical_hit_file_at_5": 0.76,
+      "lexical_recall_at_10": 0.7185833333333332,
+      "repeats": 3,
+      "rerank_auto_reduced": false,
+      "reranked_hit_file_at_5": 0.875,
+      "reranked_p95_ms": 1235.5767799999999,
+      "reranked_recall_at_10": 0.8166666666666668,
+      "state": "complete"
+    },
+    "misses": [
+      {
+        "actual": 24.06607938960409,
+        "detail": "full L2 vs admitted checkout text",
+        "kind": "release_gate",
+        "metric": "l2_footprint_ratio",
+        "target": "<=3.5"
+      },
+      {
+        "actual": 70.78749649021441,
+        "detail": "Moonly target",
+        "kind": "release_gate",
+        "metric": "l2_throughput_units_per_second",
+        "target": ">=80"
+      }
+    ],
+    "scope_limitations": [
+      "Same source-only commit cohort compared across lexical/hybrid/reranked modes.",
+      "Remote model aliases retained;immutable weights revisions absent.",
+      "Paired handwritten scores absent;not a validated semantic-vague result.",
+      "Recorded full corpus lane has7 token-cap pauses and24.066x footprint;not current release acceptance."
+    ]
+  },
+  "agent_token_experiment": {
+    "agent_model": "Qwen3.5-35B-A3B",
+    "temperature": 0,
+    "repo": "ripgrep",
+    "head": "3fce3b5bb0236da2df6d99672afb8a719642eca7",
+    "queries": 30,
+    "paired_repetitions": 3,
+    "primary_sessions": 180,
+    "arms": {
+      "without_dkc": {
+        "sessions": 90,
+        "tokens": 1548207,
+        "correctness_points": 71,
+        "correctness_possible": 180,
+        "evidence_points": 91,
+        "tool_calls": 368
+      },
+      "with_dkc": {
+        "sessions": 90,
+        "tokens": 1607814,
+        "correctness_points": 86,
+        "correctness_possible": 180,
+        "evidence_points": 106,
+        "tool_calls": 351
+      }
+    },
+    "token_change_fraction": 0.038500665608668605,
+    "correctness_grading": "Condition-blind factual and citation review against frozen rubric; bare tool-call markup earns zero.",
+    "uncertainty": "Question-cluster bootstrap resamples the 30 frozen questions; three model repetitions per question are correlated. Results describe this model, revision, configuration and tool budget.",
+    "claim": "More graded correct/evidenced answers in this sample;3.85% more tokens,not token savings."
+  },
+  "source_files": {
+    "notes/bench/search-tuning-20260925/arm-0.json": {
+      "bytes": 507409,
+      "sha256": "3cda38d187d02694b18ede49526a933b50daf26c5593e04874355b21037b160a"
+    },
+    "notes/bench/search-tuning-20260925/arm-8.json": {
+      "bytes": 507066,
+      "sha256": "271a291278e14c98128763052a548afcf9fca482582e46e13643f952eeb63a6a"
+    },
+    "notes/bench/search-tuning-20260925/arm-9.json": {
+      "bytes": 507296,
+      "sha256": "205da4e4c72fcf451490903532b6319f59b278ceac897f6b443219e740b3f0cc"
+    },
+    "notes/bench/2026-09-21-final-A-moonly-ripgrep.json.gz": {
+      "bytes": 207724,
+      "sha256": "900a15b83da293bf02af7de42bcf03848444eb1255a90a5bec7f2d42f2dca034"
+    },
+    "notes/bench/t4-final-moonly-ripgrep-evidence-1.json": {
+      "bytes": 3827,
+      "sha256": "5ce8183fd53372ebde9e69d02e997b394eb3b7f559cd805b16b7e68acc6f579e"
+    },
+    "notes/bench/t4-9-final-result-2.json": {
+      "bytes": 284430,
+      "sha256": "f707e52a542e86162dc9581570131acef5615f2b5684cc1f267923820cb9b933"
+    },
+    "notes/bench/t4-9-protocol-final-2.json": {
+      "bytes": 83300,
+      "sha256": "c20ad999aeb8a2e920314a39801585270a21b58dcbc0866d27490927cba01db2"
+    },
+    "bench/goldens/ripgrep.yaml": {
+      "bytes": 7995,
+      "sha256": "abeca433c437d9abfa7087045b209c9b1ab88f43047d2b7d1a7ee04da7f6a37f"
+    },
+    "bench/goldens/laravel.yaml": {
+      "bytes": 9097,
+      "sha256": "0450899c1e0679d6ec0b780037cbc9bbc973c598323b8703fea412dc2e4bdb39"
+    },
+    "bench/goldens/django.yaml": {
+      "bytes": 8329,
+      "sha256": "f7eeef5e98e2e2920371b22d944fb36dabe433cf4a6f515cb2183036de7fcc6e"
+    },
+    "bench/goldens/hugo.yaml": {
+      "bytes": 8097,
+      "sha256": "a17101cfac08b6232e3448f03acbe84220ba776b4cfac45c3e8eb473ad8ada59"
+    },
+    "notes/bench/search-tuning-20260925/protocol.md": {
+      "bytes": 6172,
+      "sha256": "a1b082e2a304cc2960605783d1bf66bf06fdf5217c54a0530bc61ed1e9b929ef"
+    },
+    "notes/bench/search-tuning-20260925/prototype-build.json": {
+      "bytes": 545,
+      "sha256": "548b2b1c0097036a2b6f4d0f9e9566aa4bd0ac5759c5eca2929c78327b3992e4"
+    },
+    "notes/bench/search-tuning-20260925/prototype.patch": {
+      "bytes": 24157,
+      "sha256": "1de0703aeaa92ab7468676db2066e0688c8a89237c6d2d935d1a49291c27dcba"
+    },
+    "notes/bench/search-tuning-20260925/query-input-hashes.json": {
+      "bytes": 323,
+      "sha256": "a7203d00dc4abd1b2aa0f73392bcc68337fd589a6e316dcbf545f13b16d6864e"
+    },
+    "notes/bench/search-tuning-20260925/preparation.json": {
+      "bytes": 73186,
+      "sha256": "1805b40209fe76ad4a14eb0f80aef83bcd53e7a15b9d9552830589fedad5c277"
+    },
+    "notes/bench/search-tuning-20260925/quality-screen.json": {
+      "bytes": 63447,
+      "sha256": "f75225976d164ac6ef17d191ae7948c04d80cc2246b9fb830013f14d6701d804"
+    },
+    "notes/bench/search-tuning-20260925/report.md": {
+      "bytes": 6576,
+      "sha256": "77c3c762a465ceec370fc605a69c1e4ba5c52d383d81c6a56776cdf5e3f33b7c"
+    }
+  }
+}

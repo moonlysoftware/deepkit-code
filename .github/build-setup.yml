@@ -1,0 +1,37 @@
+- name: Set the supported macOS deployment target
+  if: contains(join(matrix.targets, ','), 'apple-darwin')
+  shell: bash
+  run: echo "MACOSX_DEPLOYMENT_TARGET=13.0" >> "$GITHUB_ENV"
+
+- name: Install Zig for static musl C and C++
+  if: contains(join(matrix.targets, ','), 'unknown-linux-musl')
+  uses: mlugg/setup-zig@v2
+  with:
+    version: 0.15.1
+
+- name: Install cargo-zigbuild for static musl C and C++
+  if: contains(join(matrix.targets, ','), 'unknown-linux-musl')
+  uses: taiki-e/install-action@v2
+  with:
+    tool: cargo-zigbuild
+
+- name: Bind Zig to musl C, C++ and Rust linking
+  if: contains(join(matrix.targets, ','), 'unknown-linux-musl')
+  shell: bash
+  run: |
+    set -euo pipefail
+    tools_dir="$RUNNER_TEMP/dkc-zig-musl-tools"
+    mkdir -p "$tools_dir"
+    for arch in x86_64 aarch64; do
+      for role in cc cxx linker; do
+        ln -s "$GITHUB_WORKSPACE/scripts/release/zig-musl-tool.sh" "$tools_dir/dkc-zig-musl-$arch-$role"
+      done
+    done
+    {
+      echo "CC_x86_64_unknown_linux_musl=$tools_dir/dkc-zig-musl-x86_64-cc"
+      echo "CXX_x86_64_unknown_linux_musl=$tools_dir/dkc-zig-musl-x86_64-cxx"
+      echo "CARGO_TARGET_X86_64_UNKNOWN_LINUX_MUSL_LINKER=$tools_dir/dkc-zig-musl-x86_64-linker"
+      echo "CC_aarch64_unknown_linux_musl=$tools_dir/dkc-zig-musl-aarch64-cc"
+      echo "CXX_aarch64_unknown_linux_musl=$tools_dir/dkc-zig-musl-aarch64-cxx"
+      echo "CARGO_TARGET_AARCH64_UNKNOWN_LINUX_MUSL_LINKER=$tools_dir/dkc-zig-musl-aarch64-linker"
+    } >> "$GITHUB_ENV"

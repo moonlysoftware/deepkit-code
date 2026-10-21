@@ -1,0 +1,21 @@
+{
+  "review_status": "reviewed",
+  "reviewer": "Bart",
+  "review_date": "2026-09-09",
+  "statement": "Reviewed all, and accept the review. looks good",
+  "primary": "bench/goldens/ripgrep.yaml",
+  "primary_blake3": "3ca853f73a4b688d2e0f4b36ad858959f6c39606bd5f56f3b9ba79010cdca9a2",
+  "primary_sha256": "abeca433c437d9abfa7087045b209c9b1ab88f43047d2b7d1a7ee04da7f6a37f",
+  "approved_commit": "53e66d02bde455971626502f96766b2beb6efc1c",
+  "pinned_repository_commit": "3fce3b5bb0236da2df6d99672afb8a719642eca7",
+  "positive_questions": 30,
+  "counts": {
+    "vague": 10,
+    "ident": 10,
+    "doc": 5,
+    "cross": 5
+  },
+  "extras": "bench/goldens/ripgrep-held-out.yaml",
+  "extras_reviewed": false,
+  "scope": "Exact primary bytes frozen unchanged, including historical DRAFT comment; pass primary_blake3 as golden_reviewed_blake3 in subsequent benchmarks. Earlier draft results are not retroactively relabeled."
+}

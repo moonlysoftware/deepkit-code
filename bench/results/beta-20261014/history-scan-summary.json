@@ -1,0 +1,15 @@
+{
+  "head": "a7e45b06ce1c40c7648c44359bb248c83f7b232b",
+  "commit_count": 734,
+  "product_commit_count": 439,
+  "product_diff_bytes_scanned": 15657404,
+  "reachable_blob_count": 9740,
+  "reachable_blob_bytes_scanned": 277349027,
+  "binary_blobs": 143,
+  "secret_rule_candidates": 20,
+  "secret_rules": {
+    "url_password": 20
+  },
+  "non_fixture_candidates": 0,
+  "over_1MB_blobs": []
+}

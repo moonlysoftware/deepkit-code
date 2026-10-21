@@ -1,0 +1,35 @@
+{
+  "snapshot_root": "/tmp/dkc-beta-clean-tree-x027xbal/tree",
+  "snapshot_manifest_sha256": "83a68c65d02f5fbd0f7c5f37af419e0ef881357b6f77c792186dba8f54e21906",
+  "benchmark_tests": {
+    "exit_code": 0,
+    "seconds": 5.0608540519997405,
+    "log": "/tmp/dkc-beta-clean-tree-x027xbal/benchmark-tests.log",
+    "tests": 100
+  },
+  "release_tests": {
+    "tests": 36,
+    "all_exit_zero": true,
+    "receipts": "/tmp/dkc-beta-clean-tree-x027xbal/release-tests.json"
+  },
+  "docs": {
+    "files": 12,
+    "local_links_checked": 46,
+    "missing": [
+      {
+        "document": "docs/beta-audit.md",
+        "target": "../bench/results/beta-20261014/validation.json"
+      }
+    ],
+    "expected_missing": [
+      "../bench/results/beta-20261014/validation.json"
+    ]
+  },
+  "v1_gate_without_private_ledger": {
+    "exit_code": 2,
+    "audit_valid": false,
+    "candidate_ready": false
+  },
+  "cargo_invoked": false,
+  "original_repository_modified": false
+}

@@ -1,0 +1,8 @@
+# Aurora is the mixed-stack dual-mode acceptance target. Code uses the local
+# tier while document-like units use Moonly's remote tier in T4.3.
+[embedder]
+profile = "local"
+
+[embedder.docs]
+profile = "remote"
+kinds = ["doc_section", "pr", "module", "history", "summary", "image"]

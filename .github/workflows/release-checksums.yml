@@ -1,0 +1,37 @@
+name: Publish SHA256SUMS
+
+on:
+  workflow_call:
+    inputs:
+      plan:
+        required: true
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+  checksum-alias:
+    name: Upload conventional SHA256SUMS asset
+    runs-on: ubuntu-22.04
+    env:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      PLAN: ${{ inputs.plan }}
+    steps:
+      - name: Download generated checksum manifest
+        uses: actions/download-artifact@v8
+        with:
+          pattern: artifacts-build-global
+          path: artifacts
+          merge-multiple: true
+
+      - name: Upload SHA256SUMS
+        shell: bash
+        run: |
+          source_path="$(find artifacts -type f -name sha256.sum -print -quit)"
+          test -n "$source_path"
+          cp "$source_path" SHA256SUMS
+          test -s SHA256SUMS
+          tag="$(jq -r '.announcement_tag' <<<"$PLAN")"
+          test -n "$tag"
+          gh release upload "$tag" SHA256SUMS --clobber

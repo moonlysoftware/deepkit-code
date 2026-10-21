@@ -1,0 +1,8 @@
+{
+  "models": [
+    {
+      "name": "qwen3-embedding:0.6b",
+      "model": "qwen3-embedding:0.6b"
+    }
+  ]
+}

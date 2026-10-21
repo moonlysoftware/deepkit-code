@@ -1,0 +1,5 @@
+{
+  "error": {
+    "message": "model does not support matryoshka representation"
+  }
+}

@@ -1,0 +1,39 @@
+# DRAFT: human review pending. Pinned ripgrep 3fce3b5bb0236da2df6d99672afb8a719642eca7.
+- id: "rg-held-001"
+  cohort: "held_out"
+  query: "Where does ripgrep turn non-printable path bytes into escaped display text?"
+  kind: "vague"
+  expect_files: ["crates/cli/src/escape.rs"]
+  notes: "Held out from the 30-query development set."
+- id: "rg-held-002"
+  cohort: "held_out"
+  query: "How can a caller collect total bytes searched and matches produced?"
+  kind: "vague"
+  expect_files: ["crates/printer/src/stats.rs"]
+  notes: "Held out from the 30-query development set."
+- id: "rg-scope-001"
+  cohort: "scoped"
+  query: "follow symbolic links"
+  kind: "vague"
+  scope: "crates/ignore/src/*"
+  expect_files: ["crates/ignore/src/walk.rs"]
+  notes: "Scoped positive; excluded from the frozen 30-query denominator."
+- id: "rg-scope-002"
+  cohort: "scoped"
+  query: "configuration file"
+  kind: "doc"
+  scope: "docs"
+  expect_files: ["GUIDE.md"]
+  notes: "Scoped positive; excluded from the frozen 30-query denominator."
+- id: "rg-none-001"
+  cohort: "no_answer"
+  query: "Where does ripgrep store user login sessions?"
+  kind: "vague"
+  expect_files: []
+  notes: "No-answer case: no application login/session subsystem; report separately."
+- id: "rg-none-002"
+  cohort: "no_answer"
+  query: "Which ripgrep module submits credit-card payments to a checkout service?"
+  kind: "vague"
+  expect_files: []
+  notes: "No-answer case: no payment-processing subsystem; report separately."

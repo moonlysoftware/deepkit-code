@@ -1,0 +1,30 @@
+# Per-integration translation JSON is high-volume localized data. Keep it at L0
+# while indexing Python integration code and documentation.
+[[treatments]]
+name = "translations"
+match = ["homeassistant/translations/**", "homeassistant/components/*/translations/**"]
+chunker = "none"
+max_level = 0
+
+[[treatments]]
+name = "generated"
+match = ["**/vendor/**", "**/node_modules/**", "**/dist/**", "**/build/**", "**/*_pb2.py", "**/*.pb.go", "**/zz_generated*"]
+chunker = "none"
+max_level = 0
+
+[[treatments]]
+name = "source"
+match = ["homeassistant/**", "script/**"]
+chunker = "ast"
+max_level = 3
+
+[[treatments]]
+name = "tests"
+match = ["tests/**", "**/test_*.py"]
+chunker = "ast"
+max_level = 1
+
+[[treatments]]
+name = "docs"
+match = ["docs/**", "**/*.md", "**/*.rst"]
+max_level = 3

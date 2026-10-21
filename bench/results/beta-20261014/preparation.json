@@ -1,0 +1,2796 @@
+{
+  "binary": "/home/lucky93/deepkit-code/target/phase4-provisional-cuda-1476005/dkc",
+  "binary_sha256": "e63bd6457cd4445fcc3d426a3d3d01f748fc7948f04f3d81ebbf0d2faa46357e",
+  "repositories": [
+    {
+      "name": "ripgrep",
+      "source": "/data/dkc-corpus/ripgrep",
+      "root": "/data/dkc-corpus/search-tuning-20260925/ripgrep",
+      "head": "3fce3b5bb0236da2df6d99672afb8a719642eca7",
+      "index_seconds": 9.590051367005799,
+      "index": {
+        "embedding": {
+          "error": null,
+          "providers": [],
+          "state": "skipped"
+        },
+        "enrichment": {
+          "current": 0,
+          "dead": 0,
+          "deferred": 0,
+          "discarded": 0,
+          "error": null,
+          "error_codes": {},
+          "paused": 0,
+          "pending": null,
+          "published": 0,
+          "scheduled": 0,
+          "skipped": 0,
+          "state": "skipped",
+          "terminal": 0,
+          "visited": 0
+        },
+        "files_added": 233,
+        "files_deleted": 0,
+        "files_modified": 0,
+        "files_renamed": 0,
+        "higher_levels": "text and image summaries and scanned-page enrichment supported",
+        "histories": {
+          "deferred": 0,
+          "inserted": 3702,
+          "migration_selected": 0,
+          "selected": 3704,
+          "state": "completed",
+          "unchanged": 0
+        },
+        "history": {
+          "existing": 0,
+          "head": "3fce3b5bb0236da2df6d99672afb8a719642eca7",
+          "incomplete_diffs": 10,
+          "input_caps": {},
+          "inserted": 2000,
+          "max_commits_reached": true,
+          "max_count_reached": true,
+          "retained": 2000,
+          "state": "capped",
+          "visited": 2000
+        },
+        "index_priority": {
+          "after": 10,
+          "before": 0,
+          "requested": true,
+          "state": "applied"
+        },
+        "l1_deferred": [],
+        "linker": {
+          "changed": true,
+          "deferred": false,
+          "reason": null,
+          "state": "completed"
+        },
+        "maintenance": {
+          "optimization_ran": true,
+          "pages_reclaimed": 0
+        },
+        "model_preparation": {
+          "detail": "--no-queue skips model preparation",
+          "model": null,
+          "state": "skipped",
+          "verification": null
+        },
+        "modules": {
+          "deferred": 0,
+          "inserted": 27,
+          "removed": 0,
+          "selected": 27,
+          "state": "completed",
+          "unchanged": 0
+        },
+        "prs": {
+          "deferred": {},
+          "detected": 53,
+          "existing": 0,
+          "inserted": 53,
+          "migration_visited": 0,
+          "retained": 53,
+          "state": "completed",
+          "updated": 0,
+          "visited": 2000
+        },
+        "requested_level": 1,
+        "shrink": null,
+        "status": [],
+        "took_ms": 9544,
+        "truncated_files": 1,
+        "units_indexed": 4100
+      },
+      "status": {
+        "budgets": {
+          "default_daily_calls": null,
+          "default_daily_tokens": null,
+          "endpoints": [],
+          "scope": "embedding_providers",
+          "source": "configured"
+        },
+        "caps": {
+          "file_capacity_message": null,
+          "file_capacity_reached": false,
+          "max_files": 250000,
+          "max_open_bytes": "256 KiB",
+          "max_units_per_file": 400,
+          "truncated_files": 1
+        },
+        "commits": 2000,
+        "dirty_files": null,
+        "dirty_files_state": "not_checked",
+        "discovery": {
+          "generation": 1,
+          "max_files": 250000,
+          "max_files_reached": false,
+          "scope": "last_whole_repository_scan",
+          "skipped_non_unicode_paths": 0
+        },
+        "edges": 17506,
+        "endpoint_accounting": "potential_dispatches_including_retries",
+        "endpoints": [],
+        "files": 233,
+        "footprint_bytes": 17170432,
+        "fresh": {
+          "reason": "source_not_verified",
+          "state": "unknown"
+        },
+        "graph_pending": false,
+        "head": "3fce3b5bb0236da2df6d99672afb8a719642eca7",
+        "histories": {
+          "deferred": 0,
+          "inserted": 3702,
+          "migration_selected": 0,
+          "selected": 3704,
+          "state": "completed",
+          "unchanged": 0
+        },
+        "history": {
+          "existing": 0,
+          "head": "3fce3b5bb0236da2df6d99672afb8a719642eca7",
+          "incomplete_diffs": 10,
+          "input_caps": {},
+          "inserted": 2000,
+          "max_commits_reached": true,
+          "max_count_reached": true,
+          "retained": 2000,
+          "state": "capped",
+          "visited": 2000
+        },
+        "history_enabled": true,
+        "index_priority": {
+          "after": 10,
+          "before": 0,
+          "requested": true,
+          "state": "applied"
+        },
+        "indexed_head": "3fce3b5bb0236da2df6d99672afb8a719642eca7",
+        "l1_completed_generation": "1",
+        "l1_deferred": [],
+        "l1_pending_files": 0,
+        "l1_scan_generation": 1,
+        "l2": {
+          "configured_association": "available",
+          "covered_units": 0,
+          "indexed_units": 9882,
+          "pending_jobs": 0,
+          "physical_vectors": 0,
+          "tables": [],
+          "transition_generation": null
+        },
+        "l2_pending": 0,
+        "l3": {
+          "allocated_bytes": 17170432,
+          "l3_units": 0,
+          "limit_bytes": 2147483648,
+          "max_l3_units": 20000,
+          "page_sections": 0,
+          "paused": false,
+          "reason": null,
+          "summaries": 0
+        },
+        "ladder": {
+          "counting": "exact_highest_completed_level",
+          "l1": 9683,
+          "l2": 0,
+          "l3": 0,
+          "source": "persisted_occurrences"
+        },
+        "last_local_reranker_check": null,
+        "last_shrink": null,
+        "limits": {
+          "db_max_bytes": "2 GiB",
+          "index_nice": true,
+          "index_threads": 0,
+          "max_commits": 2000,
+          "max_doc_bytes": "50 MiB",
+          "max_file_bytes": "1 MiB",
+          "max_files": 250000,
+          "max_image_bytes": "5 MiB",
+          "max_l2_units": 300000,
+          "max_l3_units": 20000,
+          "max_open_bytes": "256 KiB",
+          "max_pdf_pages": 500,
+          "max_pr_commits": 500,
+          "max_prs": 1000,
+          "max_result_tokens": 1500,
+          "max_units_per_file": 400,
+          "models_cache_max_bytes": "4 GiB",
+          "query_timeout_ms": 2000,
+          "rerank_timeout_ms": 1500,
+          "wal_max_bytes": "64 MiB"
+        },
+        "linker": {
+          "deferred": false,
+          "reason": null,
+          "state": "completed"
+        },
+        "model_preparation": {
+          "detail": "--no-queue skips model preparation",
+          "model": null,
+          "state": "skipped",
+          "verification": null
+        },
+        "models": {
+          "docs": null,
+          "embedder": {
+            "dims": 1024,
+            "model": "qwen3-embedding-0.6b-q8_0",
+            "profile": "local"
+          },
+          "llm": {
+            "enabled": false,
+            "model": null,
+            "vlm_model": null
+          },
+          "rerank": {
+            "mode": "auto",
+            "model": "qwen3-reranker-0.6b-q8_0",
+            "provider": "auto",
+            "selected_provider": "local"
+          },
+          "source": "configured"
+        },
+        "modules": {
+          "deferred": 0,
+          "inserted": 27,
+          "removed": 0,
+          "selected": 27,
+          "state": "completed",
+          "unchanged": 0
+        },
+        "profile": {
+          "docs": null,
+          "mode": "single",
+          "primary": "local",
+          "source": "configured"
+        },
+        "prs": {
+          "deferred": {},
+          "detected": 53,
+          "existing": 0,
+          "inserted": 53,
+          "migration_visited": 0,
+          "retained": 53,
+          "state": "completed",
+          "updated": 0,
+          "visited": 2000
+        },
+        "query_latency_ms": {
+          "count": 0,
+          "lifetime": "process",
+          "p50": null,
+          "p95": null,
+          "window": 1000
+        },
+        "queue": {
+          "dead": 0,
+          "deferred": 0,
+          "done": 0,
+          "expired_leases": 0,
+          "failed": 0,
+          "leased": 0,
+          "next_ready_at": null,
+          "queued": 0,
+          "ready": 0
+        },
+        "queue_status": {
+          "database": {
+            "allocated_bytes": 17170432,
+            "configured_limit_bytes": 2147483648,
+            "control_headroom_bytes": 1048576,
+            "effective_limit_bytes": 2147483648,
+            "file_bytes": 17170432,
+            "free_pages": 0,
+            "growth_limit_bytes": 2146435072,
+            "over_limit": false,
+            "page_growth_available_bytes": 2130313216,
+            "unallocated_control_bytes": 1048576
+          },
+          "enrichment_claims": {
+            "active_leases": 0,
+            "available_slots": 20000,
+            "growth_leases": 0,
+            "growth_units": 0,
+            "l3_units": 0,
+            "max_l3_units": 20000,
+            "page_sections": 0,
+            "paused": false,
+            "reason": null,
+            "summaries": 0
+          },
+          "jobs": {
+            "dead": 0,
+            "deferred": 0,
+            "done": 0,
+            "expired_leases": 0,
+            "failed": 0,
+            "leased": 0,
+            "next_ready_at": null,
+            "queued": 0,
+            "ready": 0
+          },
+          "observed_at": 1790370395,
+          "providers": {},
+          "usage_day": "2026-09-25",
+          "wal": {
+            "allocated_bytes": 0,
+            "control_headroom_bytes": 1048576,
+            "control_paused": false,
+            "growth_paused": false,
+            "l1_growth_paused": false,
+            "limit_bytes": 67108864
+          }
+        },
+        "rerank_auto": {
+          "configured_candidates": 50,
+          "effective_candidates": 50,
+          "incomplete_sample": false,
+          "message": null,
+          "observed_ms": null,
+          "persistence": "not_reduced",
+          "reduced": false
+        },
+        "response_caps": {
+          "events": {},
+          "lifetime": "process"
+        },
+        "root": "/data/dkc-corpus/search-tuning-20260925/ripgrep",
+        "source_caps": {
+          "max_units_per_file": 1
+        },
+        "symbols": 3909,
+        "tables": [
+          {
+            "bytes": 16384,
+            "name": "_sqliteai_vector"
+          },
+          {
+            "bytes": 884736,
+            "name": "commits"
+          },
+          {
+            "bytes": 49152,
+            "name": "commits_time"
+          },
+          {
+            "bytes": 49152,
+            "name": "commits_unit"
+          },
+          {
+            "bytes": 16384,
+            "name": "config_effective"
+          },
+          {
+            "bytes": 16384,
+            "name": "dirs"
+          },
+          {
+            "bytes": 16384,
+            "name": "dirs_module"
+          },
+          {
+            "bytes": 16384,
+            "name": "dirs_summary"
+          },
+          {
+            "bytes": 540672,
+            "name": "edges"
+          },
+          {
+            "bytes": 344064,
+            "name": "edges_destination"
+          },
+          {
+            "bytes": 311296,
+            "name": "edges_dst_name"
+          },
+          {
+            "bytes": 180224,
+            "name": "edges_dst_symbol"
+          },
+          {
+            "bytes": 212992,
+            "name": "edges_file"
+          },
+          {
+            "bytes": 212992,
+            "name": "edges_src"
+          },
+          {
+            "bytes": 16384,
+            "name": "embedding_bindings"
+          },
+          {
+            "bytes": 16384,
+            "name": "embedding_publications"
+          },
+          {
+            "bytes": 16384,
+            "name": "embedding_tables"
+          },
+          {
+            "bytes": 16384,
+            "name": "embedding_transition"
+          },
+          {
+            "bytes": 65536,
+            "name": "files"
+          },
+          {
+            "bytes": 16384,
+            "name": "files_l1_pending"
+          },
+          {
+            "bytes": 16384,
+            "name": "files_rank"
+          },
+          {
+            "bytes": 16384,
+            "name": "files_truncated"
+          },
+          {
+            "bytes": 16384,
+            "name": "fts_names_config"
+          },
+          {
+            "bytes": 147456,
+            "name": "fts_names_content"
+          },
+          {
+            "bytes": 196608,
+            "name": "fts_names_data"
+          },
+          {
+            "bytes": 65536,
+            "name": "fts_names_docsize"
+          },
+          {
+            "bytes": 16384,
+            "name": "fts_names_idx"
+          },
+          {
+            "bytes": 16384,
+            "name": "fts_units_config"
+          },
+          {
+            "bytes": 3588096,
+            "name": "fts_units_data"
+          },
+          {
+            "bytes": 180224,
+            "name": "fts_units_docsize"
+          },
+          {
+            "bytes": 16384,
+            "name": "fts_units_idx"
+          },
+          {
+            "bytes": 16384,
+            "name": "jobs"
+          },
+          {
+            "bytes": 16384,
+            "name": "jobs_claim"
+          },
+          {
+            "bytes": 16384,
+            "name": "meta"
+          },
+          {
+            "bytes": 16384,
+            "name": "page_publications"
+          },
+          {
+            "bytes": 16384,
+            "name": "provider_admission"
+          },
+          {
+            "bytes": 16384,
+            "name": "prs"
+          },
+          {
+            "bytes": 16384,
+            "name": "prs_summary"
+          },
+          {
+            "bytes": 16384,
+            "name": "prs_unit"
+          },
+          {
+            "bytes": 16384,
+            "name": "sqlite_autoindex__sqliteai_vector_1"
+          },
+          {
+            "bytes": 81920,
+            "name": "sqlite_autoindex_commits_1"
+          },
+          {
+            "bytes": 16384,
+            "name": "sqlite_autoindex_config_effective_1"
+          },
+          {
+            "bytes": 16384,
+            "name": "sqlite_autoindex_dirs_1"
+          },
+          {
+            "bytes": 16384,
+            "name": "sqlite_autoindex_embedding_bindings_1"
+          },
+          {
+            "bytes": 16384,
+            "name": "sqlite_autoindex_embedding_tables_1"
+          },
+          {
+            "bytes": 16384,
+            "name": "sqlite_autoindex_files_1"
+          },
+          {
+            "bytes": 16384,
+            "name": "sqlite_autoindex_jobs_1"
+          },
+          {
+            "bytes": 16384,
+            "name": "sqlite_autoindex_meta_1"
+          },
+          {
+            "bytes": 16384,
+            "name": "sqlite_autoindex_page_publications_1"
+          },
+          {
+            "bytes": 16384,
+            "name": "sqlite_autoindex_page_publications_2"
+          },
+          {
+            "bytes": 16384,
+            "name": "sqlite_autoindex_provider_admission_1"
+          },
+          {
+            "bytes": 16384,
+            "name": "sqlite_autoindex_prs_1"
+          },
+          {
+            "bytes": 278528,
+            "name": "sqlite_autoindex_unit_contents_1"
+          },
+          {
+            "bytes": 425984,
+            "name": "sqlite_autoindex_unit_sources_1"
+          },
+          {
+            "bytes": 442368,
+            "name": "sqlite_autoindex_units_1"
+          },
+          {
+            "bytes": 16384,
+            "name": "sqlite_autoindex_usage_1"
+          },
+          {
+            "bytes": 16384,
+            "name": "sqlite_autoindex_usage_reservations_1"
+          },
+          {
+            "bytes": 49152,
+            "name": "sqlite_schema"
+          },
+          {
+            "bytes": 16384,
+            "name": "sqlite_stat1"
+          },
+          {
+            "bytes": 16384,
+            "name": "sqlite_stat4"
+          },
+          {
+            "bytes": 425984,
+            "name": "symbols"
+          },
+          {
+            "bytes": 65536,
+            "name": "symbols_file"
+          },
+          {
+            "bytes": 65536,
+            "name": "symbols_history"
+          },
+          {
+            "bytes": 114688,
+            "name": "symbols_name"
+          },
+          {
+            "bytes": 98304,
+            "name": "symbols_rank"
+          },
+          {
+            "bytes": 16384,
+            "name": "symbols_summary"
+          },
+          {
+            "bytes": 65536,
+            "name": "symbols_unit"
+          },
+          {
+            "bytes": 3555328,
+            "name": "unit_contents"
+          },
+          {
+            "bytes": 16384,
+            "name": "unit_contexts"
+          },
+          {
+            "bytes": 524288,
+            "name": "unit_sources"
+          },
+          {
+            "bytes": 425984,
+            "name": "unit_sources_source"
+          },
+          {
+            "bytes": 1900544,
+            "name": "units"
+          },
+          {
+            "bytes": 458752,
+            "name": "units_content"
+          },
+          {
+            "bytes": 131072,
+            "name": "units_file"
+          },
+          {
+            "bytes": 180224,
+            "name": "units_kind"
+          },
+          {
+            "bytes": 16384,
+            "name": "units_page_anchor"
+          },
+          {
+            "bytes": 65536,
+            "name": "units_parent"
+          },
+          {
+            "bytes": 16384,
+            "name": "usage"
+          },
+          {
+            "bytes": 16384,
+            "name": "usage_reservations"
+          },
+          {
+            "bytes": 16384,
+            "name": "usage_reservations_daily"
+          },
+          {
+            "bytes": 16384,
+            "name": "usage_reservations_rate"
+          }
+        ],
+        "took_ms": 7,
+        "truncated_files": 1,
+        "units": 9882,
+        "unknown_endpoint_dispatches": 0
+      },
+      "database_sha256": "009717c915413a0fa353936d29d0268f0f12bb439d4911ecc15593cd401a1d8e"
+    },
+    {
+      "name": "laravel",
+      "source": "/data/dkc-corpus/laravel-framework",
+      "root": "/data/dkc-corpus/search-tuning-20260925/laravel",
+      "head": "01d008c9b5f32cb7c5e50a9a22273113d810b2a2",
+      "index_seconds": 161.83174394200614,
+      "index": {
+        "embedding": {
+          "error": null,
+          "providers": [],
+          "state": "skipped"
+        },
+        "enrichment": {
+          "current": 0,
+          "dead": 0,
+          "deferred": 0,
+          "discarded": 0,
+          "error": null,
+          "error_codes": {},
+          "paused": 0,
+          "pending": null,
+          "published": 0,
+          "scheduled": 0,
+          "skipped": 0,
+          "state": "skipped",
+          "terminal": 0,
+          "visited": 0
+        },
+        "files_added": 3393,
+        "files_deleted": 0,
+        "files_modified": 0,
+        "files_renamed": 0,
+        "higher_levels": "text and image summaries and scanned-page enrichment supported",
+        "histories": {
+          "deferred": 0,
+          "inserted": 1216,
+          "migration_selected": 0,
+          "selected": 5000,
+          "state": "completed",
+          "unchanged": 0
+        },
+        "history": {
+          "existing": 0,
+          "head": "01d008c9b5f32cb7c5e50a9a22273113d810b2a2",
+          "incomplete_diffs": 12,
+          "input_caps": {},
+          "inserted": 2000,
+          "max_commits_reached": true,
+          "max_count_reached": true,
+          "retained": 2000,
+          "state": "capped",
+          "visited": 2000
+        },
+        "index_priority": {
+          "after": 10,
+          "before": 0,
+          "requested": true,
+          "state": "applied"
+        },
+        "l1_deferred": [],
+        "linker": {
+          "changed": true,
+          "deferred": false,
+          "reason": null,
+          "state": "completed"
+        },
+        "maintenance": {
+          "optimization_ran": true,
+          "pages_reclaimed": 0
+        },
+        "model_preparation": {
+          "detail": "--no-queue skips model preparation",
+          "model": null,
+          "state": "skipped",
+          "verification": null
+        },
+        "modules": {
+          "deferred": 0,
+          "inserted": 247,
+          "removed": 0,
+          "selected": 247,
+          "state": "completed",
+          "unchanged": 0
+        },
+        "prs": {
+          "deferred": {
+            "max_pr_commits": 1,
+            "max_prs": 477,
+            "member_already_owned": 71
+          },
+          "detected": 1549,
+          "existing": 0,
+          "inserted": 1000,
+          "migration_visited": 0,
+          "retained": 1000,
+          "state": "capped",
+          "updated": 0,
+          "visited": 2000
+        },
+        "requested_level": 1,
+        "shrink": null,
+        "status": [],
+        "took_ms": 161777,
+        "truncated_files": 3,
+        "units_indexed": 32931
+      },
+      "status": {
+        "budgets": {
+          "default_daily_calls": null,
+          "default_daily_tokens": null,
+          "endpoints": [],
+          "scope": "embedding_providers",
+          "source": "configured"
+        },
+        "caps": {
+          "file_capacity_message": null,
+          "file_capacity_reached": false,
+          "max_files": 250000,
+          "max_open_bytes": "256 KiB",
+          "max_units_per_file": 400,
+          "truncated_files": 3
+        },
+        "commits": 2000,
+        "dirty_files": null,
+        "dirty_files_state": "not_checked",
+        "discovery": {
+          "generation": 1,
+          "max_files": 250000,
+          "max_files_reached": false,
+          "scope": "last_whole_repository_scan",
+          "skipped_non_unicode_paths": 0
+        },
+        "edges": 177163,
+        "endpoint_accounting": "potential_dispatches_including_retries",
+        "endpoints": [],
+        "files": 3393,
+        "footprint_bytes": 121110528,
+        "fresh": {
+          "reason": "source_not_verified",
+          "state": "unknown"
+        },
+        "graph_pending": false,
+        "head": "01d008c9b5f32cb7c5e50a9a22273113d810b2a2",
+        "histories": {
+          "deferred": 0,
+          "inserted": 1216,
+          "migration_selected": 0,
+          "selected": 5000,
+          "state": "completed",
+          "unchanged": 0
+        },
+        "history": {
+          "existing": 0,
+          "head": "01d008c9b5f32cb7c5e50a9a22273113d810b2a2",
+          "incomplete_diffs": 12,
+          "input_caps": {},
+          "inserted": 2000,
+          "max_commits_reached": true,
+          "max_count_reached": true,
+          "retained": 2000,
+          "state": "capped",
+          "visited": 2000
+        },
+        "history_enabled": true,
+        "index_priority": {
+          "after": 10,
+          "before": 0,
+          "requested": true,
+          "state": "applied"
+        },
+        "indexed_head": "01d008c9b5f32cb7c5e50a9a22273113d810b2a2",
+        "l1_completed_generation": "1",
+        "l1_deferred": [],
+        "l1_pending_files": 0,
+        "l1_scan_generation": 1,
+        "l2": {
+          "configured_association": "available",
+          "covered_units": 0,
+          "indexed_units": 37394,
+          "pending_jobs": 0,
+          "physical_vectors": 0,
+          "tables": [],
+          "transition_generation": null
+        },
+        "l2_pending": 0,
+        "l3": {
+          "allocated_bytes": 121110528,
+          "l3_units": 0,
+          "limit_bytes": 2147483648,
+          "max_l3_units": 20000,
+          "page_sections": 0,
+          "paused": false,
+          "reason": null,
+          "summaries": 0
+        },
+        "ladder": {
+          "counting": "exact_highest_completed_level",
+          "l1": 37393,
+          "l2": 0,
+          "l3": 0,
+          "source": "persisted_occurrences"
+        },
+        "last_local_reranker_check": null,
+        "last_shrink": null,
+        "limits": {
+          "db_max_bytes": "2 GiB",
+          "index_nice": true,
+          "index_threads": 0,
+          "max_commits": 2000,
+          "max_doc_bytes": "50 MiB",
+          "max_file_bytes": "1 MiB",
+          "max_files": 250000,
+          "max_image_bytes": "5 MiB",
+          "max_l2_units": 300000,
+          "max_l3_units": 20000,
+          "max_open_bytes": "256 KiB",
+          "max_pdf_pages": 500,
+          "max_pr_commits": 500,
+          "max_prs": 1000,
+          "max_result_tokens": 1500,
+          "max_units_per_file": 400,
+          "models_cache_max_bytes": "4 GiB",
+          "query_timeout_ms": 2000,
+          "rerank_timeout_ms": 1500,
+          "wal_max_bytes": "64 MiB"
+        },
+        "linker": {
+          "deferred": false,
+          "reason": null,
+          "state": "completed"
+        },
+        "model_preparation": {
+          "detail": "--no-queue skips model preparation",
+          "model": null,
+          "state": "skipped",
+          "verification": null
+        },
+        "models": {
+          "docs": null,
+          "embedder": {
+            "dims": 1024,
+            "model": "qwen3-embedding-0.6b-q8_0",
+            "profile": "local"
+          },
+          "llm": {
+            "enabled": false,
+            "model": null,
+            "vlm_model": null
+          },
+          "rerank": {
+            "mode": "auto",
+            "model": "qwen3-reranker-0.6b-q8_0",
+            "provider": "auto",
+            "selected_provider": "local"
+          },
+          "source": "configured"
+        },
+        "modules": {
+          "deferred": 0,
+          "inserted": 247,
+          "removed": 0,
+          "selected": 247,
+          "state": "completed",
+          "unchanged": 0
+        },
+        "profile": {
+          "docs": null,
+          "mode": "single",
+          "primary": "local",
+          "source": "configured"
+        },
+        "prs": {
+          "deferred": {
+            "max_pr_commits": 1,
+            "max_prs": 477,
+            "member_already_owned": 71
+          },
+          "detected": 1549,
+          "existing": 0,
+          "inserted": 1000,
+          "migration_visited": 0,
+          "retained": 1000,
+          "state": "capped",
+          "updated": 0,
+          "visited": 2000
+        },
+        "query_latency_ms": {
+          "count": 0,
+          "lifetime": "process",
+          "p50": null,
+          "p95": null,
+          "window": 1000
+        },
+        "queue": {
+          "dead": 0,
+          "deferred": 0,
+          "done": 0,
+          "expired_leases": 0,
+          "failed": 0,
+          "leased": 0,
+          "next_ready_at": null,
+          "queued": 0,
+          "ready": 0
+        },
+        "queue_status": {
+          "database": {
+            "allocated_bytes": 121110528,
+            "configured_limit_bytes": 2147483648,
+            "control_headroom_bytes": 1048576,
+            "effective_limit_bytes": 2147483648,
+            "file_bytes": 121110528,
+            "free_pages": 0,
+            "growth_limit_bytes": 2146435072,
+            "over_limit": false,
+            "page_growth_available_bytes": 2026373120,
+            "unallocated_control_bytes": 1048576
+          },
+          "enrichment_claims": {
+            "active_leases": 0,
+            "available_slots": 20000,
+            "growth_leases": 0,
+            "growth_units": 0,
+            "l3_units": 0,
+            "max_l3_units": 20000,
+            "page_sections": 0,
+            "paused": false,
+            "reason": null,
+            "summaries": 0
+          },
+          "jobs": {
+            "dead": 0,
+            "deferred": 0,
+            "done": 0,
+            "expired_leases": 0,
+            "failed": 0,
+            "leased": 0,
+            "next_ready_at": null,
+            "queued": 0,
+            "ready": 0
+          },
+          "observed_at": 1790370557,
+          "providers": {},
+          "usage_day": "2026-09-25",
+          "wal": {
+            "allocated_bytes": 0,
+            "control_headroom_bytes": 1048576,
+            "control_paused": false,
+            "growth_paused": false,
+            "l1_growth_paused": false,
+            "limit_bytes": 67108864
+          }
+        },
+        "rerank_auto": {
+          "configured_candidates": 50,
+          "effective_candidates": 50,
+          "incomplete_sample": false,
+          "message": null,
+          "observed_ms": null,
+          "persistence": "not_reduced",
+          "reduced": false
+        },
+        "response_caps": {
+          "events": {},
+          "lifetime": "process"
+        },
+        "root": "/data/dkc-corpus/search-tuning-20260925/laravel",
+        "source_caps": {
+          "max_file_bytes": 1,
+          "max_units_per_file": 3
+        },
+        "symbols": 45689,
+        "tables": [
+          {
+            "bytes": 16384,
+            "name": "_sqliteai_vector"
+          },
+          {
+            "bytes": 3096576,
+            "name": "commits"
+          },
+          {
+            "bytes": 49152,
+            "name": "commits_time"
+          },
+          {
+            "bytes": 49152,
+            "name": "commits_unit"
+          },
+          {
+            "bytes": 16384,
+            "name": "config_effective"
+          },
+          {
+            "bytes": 65536,
+            "name": "dirs"
+          },
+          {
+            "bytes": 16384,
+            "name": "dirs_module"
+          },
+          {
+            "bytes": 16384,
+            "name": "dirs_summary"
+          },
+          {
+            "bytes": 6324224,
+            "name": "edges"
+          },
+          {
+            "bytes": 3964928,
+            "name": "edges_destination"
+          },
+          {
+            "bytes": 3702784,
+            "name": "edges_dst_name"
+          },
+          {
+            "bytes": 1802240,
+            "name": "edges_dst_symbol"
+          },
+          {
+            "bytes": 2211840,
+            "name": "edges_file"
+          },
+          {
+            "bytes": 2293760,
+            "name": "edges_src"
+          },
+          {
+            "bytes": 16384,
+            "name": "embedding_bindings"
+          },
+          {
+            "bytes": 16384,
+            "name": "embedding_publications"
+          },
+          {
+            "bytes": 16384,
+            "name": "embedding_tables"
+          },
+          {
+            "bytes": 16384,
+            "name": "embedding_transition"
+          },
+          {
+            "bytes": 835584,
+            "name": "files"
+          },
+          {
+            "bytes": 16384,
+            "name": "files_l1_pending"
+          },
+          {
+            "bytes": 81920,
+            "name": "files_rank"
+          },
+          {
+            "bytes": 16384,
+            "name": "files_truncated"
+          },
+          {
+            "bytes": 16384,
+            "name": "fts_names_config"
+          },
+          {
+            "bytes": 2293760,
+            "name": "fts_names_content"
+          },
+          {
+            "bytes": 3358720,
+            "name": "fts_names_data"
+          },
+          {
+            "bytes": 622592,
+            "name": "fts_names_docsize"
+          },
+          {
+            "bytes": 16384,
+            "name": "fts_names_idx"
+          },
+          {
+            "bytes": 16384,
+            "name": "fts_units_config"
+          },
+          {
+            "bytes": 13729792,
+            "name": "fts_units_data"
+          },
+          {
+            "bytes": 622592,
+            "name": "fts_units_docsize"
+          },
+          {
+            "bytes": 65536,
+            "name": "fts_units_idx"
+          },
+          {
+            "bytes": 16384,
+            "name": "jobs"
+          },
+          {
+            "bytes": 16384,
+            "name": "jobs_claim"
+          },
+          {
+            "bytes": 16384,
+            "name": "meta"
+          },
+          {
+            "bytes": 16384,
+            "name": "page_publications"
+          },
+          {
+            "bytes": 16384,
+            "name": "provider_admission"
+          },
+          {
+            "bytes": 163840,
+            "name": "prs"
+          },
+          {
+            "bytes": 16384,
+            "name": "prs_summary"
+          },
+          {
+            "bytes": 16384,
+            "name": "prs_unit"
+          },
+          {
+            "bytes": 16384,
+            "name": "sqlite_autoindex__sqliteai_vector_1"
+          },
+          {
+            "bytes": 81920,
+            "name": "sqlite_autoindex_commits_1"
+          },
+          {
+            "bytes": 16384,
+            "name": "sqlite_autoindex_config_effective_1"
+          },
+          {
+            "bytes": 49152,
+            "name": "sqlite_autoindex_dirs_1"
+          },
+          {
+            "bytes": 16384,
+            "name": "sqlite_autoindex_embedding_bindings_1"
+          },
+          {
+            "bytes": 16384,
+            "name": "sqlite_autoindex_embedding_tables_1"
+          },
+          {
+            "bytes": 245760,
+            "name": "sqlite_autoindex_files_1"
+          },
+          {
+            "bytes": 16384,
+            "name": "sqlite_autoindex_jobs_1"
+          },
+          {
+            "bytes": 16384,
+            "name": "sqlite_autoindex_meta_1"
+          },
+          {
+            "bytes": 16384,
+            "name": "sqlite_autoindex_page_publications_1"
+          },
+          {
+            "bytes": 16384,
+            "name": "sqlite_autoindex_page_publications_2"
+          },
+          {
+            "bytes": 16384,
+            "name": "sqlite_autoindex_provider_admission_1"
+          },
+          {
+            "bytes": 49152,
+            "name": "sqlite_autoindex_prs_1"
+          },
+          {
+            "bytes": 1458176,
+            "name": "sqlite_autoindex_unit_contents_1"
+          },
+          {
+            "bytes": 5914624,
+            "name": "sqlite_autoindex_unit_sources_1"
+          },
+          {
+            "bytes": 1638400,
+            "name": "sqlite_autoindex_units_1"
+          },
+          {
+            "bytes": 16384,
+            "name": "sqlite_autoindex_usage_1"
+          },
+          {
+            "bytes": 16384,
+            "name": "sqlite_autoindex_usage_reservations_1"
+          },
+          {
+            "bytes": 49152,
+            "name": "sqlite_schema"
+          },
+          {
+            "bytes": 16384,
+            "name": "sqlite_stat1"
+          },
+          {
+            "bytes": 16384,
+            "name": "sqlite_stat4"
+          },
+          {
+            "bytes": 7487488,
+            "name": "symbols"
+          },
+          {
+            "bytes": 557056,
+            "name": "symbols_file"
+          },
+          {
+            "bytes": 16384,
+            "name": "symbols_history"
+          },
+          {
+            "bytes": 1540096,
+            "name": "symbols_name"
+          },
+          {
+            "bytes": 868352,
+            "name": "symbols_rank"
+          },
+          {
+            "bytes": 16384,
+            "name": "symbols_summary"
+          },
+          {
+            "bytes": 557056,
+            "name": "symbols_unit"
+          },
+          {
+            "bytes": 29065216,
+            "name": "unit_contents"
+          },
+          {
+            "bytes": 16384,
+            "name": "unit_contexts"
+          },
+          {
+            "bytes": 7045120,
+            "name": "unit_sources"
+          },
+          {
+            "bytes": 5685248,
+            "name": "unit_sources_source"
+          },
+          {
+            "bytes": 10043392,
+            "name": "units"
+          },
+          {
+            "bytes": 1638400,
+            "name": "units_content"
+          },
+          {
+            "bytes": 458752,
+            "name": "units_file"
+          },
+          {
+            "bytes": 606208,
+            "name": "units_kind"
+          },
+          {
+            "bytes": 16384,
+            "name": "units_page_anchor"
+          },
+          {
+            "bytes": 16384,
+            "name": "units_parent"
+          },
+          {
+            "bytes": 16384,
+            "name": "usage"
+          },
+          {
+            "bytes": 16384,
+            "name": "usage_reservations"
+          },
+          {
+            "bytes": 16384,
+            "name": "usage_reservations_daily"
+          },
+          {
+            "bytes": 16384,
+            "name": "usage_reservations_rate"
+          }
+        ],
+        "took_ms": 28,
+        "truncated_files": 3,
+        "units": 37394,
+        "unknown_endpoint_dispatches": 0
+      },
+      "database_sha256": "1d1f92b7e47ddbdb700fc225d7c2c378504e1c13d881907ddf745794272a2bfb"
+    },
+    {
+      "name": "django",
+      "source": "/data/dkc-corpus/django",
+      "root": "/data/dkc-corpus/search-tuning-20260925/django",
+      "head": "2b30f6255b5ef84afbd827993643d52ef2c0963a",
+      "index_seconds": 44.00019200598763,
+      "index": {
+        "embedding": {
+          "error": null,
+          "providers": [],
+          "state": "skipped"
+        },
+        "enrichment": {
+          "current": 0,
+          "dead": 0,
+          "deferred": 0,
+          "discarded": 0,
+          "error": null,
+          "error_codes": {},
+          "paused": 0,
+          "pending": null,
+          "published": 0,
+          "scheduled": 0,
+          "skipped": 0,
+          "state": "skipped",
+          "terminal": 0,
+          "visited": 0
+        },
+        "files_added": 7085,
+        "files_deleted": 0,
+        "files_modified": 0,
+        "files_renamed": 0,
+        "higher_levels": "text and image summaries and scanned-page enrichment supported",
+        "histories": {
+          "deferred": 0,
+          "inserted": 1274,
+          "migration_selected": 0,
+          "selected": 5000,
+          "state": "completed",
+          "unchanged": 0
+        },
+        "history": {
+          "existing": 0,
+          "head": "2b30f6255b5ef84afbd827993643d52ef2c0963a",
+          "incomplete_diffs": 482,
+          "input_caps": {},
+          "inserted": 2000,
+          "max_commits_reached": true,
+          "max_count_reached": true,
+          "retained": 2000,
+          "state": "capped",
+          "visited": 2000
+        },
+        "index_priority": {
+          "after": 10,
+          "before": 0,
+          "requested": true,
+          "state": "applied"
+        },
+        "l1_deferred": [],
+        "linker": {
+          "changed": false,
+          "deferred": true,
+          "reason": "wal_max_bytes",
+          "state": "capped"
+        },
+        "maintenance": {
+          "optimization_ran": true,
+          "pages_reclaimed": 5
+        },
+        "model_preparation": {
+          "detail": "--no-queue skips model preparation",
+          "model": null,
+          "state": "skipped",
+          "verification": null
+        },
+        "modules": {
+          "deferred": 0,
+          "inserted": 373,
+          "removed": 0,
+          "selected": 373,
+          "state": "completed",
+          "unchanged": 0
+        },
+        "prs": {
+          "deferred": {},
+          "detected": 2,
+          "existing": 0,
+          "inserted": 2,
+          "migration_visited": 0,
+          "retained": 2,
+          "state": "completed",
+          "updated": 0,
+          "visited": 2000
+        },
+        "requested_level": 1,
+        "shrink": null,
+        "status": [],
+        "took_ms": 43962,
+        "truncated_files": 0,
+        "units_indexed": 33885
+      },
+      "status": {
+        "budgets": {
+          "default_daily_calls": null,
+          "default_daily_tokens": null,
+          "endpoints": [],
+          "scope": "embedding_providers",
+          "source": "configured"
+        },
+        "caps": {
+          "file_capacity_message": null,
+          "file_capacity_reached": false,
+          "max_files": 250000,
+          "max_open_bytes": "256 KiB",
+          "max_units_per_file": 400,
+          "truncated_files": 0
+        },
+        "commits": 2000,
+        "dirty_files": null,
+        "dirty_files_state": "not_checked",
+        "discovery": {
+          "generation": 1,
+          "max_files": 250000,
+          "max_files_reached": false,
+          "scope": "last_whole_repository_scan",
+          "skipped_non_unicode_paths": 0
+        },
+        "edges": 202979,
+        "endpoint_accounting": "potential_dispatches_including_retries",
+        "endpoints": [],
+        "files": 7085,
+        "footprint_bytes": 135970816,
+        "fresh": {
+          "reason": "source_not_verified",
+          "state": "unknown"
+        },
+        "graph_pending": false,
+        "head": "2b30f6255b5ef84afbd827993643d52ef2c0963a",
+        "histories": {
+          "deferred": 0,
+          "inserted": 1274,
+          "migration_selected": 0,
+          "selected": 5000,
+          "state": "completed",
+          "unchanged": 0
+        },
+        "history": {
+          "existing": 0,
+          "head": "2b30f6255b5ef84afbd827993643d52ef2c0963a",
+          "incomplete_diffs": 482,
+          "input_caps": {},
+          "inserted": 2000,
+          "max_commits_reached": true,
+          "max_count_reached": true,
+          "retained": 2000,
+          "state": "capped",
+          "visited": 2000
+        },
+        "history_enabled": true,
+        "index_priority": {
+          "after": 10,
+          "before": 0,
+          "requested": true,
+          "state": "applied"
+        },
+        "indexed_head": "2b30f6255b5ef84afbd827993643d52ef2c0963a",
+        "l1_completed_generation": "1",
+        "l1_deferred": [],
+        "l1_pending_files": 0,
+        "l1_scan_generation": 1,
+        "l2": {
+          "configured_association": "available",
+          "covered_units": 0,
+          "indexed_units": 37534,
+          "pending_jobs": 0,
+          "physical_vectors": 0,
+          "tables": [],
+          "transition_generation": null
+        },
+        "l2_pending": 0,
+        "l3": {
+          "allocated_bytes": 135970816,
+          "l3_units": 0,
+          "limit_bytes": 2147483648,
+          "max_l3_units": 20000,
+          "page_sections": 0,
+          "paused": false,
+          "reason": null,
+          "summaries": 0
+        },
+        "ladder": {
+          "counting": "exact_highest_completed_level",
+          "l1": 37512,
+          "l2": 0,
+          "l3": 0,
+          "source": "persisted_occurrences"
+        },
+        "last_local_reranker_check": null,
+        "last_shrink": null,
+        "limits": {
+          "db_max_bytes": "2 GiB",
+          "index_nice": true,
+          "index_threads": 0,
+          "max_commits": 2000,
+          "max_doc_bytes": "50 MiB",
+          "max_file_bytes": "1 MiB",
+          "max_files": 250000,
+          "max_image_bytes": "5 MiB",
+          "max_l2_units": 300000,
+          "max_l3_units": 20000,
+          "max_open_bytes": "256 KiB",
+          "max_pdf_pages": 500,
+          "max_pr_commits": 500,
+          "max_prs": 1000,
+          "max_result_tokens": 1500,
+          "max_units_per_file": 400,
+          "models_cache_max_bytes": "4 GiB",
+          "query_timeout_ms": 2000,
+          "rerank_timeout_ms": 1500,
+          "wal_max_bytes": "64 MiB"
+        },
+        "linker": {
+          "deferred": true,
+          "reason": "wal_max_bytes",
+          "state": "capped"
+        },
+        "model_preparation": {
+          "detail": "--no-queue skips model preparation",
+          "model": null,
+          "state": "skipped",
+          "verification": null
+        },
+        "models": {
+          "docs": null,
+          "embedder": {
+            "dims": 1024,
+            "model": "qwen3-embedding-0.6b-q8_0",
+            "profile": "local"
+          },
+          "llm": {
+            "enabled": false,
+            "model": null,
+            "vlm_model": null
+          },
+          "rerank": {
+            "mode": "auto",
+            "model": "qwen3-reranker-0.6b-q8_0",
+            "provider": "auto",
+            "selected_provider": "local"
+          },
+          "source": "configured"
+        },
+        "modules": {
+          "deferred": 0,
+          "inserted": 373,
+          "removed": 0,
+          "selected": 373,
+          "state": "completed",
+          "unchanged": 0
+        },
+        "profile": {
+          "docs": null,
+          "mode": "single",
+          "primary": "local",
+          "source": "configured"
+        },
+        "prs": {
+          "deferred": {},
+          "detected": 2,
+          "existing": 0,
+          "inserted": 2,
+          "migration_visited": 0,
+          "retained": 2,
+          "state": "completed",
+          "updated": 0,
+          "visited": 2000
+        },
+        "query_latency_ms": {
+          "count": 0,
+          "lifetime": "process",
+          "p50": null,
+          "p95": null,
+          "window": 1000
+        },
+        "queue": {
+          "dead": 0,
+          "deferred": 0,
+          "done": 0,
+          "expired_leases": 0,
+          "failed": 0,
+          "leased": 0,
+          "next_ready_at": null,
+          "queued": 0,
+          "ready": 0
+        },
+        "queue_status": {
+          "database": {
+            "allocated_bytes": 135970816,
+            "configured_limit_bytes": 2147483648,
+            "control_headroom_bytes": 1048576,
+            "effective_limit_bytes": 2147483648,
+            "file_bytes": 135970816,
+            "free_pages": 0,
+            "growth_limit_bytes": 2146435072,
+            "over_limit": false,
+            "page_growth_available_bytes": 2011512832,
+            "unallocated_control_bytes": 1048576
+          },
+          "enrichment_claims": {
+            "active_leases": 0,
+            "available_slots": 20000,
+            "growth_leases": 0,
+            "growth_units": 0,
+            "l3_units": 0,
+            "max_l3_units": 20000,
+            "page_sections": 0,
+            "paused": false,
+            "reason": null,
+            "summaries": 0
+          },
+          "jobs": {
+            "dead": 0,
+            "deferred": 0,
+            "done": 0,
+            "expired_leases": 0,
+            "failed": 0,
+            "leased": 0,
+            "next_ready_at": null,
+            "queued": 0,
+            "ready": 0
+          },
+          "observed_at": 1790370601,
+          "providers": {},
+          "usage_day": "2026-09-25",
+          "wal": {
+            "allocated_bytes": 0,
+            "control_headroom_bytes": 1048576,
+            "control_paused": false,
+            "growth_paused": false,
+            "l1_growth_paused": false,
+            "limit_bytes": 67108864
+          }
+        },
+        "rerank_auto": {
+          "configured_candidates": 50,
+          "effective_candidates": 50,
+          "incomplete_sample": false,
+          "message": null,
+          "observed_ms": null,
+          "persistence": "not_reduced",
+          "reduced": false
+        },
+        "response_caps": {
+          "events": {},
+          "lifetime": "process"
+        },
+        "root": "/data/dkc-corpus/search-tuning-20260925/django",
+        "source_caps": {},
+        "symbols": 51370,
+        "tables": [
+          {
+            "bytes": 16384,
+            "name": "_sqliteai_vector"
+          },
+          {
+            "bytes": 1671168,
+            "name": "commits"
+          },
+          {
+            "bytes": 49152,
+            "name": "commits_time"
+          },
+          {
+            "bytes": 49152,
+            "name": "commits_unit"
+          },
+          {
+            "bytes": 16384,
+            "name": "config_effective"
+          },
+          {
+            "bytes": 311296,
+            "name": "dirs"
+          },
+          {
+            "bytes": 16384,
+            "name": "dirs_module"
+          },
+          {
+            "bytes": 16384,
+            "name": "dirs_summary"
+          },
+          {
+            "bytes": 6520832,
+            "name": "edges"
+          },
+          {
+            "bytes": 4505600,
+            "name": "edges_destination"
+          },
+          {
+            "bytes": 4341760,
+            "name": "edges_dst_name"
+          },
+          {
+            "bytes": 2064384,
+            "name": "edges_dst_symbol"
+          },
+          {
+            "bytes": 2539520,
+            "name": "edges_file"
+          },
+          {
+            "bytes": 2621440,
+            "name": "edges_src"
+          },
+          {
+            "bytes": 16384,
+            "name": "embedding_bindings"
+          },
+          {
+            "bytes": 16384,
+            "name": "embedding_publications"
+          },
+          {
+            "bytes": 16384,
+            "name": "embedding_tables"
+          },
+          {
+            "bytes": 16384,
+            "name": "embedding_transition"
+          },
+          {
+            "bytes": 1687552,
+            "name": "files"
+          },
+          {
+            "bytes": 16384,
+            "name": "files_l1_pending"
+          },
+          {
+            "bytes": 114688,
+            "name": "files_rank"
+          },
+          {
+            "bytes": 16384,
+            "name": "files_truncated"
+          },
+          {
+            "bytes": 16384,
+            "name": "fts_names_config"
+          },
+          {
+            "bytes": 2818048,
+            "name": "fts_names_content"
+          },
+          {
+            "bytes": 3637248,
+            "name": "fts_names_data"
+          },
+          {
+            "bytes": 835584,
+            "name": "fts_names_docsize"
+          },
+          {
+            "bytes": 16384,
+            "name": "fts_names_idx"
+          },
+          {
+            "bytes": 16384,
+            "name": "fts_units_config"
+          },
+          {
+            "bytes": 18726912,
+            "name": "fts_units_data"
+          },
+          {
+            "bytes": 638976,
+            "name": "fts_units_docsize"
+          },
+          {
+            "bytes": 81920,
+            "name": "fts_units_idx"
+          },
+          {
+            "bytes": 16384,
+            "name": "jobs"
+          },
+          {
+            "bytes": 16384,
+            "name": "jobs_claim"
+          },
+          {
+            "bytes": 16384,
+            "name": "meta"
+          },
+          {
+            "bytes": 16384,
+            "name": "page_publications"
+          },
+          {
+            "bytes": 16384,
+            "name": "provider_admission"
+          },
+          {
+            "bytes": 16384,
+            "name": "prs"
+          },
+          {
+            "bytes": 16384,
+            "name": "prs_summary"
+          },
+          {
+            "bytes": 16384,
+            "name": "prs_unit"
+          },
+          {
+            "bytes": 16384,
+            "name": "sqlite_autoindex__sqliteai_vector_1"
+          },
+          {
+            "bytes": 81920,
+            "name": "sqlite_autoindex_commits_1"
+          },
+          {
+            "bytes": 16384,
+            "name": "sqlite_autoindex_config_effective_1"
+          },
+          {
+            "bytes": 180224,
+            "name": "sqlite_autoindex_dirs_1"
+          },
+          {
+            "bytes": 16384,
+            "name": "sqlite_autoindex_embedding_bindings_1"
+          },
+          {
+            "bytes": 16384,
+            "name": "sqlite_autoindex_embedding_tables_1"
+          },
+          {
+            "bytes": 442368,
+            "name": "sqlite_autoindex_files_1"
+          },
+          {
+            "bytes": 16384,
+            "name": "sqlite_autoindex_jobs_1"
+          },
+          {
+            "bytes": 16384,
+            "name": "sqlite_autoindex_meta_1"
+          },
+          {
+            "bytes": 16384,
+            "name": "sqlite_autoindex_page_publications_1"
+          },
+          {
+            "bytes": 16384,
+            "name": "sqlite_autoindex_page_publications_2"
+          },
+          {
+            "bytes": 16384,
+            "name": "sqlite_autoindex_provider_admission_1"
+          },
+          {
+            "bytes": 16384,
+            "name": "sqlite_autoindex_prs_1"
+          },
+          {
+            "bytes": 1572864,
+            "name": "sqlite_autoindex_unit_contents_1"
+          },
+          {
+            "bytes": 5373952,
+            "name": "sqlite_autoindex_unit_sources_1"
+          },
+          {
+            "bytes": 1638400,
+            "name": "sqlite_autoindex_units_1"
+          },
+          {
+            "bytes": 16384,
+            "name": "sqlite_autoindex_usage_1"
+          },
+          {
+            "bytes": 16384,
+            "name": "sqlite_autoindex_usage_reservations_1"
+          },
+          {
+            "bytes": 49152,
+            "name": "sqlite_schema"
+          },
+          {
+            "bytes": 16384,
+            "name": "sqlite_stat1"
+          },
+          {
+            "bytes": 16384,
+            "name": "sqlite_stat4"
+          },
+          {
+            "bytes": 7667712,
+            "name": "symbols"
+          },
+          {
+            "bytes": 622592,
+            "name": "symbols_file"
+          },
+          {
+            "bytes": 16384,
+            "name": "symbols_history"
+          },
+          {
+            "bytes": 1474560,
+            "name": "symbols_name"
+          },
+          {
+            "bytes": 983040,
+            "name": "symbols_rank"
+          },
+          {
+            "bytes": 16384,
+            "name": "symbols_summary"
+          },
+          {
+            "bytes": 622592,
+            "name": "symbols_unit"
+          },
+          {
+            "bytes": 38715392,
+            "name": "unit_contents"
+          },
+          {
+            "bytes": 16384,
+            "name": "unit_contexts"
+          },
+          {
+            "bytes": 6406144,
+            "name": "unit_sources"
+          },
+          {
+            "bytes": 5128192,
+            "name": "unit_sources_source"
+          },
+          {
+            "bytes": 8208384,
+            "name": "units"
+          },
+          {
+            "bytes": 1703936,
+            "name": "units_content"
+          },
+          {
+            "bytes": 475136,
+            "name": "units_file"
+          },
+          {
+            "bytes": 638976,
+            "name": "units_kind"
+          },
+          {
+            "bytes": 16384,
+            "name": "units_page_anchor"
+          },
+          {
+            "bytes": 16384,
+            "name": "units_parent"
+          },
+          {
+            "bytes": 16384,
+            "name": "usage"
+          },
+          {
+            "bytes": 16384,
+            "name": "usage_reservations"
+          },
+          {
+            "bytes": 16384,
+            "name": "usage_reservations_daily"
+          },
+          {
+            "bytes": 16384,
+            "name": "usage_reservations_rate"
+          }
+        ],
+        "took_ms": 27,
+        "truncated_files": 0,
+        "units": 37534,
+        "unknown_endpoint_dispatches": 0
+      },
+      "database_sha256": "1905034b4973e4abf37cdbe0f2bea324d55233e8ce360ce6573cdb93e7d06556"
+    },
+    {
+      "name": "hugo",
+      "source": "/data/dkc-corpus/hugo",
+      "root": "/data/dkc-corpus/search-tuning-20260925/hugo",
+      "head": "f425ff622dfc715315f6c210fb5aa4e0c500472c",
+      "index_seconds": 24.26040161799756,
+      "index": {
+        "embedding": {
+          "error": null,
+          "providers": [],
+          "state": "skipped"
+        },
+        "enrichment": {
+          "current": 0,
+          "dead": 0,
+          "deferred": 0,
+          "discarded": 0,
+          "error": null,
+          "error_codes": {},
+          "paused": 0,
+          "pending": null,
+          "published": 0,
+          "scheduled": 0,
+          "skipped": 0,
+          "state": "skipped",
+          "terminal": 0,
+          "visited": 0
+        },
+        "files_added": 2556,
+        "files_deleted": 0,
+        "files_modified": 0,
+        "files_renamed": 0,
+        "higher_levels": "text and image summaries and scanned-page enrichment supported",
+        "histories": {
+          "deferred": 0,
+          "inserted": 3662,
+          "migration_selected": 0,
+          "selected": 5000,
+          "state": "completed",
+          "unchanged": 0
+        },
+        "history": {
+          "existing": 0,
+          "head": "f425ff622dfc715315f6c210fb5aa4e0c500472c",
+          "incomplete_diffs": 1959,
+          "input_caps": {},
+          "inserted": 2000,
+          "max_commits_reached": true,
+          "max_count_reached": true,
+          "retained": 2000,
+          "state": "capped",
+          "visited": 2000
+        },
+        "index_priority": {
+          "after": 10,
+          "before": 0,
+          "requested": true,
+          "state": "applied"
+        },
+        "l1_deferred": [],
+        "linker": {
+          "changed": true,
+          "deferred": false,
+          "reason": null,
+          "state": "completed"
+        },
+        "maintenance": {
+          "optimization_ran": true,
+          "pages_reclaimed": 7
+        },
+        "model_preparation": {
+          "detail": "--no-queue skips model preparation",
+          "model": null,
+          "state": "skipped",
+          "verification": null
+        },
+        "modules": {
+          "deferred": 0,
+          "inserted": 186,
+          "removed": 0,
+          "selected": 186,
+          "state": "completed",
+          "unchanged": 0
+        },
+        "prs": {
+          "deferred": {},
+          "detected": 18,
+          "existing": 0,
+          "inserted": 18,
+          "migration_visited": 0,
+          "retained": 18,
+          "state": "completed",
+          "updated": 0,
+          "visited": 2000
+        },
+        "requested_level": 1,
+        "shrink": null,
+        "status": [],
+        "took_ms": 24224,
+        "truncated_files": 1,
+        "units_indexed": 17581
+      },
+      "status": {
+        "budgets": {
+          "default_daily_calls": null,
+          "default_daily_tokens": null,
+          "endpoints": [],
+          "scope": "embedding_providers",
+          "source": "configured"
+        },
+        "caps": {
+          "file_capacity_message": null,
+          "file_capacity_reached": false,
+          "max_files": 250000,
+          "max_open_bytes": "256 KiB",
+          "max_units_per_file": 400,
+          "truncated_files": 1
+        },
+        "commits": 2000,
+        "dirty_files": null,
+        "dirty_files_state": "not_checked",
+        "discovery": {
+          "generation": 1,
+          "max_files": 250000,
+          "max_files_reached": false,
+          "scope": "last_whole_repository_scan",
+          "skipped_non_unicode_paths": 0
+        },
+        "edges": 250472,
+        "endpoint_accounting": "potential_dispatches_including_retries",
+        "endpoints": [],
+        "files": 2556,
+        "footprint_bytes": 76333056,
+        "fresh": {
+          "reason": "source_not_verified",
+          "state": "unknown"
+        },
+        "graph_pending": false,
+        "head": "f425ff622dfc715315f6c210fb5aa4e0c500472c",
+        "histories": {
+          "deferred": 0,
+          "inserted": 3662,
+          "migration_selected": 0,
+          "selected": 5000,
+          "state": "completed",
+          "unchanged": 0
+        },
+        "history": {
+          "existing": 0,
+          "head": "f425ff622dfc715315f6c210fb5aa4e0c500472c",
+          "incomplete_diffs": 1959,
+          "input_caps": {},
+          "inserted": 2000,
+          "max_commits_reached": true,
+          "max_count_reached": true,
+          "retained": 2000,
+          "state": "capped",
+          "visited": 2000
+        },
+        "history_enabled": true,
+        "index_priority": {
+          "after": 10,
+          "before": 0,
+          "requested": true,
+          "state": "applied"
+        },
+        "indexed_head": "f425ff622dfc715315f6c210fb5aa4e0c500472c",
+        "l1_completed_generation": "1",
+        "l1_deferred": [],
+        "l1_pending_files": 0,
+        "l1_scan_generation": 1,
+        "l2": {
+          "configured_association": "available",
+          "covered_units": 0,
+          "indexed_units": 23447,
+          "pending_jobs": 0,
+          "physical_vectors": 0,
+          "tables": [],
+          "transition_generation": null
+        },
+        "l2_pending": 0,
+        "l3": {
+          "allocated_bytes": 76333056,
+          "l3_units": 0,
+          "limit_bytes": 2147483648,
+          "max_l3_units": 20000,
+          "page_sections": 0,
+          "paused": false,
+          "reason": null,
+          "summaries": 0
+        },
+        "ladder": {
+          "counting": "exact_highest_completed_level",
+          "l1": 23041,
+          "l2": 0,
+          "l3": 0,
+          "source": "persisted_occurrences"
+        },
+        "last_local_reranker_check": null,
+        "last_shrink": null,
+        "limits": {
+          "db_max_bytes": "2 GiB",
+          "index_nice": true,
+          "index_threads": 0,
+          "max_commits": 2000,
+          "max_doc_bytes": "50 MiB",
+          "max_file_bytes": "1 MiB",
+          "max_files": 250000,
+          "max_image_bytes": "5 MiB",
+          "max_l2_units": 300000,
+          "max_l3_units": 20000,
+          "max_open_bytes": "256 KiB",
+          "max_pdf_pages": 500,
+          "max_pr_commits": 500,
+          "max_prs": 1000,
+          "max_result_tokens": 1500,
+          "max_units_per_file": 400,
+          "models_cache_max_bytes": "4 GiB",
+          "query_timeout_ms": 2000,
+          "rerank_timeout_ms": 1500,
+          "wal_max_bytes": "64 MiB"
+        },
+        "linker": {
+          "deferred": false,
+          "reason": null,
+          "state": "completed"
+        },
+        "model_preparation": {
+          "detail": "--no-queue skips model preparation",
+          "model": null,
+          "state": "skipped",
+          "verification": null
+        },
+        "models": {
+          "docs": null,
+          "embedder": {
+            "dims": 1024,
+            "model": "qwen3-embedding-0.6b-q8_0",
+            "profile": "local"
+          },
+          "llm": {
+            "enabled": false,
+            "model": null,
+            "vlm_model": null
+          },
+          "rerank": {
+            "mode": "auto",
+            "model": "qwen3-reranker-0.6b-q8_0",
+            "provider": "auto",
+            "selected_provider": "local"
+          },
+          "source": "configured"
+        },
+        "modules": {
+          "deferred": 0,
+          "inserted": 186,
+          "removed": 0,
+          "selected": 186,
+          "state": "completed",
+          "unchanged": 0
+        },
+        "profile": {
+          "docs": null,
+          "mode": "single",
+          "primary": "local",
+          "source": "configured"
+        },
+        "prs": {
+          "deferred": {},
+          "detected": 18,
+          "existing": 0,
+          "inserted": 18,
+          "migration_visited": 0,
+          "retained": 18,
+          "state": "completed",
+          "updated": 0,
+          "visited": 2000
+        },
+        "query_latency_ms": {
+          "count": 0,
+          "lifetime": "process",
+          "p50": null,
+          "p95": null,
+          "window": 1000
+        },
+        "queue": {
+          "dead": 0,
+          "deferred": 0,
+          "done": 0,
+          "expired_leases": 0,
+          "failed": 0,
+          "leased": 0,
+          "next_ready_at": null,
+          "queued": 0,
+          "ready": 0
+        },
+        "queue_status": {
+          "database": {
+            "allocated_bytes": 76333056,
+            "configured_limit_bytes": 2147483648,
+            "control_headroom_bytes": 1048576,
+            "effective_limit_bytes": 2147483648,
+            "file_bytes": 76333056,
+            "free_pages": 0,
+            "growth_limit_bytes": 2146435072,
+            "over_limit": false,
+            "page_growth_available_bytes": 2071150592,
+            "unallocated_control_bytes": 1048576
+          },
+          "enrichment_claims": {
+            "active_leases": 0,
+            "available_slots": 20000,
+            "growth_leases": 0,
+            "growth_units": 0,
+            "l3_units": 0,
+            "max_l3_units": 20000,
+            "page_sections": 0,
+            "paused": false,
+            "reason": null,
+            "summaries": 0
+          },
+          "jobs": {
+            "dead": 0,
+            "deferred": 0,
+            "done": 0,
+            "expired_leases": 0,
+            "failed": 0,
+            "leased": 0,
+            "next_ready_at": null,
+            "queued": 0,
+            "ready": 0
+          },
+          "observed_at": 1790370626,
+          "providers": {},
+          "usage_day": "2026-09-25",
+          "wal": {
+            "allocated_bytes": 0,
+            "control_headroom_bytes": 1048576,
+            "control_paused": false,
+            "growth_paused": false,
+            "l1_growth_paused": false,
+            "limit_bytes": 67108864
+          }
+        },
+        "rerank_auto": {
+          "configured_candidates": 50,
+          "effective_candidates": 50,
+          "incomplete_sample": false,
+          "message": null,
+          "observed_ms": null,
+          "persistence": "not_reduced",
+          "reduced": false
+        },
+        "response_caps": {
+          "events": {},
+          "lifetime": "process"
+        },
+        "root": "/data/dkc-corpus/search-tuning-20260925/hugo",
+        "source_caps": {
+          "max_file_bytes": 2,
+          "max_units_per_file": 1
+        },
+        "symbols": 15481,
+        "tables": [
+          {
+            "bytes": 16384,
+            "name": "_sqliteai_vector"
+          },
+          {
+            "bytes": 2981888,
+            "name": "commits"
+          },
+          {
+            "bytes": 49152,
+            "name": "commits_time"
+          },
+          {
+            "bytes": 49152,
+            "name": "commits_unit"
+          },
+          {
+            "bytes": 16384,
+            "name": "config_effective"
+          },
+          {
+            "bytes": 49152,
+            "name": "dirs"
+          },
+          {
+            "bytes": 16384,
+            "name": "dirs_module"
+          },
+          {
+            "bytes": 16384,
+            "name": "dirs_summary"
+          },
+          {
+            "bytes": 8388608,
+            "name": "edges"
+          },
+          {
+            "bytes": 4292608,
+            "name": "edges_destination"
+          },
+          {
+            "bytes": 3866624,
+            "name": "edges_dst_name"
+          },
+          {
+            "bytes": 2834432,
+            "name": "edges_dst_symbol"
+          },
+          {
+            "bytes": 3080192,
+            "name": "edges_file"
+          },
+          {
+            "bytes": 3129344,
+            "name": "edges_src"
+          },
+          {
+            "bytes": 16384,
+            "name": "embedding_bindings"
+          },
+          {
+            "bytes": 16384,
+            "name": "embedding_publications"
+          },
+          {
+            "bytes": 16384,
+            "name": "embedding_tables"
+          },
+          {
+            "bytes": 16384,
+            "name": "embedding_transition"
+          },
+          {
+            "bytes": 622592,
+            "name": "files"
+          },
+          {
+            "bytes": 16384,
+            "name": "files_l1_pending"
+          },
+          {
+            "bytes": 49152,
+            "name": "files_rank"
+          },
+          {
+            "bytes": 16384,
+            "name": "files_truncated"
+          },
+          {
+            "bytes": 16384,
+            "name": "fts_names_config"
+          },
+          {
+            "bytes": 786432,
+            "name": "fts_names_content"
+          },
+          {
+            "bytes": 1015808,
+            "name": "fts_names_data"
+          },
+          {
+            "bytes": 245760,
+            "name": "fts_names_docsize"
+          },
+          {
+            "bytes": 16384,
+            "name": "fts_names_idx"
+          },
+          {
+            "bytes": 16384,
+            "name": "fts_units_config"
+          },
+          {
+            "bytes": 10108928,
+            "name": "fts_units_data"
+          },
+          {
+            "bytes": 393216,
+            "name": "fts_units_docsize"
+          },
+          {
+            "bytes": 49152,
+            "name": "fts_units_idx"
+          },
+          {
+            "bytes": 16384,
+            "name": "jobs"
+          },
+          {
+            "bytes": 16384,
+            "name": "jobs_claim"
+          },
+          {
+            "bytes": 16384,
+            "name": "meta"
+          },
+          {
+            "bytes": 16384,
+            "name": "page_publications"
+          },
+          {
+            "bytes": 16384,
+            "name": "provider_admission"
+          },
+          {
+            "bytes": 16384,
+            "name": "prs"
+          },
+          {
+            "bytes": 16384,
+            "name": "prs_summary"
+          },
+          {
+            "bytes": 16384,
+            "name": "prs_unit"
+          },
+          {
+            "bytes": 16384,
+            "name": "sqlite_autoindex__sqliteai_vector_1"
+          },
+          {
+            "bytes": 81920,
+            "name": "sqlite_autoindex_commits_1"
+          },
+          {
+            "bytes": 16384,
+            "name": "sqlite_autoindex_config_effective_1"
+          },
+          {
+            "bytes": 16384,
+            "name": "sqlite_autoindex_dirs_1"
+          },
+          {
+            "bytes": 16384,
+            "name": "sqlite_autoindex_embedding_bindings_1"
+          },
+          {
+            "bytes": 16384,
+            "name": "sqlite_autoindex_embedding_tables_1"
+          },
+          {
+            "bytes": 163840,
+            "name": "sqlite_autoindex_files_1"
+          },
+          {
+            "bytes": 16384,
+            "name": "sqlite_autoindex_jobs_1"
+          },
+          {
+            "bytes": 16384,
+            "name": "sqlite_autoindex_meta_1"
+          },
+          {
+            "bytes": 16384,
+            "name": "sqlite_autoindex_page_publications_1"
+          },
+          {
+            "bytes": 16384,
+            "name": "sqlite_autoindex_page_publications_2"
+          },
+          {
+            "bytes": 16384,
+            "name": "sqlite_autoindex_provider_admission_1"
+          },
+          {
+            "bytes": 16384,
+            "name": "sqlite_autoindex_prs_1"
+          },
+          {
+            "bytes": 917504,
+            "name": "sqlite_autoindex_unit_contents_1"
+          },
+          {
+            "bytes": 2162688,
+            "name": "sqlite_autoindex_unit_sources_1"
+          },
+          {
+            "bytes": 1032192,
+            "name": "sqlite_autoindex_units_1"
+          },
+          {
+            "bytes": 16384,
+            "name": "sqlite_autoindex_usage_1"
+          },
+          {
+            "bytes": 16384,
+            "name": "sqlite_autoindex_usage_reservations_1"
+          },
+          {
+            "bytes": 49152,
+            "name": "sqlite_schema"
+          },
+          {
+            "bytes": 16384,
+            "name": "sqlite_stat1"
+          },
+          {
+            "bytes": 16384,
+            "name": "sqlite_stat4"
+          },
+          {
+            "bytes": 1818624,
+            "name": "symbols"
+          },
+          {
+            "bytes": 196608,
+            "name": "symbols_file"
+          },
+          {
+            "bytes": 65536,
+            "name": "symbols_history"
+          },
+          {
+            "bytes": 393216,
+            "name": "symbols_name"
+          },
+          {
+            "bytes": 311296,
+            "name": "symbols_rank"
+          },
+          {
+            "bytes": 16384,
+            "name": "symbols_summary"
+          },
+          {
+            "bytes": 196608,
+            "name": "symbols_unit"
+          },
+          {
+            "bytes": 14811136,
+            "name": "unit_contents"
+          },
+          {
+            "bytes": 16384,
+            "name": "unit_contexts"
+          },
+          {
+            "bytes": 2621440,
+            "name": "unit_sources"
+          },
+          {
+            "bytes": 2097152,
+            "name": "unit_sources_source"
+          },
+          {
+            "bytes": 4816896,
+            "name": "units"
+          },
+          {
+            "bytes": 1064960,
+            "name": "units_content"
+          },
+          {
+            "bytes": 294912,
+            "name": "units_file"
+          },
+          {
+            "bytes": 442368,
+            "name": "units_kind"
+          },
+          {
+            "bytes": 16384,
+            "name": "units_page_anchor"
+          },
+          {
+            "bytes": 65536,
+            "name": "units_parent"
+          },
+          {
+            "bytes": 16384,
+            "name": "usage"
+          },
+          {
+            "bytes": 16384,
+            "name": "usage_reservations"
+          },
+          {
+            "bytes": 16384,
+            "name": "usage_reservations_daily"
+          },
+          {
+            "bytes": 16384,
+            "name": "usage_reservations_rate"
+          }
+        ],
+        "took_ms": 19,
+        "truncated_files": 1,
+        "units": 23447,
+        "unknown_endpoint_dispatches": 0
+      },
+      "database_sha256": "d19af80c730f50b731fbd1a8653c9d0348b14d255411250637656d29542d87b0"
+    }
+  ],
+  "started_at": 1790370385.7578475,
+  "completed_at": 1790370626.227423
+}

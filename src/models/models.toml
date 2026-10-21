@@ -1,0 +1,45 @@
+# Pinned embedding and project-converted reranker artifacts; v1.md §7.4.
+
+[[models]]
+name = "qwen3-embedding-0.6b-q8_0"
+url = "https://huggingface.co/Qwen/Qwen3-Embedding-0.6B-GGUF/resolve/370f27d7550e0def9b39c1f16d3fbaa13aa67728/Qwen3-Embedding-0.6B-Q8_0.gguf"
+file = "Qwen3-Embedding-0.6B-Q8_0.gguf"
+sha256 = "06507c7b42688469c4e7298b0a1e16deff06caf291cf0a5b278c308249c3e439"
+size = 639150592
+context = 2048
+pooling = "last"
+dims = 1024
+instruct = "Instruct: Given a code search query, retrieve relevant code or docs\nQuery: "
+
+[[models]]
+name = "qwen3-embedding-0.6b-f16"
+url = "https://huggingface.co/Qwen/Qwen3-Embedding-0.6B-GGUF/resolve/370f27d7550e0def9b39c1f16d3fbaa13aa67728/Qwen3-Embedding-0.6B-f16.gguf"
+file = "Qwen3-Embedding-0.6B-f16.gguf"
+sha256 = "421a27e58d165478cc7acb984a688c2aa41404968b0203e7cd743ece44c54340"
+size = 1197629632
+context = 2048
+pooling = "last"
+dims = 1024
+instruct = "Instruct: Given a code search query, retrieve relevant code or docs\nQuery: "
+
+[[models]]
+name = "qwen3-reranker-0.6b-q8_0"
+url = "https://huggingface.co/bartscheffer/deepkit-code-reranker-gguf/resolve/90736d4de467cd106d46f5b576f9e59255c43a51/Qwen3-Reranker-0.6B-Q8_0.gguf"
+file = "Qwen3-Reranker-0.6B-Q8_0.gguf"
+sha256 = "4fb2a26728ecea8ea30dc396ac553af14970329849f0dd4b23ae06340f37715a"
+size = 639153344
+context = 2048
+pooling = "rank"
+dims = 2
+instruct = "<|im_start|>system\nJudge whether the Document meets the requirements based on the Query and the Instruct provided. Note that the answer can only be \"yes\" or \"no\".<|im_end|>\n<|im_start|>user\n<Instruct>: Given a web search query, retrieve relevant passages that answer the query\n<Query>: {query}\n<Document>: {document}<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n"
+
+[[models]]
+name = "qwen3-reranker-0.6b-f16"
+url = "https://huggingface.co/bartscheffer/deepkit-code-reranker-gguf/resolve/90736d4de467cd106d46f5b576f9e59255c43a51/Qwen3-Reranker-0.6B-f16.gguf"
+file = "Qwen3-Reranker-0.6B-f16.gguf"
+sha256 = "a3182982cf5ff9d3c40a75b3c4120e297769be0da333cf49b4ad86755c9535e5"
+size = 1197634304
+context = 2048
+pooling = "rank"
+dims = 2
+instruct = "<|im_start|>system\nJudge whether the Document meets the requirements based on the Query and the Instruct provided. Note that the answer can only be \"yes\" or \"no\".<|im_end|>\n<|im_start|>user\n<Instruct>: Given a web search query, retrieve relevant passages that answer the query\n<Query>: {query}\n<Document>: {document}<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n"

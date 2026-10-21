@@ -1,0 +1,191 @@
+# DRAFT: human review pending. Pinned Hugo f425ff622dfc715315f6c210fb5aa4e0c500472c.
+- id: "hugo-001"
+  query: "Which code decides what must be rebuilt after files change while the development server is running?"
+  kind: "vague"
+  expect_files: ["commands/server.go", "hugolib/hugo_sites_build.go"]
+  scope: "code"
+  notes: "Ambiguous 1/5: the server classifies events and the site builder applies the rebuild plan."
+- id: "hugo-002"
+  query: "Where is a page reference turned into the matching content node?"
+  kind: "vague"
+  expect_files: ["hugolib/pagecollections.go", "hugolib/content_map.go"]
+  scope: "code"
+  notes: "Ambiguous 2/5: reference lookup and content-tree lookup are both direct parts of the answer."
+- id: "hugo-003"
+  query: "How does a page get both its output filename and its public URL?"
+  kind: "vague"
+  expect_files: ["hugolib/page__paths.go", "common/urls/baseURL.go"]
+  scope: "code"
+  notes: "Ambiguous 3/5: target-path construction and base-URL handling are legitimate entry points."
+- id: "hugo-004"
+  query: "Where are rendered content and the table of contents cached for each output format?"
+  kind: "vague"
+  expect_files: ["hugolib/page__content.go", "hugolib/page__per_output.go"]
+  scope: "code"
+  notes: "Ambiguous 4/5: the shared content cache and per-output wrapper divide this responsibility."
+- id: "hugo-005"
+  query: "Which code transforms an asset and then writes the transformed result to its destination?"
+  kind: "vague"
+  expect_files: ["resources/transform.go", "resources/resource_spec.go"]
+  scope: "code"
+  notes: "Ambiguous 5/5: transformation execution and resource specification both govern the result."
+- id: "hugo-006"
+  query: "Where is front matter separated from the body before a content page is rendered?"
+  kind: "vague"
+  expect_files: ["hugolib/page__content.go"]
+  scope: "code"
+  notes: "Follow content parsing and its front-matter iterator handling."
+- id: "hugo-007"
+  query: "How are site data files decoded and added to the combined data map?"
+  kind: "vague"
+  expect_files: ["hugolib/hugo_sites.go"]
+  scope: "code"
+  notes: "The site collection loads and decodes data sources."
+- id: "hugo-008"
+  query: "Where are the translated variants of one page selected and ordered?"
+  kind: "vague"
+  expect_files: ["hugolib/page.go"]
+  scope: "code"
+  notes: "Page translation methods use site vectors to collect language variants."
+- id: "hugo-009"
+  query: "Which code inserts the browser reload script into served HTML?"
+  kind: "vague"
+  expect_files: ["commands/server.go"]
+  scope: "code"
+  notes: "The development server rewrites HTML responses for live reload."
+- id: "hugo-010"
+  query: "How are shortcode placeholders replaced before markup conversion?"
+  kind: "vague"
+  expect_files: ["hugolib/page__content.go"]
+  scope: "code"
+  notes: "The content parser records shortcodes and later assembles renderable bytes."
+- id: "hugo-011"
+  query: "How does NewHugoSites create the collection of sites from dependency configuration?"
+  kind: "ident"
+  expect_files: ["hugolib/site.go"]
+  expect_symbols: ["NewHugoSites"]
+  scope: "code"
+  notes: "Main constructor for the multi-site build object."
+- id: "hugo-012"
+  query: "Where does HugoSites.Build choose between a full build and a rebuild from file events?"
+  kind: "ident"
+  expect_files: ["hugolib/hugo_sites_build.go"]
+  expect_symbols: ["Build"]
+  scope: "code"
+  notes: "Top-level site build orchestration."
+- id: "hugo-013"
+  query: "How does SectionFromFilename infer the content section for a new file?"
+  kind: "ident"
+  expect_files: ["hugolib/content_factory.go"]
+  expect_symbols: ["SectionFromFilename"]
+  scope: "code"
+  notes: "ContentFactory path-to-section logic."
+- id: "hugo-014"
+  query: "Where does NewConverterProvider register the available markup converters?"
+  kind: "ident"
+  expect_files: ["markup/markup.go"]
+  expect_symbols: ["NewConverterProvider"]
+  scope: "code"
+  notes: "Markup provider registry construction."
+- id: "hugo-015"
+  query: "How does ResolveMarkup normalize an input markup name or alias?"
+  kind: "ident"
+  expect_files: ["markup/markup.go"]
+  expect_symbols: ["ResolveMarkup"]
+  scope: "code"
+  notes: "Canonical markup-name resolution."
+- id: "hugo-016"
+  query: "How does NewBaseURLFromString validate and store the configured base URL?"
+  kind: "ident"
+  expect_files: ["common/urls/baseURL.go"]
+  expect_symbols: ["NewBaseURLFromString"]
+  scope: "code"
+  notes: "Base URL constructor and normalization."
+- id: "hugo-017"
+  query: "Where does AbsURL turn a template value into an absolute site URL?"
+  kind: "ident"
+  expect_files: ["tpl/urls/urls.go"]
+  expect_symbols: ["AbsURL"]
+  scope: "code"
+  notes: "Template URL namespace method."
+- id: "hugo-018"
+  query: "How does ResourceTransformationCtx.PublishTo persist generated resource bytes?"
+  kind: "ident"
+  expect_files: ["resources/transform.go"]
+  expect_symbols: ["PublishTo"]
+  scope: "code"
+  notes: "Transformation output publication."
+- id: "hugo-019"
+  query: "Where does ParseVersion split and validate a Hugo version string?"
+  kind: "ident"
+  expect_files: ["common/version/version.go"]
+  expect_symbols: ["ParseVersion"]
+  scope: "code"
+  notes: "Version parsing entry point."
+- id: "hugo-020"
+  query: "How does ShouldSkipFileChangeEvent reject irrelevant watcher events?"
+  kind: "ident"
+  expect_files: ["hugolib/hugo_sites.go"]
+  expect_symbols: ["ShouldSkipFileChangeEvent"]
+  scope: "code"
+  notes: "HugoSites watcher-event filter."
+- id: "hugo-021"
+  query: "Which configuration options control Goldmark rendering and syntax highlighting?"
+  kind: "doc"
+  expect_files: ["docs/content/en/configuration/markup.md"]
+  scope: "docs"
+  notes: "Markup configuration reference."
+- id: "hugo-022"
+  query: "How should content translations be named and linked in a multilingual site?"
+  kind: "doc"
+  expect_files: ["docs/content/en/content-management/multilingual.md"]
+  scope: "docs"
+  notes: "Multilingual content guide."
+- id: "hugo-023"
+  query: "What is the difference between leaf bundles and branch bundles?"
+  kind: "doc"
+  expect_files: ["docs/content/en/content-management/page-bundles.md"]
+  scope: "docs"
+  notes: "Page bundle organization guide."
+- id: "hugo-024"
+  query: "Which resize, crop, rotate, and filter operations are available for images?"
+  kind: "doc"
+  expect_files: ["docs/content/en/content-management/image-processing/index.md"]
+  scope: "docs"
+  notes: "Image processing documentation."
+- id: "hugo-025"
+  query: "In what order does Hugo look for the template used to render a page?"
+  kind: "doc"
+  expect_files: ["docs/content/en/templates/lookup-order.md"]
+  scope: "docs"
+  notes: "Template lookup-order reference."
+- id: "hugo-026"
+  query: "How does a file-system event from the server reach the site rebuild pipeline?"
+  kind: "cross"
+  expect_files: ["commands/server.go", "hugolib/hugo_sites_build.go"]
+  scope: "code"
+  notes: "Trace server event collection into HugoSites build processing."
+- id: "hugo-027"
+  query: "How does a template ref call reach content-tree page resolution?"
+  kind: "cross"
+  expect_files: ["tpl/urls/urls.go", "hugolib/pagecollections.go"]
+  scope: "code"
+  notes: "Trace the template namespace into page reference lookup."
+- id: "hugo-028"
+  query: "How does raw page content reach the selected markup converter and rendered output?"
+  kind: "cross"
+  expect_files: ["hugolib/page__content.go", "markup/markup.go"]
+  scope: "code"
+  notes: "Connect page content preparation with converter selection."
+- id: "hugo-029"
+  query: "How does a resource transformation publish bytes through the resource specification?"
+  kind: "cross"
+  expect_files: ["resources/transform.go", "resources/resource_spec.go"]
+  scope: "code"
+  notes: "Follow a transformation from adapter execution to publication support."
+- id: "hugo-030"
+  query: "How does a content-tree entry become an output path for a rendered page?"
+  kind: "cross"
+  expect_files: ["hugolib/content_map.go", "hugolib/page__paths.go"]
+  scope: "code"
+  notes: "Connect content-map identity and target-path construction."

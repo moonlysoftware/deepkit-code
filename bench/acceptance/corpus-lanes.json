@@ -1,0 +1,575 @@
+{
+  "generated_at": "2026-09-25T16:41:20.006366+00:00",
+  "lanes": [
+    {
+      "build_receipt": null,
+      "handwritten_report": null,
+      "lane": "local_cuda",
+      "report": null,
+      "target": "laravel"
+    },
+    {
+      "build_receipt": null,
+      "handwritten_report": null,
+      "lane": "moonly",
+      "report": null,
+      "target": "laravel"
+    },
+    {
+      "build_receipt": null,
+      "handwritten_report": null,
+      "lane": "local_cpu",
+      "report": null,
+      "target": "laravel"
+    },
+    {
+      "build_receipt": null,
+      "handwritten_report": null,
+      "lane": "ollama",
+      "report": null,
+      "target": "laravel"
+    },
+    {
+      "build_receipt": null,
+      "handwritten_report": null,
+      "lane": "local_cuda",
+      "report": null,
+      "target": "ripgrep"
+    },
+    {
+      "build_receipt": null,
+      "handwritten_report": null,
+      "lane": "moonly",
+      "report": null,
+      "target": "ripgrep"
+    },
+    {
+      "build_receipt": null,
+      "handwritten_report": null,
+      "lane": "local_cpu",
+      "report": null,
+      "target": "ripgrep"
+    },
+    {
+      "build_receipt": null,
+      "handwritten_report": null,
+      "lane": "ollama",
+      "report": null,
+      "target": "ripgrep"
+    },
+    {
+      "build_receipt": null,
+      "handwritten_report": null,
+      "lane": "local_cuda",
+      "report": null,
+      "target": "rust-analyzer"
+    },
+    {
+      "build_receipt": null,
+      "handwritten_report": null,
+      "lane": "moonly",
+      "report": null,
+      "target": "rust-analyzer"
+    },
+    {
+      "build_receipt": null,
+      "handwritten_report": null,
+      "lane": "local_cpu",
+      "report": null,
+      "target": "rust-analyzer"
+    },
+    {
+      "build_receipt": null,
+      "handwritten_report": null,
+      "lane": "local_cuda",
+      "report": null,
+      "target": "vscode"
+    },
+    {
+      "build_receipt": null,
+      "handwritten_report": null,
+      "lane": "moonly",
+      "report": null,
+      "target": "vscode"
+    },
+    {
+      "build_receipt": null,
+      "handwritten_report": null,
+      "lane": "local_cpu",
+      "report": null,
+      "target": "vscode"
+    },
+    {
+      "build_receipt": null,
+      "handwritten_report": null,
+      "lane": "local_cuda",
+      "report": null,
+      "target": "nextjs"
+    },
+    {
+      "build_receipt": null,
+      "handwritten_report": null,
+      "lane": "moonly",
+      "report": null,
+      "target": "nextjs"
+    },
+    {
+      "build_receipt": null,
+      "handwritten_report": null,
+      "lane": "local_cpu",
+      "report": null,
+      "target": "nextjs"
+    },
+    {
+      "build_receipt": null,
+      "handwritten_report": null,
+      "lane": "local_cuda",
+      "report": null,
+      "target": "excalidraw"
+    },
+    {
+      "build_receipt": null,
+      "handwritten_report": null,
+      "lane": "moonly",
+      "report": null,
+      "target": "excalidraw"
+    },
+    {
+      "build_receipt": null,
+      "handwritten_report": null,
+      "lane": "local_cpu",
+      "report": null,
+      "target": "excalidraw"
+    },
+    {
+      "build_receipt": null,
+      "handwritten_report": null,
+      "lane": "local_cuda",
+      "report": null,
+      "target": "django"
+    },
+    {
+      "build_receipt": null,
+      "handwritten_report": null,
+      "lane": "moonly",
+      "report": null,
+      "target": "django"
+    },
+    {
+      "build_receipt": null,
+      "handwritten_report": null,
+      "lane": "local_cpu",
+      "report": null,
+      "target": "django"
+    },
+    {
+      "build_receipt": null,
+      "handwritten_report": null,
+      "lane": "local_cuda",
+      "report": null,
+      "target": "fastapi"
+    },
+    {
+      "build_receipt": null,
+      "handwritten_report": null,
+      "lane": "moonly",
+      "report": null,
+      "target": "fastapi"
+    },
+    {
+      "build_receipt": null,
+      "handwritten_report": null,
+      "lane": "local_cpu",
+      "report": null,
+      "target": "fastapi"
+    },
+    {
+      "build_receipt": null,
+      "handwritten_report": null,
+      "lane": "local_cuda",
+      "report": null,
+      "target": "langchain"
+    },
+    {
+      "build_receipt": null,
+      "handwritten_report": null,
+      "lane": "moonly",
+      "report": null,
+      "target": "langchain"
+    },
+    {
+      "build_receipt": null,
+      "handwritten_report": null,
+      "lane": "local_cpu",
+      "report": null,
+      "target": "langchain"
+    },
+    {
+      "build_receipt": null,
+      "handwritten_report": null,
+      "lane": "local_cuda",
+      "report": null,
+      "target": "home-assistant"
+    },
+    {
+      "build_receipt": null,
+      "handwritten_report": null,
+      "lane": "moonly",
+      "report": null,
+      "target": "home-assistant"
+    },
+    {
+      "build_receipt": null,
+      "handwritten_report": null,
+      "lane": "local_cpu",
+      "report": null,
+      "target": "home-assistant"
+    },
+    {
+      "build_receipt": null,
+      "handwritten_report": null,
+      "lane": "local_cuda",
+      "report": null,
+      "target": "kubernetes"
+    },
+    {
+      "build_receipt": null,
+      "handwritten_report": null,
+      "lane": "moonly",
+      "report": null,
+      "target": "kubernetes"
+    },
+    {
+      "build_receipt": null,
+      "handwritten_report": null,
+      "lane": "local_cpu",
+      "report": null,
+      "target": "kubernetes"
+    },
+    {
+      "build_receipt": null,
+      "handwritten_report": null,
+      "lane": "local_cuda",
+      "report": null,
+      "target": "hugo"
+    },
+    {
+      "build_receipt": null,
+      "handwritten_report": null,
+      "lane": "moonly",
+      "report": null,
+      "target": "hugo"
+    },
+    {
+      "build_receipt": null,
+      "handwritten_report": null,
+      "lane": "local_cpu",
+      "report": null,
+      "target": "hugo"
+    },
+    {
+      "build_receipt": null,
+      "handwritten_report": null,
+      "lane": "local_cuda",
+      "report": null,
+      "target": "spring-boot"
+    },
+    {
+      "build_receipt": null,
+      "handwritten_report": null,
+      "lane": "moonly",
+      "report": null,
+      "target": "spring-boot"
+    },
+    {
+      "build_receipt": null,
+      "handwritten_report": null,
+      "lane": "local_cpu",
+      "report": null,
+      "target": "spring-boot"
+    },
+    {
+      "build_receipt": null,
+      "handwritten_report": null,
+      "lane": "local_cuda",
+      "report": null,
+      "target": "ktor"
+    },
+    {
+      "build_receipt": null,
+      "handwritten_report": null,
+      "lane": "moonly",
+      "report": null,
+      "target": "ktor"
+    },
+    {
+      "build_receipt": null,
+      "handwritten_report": null,
+      "lane": "local_cpu",
+      "report": null,
+      "target": "ktor"
+    },
+    {
+      "build_receipt": null,
+      "handwritten_report": null,
+      "lane": "local_cuda",
+      "report": null,
+      "target": "llama.cpp"
+    },
+    {
+      "build_receipt": null,
+      "handwritten_report": null,
+      "lane": "moonly",
+      "report": null,
+      "target": "llama.cpp"
+    },
+    {
+      "build_receipt": null,
+      "handwritten_report": null,
+      "lane": "local_cpu",
+      "report": null,
+      "target": "llama.cpp"
+    },
+    {
+      "build_receipt": null,
+      "handwritten_report": null,
+      "lane": "local_cuda",
+      "report": null,
+      "target": "redis"
+    },
+    {
+      "build_receipt": null,
+      "handwritten_report": null,
+      "lane": "moonly",
+      "report": null,
+      "target": "redis"
+    },
+    {
+      "build_receipt": null,
+      "handwritten_report": null,
+      "lane": "local_cpu",
+      "report": null,
+      "target": "redis"
+    },
+    {
+      "build_receipt": null,
+      "handwritten_report": null,
+      "lane": "local_cuda",
+      "report": null,
+      "target": "rails"
+    },
+    {
+      "build_receipt": null,
+      "handwritten_report": null,
+      "lane": "moonly",
+      "report": null,
+      "target": "rails"
+    },
+    {
+      "build_receipt": null,
+      "handwritten_report": null,
+      "lane": "local_cpu",
+      "report": null,
+      "target": "rails"
+    },
+    {
+      "build_receipt": null,
+      "handwritten_report": null,
+      "lane": "local_cuda",
+      "report": null,
+      "target": "Alamofire"
+    },
+    {
+      "build_receipt": null,
+      "handwritten_report": null,
+      "lane": "moonly",
+      "report": null,
+      "target": "Alamofire"
+    },
+    {
+      "build_receipt": null,
+      "handwritten_report": null,
+      "lane": "local_cpu",
+      "report": null,
+      "target": "Alamofire"
+    },
+    {
+      "build_receipt": null,
+      "handwritten_report": null,
+      "lane": "local_cuda",
+      "report": null,
+      "target": "jellyfin"
+    },
+    {
+      "build_receipt": null,
+      "handwritten_report": null,
+      "lane": "moonly",
+      "report": null,
+      "target": "jellyfin"
+    },
+    {
+      "build_receipt": null,
+      "handwritten_report": null,
+      "lane": "local_cpu",
+      "report": null,
+      "target": "jellyfin"
+    },
+    {
+      "build_receipt": null,
+      "handwritten_report": null,
+      "lane": "local_cuda",
+      "report": null,
+      "target": "git"
+    },
+    {
+      "build_receipt": null,
+      "handwritten_report": null,
+      "lane": "moonly",
+      "report": null,
+      "target": "git"
+    },
+    {
+      "build_receipt": null,
+      "handwritten_report": null,
+      "lane": "local_cpu",
+      "report": null,
+      "target": "git"
+    },
+    {
+      "build_receipt": null,
+      "handwritten_report": null,
+      "lane": "local_cuda",
+      "report": null,
+      "target": "googleapis"
+    },
+    {
+      "build_receipt": null,
+      "handwritten_report": null,
+      "lane": "moonly",
+      "report": null,
+      "target": "googleapis"
+    },
+    {
+      "build_receipt": null,
+      "handwritten_report": null,
+      "lane": "local_cpu",
+      "report": null,
+      "target": "googleapis"
+    },
+    {
+      "build_receipt": null,
+      "handwritten_report": null,
+      "lane": "local_cuda",
+      "report": null,
+      "target": "mdn-content"
+    },
+    {
+      "build_receipt": null,
+      "handwritten_report": null,
+      "lane": "moonly",
+      "report": null,
+      "target": "mdn-content"
+    },
+    {
+      "build_receipt": null,
+      "handwritten_report": null,
+      "lane": "local_cpu",
+      "report": null,
+      "target": "mdn-content"
+    },
+    {
+      "build_receipt": null,
+      "handwritten_report": null,
+      "lane": "dual_local_code_moonly_docs",
+      "report": null,
+      "target": "mdn-content"
+    },
+    {
+      "build_receipt": null,
+      "handwritten_report": null,
+      "lane": "local_cuda",
+      "report": null,
+      "target": "fastbook"
+    },
+    {
+      "build_receipt": null,
+      "handwritten_report": null,
+      "lane": "moonly",
+      "report": null,
+      "target": "fastbook"
+    },
+    {
+      "build_receipt": null,
+      "handwritten_report": null,
+      "lane": "local_cpu",
+      "report": null,
+      "target": "fastbook"
+    },
+    {
+      "build_receipt": null,
+      "handwritten_report": null,
+      "lane": "local_cuda",
+      "report": null,
+      "target": "paddleocr"
+    },
+    {
+      "build_receipt": null,
+      "handwritten_report": null,
+      "lane": "moonly",
+      "report": null,
+      "target": "paddleocr"
+    },
+    {
+      "build_receipt": null,
+      "handwritten_report": null,
+      "lane": "local_cpu",
+      "report": null,
+      "target": "paddleocr"
+    },
+    {
+      "build_receipt": null,
+      "handwritten_report": null,
+      "lane": "local_cuda",
+      "report": null,
+      "target": "fixtures-docs"
+    },
+    {
+      "build_receipt": null,
+      "handwritten_report": null,
+      "lane": "moonly",
+      "report": null,
+      "target": "fixtures-docs"
+    },
+    {
+      "build_receipt": null,
+      "handwritten_report": null,
+      "lane": "local_cpu",
+      "report": null,
+      "target": "fixtures-docs"
+    },
+    {
+      "build_receipt": null,
+      "handwritten_report": null,
+      "lane": "local_cuda",
+      "report": null,
+      "target": "tiny"
+    },
+    {
+      "build_receipt": null,
+      "handwritten_report": null,
+      "lane": "moonly",
+      "report": null,
+      "target": "tiny"
+    },
+    {
+      "build_receipt": null,
+      "handwritten_report": null,
+      "lane": "local_cpu",
+      "report": null,
+      "target": "tiny"
+    }
+  ],
+  "product_source_blake3": null,
+  "product_source_revision": null,
+  "schema": "dkc.t4-12.corpus-evidence-import-manifest.v2"
+}

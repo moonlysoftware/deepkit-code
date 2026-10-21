@@ -1,0 +1,45 @@
+{
+  "edges": [],
+  "symbols": [
+    {
+      "end": 1,
+      "kind": "module",
+      "name": "base",
+      "qualified": "base",
+      "start": 1
+    },
+    {
+      "end": 2,
+      "kind": "constant",
+      "name": "RETRY",
+      "qualified": "RETRY",
+      "start": 2
+    }
+  ],
+  "units": [
+    {
+      "end": 1,
+      "header": "base › FROM alpine:3.20 AS base",
+      "kind": "Symbol",
+      "scope": "base",
+      "start": 1,
+      "text": "FROM alpine:3.20 AS base"
+    },
+    {
+      "end": 2,
+      "header": "RETRY › ARG RETRY=3",
+      "kind": "Symbol",
+      "scope": "RETRY",
+      "start": 2,
+      "text": "ARG RETRY=3"
+    },
+    {
+      "end": 3,
+      "header": "chunk",
+      "kind": "Chunk",
+      "scope": "",
+      "start": 3,
+      "text": "RUN echo \"$RETRY\""
+    }
+  ]
+}

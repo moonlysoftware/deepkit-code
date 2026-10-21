@@ -1,0 +1,191 @@
+# DRAFT: human review pending. Pinned ripgrep 3fce3b5bb0236da2df6d99672afb8a719642eca7.
+- id: "rg-001"
+  query: "Where is the number of directory traversal workers chosen?"
+  kind: "vague"
+  expect_files: ["crates/core/flags/hiargs.rs", "crates/ignore/src/walk.rs"]
+  scope: "code"
+  notes: "Ambiguous 1/5: CLI policy and walker default both legitimately answer the question."
+- id: "rg-002"
+  query: "Which code decides whether hidden files are skipped?"
+  kind: "vague"
+  expect_files: ["crates/ignore/src/walk.rs", "crates/ignore/src/incremental.rs"]
+  scope: "code"
+  notes: "Ambiguous 2/5: the public traversal option and incremental path matching are both relevant."
+- id: "rg-003"
+  query: "Where is searching stopped after encountering binary data?"
+  kind: "vague"
+  expect_files: ["crates/searcher/src/searcher/mod.rs", "crates/searcher/src/searcher/core.rs"]
+  scope: "code"
+  notes: "Ambiguous 3/5: search configuration and execution both implement the behaviour."
+- id: "rg-004"
+  query: "Where does the program decide between streaming a file and mapping it into memory?"
+  kind: "vague"
+  expect_files: ["crates/searcher/src/searcher/mod.rs", "crates/searcher/src/searcher/mmap.rs"]
+  scope: "code"
+  notes: "Ambiguous 4/5: search dispatch and memory-map feasibility are legitimate entry points."
+- id: "rg-005"
+  query: "Where are external programs selected to read compressed files?"
+  kind: "vague"
+  expect_files: ["crates/cli/src/decompress.rs", "crates/core/search.rs"]
+  scope: "code"
+  notes: "Ambiguous 5/5: decompressor selection and search-worker integration both answer this."
+- id: "rg-006"
+  query: "How are rules from parent ignore files combined with local rules?"
+  kind: "vague"
+  expect_files: ["crates/ignore/src/incremental.rs"]
+  scope: "code"
+  notes: "Inspect incremental ignore matching and ancestor traversal."
+- id: "rg-007"
+  query: "Where are input bytes converted from another character encoding before matching?"
+  kind: "vague"
+  expect_files: ["crates/searcher/src/searcher/mod.rs"]
+  scope: "code"
+  notes: "Searcher configuration creates the decoding reader."
+- id: "rg-008"
+  query: "Where does case sensitivity depend on whether the pattern has capital letters?"
+  kind: "vague"
+  expect_files: ["crates/regex/src/config.rs"]
+  scope: "code"
+  notes: "Smart-case handling during regex construction."
+- id: "rg-009"
+  query: "Where is context around matching lines assembled for output?"
+  kind: "vague"
+  expect_files: ["crates/searcher/src/searcher/core.rs"]
+  scope: "code"
+  notes: "Search core manages before/after-context emission to the sink."
+- id: "rg-010"
+  query: "Where is an unsupported regular expression retried with the alternative engine?"
+  kind: "vague"
+  expect_files: ["crates/core/flags/hiargs.rs"]
+  scope: "code"
+  notes: "Automatic engine selection first tries the default matcher, then PCRE2."
+- id: "rg-011"
+  query: "How does RegexMatcherBuilder build one matcher from several patterns?"
+  kind: "ident"
+  expect_files: ["crates/regex/src/matcher.rs"]
+  expect_symbols: ["RegexMatcherBuilder"]
+  scope: "code"
+  notes: "Public multi-pattern construction."
+- id: "rg-012"
+  query: "Where does SearcherBuilder configure treatment of binary input?"
+  kind: "ident"
+  expect_files: ["crates/searcher/src/searcher/mod.rs"]
+  expect_symbols: ["SearcherBuilder"]
+  scope: "code"
+  notes: "Builder API for binary detection."
+- id: "rg-013"
+  query: "How can WalkBuilder be told to follow symbolic links?"
+  kind: "ident"
+  expect_files: ["crates/ignore/src/walk.rs"]
+  expect_symbols: ["WalkBuilder"]
+  scope: "code"
+  notes: "Traversal builder follow_links option."
+- id: "rg-014"
+  query: "Where does GlobBuilder turn a wildcard pattern into a parsed glob?"
+  kind: "ident"
+  expect_files: ["crates/globset/src/glob.rs"]
+  expect_symbols: ["GlobBuilder"]
+  scope: "code"
+  notes: "Glob parser and builder implementation."
+- id: "rg-015"
+  query: "How does TypesBuilder select the file types that will be searched?"
+  kind: "ident"
+  expect_files: ["crates/ignore/src/types.rs"]
+  expect_symbols: ["TypesBuilder"]
+  scope: "code"
+  notes: "File-type selection/negation and matcher construction."
+- id: "rg-016"
+  query: "Where can StandardBuilder change the separator between context groups?"
+  kind: "ident"
+  expect_files: ["crates/printer/src/standard.rs"]
+  expect_symbols: ["StandardBuilder"]
+  scope: "code"
+  notes: "Standard output configuration."
+- id: "rg-017"
+  query: "How does JSONBuilder produce a sink for structured match events?"
+  kind: "ident"
+  expect_files: ["crates/printer/src/json.rs"]
+  expect_symbols: ["JSONBuilder"]
+  scope: "code"
+  notes: "JSON printer construction and sink binding."
+- id: "rg-018"
+  query: "Where does DecompressionMatcherBuilder obtain its default command associations?"
+  kind: "ident"
+  expect_files: ["crates/cli/src/decompress.rs"]
+  expect_symbols: ["DecompressionMatcherBuilder"]
+  scope: "code"
+  notes: "Default extension-to-command mapping."
+- id: "rg-019"
+  query: "How does parse_reader treat comments and empty lines in a ripgrep config file?"
+  kind: "ident"
+  expect_files: ["crates/core/flags/config.rs"]
+  expect_symbols: ["parse_reader"]
+  scope: "code"
+  notes: "Line-oriented configuration parser, not general CLI argument parsing."
+- id: "rg-020"
+  query: "How does search_parallel create and run the search workers?"
+  kind: "ident"
+  expect_files: ["crates/core/main.rs"]
+  expect_symbols: ["search_parallel"]
+  scope: "code"
+  notes: "Top-level parallel search orchestration."
+- id: "rg-021"
+  query: "What should I put in a config file so every search uses my preferred options?"
+  kind: "doc"
+  expect_files: ["GUIDE.md"]
+  scope: "docs"
+  notes: "Configuration-file section, including its environment-variable setup."
+- id: "rg-022"
+  query: "Which documented options let one match span several input lines?"
+  kind: "doc"
+  expect_files: ["FAQ.md"]
+  scope: "docs"
+  notes: "Multiline FAQ entry."
+- id: "rg-023"
+  query: "What does the documentation recommend when I need look-around or backreferences?"
+  kind: "doc"
+  expect_files: ["FAQ.md"]
+  scope: "docs"
+  notes: "Regex feature/PCRE2 explanation."
+- id: "rg-024"
+  query: "How do I search a file whose text is encoded differently from UTF-8?"
+  kind: "doc"
+  expect_files: ["GUIDE.md"]
+  scope: "docs"
+  notes: "File-encoding guidance."
+- id: "rg-025"
+  query: "Where are the instructions for installing ripgrep or building it from source?"
+  kind: "doc"
+  expect_files: ["README.md"]
+  scope: "docs"
+  notes: "Installation section."
+- id: "rg-026"
+  query: "How do command-line glob overrides get from parsed options to directory filtering?"
+  kind: "cross"
+  expect_files: ["crates/core/flags/hiargs.rs", "crates/ignore/src/overrides.rs"]
+  scope: "code"
+  notes: "Follow override construction into the matcher used by the walker."
+- id: "rg-027"
+  query: "How does selecting JSON output connect CLI configuration to match-event serialization?"
+  kind: "cross"
+  expect_files: ["crates/core/flags/hiargs.rs", "crates/printer/src/json.rs"]
+  scope: "code"
+  notes: "Trace printer_json into JSON printer/sink."
+- id: "rg-028"
+  query: "How do options read from a config file reach the normal command-line parser?"
+  kind: "cross"
+  expect_files: ["crates/core/flags/config.rs", "crates/core/flags/parse.rs"]
+  scope: "code"
+  notes: "Trace config argument loading and insertion into parse input."
+- id: "rg-029"
+  query: "How does a directory entry found by the parallel walker become a searchable input?"
+  kind: "cross"
+  expect_files: ["crates/core/main.rs", "crates/core/haystack.rs"]
+  scope: "code"
+  notes: "Parallel traversal callback uses the haystack builder."
+- id: "rg-030"
+  query: "How does a chosen character encoding reach the reader that supplies bytes to the matcher?"
+  kind: "cross"
+  expect_files: ["crates/core/flags/hiargs.rs", "crates/searcher/src/searcher/mod.rs"]
+  scope: "code"
+  notes: "CLI searcher construction transfers encoding policy to SearcherBuilder."

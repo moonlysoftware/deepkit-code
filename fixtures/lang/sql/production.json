@@ -1,0 +1,22 @@
+{
+  "edges": [],
+  "symbols": [
+    {
+      "end": 1,
+      "kind": "class",
+      "name": "retry",
+      "qualified": "retry",
+      "start": 1
+    }
+  ],
+  "units": [
+    {
+      "end": 1,
+      "header": "retry › CREATE TABLE retry (id INTEGER PRIMARY KEY)",
+      "kind": "Symbol",
+      "scope": "retry",
+      "start": 1,
+      "text": "CREATE TABLE retry (id INTEGER PRIMARY KEY)"
+    }
+  ]
+}

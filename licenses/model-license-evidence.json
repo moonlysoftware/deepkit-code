@@ -1,0 +1,63 @@
+[
+  {
+    "id": "Qwen/Qwen3-Embedding-0.6B-GGUF",
+    "sha": "370f27d7550e0def9b39c1f16d3fbaa13aa67728",
+    "cardData": {
+      "license": "apache-2.0",
+      "base_model": [
+        "Qwen/Qwen3-0.6B-Base"
+      ]
+    },
+    "siblings": [
+      {
+        "rfilename": ".gitattributes"
+      },
+      {
+        "rfilename": "Qwen3-Embedding-0.6B-Q8_0.gguf"
+      },
+      {
+        "rfilename": "Qwen3-Embedding-0.6B-f16.gguf"
+      },
+      {
+        "rfilename": "README.md"
+      }
+    ],
+    "url": "https://huggingface.co/api/models/Qwen/Qwen3-Embedding-0.6B-GGUF/revision/370f27d7550e0def9b39c1f16d3fbaa13aa67728"
+  },
+  {
+    "id": "bartscheffer/deepkit-code-reranker-gguf",
+    "sha": "90736d4de467cd106d46f5b576f9e59255c43a51",
+    "cardData": {
+      "license": "apache-2.0",
+      "base_model": "Qwen/Qwen3-Reranker-0.6B",
+      "library_name": "gguf",
+      "pipeline_tag": "text-ranking",
+      "tags": [
+        "gguf",
+        "reranker",
+        "deepkit-code"
+      ]
+    },
+    "siblings": [
+      {
+        "rfilename": ".gitattributes"
+      },
+      {
+        "rfilename": "LICENSE"
+      },
+      {
+        "rfilename": "Qwen3-Reranker-0.6B-Q8_0.gguf"
+      },
+      {
+        "rfilename": "Qwen3-Reranker-0.6B-f16.gguf"
+      },
+      {
+        "rfilename": "README.md"
+      },
+      {
+        "rfilename": "artifact-manifest.json"
+      }
+    ],
+    "url": "https://huggingface.co/api/models/bartscheffer/deepkit-code-reranker-gguf/revision/90736d4de467cd106d46f5b576f9e59255c43a51"
+  }
+]

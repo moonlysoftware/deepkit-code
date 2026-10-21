@@ -1,0 +1,36 @@
+name: Release download sizes
+
+on:
+  workflow_call:
+    inputs:
+      plan:
+        required: true
+        type: string
+
+permissions:
+  contents: read
+
+jobs:
+  size-gate:
+    name: Download archives are at most 50 MB
+    runs-on: ubuntu-22.04
+    env:
+      DIST_PLAN_JSON: ${{ inputs.plan }}
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+
+      - name: Download native artifacts
+        uses: actions/download-artifact@v8
+        with:
+          pattern: artifacts-build-local-*
+          path: target/distrib
+          merge-multiple: true
+
+      - name: Check every release archive and record executable sizes
+        shell: bash
+        run: |
+          printf '%s' "$DIST_PLAN_JSON" > "$RUNNER_TEMP/dist-plan.json"
+          python3 scripts/release/check-artifact-size.py target/distrib --plan-file "$RUNNER_TEMP/dist-plan.json"

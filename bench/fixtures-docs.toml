@@ -1,0 +1,2471 @@
+# Pinned inputs for T3.9; generated-file hashes are recorded only after real builds.
+version = 1
+mdn_repo = "mdn-content"
+mdn_rev = "8bc4e3fe45532906246a760bff0b06b7cd105c52"
+digital_pdfs = 50
+scanned_pdfs = 10
+office_files = 20
+source_images = 100
+oversized_images = 1
+hostile_empty_files = 100000
+
+[[paper]]
+id = "2608.01507v1"
+url = "https://arxiv.org/pdf/2608.01507v1"
+sha256 = "5dcb3713b2bb417d9f046f2098c0d84ae98d581f15b00ad1b6955caa9079ac3c"
+bytes = 7871491
+scan = true
+
+[[paper]]
+id = "2603.03194v1"
+url = "https://arxiv.org/pdf/2603.03194v1"
+sha256 = "9aefe5d8b1e22dde31a21b5e5c2dcdddc9f400c94674b931ff9f3becec92c77a"
+bytes = 10907985
+scan = true
+
+[[paper]]
+id = "2606.11864v1"
+url = "https://arxiv.org/pdf/2606.11864v1"
+sha256 = "f35cad125e8e2ecdf85fc2f911d39a913e9873f42e1c63d729bb1b29f36ed968"
+bytes = 856339
+scan = true
+
+[[paper]]
+id = "2605.18561v1"
+url = "https://arxiv.org/pdf/2605.18561v1"
+sha256 = "fa1eb27a5d1472ad5dae7732baba6465b5d941db90ccc306c346ed48b8329fa1"
+bytes = 710869
+scan = true
+
+[[paper]]
+id = "2603.27277v1"
+url = "https://arxiv.org/pdf/2603.27277v1"
+sha256 = "b51866b189361dacbce2c6956cd055c86133ee543dbfc6038559630cf31b4be5"
+bytes = 696759
+scan = true
+
+[[paper]]
+id = "2506.15655v1"
+url = "https://arxiv.org/pdf/2506.15655v1"
+sha256 = "b19b9ef01e6d33e0301a4f83f2e39eb82a143732346636635266805a867b7175"
+bytes = 562883
+scan = true
+
+[[paper]]
+id = "2608.00181v1"
+url = "https://arxiv.org/pdf/2608.00181v1"
+sha256 = "d6781d4c7f50cc94f6e9b9067743d62a7eca32d53b5565e290ed054cdd09af06"
+bytes = 179192
+scan = true
+
+[[paper]]
+id = "2608.00227v1"
+url = "https://arxiv.org/pdf/2608.00227v1"
+sha256 = "e1d19334d1ae217a415763427c9afda47a0da147d371d86765a67b0374f39953"
+bytes = 435656
+scan = true
+
+[[paper]]
+id = "2608.00228v1"
+url = "https://arxiv.org/pdf/2608.00228v1"
+sha256 = "1c6fb017e537cafed5b94e0579426c1cb4c6aae923da13f24ed6481031eb354a"
+bytes = 340780
+scan = true
+
+[[paper]]
+id = "2608.00230v1"
+url = "https://arxiv.org/pdf/2608.00230v1"
+sha256 = "3a9e5b2bd910edeb49de7ac3414997f9a06d12f1e249342c149ba46898c6ef85"
+bytes = 425495
+scan = true
+
+[[paper]]
+id = "2608.00236v1"
+url = "https://arxiv.org/pdf/2608.00236v1"
+sha256 = "00ae2df683e3444dab2dafd2c8a5093b3294663d88c633cbc45872fe0671feed"
+bytes = 374401
+scan = false
+
+[[paper]]
+id = "2608.00248v1"
+url = "https://arxiv.org/pdf/2608.00248v1"
+sha256 = "4f733cd6e794cd1abef8df9f7a671bbffc922c1769f26355cdd11ba03f3c4c77"
+bytes = 171656
+scan = false
+
+[[paper]]
+id = "2608.00267v1"
+url = "https://arxiv.org/pdf/2608.00267v1"
+sha256 = "b653857d312b1ee2f3f9cf564c7966bf254d39f735c4dc3b89b464e5c0dfa195"
+bytes = 1815380
+scan = false
+
+[[paper]]
+id = "2608.00309v1"
+url = "https://arxiv.org/pdf/2608.00309v1"
+sha256 = "2e6550093f0b0659fbe7383b67c260306694294906513f41138e576502a3de4b"
+bytes = 2317311
+scan = false
+
+[[paper]]
+id = "2608.00366v1"
+url = "https://arxiv.org/pdf/2608.00366v1"
+sha256 = "80c7a0697025b23ddf11d6261a8200bf4ebb51a5c2d6d45718e67eb7593eb19f"
+bytes = 419285
+scan = false
+
+[[paper]]
+id = "2608.00378v1"
+url = "https://arxiv.org/pdf/2608.00378v1"
+sha256 = "9729c0f547998d453e583b5eb6847473f67764ec3511b32b969e68996f5582a6"
+bytes = 911587
+scan = false
+
+[[paper]]
+id = "2608.00437v1"
+url = "https://arxiv.org/pdf/2608.00437v1"
+sha256 = "ed507ce6931c1b4f26f39272e514995b3f81e002892575c5c91cc4728bc86c99"
+bytes = 434727
+scan = false
+
+[[paper]]
+id = "2608.00558v1"
+url = "https://arxiv.org/pdf/2608.00558v1"
+sha256 = "dc143d9c7bc630c20f38487b54ca82378f45829a7084fee4893a6695cd90da01"
+bytes = 614935
+scan = false
+
+[[paper]]
+id = "2608.00624v1"
+url = "https://arxiv.org/pdf/2608.00624v1"
+sha256 = "ee8080f9696b4389d744dab004e120c13c42828a9fe700312be1c6442fdb57f9"
+bytes = 1677285
+scan = false
+
+[[paper]]
+id = "2608.00651v1"
+url = "https://arxiv.org/pdf/2608.00651v1"
+sha256 = "3f241c2168767994e4a7720ba7d299196710ec58e421ec13d5f1486fd011358e"
+bytes = 407794
+scan = false
+
+[[paper]]
+id = "2608.00661v1"
+url = "https://arxiv.org/pdf/2608.00661v1"
+sha256 = "f7b364fa4c29415e22f14a814ad0242ea58ef84d632a767e2e1ad83ccc38ae2e"
+bytes = 224890
+scan = false
+
+[[paper]]
+id = "2608.00692v1"
+url = "https://arxiv.org/pdf/2608.00692v1"
+sha256 = "0d569f763a961ed83911f5c53ac12f54535b3aa812f2ce3845d1bbb56af57bc0"
+bytes = 497766
+scan = false
+
+[[paper]]
+id = "2608.00739v1"
+url = "https://arxiv.org/pdf/2608.00739v1"
+sha256 = "d95315f7c6b55005f142972f2d82762f4b738cfe1df946fcb33e0296dcd4402a"
+bytes = 612043
+scan = false
+
+[[paper]]
+id = "2608.00759v1"
+url = "https://arxiv.org/pdf/2608.00759v1"
+sha256 = "022dfed60e3de927c4396c77fa5459cc08acd0992cd312c762b6209718196fc0"
+bytes = 1362514
+scan = false
+
+[[paper]]
+id = "2608.00808v1"
+url = "https://arxiv.org/pdf/2608.00808v1"
+sha256 = "d7a0fc6b043d3b8d17575359cc8606afb3807cdc0d81cffe204c38e2308240e9"
+bytes = 1259596
+scan = false
+
+[[paper]]
+id = "2608.00229v1"
+url = "https://arxiv.org/pdf/2608.00229v1"
+sha256 = "afef5b63608a11f3520f651fb1a5ae7f4e1b809087205249fc766ebfbfb996f5"
+bytes = 950920
+scan = false
+
+[[paper]]
+id = "2608.00452v1"
+url = "https://arxiv.org/pdf/2608.00452v1"
+sha256 = "b4900bca5aa002347283e31f77f18e0b31ccaa5b0f2d9e7642f24ae080d922ab"
+bytes = 249394
+scan = false
+
+[[paper]]
+id = "2608.00549v1"
+url = "https://arxiv.org/pdf/2608.00549v1"
+sha256 = "2f644e6328eb475cd8c83ea53517ab59f390ef8ff4d3b5702944be34b483ba38"
+bytes = 4998338
+scan = false
+
+[[paper]]
+id = "2608.00551v1"
+url = "https://arxiv.org/pdf/2608.00551v1"
+sha256 = "3ecee39d33887cbe17232f034c8aa265d5963cb35943ac366b129f8b94151b78"
+bytes = 4663122
+scan = false
+
+[[paper]]
+id = "2608.00669v1"
+url = "https://arxiv.org/pdf/2608.00669v1"
+sha256 = "5af3d6a9d52a2619fd89af8a4948409f5cb3d5cd5859f683d0fbd7abaf013444"
+bytes = 1090465
+scan = false
+
+[[paper]]
+id = "2608.00705v1"
+url = "https://arxiv.org/pdf/2608.00705v1"
+sha256 = "2792011cf0406bd8b0629d2b4eebc9d3bf9375799e218d05211d3e95aaf7adea"
+bytes = 587883
+scan = false
+
+[[paper]]
+id = "2608.00750v1"
+url = "https://arxiv.org/pdf/2608.00750v1"
+sha256 = "8d782531bb07d3c92fe72adbe9e7a88b88a445616caad8eb89a6ca1e6ae5d0bb"
+bytes = 3576410
+scan = false
+
+[[paper]]
+id = "2608.00816v1"
+url = "https://arxiv.org/pdf/2608.00816v1"
+sha256 = "1453ecb5705a7fc2b1b93822c6de78824f12f25ad3cd77d527d8d44fc167327b"
+bytes = 3772503
+scan = false
+
+[[paper]]
+id = "2608.00916v1"
+url = "https://arxiv.org/pdf/2608.00916v1"
+sha256 = "587f5732b04fdafd115ea0d5d760db166da00a6da0cc438ac954103d15384823"
+bytes = 2567640
+scan = false
+
+[[paper]]
+id = "2608.00938v1"
+url = "https://arxiv.org/pdf/2608.00938v1"
+sha256 = "4b0fb0a46d634f111450e471f1b5236435b68c59d03e8ccd03601bc176cadfae"
+bytes = 541631
+scan = false
+
+[[paper]]
+id = "2608.01147v1"
+url = "https://arxiv.org/pdf/2608.01147v1"
+sha256 = "b4887e3f64c2b4df6d6a313ccd26fabc70455fce0857e57aaa8d385267452cf4"
+bytes = 1109253
+scan = false
+
+[[paper]]
+id = "2608.01260v1"
+url = "https://arxiv.org/pdf/2608.01260v1"
+sha256 = "3f932cf2cb197ebf89db3e3c484e317920c99c3851091a074c9c4e64205aca51"
+bytes = 1003825
+scan = false
+
+[[paper]]
+id = "2608.01315v1"
+url = "https://arxiv.org/pdf/2608.01315v1"
+sha256 = "87f8dc8d2192e086096e5ecbfba3fdfd7d2106218d00d508d2a6b57089fb3db8"
+bytes = 1056378
+scan = false
+
+[[paper]]
+id = "2608.01450v1"
+url = "https://arxiv.org/pdf/2608.01450v1"
+sha256 = "3529ab6b8889c776a1a0c6e7aa3e90b64eeb71593b5b3a9487584857421a5446"
+bytes = 437599
+scan = false
+
+[[paper]]
+id = "2608.01704v1"
+url = "https://arxiv.org/pdf/2608.01704v1"
+sha256 = "c9cfaad26a8a3325304d244dc915ccc00ede74cbf2497167b26cf0739920df1a"
+bytes = 189936
+scan = false
+
+[[paper]]
+id = "2608.01731v1"
+url = "https://arxiv.org/pdf/2608.01731v1"
+sha256 = "3806064d157f87b4493d4c691d6ff386de61fecf32e715b9cc1b29808d7958a7"
+bytes = 802070
+scan = false
+
+[[paper]]
+id = "2608.01732v1"
+url = "https://arxiv.org/pdf/2608.01732v1"
+sha256 = "9588b7d6797dc36af7ed581168636eb002e8e22a811f33b8475f00b585f07447"
+bytes = 3510437
+scan = false
+
+[[paper]]
+id = "2608.01738v1"
+url = "https://arxiv.org/pdf/2608.01738v1"
+sha256 = "11735faacf7c5d07c13cf1489d8518b20ea8611ba61fbb64a6856a5c4963acd4"
+bytes = 3343762
+scan = false
+
+[[paper]]
+id = "2608.01846v1"
+url = "https://arxiv.org/pdf/2608.01846v1"
+sha256 = "13320dcfe910078639a9474d7eadd81800b5b86bf280df85e03165a1c7e3bcce"
+bytes = 741142
+scan = false
+
+[[image]]
+source = "files/en-us/games/techniques/3d_collision_detection/rotating_knot.gif"
+target = "03-images/001-rotating_knot.gif"
+sha256 = "8ea0a4daf6673189cb031eb556d6241ae5a2f7bb888b98164b09d0fce4cc0b3d"
+bytes = 112355
+captioned = true
+
+[[image]]
+source = "files/en-us/games/techniques/tilemaps/square_tilemaps_implementation_colon__scrolling_maps/untitled.gif"
+target = "03-images/002-untitled.gif"
+sha256 = "592584f48a0da4b8a89282596a4146ae3c663f5dd6b08fb7e3068b7e15de3669"
+bytes = 352505
+captioned = true
+
+[[image]]
+source = "files/en-us/glossary/bezier_curve/bezier_2_big.gif"
+target = "03-images/003-bezier_2_big.gif"
+sha256 = "e445c56b1c3a3f6b5204147b1cf35d63a7c360f8819aa37a975e1ecf41370b2e"
+bytes = 153902
+captioned = true
+
+[[image]]
+source = "files/en-us/glossary/sql_injection/sql_inj_xss.gif"
+target = "03-images/004-sql_inj_xss.gif"
+sha256 = "443380fb8672fd63c688f65ccb92139a4c2ac4b1b61b2c8e40a35be86c202ea4"
+bytes = 19077
+captioned = true
+
+[[image]]
+source = "files/en-us/mozilla/add-ons/webextensions/manifest.json/theme/theme-tab_loading.gif"
+target = "03-images/005-theme-tab_loading.gif"
+sha256 = "02a80ce32a4a0358f25c0f24b0a17f547aa92dd522a5dceb23e670caf65af655"
+bytes = 328423
+captioned = true
+
+[[image]]
+source = "files/en-us/web/performance/guides/how_browsers_work/dom.gif"
+target = "03-images/006-dom.gif"
+sha256 = "bb88f3879409b1e69e9fa452d31a605d5cb6083699afb023b86ca46a769d054a"
+bytes = 17291
+captioned = true
+
+[[image]]
+source = "files/en-us/learn_web_development/extensions/forms/styling_web_forms/updated-form-screenshot.jpg"
+target = "03-images/007-updated-form-screenshot.jpg"
+sha256 = "a89975c8d2999b52c3829510ac507ec2aa1a997685c6e3d6444575a352b1b213"
+bytes = 33607
+captioned = true
+
+[[image]]
+source = "files/en-us/learn_web_development/howto/design_and_accessibility/common_web_layouts/screenshot-blog-overlay.jpg"
+target = "03-images/008-screenshot-blog-overlay.jpg"
+sha256 = "543680a32fea8b1a4a3e24bc097d47a46ed8ce6c37bcc7a8c047887b594d2d62"
+bytes = 22002
+captioned = true
+
+[[image]]
+source = "files/en-us/learn_web_development/howto/design_and_accessibility/common_web_layouts/screenshot-blog.jpg"
+target = "03-images/009-screenshot-blog.jpg"
+sha256 = "47621f6efb313345e1447840f64c7faa5f0d1c6391b93fbc427429e31634033f"
+bytes = 26702
+captioned = true
+
+[[image]]
+source = "files/en-us/learn_web_development/howto/design_and_accessibility/common_web_layouts/screenshot-education.jpg"
+target = "03-images/010-screenshot-education.jpg"
+sha256 = "c5a914b5e1794095efe073d8d56807775e4e39a0a34f4620b633bd17bc4e7e32"
+bytes = 10939
+captioned = true
+
+[[image]]
+source = "files/en-us/learn_web_development/howto/design_and_accessibility/common_web_layouts/screenshot-opera-overlay.jpg"
+target = "03-images/011-screenshot-opera-overlay.jpg"
+sha256 = "921b202799c7ebb63c844dfbf528db320de8825f15b6b341d241c7059a872155"
+bytes = 14751
+captioned = true
+
+[[image]]
+source = "files/en-us/learn_web_development/howto/design_and_accessibility/common_web_layouts/screenshot-opera.jpg"
+target = "03-images/012-screenshot-opera.jpg"
+sha256 = "b8ff14207cc9e1d0bb282b7f0caa55b8c766a0c70a7b567bd3e37116e5d61e0e"
+bytes = 17216
+captioned = true
+
+[[image]]
+source = "files/en-us/learn_web_development/howto/design_and_accessibility/common_web_layouts/screenshot-product-overlay.jpg"
+target = "03-images/013-screenshot-product-overlay.jpg"
+sha256 = "11b961470f1a74b2c239ffbfb62441add03878cbcbb67a54a80ee69a1ef0a0a4"
+bytes = 18092
+captioned = true
+
+[[image]]
+source = "files/en-us/learn_web_development/howto/design_and_accessibility/common_web_layouts/screenshot-product.jpg"
+target = "03-images/014-screenshot-product.jpg"
+sha256 = "4c38e157a7af6375bbc65fdaa274fae0ee8791195f5bcd0ed83adef3e0b1ecec"
+bytes = 19158
+captioned = true
+
+[[image]]
+source = "files/en-us/learn_web_development/core/structuring_content/headings_and_paragraphs/newspaper_small.jpg"
+target = "03-images/015-newspaper_small.jpg"
+sha256 = "485fe6fcedce2d0250eb555093ae079e3984e20f2901ceab6da97a2b13e6cc6d"
+bytes = 57756
+captioned = true
+
+[[image]]
+source = "files/en-us/learn_web_development/core/structuring_content/html_images/dinosaur_small.jpg"
+target = "03-images/016-dinosaur_small.jpg"
+sha256 = "c12ade84921ce83c4029406c0277aae819defe80c26172e11bc26210ec1d4eba"
+bytes = 20875
+captioned = true
+
+[[image]]
+source = "files/en-us/learn_web_development/core/structuring_content/html_table_basics/1800-census.jpg"
+target = "03-images/017-1800-census.jpg"
+sha256 = "59e3b5f5b36b722d81db336b73548fe35f6f8c2da8311f3475a73a34099d9148"
+bytes = 63416
+captioned = true
+
+[[image]]
+source = "files/en-us/learn_web_development/extensions/forms/html5_input_types/fx-android-email-type-keyboard.jpg"
+target = "03-images/018-fx-android-email-type-keyboard.jpg"
+sha256 = "26e2925ba5aaa0655d2dfbd56e9ca972a00693728c598c6e3d479cb28724255f"
+bytes = 12739
+captioned = true
+
+[[image]]
+source = "files/en-us/learn_web_development/extensions/forms/your_first_form/form-sketch-low.jpg"
+target = "03-images/019-form-sketch-low.jpg"
+sha256 = "39cbcafb9fcae767c95b6e2f38358848856e1fcd885a816dd0fe1166c59721f2"
+bytes = 23424
+captioned = true
+
+[[image]]
+source = "files/en-us/learn_web_development/extensions/performance/measuring_performance/navigationtimingapi.jpg"
+target = "03-images/020-navigationtimingapi.jpg"
+sha256 = "d9535c4c1764d42e95a484cd1323572706d448f58bc2dca76beff284f3757fa5"
+bytes = 34550
+captioned = true
+
+[[image]]
+source = "files/en-us/learn_web_development/extensions/performance/multimedia/ar-guide.jpg"
+target = "03-images/021-ar-guide.jpg"
+sha256 = "300bcacc491b6571e6ee2e3fabed9693c5f68bef064ed84d14c60893a973d46b"
+bytes = 83652
+captioned = false
+
+[[image]]
+source = "files/en-us/learn_web_development/core/accessibility/tooling/axe-screenshot.png"
+target = "03-images/022-axe-screenshot.png"
+sha256 = "fdd12328f428d7f8c9e55b9205f99a2599dbc5df7a4c3b3cd1ee84859151e12e"
+bytes = 44426
+captioned = false
+
+[[image]]
+source = "files/en-us/learn_web_development/core/scripting/dom_scripting/dom-screenshot.png"
+target = "03-images/023-dom-screenshot.png"
+sha256 = "01ce81ec4568fc806370fd35c704eda418eb480b94d90b0ea5e81cf61cad9ac6"
+bytes = 15204
+captioned = false
+
+[[image]]
+source = "files/en-us/learn_web_development/core/structuring_content/html_video_and_audio/poster_screenshot_updated.png"
+target = "03-images/024-poster_screenshot_updated.png"
+sha256 = "5dfa02ea07184d752f30149b24463180af79c2c11a5c09baf5d6ffd5e9ecb851"
+bytes = 16344
+captioned = false
+
+[[image]]
+source = "files/en-us/learn_web_development/core/styling_basics/box_model/box-model-devtools.png"
+target = "03-images/025-box-model-devtools.png"
+sha256 = "9547c1b986a2e811c02e86a2249ab4ab24b8168d2cce15449d41294e4312fe53"
+bytes = 16296
+captioned = false
+
+[[image]]
+source = "files/en-us/learn_web_development/getting_started/environment_setup/dealing_with_files/website-screenshot.png"
+target = "03-images/026-website-screenshot.png"
+sha256 = "8c2d98316bbb2d31a61f1b99ac740df16d0d8f27859965e1fff1f9927d5be831"
+bytes = 38443
+captioned = false
+
+[[image]]
+source = "files/en-us/learn_web_development/getting_started/your_first_website/styling_the_content/website-screenshot-final.png"
+target = "03-images/027-website-screenshot-final.png"
+sha256 = "f943cae22f6209c2b09b48886da72c085526f3e13a1a0d3a4cfcf4603112d097"
+bytes = 53141
+captioned = false
+
+[[image]]
+source = "files/en-us/learn_web_development/getting_started/your_first_website/styling_the_content/website-screenshot-font-small.png"
+target = "03-images/028-website-screenshot-font-small.png"
+sha256 = "bf7f9a4da6f765e8b478f2310ec23130f8b7dbfa5aa79b623a3ab73f2b2ed58e"
+bytes = 52225
+captioned = false
+
+[[image]]
+source = "files/en-us/learn_web_development/getting_started/your_first_website/styling_the_content/website-screenshot-styled.png"
+target = "03-images/029-website-screenshot-styled.png"
+sha256 = "30c995142401a8672e985bb57496c1276b39c347b571a4068fa0904bf715be68"
+bytes = 46291
+captioned = false
+
+[[image]]
+source = "files/en-us/mozilla/add-ons/webextensions/background_scripts/your-tab-crashed-screenshot.png"
+target = "03-images/030-your-tab-crashed-screenshot.png"
+sha256 = "4b23ad434ed519f559ce2b64c45f200ba33c69a46d65de2748403d3984b8487c"
+bytes = 14970
+captioned = false
+
+[[image]]
+source = "files/en-us/web/api/element/getboundingclientrect/element-box-diagram.png"
+target = "03-images/031-element-box-diagram.png"
+sha256 = "a62d6bcf0b76f1f6055af9da79a803a3e5354693439a2d1e3bc6758fe785e3e1"
+bytes = 18222
+captioned = false
+
+[[image]]
+source = "files/en-us/web/api/rtcremoteoutboundrtpstreamstats/localid/rtc-log-screenshot.png"
+target = "03-images/032-rtc-log-screenshot.png"
+sha256 = "fb415f397f59d5b55c2c054ca99b5732c7ddc805164ca0f48887850fbdd91c0d"
+bytes = 57992
+captioned = false
+
+[[image]]
+source = "files/en-us/web/api/service_worker_api/using_service_workers/demo-screenshot.png"
+target = "03-images/033-demo-screenshot.png"
+sha256 = "4176333170f8b0e6c0070fb7b68f51431aba58f8caa78ec63ea7b9700ad22b0a"
+bytes = 60270
+captioned = false
+
+[[image]]
+source = "files/en-us/web/api/web_animations_api/web_animations_api_concepts/waapi_diagram_white.png"
+target = "03-images/034-waapi_diagram_white.png"
+sha256 = "0d3c31fd19aee8b724215be82e621d52d09472f76d5446173f7925d985360b26"
+bytes = 33829
+captioned = false
+
+[[image]]
+source = "files/en-us/web/api/web_animations_api/web_animations_api_concepts/waapi_player_diagram_white.png"
+target = "03-images/035-waapi_player_diagram_white.png"
+sha256 = "ae137202fecfab02862f31c9e2781d75daaf78aa8df88a3308ea387fd5aeb57b"
+bytes = 51331
+captioned = false
+
+[[image]]
+source = "files/en-us/web/api/web_animations_api/web_animations_api_concepts/waapi_timing_diagram_white.png"
+target = "03-images/036-waapi_timing_diagram_white.png"
+sha256 = "25bbbdc3b9436838615151c86d2b70c84c542ed7bf27c998651149e303095251"
+bytes = 45704
+captioned = false
+
+[[image]]
+source = "files/en-us/web/api/webrtc_api/connectivity/webrtc-complete-diagram.png"
+target = "03-images/037-webrtc-complete-diagram.png"
+sha256 = "02ff083ea20094e7a5cc611ccedd66675cfcd40463bfb1ab9f7ab7f93005045a"
+bytes = 11292
+captioned = false
+
+[[image]]
+source = "files/en-us/web/progressive_web_apps/manifest/reference/screenshots/todoist-ipad-fullscreen.png"
+target = "03-images/038-todoist-ipad-fullscreen.png"
+sha256 = "1037626eac75ec3aaf5a25a19a101cc8e80765929edb250a5820cfe5755bb9e1"
+bytes = 61479
+captioned = false
+
+[[image]]
+source = "files/en-us/web/progressive_web_apps/manifest/reference/screenshots/todoist-iphone-fullscreen.png"
+target = "03-images/039-todoist-iphone-fullscreen.png"
+sha256 = "3562e040010a7aaf1a0aeacb1605321a1ced5b2a46bd20431bdb3665598bfd3f"
+bytes = 84433
+captioned = false
+
+[[image]]
+source = "files/en-us/web/progressive_web_apps/manifest/reference/screenshots/todoist-iphone-gallery.png"
+target = "03-images/040-todoist-iphone-gallery.png"
+sha256 = "236c1caf4e2041cfea993584bc5dfccc8ac808204c94e7ce2447bf351892ad9e"
+bytes = 90006
+captioned = false
+
+[[image]]
+source = "files/en-us/learn_web_development/core/accessibility/accessibility_troubleshooting/assessment-site-finished.png"
+target = "03-images/041-assessment-site-finished.png"
+sha256 = "29837bd27dec0e09e089261a786981be9a47f98f92a7c4ee4ab0d42f51fd3762"
+bytes = 47484
+captioned = false
+
+[[image]]
+source = "files/en-us/learn_web_development/core/accessibility/css_and_javascript/tabbed-info-box.png"
+target = "03-images/042-tabbed-info-box.png"
+sha256 = "0f80fe117198a193cee46a17804e20c651d466d2a4f69019819783b7cc821159"
+bytes = 13096
+captioned = false
+
+[[image]]
+source = "files/en-us/learn_web_development/core/accessibility/html/voiceover-formcontrols.png"
+target = "03-images/043-voiceover-formcontrols.png"
+sha256 = "a6809a735c54c0c622ddf70aec87e94e829f4469efb958ae03a4f40ef0203fc7"
+bytes = 17153
+captioned = false
+
+[[image]]
+source = "files/en-us/learn_web_development/core/accessibility/multimedia/closed-captions.png"
+target = "03-images/044-closed-captions.png"
+sha256 = "909ebed2730e89ab64e578005e1c3c71054c3dc18a0fadc0c9219ca19168fc16"
+bytes = 38318
+captioned = false
+
+[[image]]
+source = "files/en-us/learn_web_development/core/accessibility/multimedia/native-controls-chrome.png"
+target = "03-images/045-native-controls-chrome.png"
+sha256 = "964c5abaaccc24de6b7ea6172025d395a8af7460860d220002d67b13040e2aeb"
+bytes = 169341
+captioned = false
+
+[[image]]
+source = "files/en-us/learn_web_development/core/accessibility/multimedia/native-controls-firefox.png"
+target = "03-images/046-native-controls-firefox.png"
+sha256 = "8155f51c6f3f012a8e346d241faf375412fac06073599339028b9ffdc269cb6e"
+bytes = 165025
+captioned = false
+
+[[image]]
+source = "files/en-us/learn_web_development/core/accessibility/multimedia/subtitles_german.png"
+target = "03-images/047-subtitles_german.png"
+sha256 = "7bc00b3a6c2405e6cfd3848ea2c54908eeb43fc4fc274cd3442c534b8412f74b"
+bytes = 40641
+captioned = false
+
+[[image]]
+source = "files/en-us/learn_web_development/core/accessibility/tooling/voiceover.png"
+target = "03-images/048-voiceover.png"
+sha256 = "67ad6e3f51662d73feeca073681ea3c5f883d55a112c60071a9d093a01c8fd67"
+bytes = 143942
+captioned = false
+
+[[image]]
+source = "files/en-us/learn_web_development/core/css_layout/flexbox/flex_terms.png"
+target = "03-images/049-flex_terms.png"
+sha256 = "46866614e01ac7f5778c7ec82314e72225745b4ebe432807050ce0d6c6306b8c"
+bytes = 10869
+captioned = false
+
+[[image]]
+source = "files/en-us/learn_web_development/core/css_layout/fundamental_layout_comprehension/layout-task-complete.png"
+target = "03-images/050-layout-task-complete.png"
+sha256 = "1a12961734cd75516918f2cea3e9a98a527a08b5e75694e4cef1a3eb7789defc"
+bytes = 65771
+captioned = false
+
+[[image]]
+source = "files/en-us/learn_web_development/core/css_layout/fundamental_layout_comprehension/layout-task-start.png"
+target = "03-images/051-layout-task-start.png"
+sha256 = "1f1a5cf543af14a30c6feed87a9be203937ffc33ab7428f6127c6072cc4b4642"
+bytes = 36677
+captioned = false
+
+[[image]]
+source = "files/en-us/learn_web_development/core/css_layout/grids/grid.png"
+target = "03-images/052-grid.png"
+sha256 = "89b18233c9d1c86455e52bc3f27f750a138537529cdf320a1cab54c99c48f429"
+bytes = 11712
+captioned = false
+
+[[image]]
+source = "files/en-us/learn_web_development/core/css_layout/grids/learn-grids-inspector.png"
+target = "03-images/053-learn-grids-inspector.png"
+sha256 = "b374e519b73a2c1ed20cd59c03c08fe447fc145d69fbfb8dcd665b320104a37d"
+bytes = 29078
+captioned = false
+
+[[image]]
+source = "files/en-us/learn_web_development/core/css_layout/media_queries/rwd-mode.png"
+target = "03-images/054-rwd-mode.png"
+sha256 = "af25e46e5536b259db854691095f43d78c26302f8153d4e0959a307358d60459"
+bytes = 38911
+captioned = false
+
+[[image]]
+source = "files/en-us/learn_web_development/core/css_layout/mobile-first_challenge/rwd-task-middle.png"
+target = "03-images/055-rwd-task-middle.png"
+sha256 = "9ebb610cd3a4de25cd0f0dac1b3cb36fead2a8d7c84d0ff5e01819f6e96ecdc3"
+bytes = 44892
+captioned = false
+
+[[image]]
+source = "files/en-us/learn_web_development/core/css_layout/mobile-first_challenge/rwd-task-start.png"
+target = "03-images/056-rwd-task-start.png"
+sha256 = "8bf043e33be719b2ee61c4d10b65d0d7e7b05c62b345bb06cb16bcede0c33319"
+bytes = 38327
+captioned = false
+
+[[image]]
+source = "files/en-us/learn_web_development/core/css_layout/mobile-first_challenge/rwd-task-widescreen.png"
+target = "03-images/057-rwd-task-widescreen.png"
+sha256 = "ab198e0b5cce958c1ed62901a6465b9a06fe212bb0240635e502f5dc03f3f77b"
+bytes = 66808
+captioned = false
+
+[[image]]
+source = "files/en-us/learn_web_development/core/css_layout/practical_positioning_examples/fixed-info-box.png"
+target = "03-images/058-fixed-info-box.png"
+sha256 = "c1f146c6b494bc71197287fe3b584243674822fe75f5a0805b65933ca088b4a4"
+bytes = 28097
+captioned = false
+
+[[image]]
+source = "files/en-us/learn_web_development/core/css_layout/practical_positioning_examples/hidden-sliding-panel.png"
+target = "03-images/059-hidden-sliding-panel.png"
+sha256 = "cf6cbfab3a6212e93040c4c575d5b16c3adcbc8a9ab8ed33f6e2c083246dc94b"
+bytes = 19528
+captioned = false
+
+[[image]]
+source = "files/en-us/learn_web_development/core/css_layout/practical_positioning_examples/tabbed-info-box.png"
+target = "03-images/060-tabbed-info-box.png"
+sha256 = "772feeec93bf7b800d892913b919c2b105017e390bf2ff697f3afcdae6f049f0"
+bytes = 19439
+captioned = false
+
+[[image]]
+source = "files/en-us/learn_web_development/core/css_layout/responsive_design/mdn-rwd-liquid.png"
+target = "03-images/061-mdn-rwd-liquid.png"
+sha256 = "8ccbe075fc088daeb712d3392df134e4c2aff7a1dfa1ed3a1c2704af5242aee2"
+bytes = 48311
+captioned = false
+
+[[image]]
+source = "files/en-us/learn_web_development/core/css_layout/test_your_skills/responsive_design/rwd-task.png"
+target = "03-images/062-rwd-task.png"
+sha256 = "a69cdee7e6a8f394bbc7aff83b0e8fdbdafab69e3f250fa5f599c3130f5d7371"
+bytes = 77153
+captioned = false
+
+[[image]]
+source = "files/en-us/learn_web_development/core/frameworks_libraries/react_components/todo-list-differing-checked-states.png"
+target = "03-images/063-todo-list-differing-checked-states.png"
+sha256 = "2dab3caf6ff834bfece851bc0237d95477b65eb4bfcc34f8d07f6b31efa4b6ba"
+bytes = 19862
+captioned = false
+
+[[image]]
+source = "files/en-us/learn_web_development/core/frameworks_libraries/react_components/todo-list-repeating-todos.png"
+target = "03-images/064-todo-list-repeating-todos.png"
+sha256 = "6b6d07dd9a94cc7e83b8d67cc367df957ce003445c77426d7e74a6266067ffc4"
+bytes = 19686
+captioned = false
+
+[[image]]
+source = "files/en-us/learn_web_development/core/frameworks_libraries/react_components/todo-list-unique-todos.png"
+target = "03-images/065-todo-list-unique-todos.png"
+sha256 = "73d8198c964c8551d6967bedc017ec05b0c18bb7ef9dc12b16fb0c6d177f6508"
+bytes = 20162
+captioned = false
+
+[[image]]
+source = "files/en-us/learn_web_development/core/frameworks_libraries/react_components/todo-list-unstructured-names.png"
+target = "03-images/066-todo-list-unstructured-names.png"
+sha256 = "373c6c3e0072d283e7ecf81502024a097f5ab6ad665dc9fdd401b79fbc2920e7"
+bytes = 16650
+captioned = false
+
+[[image]]
+source = "files/en-us/learn_web_development/core/frameworks_libraries/react_getting_started/default-vite.png"
+target = "03-images/067-default-vite.png"
+sha256 = "9242ce1483599ba26ad953a153cd77fe4247e3856ddbf092521fd2f127d71c6f"
+bytes = 36545
+captioned = false
+
+[[image]]
+source = "files/en-us/learn_web_development/core/frameworks_libraries/react_interactivity_filtering_conditional_rendering/filtered-todo-list.png"
+target = "03-images/068-filtered-todo-list.png"
+sha256 = "45ca35ec9ce42e60c53ea728050b48469fac398e46fa64232d6574307cb76e6e"
+bytes = 15908
+captioned = false
+
+[[image]]
+source = "files/en-us/learn_web_development/core/frameworks_libraries/react_resources/react-devtools.png"
+target = "03-images/069-react-devtools.png"
+sha256 = "026524ffc24f6016ca507d9c4c9b6b342239d7fbffbc1a6398083c5f42491d2d"
+bytes = 34935
+captioned = false
+
+[[image]]
+source = "files/en-us/learn_web_development/core/frameworks_libraries/react_todo_list_beginning/unstyled-app.png"
+target = "03-images/070-unstyled-app.png"
+sha256 = "6d1365bc4f7c2067d5251615dea5c7b80bf97dd39eb121586392aab72e794fd7"
+bytes = 24907
+captioned = false
+
+[[image]]
+source = "files/en-us/learn_web_development/core/scripting/conditionals/cookie-choice-small.png"
+target = "03-images/071-cookie-choice-small.png"
+sha256 = "02b51c4175a2740683384e38a01c29af4912da88163f616139cf80f2d2662a67"
+bytes = 27107
+captioned = false
+
+[[image]]
+source = "files/en-us/learn_web_development/core/scripting/debugging_javascript/breakpoint.png"
+target = "03-images/072-breakpoint.png"
+sha256 = "169c5ef5fa5c875a2ad28214e53a639fcd6672df371593c5683ba2eb00907880"
+bytes = 139028
+captioned = false
+
+[[image]]
+source = "files/en-us/learn_web_development/core/scripting/debugging_javascript/debugger-tab.png"
+target = "03-images/073-debugger-tab.png"
+sha256 = "6edee13807031a2efce9dedbcc241e7d2e607d3908db2b482fbd38fdc5f40fb1"
+bytes = 106677
+captioned = false
+
+[[image]]
+source = "files/en-us/learn_web_development/core/scripting/dom_scripting/document-window-navigator.png"
+target = "03-images/074-document-window-navigator.png"
+sha256 = "35f5c5a11e275758ed825d1fe096ac71c07c53c9faf3c1521196ed05b743bad3"
+bytes = 62671
+captioned = false
+
+[[image]]
+source = "files/en-us/learn_web_development/core/scripting/json/json-superheroes.png"
+target = "03-images/075-json-superheroes.png"
+sha256 = "48667d1ed40f21fc1cf52526a00ab89b1e52ee78f2049135763db400db9b6231"
+bytes = 26608
+captioned = false
+
+[[image]]
+source = "files/en-us/learn_web_development/core/scripting/network_requests/can-store.png"
+target = "03-images/076-can-store.png"
+sha256 = "006c7118fb36625463d200f911adb640bf06c9bfee8478f6c2d1c5c3de0773fa"
+bytes = 101715
+captioned = false
+
+[[image]]
+source = "files/en-us/learn_web_development/core/scripting/variables/boxes.png"
+target = "03-images/077-boxes.png"
+sha256 = "f417e406c9c7d30afffc0f7b0056311bd4ce402b41551b3815cc8dc4b7cecc6a"
+bytes = 13055
+captioned = false
+
+[[image]]
+source = "files/en-us/learn_web_development/core/scripting/what_is_javascript/browser.png"
+target = "03-images/078-browser.png"
+sha256 = "a08458fe4d5ec085d284b6df8d15ba105cc621cbfe69ac088e9f4b7a14be80ee"
+bytes = 20083
+captioned = false
+
+[[image]]
+source = "files/en-us/learn_web_development/core/scripting/what_is_javascript/cake.png"
+target = "03-images/079-cake.png"
+sha256 = "f3699662dd1639654b0ea507dcb76d0c726e50e815403a06ffaf5af52513ce07"
+bytes = 17351
+captioned = false
+
+[[image]]
+source = "files/en-us/learn_web_development/core/scripting/what_is_javascript/execution.png"
+target = "03-images/080-execution.png"
+sha256 = "dda499e8aa4719ea8dd3a471f0ca97342e7d440f6e05538cb0612cfc3bd25f0c"
+bytes = 12852
+captioned = false
+
+[[image]]
+source = "files/en-us/learn_web_development/core/scripting/what_went_wrong/console-log-output.png"
+target = "03-images/081-console-log-output.png"
+sha256 = "b4e9bde5eff4303dfb6afbadb9270f16c77b931d93ab2ce1c0e16f6cd0e6c158"
+bytes = 244685
+captioned = false
+
+[[image]]
+source = "files/en-us/learn_web_development/core/scripting/what_went_wrong/not-a-function.png"
+target = "03-images/082-not-a-function.png"
+sha256 = "7c6e0bee0182ae7d55c333ded47679367aa1e067dd02aef110d0172ecaad7b19"
+bytes = 248711
+captioned = false
+
+[[image]]
+source = "files/en-us/learn_web_development/core/scripting/what_went_wrong/variable-is-null.png"
+target = "03-images/083-variable-is-null.png"
+sha256 = "09b4f2876b61119ca1fa3f2b3311bde7ca7caf3d973fd664c4bba5b2419e39ef"
+bytes = 280275
+captioned = false
+
+[[image]]
+source = "files/en-us/learn_web_development/core/structuring_content/creating_links/navigation-example.png"
+target = "03-images/084-navigation-example.png"
+sha256 = "43cadd2d380ca04b5f7a668c0081f6cb902c8664a8c9a5150e333c1719523f5f"
+bytes = 14952
+captioned = false
+
+[[image]]
+source = "files/en-us/learn_web_development/core/structuring_content/creating_links/simple-directory.png"
+target = "03-images/085-simple-directory.png"
+sha256 = "0638eba04733b34c34e3e57b53b25574d8be34f03c1b3a02e4d0cd77332d9a62"
+bytes = 29943
+captioned = false
+
+[[image]]
+source = "files/en-us/learn_web_development/core/structuring_content/creating_links/updated-bbc-website.png"
+target = "03-images/086-updated-bbc-website.png"
+sha256 = "b32971768dce0a2fbbbd777e2105b9cbea6d611673e946aa61a2c6e01e423ea3"
+bytes = 124866
+captioned = false
+
+[[image]]
+source = "files/en-us/learn_web_development/core/structuring_content/debugging_html/badly-formed-html.png"
+target = "03-images/087-badly-formed-html.png"
+sha256 = "f641f1d238fd95324a46f80ba3f7bc02572e215c384f662ec0a1756da74b3f3d"
+bytes = 27072
+captioned = false
+
+[[image]]
+source = "files/en-us/learn_web_development/core/structuring_content/debugging_html/error-message.png"
+target = "03-images/088-error-message.png"
+sha256 = "85bdd461851ff51867076057060d018078665c63aa2ffee9691dc493ac26f90e"
+bytes = 13930
+captioned = false
+
+[[image]]
+source = "files/en-us/learn_web_development/core/structuring_content/debugging_html/html-inspector.png"
+target = "03-images/089-html-inspector.png"
+sha256 = "54fbaa5ae7cc3317deb8d81ce8ec1f0ed07fa8755c4ae2699b1fbbb85411373f"
+bytes = 39909
+captioned = false
+
+[[image]]
+source = "files/en-us/learn_web_development/core/structuring_content/debugging_html/validation-results.png"
+target = "03-images/090-validation-results.png"
+sha256 = "9d87180974254bb9a74c7f89a439993d2e4128ea077ec82b22b88137635b6ed4"
+bytes = 22469
+captioned = false
+
+[[image]]
+source = "files/en-us/learn_web_development/core/structuring_content/debugging_html/validator.png"
+target = "03-images/091-validator.png"
+sha256 = "ad4f0f4f4b1b589c881c7f8300e227a0b10fd6da04b0ebf26dacbe04dd2311a8"
+bytes = 44317
+captioned = false
+
+[[image]]
+source = "files/en-us/learn_web_development/core/structuring_content/headings_and_paragraphs/screen_shot_2017-03-29_at_09.20.35.png"
+target = "03-images/092-screen_shot_2017-03-29_at_09.20.35.png"
+sha256 = "bfd4cb14a8b6c5bf4d53e34e4d631ec108f9d71d8ce9294da7273be231e1517b"
+bytes = 27203
+captioned = false
+
+[[image]]
+source = "files/en-us/learn_web_development/core/structuring_content/html_images/alt-text.png"
+target = "03-images/093-alt-text.png"
+sha256 = "2d549ba4e2fb3f461a6ab7c675888016a2be76122a28048c6af47c3370b2e42f"
+bytes = 29422
+captioned = false
+
+[[image]]
+source = "files/en-us/learn_web_development/core/structuring_content/html_images/basic-image.png"
+target = "03-images/094-basic-image.png"
+sha256 = "3e9487267aa981791d7b92f24ce55ca70ea7149abfe86d4db34417dd895fbd8f"
+bytes = 113764
+captioned = false
+
+[[image]]
+source = "files/en-us/learn_web_development/core/structuring_content/html_images/image-with-title.png"
+target = "03-images/095-image-with-title.png"
+sha256 = "f490dae9d1184f56593cc2f69114d4571e89ccde3c2717eac1926efa5c52f323"
+bytes = 85715
+captioned = false
+
+[[image]]
+source = "files/en-us/learn_web_development/core/structuring_content/html_images/no-size.png"
+target = "03-images/096-no-size.png"
+sha256 = "a17d181cd20f09f511d20f982aa25bdac101287d1a1c1d4c1c2ee3d721be0258"
+bytes = 431136
+captioned = false
+
+[[image]]
+source = "files/en-us/learn_web_development/core/structuring_content/html_images/size.png"
+target = "03-images/097-size.png"
+sha256 = "3fa8cce78eb5685a53fe3eaad3c0b4b628be37af3f798ab0e8c8507310975d79"
+bytes = 422971
+captioned = false
+
+[[image]]
+source = "files/en-us/learn_web_development/core/structuring_content/html_table_basics/swimming-timetable.png"
+target = "03-images/098-swimming-timetable.png"
+sha256 = "b024e9587447f06c1d34a6b16bfdd59f18349cc2c34ce9aa046c0b14cffd1205"
+bytes = 29622
+captioned = false
+
+[[image]]
+source = "files/en-us/learn_web_development/core/structuring_content/html_video_and_audio/audio-player.png"
+target = "03-images/099-audio-player.png"
+sha256 = "44350d1e4ca655ec1192c179e802de22b92298c4e481ad9569c4175cb4a4ad35"
+bytes = 16861
+captioned = false
+
+[[image]]
+source = "files/en-us/learn_web_development/core/structuring_content/html_video_and_audio/containersandtracks.png"
+target = "03-images/100-containersandtracks.png"
+sha256 = "be770b2396a67db70e3ce2cf645e2783b16728b00b13eff1522c92123d04f090"
+bytes = 34578
+captioned = false
+
+[[markdown]]
+source = "files/en-us/games/anatomy/index.md"
+sha256 = "664e01267226097242dc264e745a1b33fe2d61ca3b5febcae810444f65df80bf"
+
+[[markdown]]
+source = "files/en-us/games/index.md"
+sha256 = "4892b5464505743d7efa14653edc2b36dfa5870c582822623ea1eda01d79c396"
+
+[[markdown]]
+source = "files/en-us/games/introduction/index.md"
+sha256 = "ee005758f463e05ee85998d46a7d1955008fe0e95795d338adc25027df5859e0"
+
+[[markdown]]
+source = "files/en-us/games/publishing_games/game_distribution/index.md"
+sha256 = "2a6e269681274ef5b9b9c92fd246d28427ceadba0d8748a6f62193a108559ee0"
+
+[[markdown]]
+source = "files/en-us/games/publishing_games/game_monetization/index.md"
+sha256 = "2a1942753375005cf7aac366b033e652b1c93cd00f10647d803b3b5f48ff2093"
+
+[[markdown]]
+source = "files/en-us/games/publishing_games/game_promotion/index.md"
+sha256 = "9ea49746ed6ac37daf249501da7b4b43cd61fabe7543fcbf41d188a986617aed"
+
+[[markdown]]
+source = "files/en-us/games/publishing_games/index.md"
+sha256 = "6f615bbd2dce3f1ce1a3c4cafd61b5d0ac2a9aafe58b334b590006288d84afcc"
+
+[[markdown]]
+source = "files/en-us/games/techniques/2d_collision_detection/index.md"
+sha256 = "4d15700a6bc7fa8c46d4b4a8f1dcc83e7699940b99ada89a4345e4d1aaa7a295"
+
+[[markdown]]
+source = "files/en-us/games/techniques/3d_collision_detection/bounding_volume_collision_detection_with_three.js/index.md"
+sha256 = "6ea5cd1d416aeee244b60dcb35a6183a8bf5400dd5013fea70a492916b3067ad"
+
+[[markdown]]
+source = "files/en-us/games/techniques/3d_collision_detection/index.md"
+sha256 = "0fbc7291c1d1b00a8d238b502e7ba03656959f43d499eaf1f2abff47ba4c1229"
+
+[[markdown]]
+source = "files/en-us/games/techniques/3d_on_the_web/basic_theory/index.md"
+sha256 = "43026c22c7f2f0cd99a371bba0b792cd383edc921a9a53a839a142bd50d37d0b"
+
+[[markdown]]
+source = "files/en-us/games/techniques/3d_on_the_web/building_up_a_basic_demo_with_a-frame/index.md"
+sha256 = "d9cb5f6d82145e36057e542920c190fdd7e02bb86c020509ce7f99a63d21fb84"
+
+[[markdown]]
+source = "files/en-us/games/techniques/3d_on_the_web/building_up_a_basic_demo_with_babylon.js/index.md"
+sha256 = "9eca63be774c7a626d425d0bf193d73fb12d8b2bbb8be23e41d9a7ac597fb440"
+
+[[markdown]]
+source = "files/en-us/games/techniques/3d_on_the_web/building_up_a_basic_demo_with_playcanvas/editor/index.md"
+sha256 = "a0eea9f310e7df5d290df62551495057ca42183e26463fbe8b7a61f451939950"
+
+[[markdown]]
+source = "files/en-us/games/techniques/3d_on_the_web/building_up_a_basic_demo_with_playcanvas/engine/index.md"
+sha256 = "63440b80ce370722744926746f1bb8b60ac05c32190d1f6772808ce255b28484"
+
+[[markdown]]
+source = "files/en-us/games/techniques/3d_on_the_web/building_up_a_basic_demo_with_playcanvas/index.md"
+sha256 = "82f49d0abfd8e639e3938800bc99e473aa68d86ab8ada944a198b4bb0c8aca23"
+
+[[markdown]]
+source = "files/en-us/games/techniques/3d_on_the_web/building_up_a_basic_demo_with_three.js/index.md"
+sha256 = "24cd550105e144867e3da24c7b956cc6dcdbd7cd5031ca988e856420d1ed7984"
+
+[[markdown]]
+source = "files/en-us/games/techniques/3d_on_the_web/glsl_shaders/index.md"
+sha256 = "66ca4ccd8673fb0093d72a4a74df5cb82d54963cf6b1df88e555c88849f65406"
+
+[[markdown]]
+source = "files/en-us/games/techniques/3d_on_the_web/index.md"
+sha256 = "627f71cc33b44052af286f40783b3c90d85d9343f40042623f61d11f5766f098"
+
+[[markdown]]
+source = "files/en-us/games/techniques/3d_on_the_web/webxr/index.md"
+sha256 = "cc7c6d6c00bec62eb7e0a7ac017655e5ef394829aaf8af978893281e286c54c2"
+
+[[markdown]]
+source = "files/en-us/games/techniques/async_scripts/index.md"
+sha256 = "825bc7ad26a227c64f85f719e51a57d1d7b03294f651b0676e04282fd2705f3c"
+
+[[markdown]]
+source = "files/en-us/games/techniques/audio_for_web_games/index.md"
+sha256 = "29140206f2461fc82252d0e437c10192f1ca9b400e5c2acbc7102ca2b44a6fc0"
+
+[[markdown]]
+source = "files/en-us/games/techniques/control_mechanisms/desktop_with_gamepad/index.md"
+sha256 = "78cf5b8611a340f212654afb515cc7d8d82dd517696a8e2ae7be1f9a30e54ec4"
+
+[[markdown]]
+source = "files/en-us/games/techniques/control_mechanisms/desktop_with_mouse_and_keyboard/index.md"
+sha256 = "2724e816e7b62497163b6a67a2d8401cf7eb1e1b7ced673ffd6df19435ed765d"
+
+[[markdown]]
+source = "files/en-us/games/techniques/control_mechanisms/index.md"
+sha256 = "6b222d0e87c28085853a5c520acf00955cf8104a4b87bd5effab8dda7ae32781"
+
+[[markdown]]
+source = "files/en-us/games/techniques/control_mechanisms/mobile_touch/index.md"
+sha256 = "2a0523a5f08f40a7e1c0e82b76b63956d3892ae6298103299ca52bb726fbaaca"
+
+[[markdown]]
+source = "files/en-us/games/techniques/control_mechanisms/other/index.md"
+sha256 = "ce0b5733788e50d12c52f59c35016e73370df4a56a99a8b395e51e063b0faaa2"
+
+[[markdown]]
+source = "files/en-us/games/techniques/controls_gamepad_api/index.md"
+sha256 = "5a06fd0daa6050a27d18b19dca7baf332b2ce92fbf85a733309e9f271a911f31"
+
+[[markdown]]
+source = "files/en-us/games/techniques/crisp_pixel_art_look/index.md"
+sha256 = "b5b6ed77bc870f30dc0158749bf1d577f3b7a4ca637b29117e2638a54edf3c30"
+
+[[markdown]]
+source = "files/en-us/games/techniques/tilemaps/index.md"
+sha256 = "a47ee42c563fa221b0555d63502067b64e128e4a9bc576dcf5e88a8a171a7637"
+
+[[markdown]]
+source = "files/en-us/games/techniques/tilemaps/square_tilemaps_implementation_colon__scrolling_maps/index.md"
+sha256 = "af8aa5bc0cf44ae0bc568be0c988450e2d0208bf21f9254117be5b8cfde76c78"
+
+[[markdown]]
+source = "files/en-us/games/techniques/tilemaps/square_tilemaps_implementation_colon__static_maps/index.md"
+sha256 = "0bd1981cefc14f0ad197f34718f3a8f1fb6ff4ef5becc411d252e8ead7b919e3"
+
+[[markdown]]
+source = "files/en-us/games/techniques/webrtc_data_channels/index.md"
+sha256 = "b3ecd7124647d8275d2475eb3354e2724904b055ca374be79ccba500abd9c605"
+
+[[markdown]]
+source = "files/en-us/games/tools/asm.js/index.md"
+sha256 = "5887f7e76cc64878f4b7b670f5f0452124350f3904841e8c488cd7f1deb321ef"
+
+[[markdown]]
+source = "files/en-us/games/tools/index.md"
+sha256 = "16180876a8049f1356295565e0f85105e22fa93ccd87b5e3d685830eb29562a7"
+
+[[markdown]]
+source = "files/en-us/games/tutorials/2d_breakout_game_phaser/animations_and_tweens/index.md"
+sha256 = "69e2b1871f1bf3672393200d80859a128315e5e7f1f7a010e468275bda0d0365"
+
+[[markdown]]
+source = "files/en-us/games/tutorials/2d_breakout_game_phaser/bounce_off_the_walls/index.md"
+sha256 = "f74cf9fc2f509b4d5e4cf3ac7940aff0447466761375375737e888b4897a1bbe"
+
+[[markdown]]
+source = "files/en-us/games/tutorials/2d_breakout_game_phaser/build_the_brick_field/index.md"
+sha256 = "0a51cd884c0e75e04ab88cd40f9f82cebe6ea44c626ae0bb1b850469fc8722cb"
+
+[[markdown]]
+source = "files/en-us/games/tutorials/2d_breakout_game_phaser/buttons/index.md"
+sha256 = "6864be7a116cd1c7134de2e42b8d2b1418354ab96126e3e5655a2e83f1582c38"
+
+[[markdown]]
+source = "files/en-us/games/tutorials/2d_breakout_game_phaser/collision_detection/index.md"
+sha256 = "72f9c13716cc0d5e9602b246a88d70449a40c1709394818550de3121c992ae68"
+
+[[markdown]]
+source = "files/en-us/games/tutorials/2d_breakout_game_phaser/extra_lives/index.md"
+sha256 = "3ae1532d127536e4e0883f18123ca4508731c1e9350259c5e4f92e851594c2d0"
+
+[[markdown]]
+source = "files/en-us/games/tutorials/2d_breakout_game_phaser/game_over/index.md"
+sha256 = "d821cd09b0b013186c4d149e382c696495eb8d3205f6ec2c7a104ca94d6de56d"
+
+[[markdown]]
+source = "files/en-us/games/tutorials/2d_breakout_game_phaser/index.md"
+sha256 = "3769f9ecba7765b62c48b123363c401c5e3a2cbe1e70fcbcd214e776cbb01f3c"
+
+[[markdown]]
+source = "files/en-us/games/tutorials/2d_breakout_game_phaser/initialize_the_framework/index.md"
+sha256 = "f0035b67f7dd8cccd6a2c143809ef8b4528bd14eafd3d5c0281825f350db59b6"
+
+[[markdown]]
+source = "files/en-us/games/tutorials/2d_breakout_game_phaser/load_the_assets_and_print_them_on_screen/index.md"
+sha256 = "2b6819aa757819acc110b503b67d2431524f6560201c44e7225cfe9bbbe4cfdd"
+
+[[markdown]]
+source = "files/en-us/games/tutorials/2d_breakout_game_phaser/move_the_ball/index.md"
+sha256 = "af0564ffc2eb8e217718ddff127d99ce8d1fc76f7ab418e4e32b4d374bacd20d"
+
+[[markdown]]
+source = "files/en-us/games/tutorials/2d_breakout_game_phaser/physics/index.md"
+sha256 = "e5d57587cb24b32f892f0ec46675c7f02ce4ba35d69800d91c136ce83f83959e"
+
+[[markdown]]
+source = "files/en-us/games/tutorials/2d_breakout_game_phaser/player_paddle_and_controls/index.md"
+sha256 = "a204e098dfe81fe5c009def2f5327e16cf70b93359c4a42b6eea8c27587d416a"
+
+[[markdown]]
+source = "files/en-us/games/tutorials/2d_breakout_game_phaser/randomizing_gameplay/index.md"
+sha256 = "2762a565716e4a6dd5c44c7aa14c3af3d199b98eb057b5f5d080a52176f653a5"
+
+[[markdown]]
+source = "files/en-us/games/tutorials/2d_breakout_game_phaser/scaling/index.md"
+sha256 = "006f6ac0e34cce5b0635193b7afded50e17cbc66bca04f8656f18543f2540f03"
+
+[[markdown]]
+source = "files/en-us/games/tutorials/2d_breakout_game_phaser/the_score/index.md"
+sha256 = "cc26a354c7e0183699673171e2589fcec359736b8db73990d1d6b32f7ebbb8dd"
+
+[[markdown]]
+source = "files/en-us/games/tutorials/2d_breakout_game_phaser/win_the_game/index.md"
+sha256 = "0e4c1859cd3cbd6da811912dc45e45a29bb0d31b36ea7f57d5b736cd05de965e"
+
+[[markdown]]
+source = "files/en-us/games/tutorials/2d_breakout_game_pure_javascript/bounce_off_the_walls/index.md"
+sha256 = "8fef30f516b178d142fb6207cf4ae304fc5a7992fd17d0fd418b8016464ce232"
+
+[[markdown]]
+source = "files/en-us/games/tutorials/2d_breakout_game_pure_javascript/build_the_brick_field/index.md"
+sha256 = "9139501dbec6280a470381ad1a7f5a58b39e33fefb8387707358edae1fc45e84"
+
+[[markdown]]
+source = "files/en-us/games/tutorials/2d_breakout_game_pure_javascript/collision_detection/index.md"
+sha256 = "6b0dacbc990469898f4535d6a964fe1bc32fb1b409a5810e34a558e1be23a5af"
+
+[[markdown]]
+source = "files/en-us/games/tutorials/2d_breakout_game_pure_javascript/create_the_canvas_and_draw_on_it/index.md"
+sha256 = "b98822a2aa9bf7ba777b93ab784997fae1725dc64e6fac16db333a8e1ddc1501"
+
+[[markdown]]
+source = "files/en-us/games/tutorials/2d_breakout_game_pure_javascript/finishing_up/index.md"
+sha256 = "43a599c9862ab2e62ad3022ff870232497d76763395b1567b7f17b1c9cf5a8ac"
+
+[[markdown]]
+source = "files/en-us/games/tutorials/2d_breakout_game_pure_javascript/game_over/index.md"
+sha256 = "8fe41f00cbb0555173f0c9e83c05e96905b015e2e78394c7fbcb5f33cb8f86f3"
+
+[[markdown]]
+source = "files/en-us/games/tutorials/2d_breakout_game_pure_javascript/index.md"
+sha256 = "7a88e81e411a581a93f7db9282dc9d65b0341e62bef35a567f28fc56d60153bd"
+
+[[markdown]]
+source = "files/en-us/games/tutorials/2d_breakout_game_pure_javascript/mouse_controls/index.md"
+sha256 = "9d92720102193c3f695c76cc759009aa9cac468a63a0e02a00f2d790392cd011"
+
+[[markdown]]
+source = "files/en-us/games/tutorials/2d_breakout_game_pure_javascript/move_the_ball/index.md"
+sha256 = "009854c342c9d09506f2cda0f858229069c312503f1983130704e94f09c9373c"
+
+[[markdown]]
+source = "files/en-us/games/tutorials/2d_breakout_game_pure_javascript/paddle_and_keyboard_controls/index.md"
+sha256 = "710ab9bad3956fe2cb87193ea105c8309caa3a772014ae58ebc14c5e4556ec4d"
+
+[[markdown]]
+source = "files/en-us/games/tutorials/2d_breakout_game_pure_javascript/track_the_score_and_win/index.md"
+sha256 = "08a80ea6ded669668e1001ebba1086414aa1a39055c0c76eb4f43fb964df6948"
+
+[[markdown]]
+source = "files/en-us/games/tutorials/html5_gamedev_phaser_device_orientation/index.md"
+sha256 = "9d91eabf50bd329dcff71ae9f7032cd3f6bc877259da0882e82bb926078d6c2d"
+
+[[markdown]]
+source = "files/en-us/games/tutorials/index.md"
+sha256 = "5dca26a08434a73c1126bfc14aca354dfc749de3c0cc1daedeb50d3c81291762"
+
+[[markdown]]
+source = "files/en-us/glossary/accessibility/index.md"
+sha256 = "33f305f64a57624d56c6162e3b7d801312e57fd3e2941c06f039f842436098d6"
+
+[[markdown]]
+source = "files/en-us/glossary/accessibility_tree/index.md"
+sha256 = "5144b55e024264d174698b8efe583623274395475e61b556b5c12fd7e690a8e0"
+
+[[markdown]]
+source = "files/en-us/glossary/accessible_description/index.md"
+sha256 = "6450f3256a851320bbfdcc7b93534cb32779843cc7c97890b4f6e14abd4b80aa"
+
+[[markdown]]
+source = "files/en-us/glossary/accessible_name/index.md"
+sha256 = "3f1a5092da145d888974e0c11950465d1ca2c941878d81e4c629a1faffc02eb9"
+
+[[markdown]]
+source = "files/en-us/glossary/adobe_flash/index.md"
+sha256 = "e3def81f2c6f10cb6d2689482b4a8595b5d682b0cf892a2c00c8f752e4f78cef"
+
+[[markdown]]
+source = "files/en-us/glossary/ajax/index.md"
+sha256 = "777b7193b2d6fcd1f0991fdd355b7770c09cf99dfe72ba61531d6d400b035b1e"
+
+[[markdown]]
+source = "files/en-us/glossary/algorithm/index.md"
+sha256 = "1d0ce930b825b3c14ee8d3ea569326a6f04e4602d296b8fbfe39177af8f81cc7"
+
+[[markdown]]
+source = "files/en-us/glossary/alignment_subject/index.md"
+sha256 = "2a2343a9c8f9faec140cb69b400ba25293cf3d65e1029cac099d93fb1e8661fb"
+
+[[markdown]]
+source = "files/en-us/glossary/alpha/index.md"
+sha256 = "b8f3146db29bc255022fb3bd59c31ae46d07e369c0fb86bac53bb7acda5632b8"
+
+[[markdown]]
+source = "files/en-us/glossary/alpn/index.md"
+sha256 = "1f98c5e550d3e7983c7b4070c355c7ea2dce5d943d6406d4f47e1c14897f31aa"
+
+[[markdown]]
+source = "files/en-us/glossary/api/index.md"
+sha256 = "8b886022e5be1d884ddb56c2afd0a63a5b726caa1d91813b3ad2028962161d1c"
+
+[[markdown]]
+source = "files/en-us/glossary/application_context/index.md"
+sha256 = "358193b202aa8c6016b9b399cbf70a388b711f35acf9b15ab0d042128b358842"
+
+[[markdown]]
+source = "files/en-us/glossary/argument/index.md"
+sha256 = "07361b0dc0152d8e91e1445ff727e6a965e2889a70b5c9f973d6e60690bd9708"
+
+[[markdown]]
+source = "files/en-us/glossary/aria/index.md"
+sha256 = "fbc283de9b48f2574ba6cbe0e47d2b758a956e2784114238d1123a9beee93e93"
+
+[[markdown]]
+source = "files/en-us/glossary/arpa/index.md"
+sha256 = "a9c0dfee251edc7040ed436f51bc3fbb0fb2df6c0b72d0c33f10969b9c52cddc"
+
+[[markdown]]
+source = "files/en-us/glossary/aspect_ratio/index.md"
+sha256 = "2780dd9d9ae959b22253b9f9ed3f4fcd259c2c535c60a5f832c1722e08be494a"
+
+[[markdown]]
+source = "files/en-us/glossary/asynchronous/index.md"
+sha256 = "8c366c6c4c1d855d05050f0870de87883b56d57678f6a64ddc1e511c40a7897f"
+
+[[markdown]]
+source = "files/en-us/glossary/atag/index.md"
+sha256 = "9e4abe30e88c10ea3f3a38867ca1d95cc66edf06cae9c2b1f81e31ed394d143d"
+
+[[markdown]]
+source = "files/en-us/glossary/attribute/index.md"
+sha256 = "9648d6adc5730226b4895356e95c78f57e23f3447fd71af86167c29414dcbc8e"
+
+[[markdown]]
+source = "files/en-us/glossary/authentication/index.md"
+sha256 = "9b2fd846faa9807161ba8e72128a73fb2cf4de61a48e9480ae8458353c8ff4cf"
+
+[[markdown]]
+source = "files/en-us/glossary/base64/index.md"
+sha256 = "d2005110736fb602d2aafda5422b752a90e292406702f07d5e8ddaaaec606423"
+
+[[markdown]]
+source = "files/en-us/glossary/baseline/compatibility/index.md"
+sha256 = "f9f1bfdcdd26dfb495ecec3c4e8b2c8db6f7e37382f88a530646ef42df3dd9c3"
+
+[[markdown]]
+source = "files/en-us/glossary/baseline/typography/index.md"
+sha256 = "44b8d49c8ac7d17223cc0f1108c09a57834d8fa742cedaa2a4ee0377bd4edf68"
+
+[[markdown]]
+source = "files/en-us/glossary/bcp_47_language_tag/index.md"
+sha256 = "b81b91158b7b3cf735d5d4f3f7d44da5c39027515fa56bc6cdb3a578f0fea161"
+
+[[markdown]]
+source = "files/en-us/glossary/bezier_curve/index.md"
+sha256 = "4dd487df66cf5616da690a72a326ce53790e2cb67fef0ca4afcf785b7bf1d636"
+
+[[markdown]]
+source = "files/en-us/glossary/bfcache/index.md"
+sha256 = "f7c33e01fd24fdca91153b13f1ecb0d04ef065288a189aaceb4a77c31b9c84a9"
+
+[[markdown]]
+source = "files/en-us/glossary/bidi/index.md"
+sha256 = "c86cb8c8d72f227d598b949905e241786fa2cd5900e2f5d8f23ccad31a656858"
+
+[[markdown]]
+source = "files/en-us/glossary/binding/index.md"
+sha256 = "acbf8f9590917b0f1278e439b92b533cb93ff8876b766e75ac22b7c49d948d3d"
+
+[[markdown]]
+source = "files/en-us/glossary/bitwise_flags/index.md"
+sha256 = "5dcb29ac3821468ae28b698b3aa3fdce090031cad0ba2c76cf781c71e14ec9b8"
+
+[[markdown]]
+source = "files/en-us/glossary/blink_element/index.md"
+sha256 = "f96dc7d3c11abebbaefb398301bc860845b5a1b17e48725a25583089c02a6f69"
+
+[[markdown]]
+source = "files/en-us/glossary/block-level_content/index.md"
+sha256 = "93e8491d59d34f5d2a1854a173b6856a8edea34011791f672a79d8d71b9bd3bf"
+
+[[markdown]]
+source = "files/en-us/glossary/boolean/html/index.md"
+sha256 = "c96b56e7c391ef15d73a96a46fff122a482c951e440a59a436ca0b7383a49a38"
+
+[[markdown]]
+source = "files/en-us/glossary/boolean/index.md"
+sha256 = "47eb23290fab70f2a1c435ffc4c043a287ad1dc29791d3015b256cc08605a7f0"
+
+[[markdown]]
+source = "files/en-us/glossary/breadcrumb/index.md"
+sha256 = "4a6019963a5b6debbdcc57063824a6ee39586b3da85b1fe013646af6b031ac48"
+
+[[markdown]]
+source = "files/en-us/glossary/brotli_compression/index.md"
+sha256 = "133460e2ed94a67d4a4e85b75f9037eb5e2005943b512e8a5046a6ebe0fdf1ba"
+
+[[markdown]]
+source = "files/en-us/glossary/browser/index.md"
+sha256 = "7a02cd44394c01fb40f20251c8ac8c1320bef5e6378eced7e72d8036f313a282"
+
+[[markdown]]
+source = "files/en-us/glossary/browsing_context/index.md"
+sha256 = "96feae57732ae30ccf2971bfff78b43906efe405560da898be231556d037f53e"
+
+[[markdown]]
+source = "files/en-us/glossary/cacheable/index.md"
+sha256 = "7a2111844058139081e3319c55dc7fa46452019028488a25dcccfdcdbc3c47d4"
+
+[[markdown]]
+source = "files/en-us/glossary/call_stack/index.md"
+sha256 = "1f575b324cc521c632032ee48a90bc2f6879e7239527122a73365f79a726990d"
+
+[[markdown]]
+source = "files/en-us/glossary/callback_function/index.md"
+sha256 = "0b9ce33fd801e2c06ba228bf82e7aa5b6142d7080077b8ecd4bc54c3de78a2d1"
+
+[[markdown]]
+source = "files/en-us/glossary/camel_case/index.md"
+sha256 = "f4a07c57af37427258899d9fb870b0bd5c46401834db5f17c530380325a8dd38"
+
+[[markdown]]
+source = "files/en-us/glossary/canonical_order/index.md"
+sha256 = "71d589299c46ceb9713fe293d19801f4734f8df42eb30ea798742b5457adb0a2"
+
+[[markdown]]
+source = "files/en-us/glossary/caret/index.md"
+sha256 = "2aad97810d1af02f519fa336d430cc41b1458987c2cbe33b35052837ecdc5a22"
+
+[[markdown]]
+source = "files/en-us/glossary/cdn/index.md"
+sha256 = "3dd6a438c5082b6e903b04ba2ff332f69b3f29bc5979655d2ef67717720d8fd6"
+
+[[markdown]]
+source = "files/en-us/glossary/certificate_authority/index.md"
+sha256 = "a9202dc501f2fd456adffe272adbf985c10f65a13ec256b19ecad0b427e3aa6f"
+
+[[markdown]]
+source = "files/en-us/glossary/character_reference/index.md"
+sha256 = "62a1588dcf5b649b2dd5a506620aa8afeed9d495ff6a44776ccfb916ba847daa"
+
+[[markdown]]
+source = "files/en-us/glossary/cipher/index.md"
+sha256 = "874e17cb1bda93d1fce4934da1a3096793b48d4d3d413ae57fc42dfe73c5b9b8"
+
+[[markdown]]
+source = "files/en-us/glossary/cloud_computing/index.md"
+sha256 = "98ccba521bfc835041de29caeb27ba293b9872f46a80bb8408c9d7752163d114"
+
+[[markdown]]
+source = "files/en-us/glossary/color_space/index.md"
+sha256 = "01051af16af68118ccdb16e609ed9108dabecc8695505ff3353068406157f3e3"
+
+[[markdown]]
+source = "files/en-us/glossary/color_wheel/index.md"
+sha256 = "dfb1f77ff042dfbddd235994dd8b6226467eef4a200e8822c3ee04a3063cdb51"
+
+[[markdown]]
+source = "files/en-us/glossary/compile/index.md"
+sha256 = "2c53cfd243cb4ba0df7f50b4abf1bb2869530959c4ac90976077bfa3b9cf7e24"
+
+[[markdown]]
+source = "files/en-us/glossary/compression_dictionary_transport/index.md"
+sha256 = "d0b3f723b9d43619ec404b097445c6c27e5c2eb9bed52de7f5aea51791a2630f"
+
+[[markdown]]
+source = "files/en-us/glossary/content_header/index.md"
+sha256 = "dc1a3ceb8353d50d6e52a2d9ff1c712b51c3ca422b104213890db46fbbc42701"
+
+[[markdown]]
+source = "files/en-us/glossary/contentful_paint/index.md"
+sha256 = "7f2479c2aba72680819dd6f02412810c68c210127410566240cf4f7041edff6d"
+
+[[markdown]]
+source = "files/en-us/glossary/continuous_integration/index.md"
+sha256 = "89c93f6f6e5a74d0d2d0dd0cac26c54cbedbfbc9e780b149ba51705380cade8b"
+
+[[markdown]]
+source = "files/en-us/glossary/control_flow/index.md"
+sha256 = "a0aa45dcd5951a09f40150cef2b7e27a545983ba2cb96d47adcfee0957db21c9"
+
+[[markdown]]
+source = "files/en-us/glossary/cors-safelisted_request_header/index.md"
+sha256 = "4041aa787e7578f17351b31f3b95411289bffb62bc196c31625c826dfaf02dc8"
+
+[[markdown]]
+source = "files/en-us/glossary/cors-safelisted_response_header/index.md"
+sha256 = "a8f4e2df306ba2d9b9661f922d6cecd8e521634098d7da6e6e283a19c584a0a8"
+
+[[markdown]]
+source = "files/en-us/glossary/cors/index.md"
+sha256 = "83bd636aa8ee3089d233bad0c2e088c9a23b0fc72b0278702752edf2d1094131"
+
+[[markdown]]
+source = "files/en-us/glossary/cross_axis/index.md"
+sha256 = "56fbc65fd257dc4168ada6e03cc163c3a6202195b9d5d671e47f634c2143742c"
+
+[[markdown]]
+source = "files/en-us/glossary/csr/index.md"
+sha256 = "b09553c5a5034089abb22b264856fa081bc2f8801daa2f9952046ce41144fca7"
+
+[[markdown]]
+source = "files/en-us/glossary/csrf/index.md"
+sha256 = "df83670b296ff123323e92e1dbed0256184ec3ce61d07654e45766d636775913"
+
+[[markdown]]
+source = "files/en-us/glossary/css/index.md"
+sha256 = "2918e1dab8f7ccdcb15307dd1432f799c7f33caad05bac48e815a163819611ba"
+
+[[markdown]]
+source = "files/en-us/glossary/css_selector/index.md"
+sha256 = "ab40356c348410d81fe3babd05f95bc920be680e348ab31c399131c506455cb0"
+
+[[markdown]]
+source = "files/en-us/glossary/debounce/index.md"
+sha256 = "1ba18c8dd94784f08940eda6aad31afae27e87518e9cfd034724b175516ea460"
+
+[[markdown]]
+source = "files/en-us/glossary/deep_copy/index.md"
+sha256 = "1f2def9d8138c8c3d403b3b13801765b6ec2dff0ff2b6dfe9833bb22688a6c1c"
+
+[[markdown]]
+source = "files/en-us/glossary/deep_equality/index.md"
+sha256 = "28362dbef219a0495f8eff2693a1ccbefc4f5a31e882cb37f74063e07495d6b3"
+
+[[markdown]]
+source = "files/en-us/glossary/delta/index.md"
+sha256 = "1e595e4db22cbf9aa14b0bee74e04e8bd2541c30e2c9544224a313ac816f216d"
+
+[[markdown]]
+source = "files/en-us/glossary/denial_of_service/index.md"
+sha256 = "9c35c8c4d14490255765eab4902e9f14dff3064f1fea3262bc36080edc3390e1"
+
+[[markdown]]
+source = "files/en-us/glossary/device_pixel/index.md"
+sha256 = "57705197e1eaa4a5b63f3eaf440fc07fbaf02bb102a20c0360f742c27e7329eb"
+
+[[markdown]]
+source = "files/en-us/glossary/digital_signature/index.md"
+sha256 = "040b1a667f75f6da2832bd3a855c3860eee9a4b3c7fe012feff7f30c9198d8b3"
+
+[[markdown]]
+source = "files/en-us/glossary/distributed_denial_of_service/index.md"
+sha256 = "f99dd0fce969539863fa42a9ad94d3ef53cf71d1fb677baa1045240b9229f41e"
+
+[[markdown]]
+source = "files/en-us/glossary/domain/index.md"
+sha256 = "07da3b027695ff29321971695fa1205b623374e1c1f65d800eb41f53fd4d7c80"
+
+[[markdown]]
+source = "files/en-us/glossary/domain_sharding/index.md"
+sha256 = "a21c10845af08fa7e2318164164abea6864ee136eadd75f090b8e5defef49efe"
+
+[[markdown]]
+source = "files/en-us/glossary/dtls/index.md"
+sha256 = "2629c7fa7c766eaee7352c79d338266109c9c9be0bc9fc520a8b82abacb3fcb4"
+
+[[markdown]]
+source = "files/en-us/glossary/effective_connection_type/index.md"
+sha256 = "de9f803af209a5aa69d15a76bb913ee10ba716adcd4bd3cce0f16e271a2e5d7c"
+
+[[markdown]]
+source = "files/en-us/glossary/endianness/index.md"
+sha256 = "38aa45bca7c3bcd3468bf349efc2d2b9fddec73af04265e56edaa9f232e7e9a6"
+
+[[markdown]]
+source = "files/en-us/glossary/engine/javascript/index.md"
+sha256 = "79d6bffa4434c41a792b762ca8b922da1c62a014a548372c5a0ffa7efc3c3d6c"
+
+[[markdown]]
+source = "files/en-us/glossary/enumerated/index.md"
+sha256 = "59160520d67f39e334832dfc1af2dd67376b9c2f54bda3ded08c3521f9b1bf89"
+
+[[markdown]]
+source = "files/en-us/glossary/escape_character/index.md"
+sha256 = "e7564e834d1d846d2877dd7b9c0a8303071ef5a93957ae5f5b0c2680eab2965b"
+
+[[markdown]]
+source = "files/en-us/glossary/extrinsic_size/index.md"
+sha256 = "63ae1a0dd0152f5283efab996ae4b20abe0934e6ec4854428e275ee747626a7b"
+
+[[markdown]]
+source = "files/en-us/glossary/falsy/index.md"
+sha256 = "08bce552c319a917551fa88971000c8a7e7a8f3d7d5aa906206115faa9cba134"
+
+[[markdown]]
+source = "files/en-us/glossary/favicon/index.md"
+sha256 = "f5c148f23146b752a4b32df7e6e8b1111b2a831e69c498e68bd858f0f943be68"
+
+[[markdown]]
+source = "files/en-us/glossary/federated_identity/index.md"
+sha256 = "eee29f14f28d26b7ae0b001619149615e1086b31b55b13f5fd0279e407f67346"
+
+[[markdown]]
+source = "files/en-us/glossary/fetch_directive/index.md"
+sha256 = "a534fe6f9c9c59b9cca8e05a3cd5734fb029b86a43ce4743fe7b5ed7a3f3fb4f"
+
+[[markdown]]
+source = "files/en-us/glossary/fetch_metadata_request_header/index.md"
+sha256 = "51e97d0cd82c4169813af809a1e98a9dcba976f3010c3cbd0d42fe5b845ea3b0"
+
+[[markdown]]
+source = "files/en-us/glossary/fingerprinting/index.md"
+sha256 = "f16a84dbba3e92671259c5b1a7f8619adc3823afe2e2b5f9a9dc34df246acc14"
+
+[[markdown]]
+source = "files/en-us/glossary/first-class_function/index.md"
+sha256 = "52bf7a9c628e754391e976b721c1d64f16fd730cfd5e2a29550780d000412bba"
+
+[[markdown]]
+source = "files/en-us/glossary/first_input_delay/index.md"
+sha256 = "1cb115b9647c76f3bad290125f7713e3c67957a1802b4c615e345fce67fdf5a2"
+
+[[markdown]]
+source = "files/en-us/glossary/flex/index.md"
+sha256 = "d0ccdc5dd4acf5907acd6c79a16821470253dfd245323c12ab301160737ef708"
+
+[[markdown]]
+source = "files/en-us/glossary/flex_container/index.md"
+sha256 = "458224dcae6377b27d8c4127ab54ccc937128b98ccb002a9cb3a31175245782f"
+
+[[markdown]]
+source = "files/en-us/glossary/flexbox/index.md"
+sha256 = "230ad49463c24785edb308c5f374031b9f6e4926f926c67a818282525b3ce89b"
+
+[[markdown]]
+source = "files/en-us/glossary/flow_relative_values/index.md"
+sha256 = "b565c144d989a6dbd56b2e3738cb5c158e28a1e876639c6c4818bd23358a9c2f"
+
+[[markdown]]
+source = "files/en-us/glossary/forbidden_request_header/index.md"
+sha256 = "609e6fc53374ff3d7ce67ef39de169c644aa4ff236345eb3383d8d736475279f"
+
+[[markdown]]
+source = "files/en-us/glossary/function/index.md"
+sha256 = "0b0150540b3852ffc1d8b635070e81942b4a9fe89d1b1cca4725005709c0d6eb"
+
+[[markdown]]
+source = "files/en-us/glossary/gamut/index.md"
+sha256 = "678cf2a59acf84a8a885219a93dff8cff680712a4437020145bfa2a8bca56cc2"
+
+[[markdown]]
+source = "files/en-us/glossary/global_object/index.md"
+sha256 = "a8f671cb47c1097ff56d5ad95a26709b8f47dffa5ca02008f99fed73b1737c6a"
+
+[[markdown]]
+source = "files/en-us/glossary/google_chrome/index.md"
+sha256 = "17f01430597607223ea6e5faf6a9fc5bdb2c0020e9ddc5f5839a7400e9502b9a"
+
+[[markdown]]
+source = "files/en-us/glossary/graceful_degradation/index.md"
+sha256 = "2d4731f37f742615f0bd241555b7c51a6a8c5d127d507deb18c8671af11a315f"
+
+[[markdown]]
+source = "files/en-us/glossary/grid/index.md"
+sha256 = "bb43babded8619186f180a5078c3601b3ab47eccafba4a8c2dff78be03fac7ad"
+
+[[markdown]]
+source = "files/en-us/glossary/grid_areas/index.md"
+sha256 = "c8ec3badb8cc4204086b35ee624a9e8b6f4455f11d741ce63c167a04547c414c"
+
+[[markdown]]
+source = "files/en-us/glossary/grid_axis/index.md"
+sha256 = "a3100fd4278c60ee97a4a8389fcb93ad122cdb79b896bf02ccb434fee94637cc"
+
+[[markdown]]
+source = "files/en-us/glossary/grid_cell/index.md"
+sha256 = "6a6a4cbff32651a6709152d60cc0b68eb0009929da9745b2ad93ac3fb1321201"
+
+[[markdown]]
+source = "files/en-us/glossary/grid_lines/index.md"
+sha256 = "8593daeca038c72c448c972abdeb16afd6f4a9a90207d1ad45497a68e9216bd5"
+
+[[markdown]]
+source = "files/en-us/glossary/grid_tracks/index.md"
+sha256 = "7c1c5791bbca4841ae368e6dff6b4176f2b52416d8f596b44e90ba683e5a75a3"
+
+[[markdown]]
+source = "files/en-us/glossary/gutters/index.md"
+sha256 = "6644a1a7eaa1757c89b8b0cf441095ddc346a48e34c5a1e454edaa0d0a9191c1"
+
+[[markdown]]
+source = "files/en-us/glossary/hash_function/index.md"
+sha256 = "ed4bad26e29bbde8021d96c45aff623aba10e88f23d0e6dc69d5cd2050910c3d"
+
+[[markdown]]
+source = "files/en-us/glossary/hash_routing/index.md"
+sha256 = "c2687bcc1597f05896c08bc5430907ff06887b2bdfb2b760f9836d89fdcedc5f"
+
+[[markdown]]
+source = "files/en-us/glossary/head_of_line_blocking/index.md"
+sha256 = "762c4a4832c789070e92bdf081897b3cf565a6603cda6087b20d0327206936f7"
+
+[[markdown]]
+source = "files/en-us/glossary/hoisting/index.md"
+sha256 = "125917fba1192cfd785154d95409219b6bd7313ae90a05cd940f552098c54380"
+
+[[markdown]]
+source = "files/en-us/glossary/houdini/index.md"
+sha256 = "b22d775df1b4d8a1cd4b15e26b054d5324537b9a91709c7fc0dda2e77a388046"
+
+[[markdown]]
+source = "files/en-us/glossary/html/index.md"
+sha256 = "f20b7d18833f43c536fc00f11d8f6d63f4ba7ce27daf824f912c3c84f3c30101"
+
+[[markdown]]
+source = "files/en-us/glossary/html5/index.md"
+sha256 = "d717498e5fb8654b470132f1f28d337c3e8f18d2665fcc3b09d27542322b2282"
+
+[[markdown]]
+source = "files/en-us/glossary/html_color_codes/index.md"
+sha256 = "fde3b00ec9aa01784b7329d6d9d39b19a24671e3866585248d7cca8815806f93"
+
+[[markdown]]
+source = "files/en-us/glossary/http/index.md"
+sha256 = "6298db9f65d3e44a5a9e4fd22ee97260075d5572b4ba6b4978ccedef1c8ce7f8"
+
+[[markdown]]
+source = "files/en-us/glossary/http_2/index.md"
+sha256 = "19db28fb1723e00bbc33e480c390e9ec0a56898c2dbb7a64e01c830970783a4c"
+
+[[markdown]]
+source = "files/en-us/glossary/http_content/index.md"
+sha256 = "3c312531b4db5194d5c03b9cb7fba6f11c18705c47ac23ca6385daa94a9208e6"
+
+[[markdown]]
+source = "files/en-us/glossary/http_header/index.md"
+sha256 = "aed3ed368aefae00d8eade17af73631fdfd7406ed94dad9b51fde722066b94c8"
+
+[[markdown]]
+source = "files/en-us/glossary/ice/index.md"
+sha256 = "93efc224a36d60412cf1838f8df0c8c1ef12bdbea2e6dba31555f0dcd4283a6c"
+
+[[markdown]]
+source = "files/en-us/glossary/idempotent/index.md"
+sha256 = "18676069423eb9248d57fe2e076e2ae0c38356019c958400b52ade608caa8d5a"
+
+[[markdown]]
+source = "files/en-us/glossary/identifier/index.md"
+sha256 = "ea9f568d087b1255ce7b79c95122f2d4ce81a68d2636c120488cf1eae7d5e0b7"
+
+[[markdown]]
+source = "files/en-us/glossary/idl/index.md"
+sha256 = "ea099873023c1195e059d685731b5646ba7a1b42456e948b856bb8c94fd4eca1"
+
+[[markdown]]
+source = "files/en-us/glossary/iife/index.md"
+sha256 = "124262a5f3824f0615134e0b1797d9b9b0322eccc1828c3bfd4b379c5865ab3c"
+
+[[markdown]]
+source = "files/en-us/glossary/immutable/index.md"
+sha256 = "b552b6c3c68310f838c8192d9ef71f6515b7edeec2207aac13d7d3193da5caf3"
+
+[[markdown]]
+source = "files/en-us/glossary/ink_overflow/index.md"
+sha256 = "8b2ab1e139d8e1c60b65785639c2281870f0cf24fc4a9f9b2a2f1658e76ab140"
+
+[[markdown]]
+source = "files/en-us/glossary/inline-level_content/index.md"
+sha256 = "e4739468c7fefc5bd3536aa727882a5bba7e822d1fb7320806fd0390bb9b1fe9"
+
+[[markdown]]
+source = "files/en-us/glossary/inset_properties/index.md"
+sha256 = "2872c5e2ee2b4b0e9c70e0864076890b2850f66bb3dd297062e32a9ad2b4f22f"
+
+[[markdown]]
+source = "files/en-us/glossary/interaction_to_next_paint/index.md"
+sha256 = "26e24a0f6bf9497e277ea652416ec4d88b5e47c2cc1fab33833f9c4a48bcc7b1"
+
+[[markdown]]
+source = "files/en-us/glossary/interface/index.md"
+sha256 = "d9f98ed43686fe4e045f891cf8ddaeeebe070bb6cac903d2fa4579268b17236e"
+
+[[markdown]]
+source = "files/en-us/glossary/internationalization/index.md"
+sha256 = "1d55cfa666beb36c6de5b5e486de0a297ac5d5c5ce930ce785de758c354c96ea"
+
+[[markdown]]
+source = "files/en-us/glossary/interpolation/index.md"
+sha256 = "00b480a32c50ea7dcb2d6bad6bb9d0e370e7d0d1884431c6352cb1a5722b1ff9"
+
+[[markdown]]
+source = "files/en-us/glossary/intrinsic_size/index.md"
+sha256 = "da5b2bd45728e93a405a885c450cd07569553983f94035a76c7748fac43f8e7f"
+
+[[markdown]]
+source = "files/en-us/glossary/invariant/index.md"
+sha256 = "bf0b8b369cbc41c70109a7bb4d5709a99f8fcfac86d5a2fb1da6523524c444dd"
+
+[[markdown]]
+source = "files/en-us/glossary/javascript/index.md"
+sha256 = "3bb2aa73d63808e9ed6826fc28b9ec1cec375f9dc06fd502bd6fdf06afa88df6"
+
+[[markdown]]
+source = "files/en-us/glossary/jitter/index.md"
+sha256 = "de72018d0e4b79cce2fbb5be00544893997bd2dfee07f8c356a3701d7a92fb18"
+
+[[markdown]]
+source = "files/en-us/glossary/jpeg/index.md"
+sha256 = "874241891ff8267e844d8fe0fcd221268f418312d72455bfdaaf9e5e0a174039"
+
+[[markdown]]
+source = "files/en-us/glossary/json_type_representation/index.md"
+sha256 = "98f6882e924ec7589b1a237d2456cb8bbb14d17284be32eb582120456647015f"
+
+[[markdown]]
+source = "files/en-us/glossary/just_in_time_compilation/index.md"
+sha256 = "c8127874be2825a710833754c41017513aaed21b884873f7d8f87abce018640c"
+
+[[markdown]]
+source = "files/en-us/glossary/key/index.md"
+sha256 = "c24bb667b47867a4542537007ea6073f70ff16e3c998f3ae44dcdb227bc572d0"
+
+[[markdown]]
+source = "files/en-us/glossary/layout_mode/index.md"
+sha256 = "96b5324b74233e514385205158453d0de93011e5fe3e4f3b46b702d6bf80c9cd"
+
+[[markdown]]
+source = "files/en-us/glossary/layout_viewport/index.md"
+sha256 = "bafeaa7b08841888182272b7bd55e42e8f847099eb8d8116c62bd3946bdba7be"
+
+[[markdown]]
+source = "files/en-us/glossary/leading/index.md"
+sha256 = "6440dceec8d17916f5ffd8da475df291d89b779937265b5404bf5be8c00d17a7"
+
+[[markdown]]
+source = "files/en-us/glossary/literal/index.md"
+sha256 = "f2b1008e228a3faf4680d38d9e71d6702ef3b47f5dc5ab215a80636970d4842e"
+
+[[markdown]]
+source = "files/en-us/glossary/localization/index.md"
+sha256 = "ece0216c6eda4e29cebf08f99a0cab7a81602bf2da410541da1367c0b8eb9123"
+
+[[markdown]]
+source = "files/en-us/glossary/logical_properties/index.md"
+sha256 = "bcfc65464df6ae94ffe0567d64afb35024ea3483a2fb72564afac8ee7182188a"
+
+[[markdown]]
+source = "files/en-us/glossary/lossy_compression/index.md"
+sha256 = "73cd77221acd14b95fee59371366ce2aa3c538e8f8d0cace9203298785077b9b"
+
+[[markdown]]
+source = "files/en-us/glossary/main_axis/index.md"
+sha256 = "c19b578b0e415305f2c0e6ecaf172bc433b8b866a259c21799135bae5294599a"
+
+[[markdown]]
+source = "files/en-us/glossary/media_query/index.md"
+sha256 = "14b85f8cd28af3fcc452d2e58473a69f46807a7490da44dc434caf7e898f03c8"
+
+[[markdown]]
+source = "files/en-us/glossary/memoization/index.md"
+sha256 = "f3db8e441b1a1de1f90a96e7f4e3bb07ec282079fa4fc0d978701b389ec69c3d"
+
+[[markdown]]
+source = "files/en-us/glossary/method/index.md"
+sha256 = "60bccc55abfda2e6ac1b5841416bd6474fd2cd0524fbfd20e12c0c3b5deb9efa"
+
+[[markdown]]
+source = "files/en-us/glossary/microsoft_edge/index.md"
+sha256 = "fef002b027342ddfd30d0ad8977092649d46c8007ca34244c3df7a1a90288838"
+
+[[markdown]]
+source = "files/en-us/glossary/microsoft_internet_explorer/index.md"
+sha256 = "006d231cd9e9f84a86bc05977d82c2381fbaea7a507e7cd2c47b5afbc9e1ad00"
+
+[[markdown]]
+source = "files/en-us/glossary/mitm/index.md"
+sha256 = "ca6a989a0d7947fefae6ed7f88a3def3bf5c62beb2a6eafb8b0a082166c0f8ff"
+
+[[markdown]]
+source = "files/en-us/glossary/mozilla_firefox/index.md"
+sha256 = "d055a05b19d4b8baf6909ccfc0c13842f721cab0aa5a6b2694563911f4fc22d8"
+
+[[markdown]]
+source = "files/en-us/glossary/mvc/index.md"
+sha256 = "1b4a9d6a21b297f20f3be9d96ced235497c9d530fcd71335ce4dacc799b16643"
+
+[[markdown]]
+source = "files/en-us/glossary/network_throttling/index.md"
+sha256 = "b71b0ebc5a668fbe22d8677cd6912651ac3cb0a91e6f26d0ecf4606f85759569"
+
+[[markdown]]
+source = "files/en-us/glossary/node.js/index.md"
+sha256 = "e986ccdff49f0e16d9895c1063c04311a395097b8daaf3a330e25834a51c00f2"
+
+[[markdown]]
+source = "files/en-us/glossary/nonce/index.md"
+sha256 = "11aaa94389dd16f05fe07164d2920e550e480cce8112264bc0aa83ec0e9be193"
+
+[[markdown]]
+source = "files/en-us/glossary/null/index.md"
+sha256 = "84014c71d21250f5123330c99bf170f3671181a56f0bb6ebe44bf3a8f53af404"
+
+[[markdown]]
+source = "files/en-us/glossary/object/index.md"
+sha256 = "46f9249e51acaa4921ce691fe46540d0ae8a6ceec92ceb4ebc2db241c1ef4fb1"
+
+[[markdown]]
+source = "files/en-us/glossary/opera_browser/index.md"
+sha256 = "ab5aa6b0ee6c89987ed84da86741f0500bbc3c97f2287b6b9bdd9408481d835c"
+
+[[markdown]]
+source = "files/en-us/glossary/origin/index.md"
+sha256 = "0295cd5d661e64469f3305e0865988c8fcb8c650c403500bb44c16a491996d5f"
+
+[[markdown]]
+source = "files/en-us/glossary/packet/index.md"
+sha256 = "f307f4c5f6caba52dac3fbe15191abb842906d23941f666b6a92ea58ee132424"
+
+[[markdown]]
+source = "files/en-us/glossary/page_load_time/index.md"
+sha256 = "2f3bc16a71106f5d9814a0dc64f16a17f0ee372d5e1943af0ac96d9e666ebbac"
+
+[[markdown]]
+source = "files/en-us/glossary/parameter/index.md"
+sha256 = "0308437a1cbe1f613568ac5019e977631b0f0855b6d508099b5430bc7766e81a"
+
+[[markdown]]
+source = "files/en-us/glossary/parse/index.md"
+sha256 = "e4767105b5126ea8bb40f8ebbd43faa9c340a290b119511a27261ffae87bbeb1"
+
+[[markdown]]
+source = "files/en-us/glossary/payload_header/index.md"
+sha256 = "34ad13526737bd6d0cabe165c515354e8ca728391e88f1ac131a780b504a26d4"
+
+[[markdown]]
+source = "files/en-us/glossary/percent-encoding/index.md"
+sha256 = "8d1d1135cc10013e9e265bf22d42fd25097440a4250994e6febf87a29d56d08e"
+
+[[markdown]]
+source = "files/en-us/glossary/plugin/index.md"
+sha256 = "a4f54432a8bf0edebc440cfd8dd45409d513b90816722fbfcce0b13426113763"
+
+[[markdown]]
+source = "files/en-us/glossary/polyfill/index.md"
+sha256 = "c714496197c05bdc6c6b8a28a52543ffa455989845bf6de747ba96ab36076146"
+
+[[markdown]]
+source = "files/en-us/glossary/prefetch/index.md"
+sha256 = "1ef9ed85b317b3e9c2e281d3b0ef06e68ba19e8275ecf73f98ee534895a7f68c"
+
+[[markdown]]
+source = "files/en-us/glossary/preflight_request/index.md"
+sha256 = "2e611cd236754977d8356c2560123fa2a47c9e2d07e8e2345380eddb6768c293"
+
+[[markdown]]
+source = "files/en-us/glossary/prerender/index.md"
+sha256 = "ffd42208ef8fb6e28e24e041b7e908e24c093a59ff06f6ff13d6fe3037ed6a88"
+
+[[markdown]]
+source = "files/en-us/glossary/primitive/index.md"
+sha256 = "b0ac9a914328848ce0f3e21fc0ec7f4b2d071c91b67589296ad1c2d5e09a91bc"
+
+[[markdown]]
+source = "files/en-us/glossary/progressive_enhancement/index.md"
+sha256 = "cb32f36238a17ddae7a6b211559d5739edca0e1060f8ab11c6787725242b6fdf"
+
+[[markdown]]
+source = "files/en-us/glossary/property/javascript/index.md"
+sha256 = "9b8a01b670b366eb4f854ff17c91e9ad0f2c09314773435993accdcd99891800"
+
+[[markdown]]
+source = "files/en-us/glossary/public-key_cryptography/index.md"
+sha256 = "26c818c4cbeef0ad8a94981f20585d70858fd9d2f88fb2af2390b896fe7ff724"
+
+[[markdown]]
+source = "files/en-us/glossary/python/index.md"
+sha256 = "7004f4c45d908dc7136287465e686a75217178534f08a46762a62b57d41cc145"
+
+[[markdown]]
+source = "files/en-us/glossary/quality_values/index.md"
+sha256 = "213c3c3180173c1936be19dee9dd20bcf8e25864a2141d5dd20ebffaba039fae"
+
+[[markdown]]
+source = "files/en-us/glossary/quic/index.md"
+sha256 = "ea5dad7424b607ea33517b8d8cb5a63c29b7a1ce3901489c378992190ec36788"
+
+[[markdown]]
+source = "files/en-us/glossary/reading_order/index.md"
+sha256 = "b420a3150a4e00e3e27682dacfcb347770497c111a07d72304344454e4f24a99"
+
+[[markdown]]
+source = "files/en-us/glossary/recursion/index.md"
+sha256 = "6f18b2e611d04a6bd0cc68ac8cb3959338b29664b3ecef0361fe6a9a2315dbcd"
+
+[[markdown]]
+source = "files/en-us/glossary/registrable_domain/index.md"
+sha256 = "84a3967606b841cb9f6400980cc1ddbd916c7d329008cab98202ee4be21c328d"
+
+[[markdown]]
+source = "files/en-us/glossary/replaced_elements/index.md"
+sha256 = "071f26d068033348274f98881208b8eb4516ed9df9a5e111566af37860c152fa"
+
+[[markdown]]
+source = "files/en-us/glossary/representation_header/index.md"
+sha256 = "f988fbe2774eb1c338390577aa823d9d6d8fcd4000b67c36a5cc0524130d0af9"
+
+[[markdown]]
+source = "files/en-us/glossary/request_header/index.md"
+sha256 = "64e673c01eed0354c6231b0726f09fdfa2728cfa9860f2afa6efdf250b7767c9"
+
+[[markdown]]
+source = "files/en-us/glossary/response_header/index.md"
+sha256 = "d10a68723d4bacdcaab4f35cc8b4093632b558aca1a282d509ca3459cb3a2dc8"
+
+[[markdown]]
+source = "files/en-us/glossary/rgb/index.md"
+sha256 = "5db8bbcaf0a51f38d398cbc0a7110c4bc9bb48f81a3a312ed0e2496629b09638"
+
+[[markdown]]
+source = "files/en-us/glossary/rng/index.md"
+sha256 = "c970bb2442b7551fba6d689f05c5f34f5b006f2f4b0d353d1145ed635fd91e56"
+
+[[markdown]]
+source = "files/en-us/glossary/robots.txt/index.md"
+sha256 = "f1edf2b8159cc9054528b0ecbba03eecdf5b47d7f29f4262cbee87a7183f93ba"
+
+[[markdown]]
+source = "files/en-us/glossary/round_trip_time/index.md"
+sha256 = "2ea4189987d862b141c50855edb067d16d73cd6aad88998bf81d1532d46b3e33"
+
+[[markdown]]
+source = "files/en-us/glossary/router/index.md"
+sha256 = "d6aa0ec475d1cb9d8c5af0e21a52ac57c6ef081d8e23d55dadcf53fc108d0a50"
+
+[[markdown]]
+source = "files/en-us/glossary/rsync/index.md"
+sha256 = "015ef62b0c75fe0176842fb9e07f078a5653f79ee339777f0e241b8a836e5b32"
+
+[[markdown]]
+source = "files/en-us/glossary/safe/http/index.md"
+sha256 = "4ed368e39c34341e2ad5a4a535f755d96755c47a29ccca5fde72cf8de2138bc4"
+
+[[markdown]]
+source = "files/en-us/glossary/salt/index.md"
+sha256 = "2647d52abb9b7b8a6d27f54af7cc6571e4dbc9493582251d6d9f188be149f941"
+
+[[markdown]]
+source = "files/en-us/glossary/scope/index.md"
+sha256 = "ae1c8b1f8f99332d4286ccbaef0724d033810a373177945abba9442cb3bce2b0"
+
+[[markdown]]
+source = "files/en-us/glossary/screen_reader/index.md"
+sha256 = "0115bcdd1724f7e619f837a0eeca4896657f81f6f86c567fd0c6bc60f600c038"
+
+[[markdown]]
+source = "files/en-us/glossary/scroll_boundary/index.md"
+sha256 = "aaf693b30a2f58c08b51c6317c5f5e4ef6ce43b168ac8d0292b3c6f6d2b21404"
+
+[[markdown]]
+source = "files/en-us/glossary/scroll_chaining/index.md"
+sha256 = "bd7efee9f89ad30ce7b951960f589405e53ec74b0ca956be18cb67becd3160ff"
+
+[[markdown]]
+source = "files/en-us/glossary/scroll_container/index.md"
+sha256 = "d471297d29c1aaab9ecd2fc696a0f712494443c1f69583498c62e83777ae0be0"
+
+[[markdown]]
+source = "files/en-us/glossary/search_engine/index.md"
+sha256 = "5ebbbd8b98182c5a59eedc1242d462437dfe73368f1812b88bbb0446830552d2"
+
+[[markdown]]
+source = "files/en-us/glossary/semantics/index.md"
+sha256 = "ff837cc8c7a0b2a3025b6e3addb329a05831d8d917f7fa3289a9039a5afb3e8e"
+
+[[markdown]]
+source = "files/en-us/glossary/seo/index.md"
+sha256 = "ec51c747255ca05289efb038a225d7a048f32640511d1563817157aa30e21d16"
+
+[[markdown]]
+source = "files/en-us/glossary/serializable_object/index.md"
+sha256 = "236c33c8a91e32477c0f451c92f6fb0ecb3955820b46e2beff92ac4938766d1a"
+
+[[markdown]]
+source = "files/en-us/glossary/session_hijacking/index.md"
+sha256 = "f1da17fc6b45edf0990832880b1953bc02771a616e9256998540be92502afb9c"
+
+[[markdown]]
+source = "files/en-us/glossary/shadow_tree/index.md"
+sha256 = "a3805eafbf73fea8e74c94572240fe6e39a3f80c3615f0c41f5c8a1773908bf4"
+
+[[markdown]]
+source = "files/en-us/glossary/shallow_copy/index.md"
+sha256 = "7633fdabb35c09122c746c2622169555d1dcf6f1e85444bb0dc2f33e3d509dd5"
+
+[[markdown]]
+source = "files/en-us/glossary/signature/function/index.md"
+sha256 = "5c0ceaf4900d9dd09bfc48312083d40a95278e879bffd1d1cd0da47d7c76fb30"
+
+[[markdown]]
+source = "files/en-us/glossary/signature/security/index.md"
+sha256 = "6f7cee3268b2a397eb6effbca9f91e7eba9acfd34f99370a4261761f6fd75765"
+
+[[markdown]]
+source = "files/en-us/glossary/site/index.md"
+sha256 = "0ac1c8f5bb61c81293332a343c93c945a96ff71b0e01656aaa5c4292dda3af35"
+
+[[markdown]]
+source = "files/en-us/glossary/social_engineering/index.md"
+sha256 = "8be7e5e0781fdacc7850caad32cfabcd0582e1365f1a8bbc025796915d47606c"
+
+[[markdown]]
+source = "files/en-us/glossary/soft_navigation/index.md"
+sha256 = "039d6e073407893cd4870bf14b7a7cf80c8f023ce7aaad48475c5c3798526bef"
+
+[[markdown]]
+source = "files/en-us/glossary/source_map/index.md"
+sha256 = "bee015487e3c69c944be11c895e77ccda9deaea76fe57ca3223ea72f19755a0d"
+
+[[markdown]]
+source = "files/en-us/glossary/speculative_parsing/index.md"
+sha256 = "d224e695831f43d54aa66ea4a6979e02c87b35ada8f29afbea170c2596259588"
+
+[[markdown]]
+source = "files/en-us/glossary/speed_index/index.md"
+sha256 = "e44a0b0b4dc5de0705afde7223462809c66e8e284c45ecca78210fe206ca7044"
+
+[[markdown]]
+source = "files/en-us/glossary/sql_injection/index.md"
+sha256 = "97c578dfc7d277c5afc81e819c84239639fbbdce6529431fd1ffac5cca2d404b"
+
+[[markdown]]
+source = "files/en-us/glossary/ssg/index.md"
+sha256 = "6c6672279e24088e5911e89c1fa22080349c0d7f1cf1bd2377bfe597332779bd"
+
+[[markdown]]
+source = "files/en-us/glossary/ssr/index.md"
+sha256 = "eef7cc8df861bf2fe8639644d17cf8073afa36cc77c460bcf427eeb98968afeb"
+
+[[markdown]]
+source = "files/en-us/glossary/state_machine/index.md"
+sha256 = "139b1e813ce37e6217f1905bedd6a7541f48ac3bc5920618ea89991c6a6d63da"
+
+[[markdown]]
+source = "files/en-us/glossary/static_method/index.md"
+sha256 = "6f7a72a002517b8abfc15209817f860a9453292d382c8325b5bf54d594c08c92"
+
+[[markdown]]
+source = "files/en-us/glossary/sticky_activation/index.md"
+sha256 = "b1586f14308c488b41a532ecc43373680058e6f60f5d823dc577730936aee980"
+
+[[markdown]]
+source = "files/en-us/glossary/style_origin/index.md"
+sha256 = "9ca2d1f2db0d752cab419cfb6a72b8cf905852286652789da9286355dbd90771"
+
+[[markdown]]
+source = "files/en-us/glossary/submit_button/index.md"
+sha256 = "7e317b204660b7cd650dab2b46d9ef5390e2089d5e1f7cb67e32d44675df4633"
+
+[[markdown]]
+source = "files/en-us/glossary/svg/index.md"
+sha256 = "9888d7c235442e08dfce6dae0903d2f7b39da293e184da5827653def686c45fa"
+
+[[markdown]]
+source = "files/en-us/glossary/symmetric-key_cryptography/index.md"
+sha256 = "31fe044a07890ed31aadcbc5da69242a4fbb4d416212936b663a3b203a035940"
+
+[[markdown]]
+source = "files/en-us/glossary/syntax/index.md"
+sha256 = "77178f1fa910e02230b58db97b52bf4c1080a7799f67ef4b656e8327e043d1d6"
+
+[[markdown]]
+source = "files/en-us/glossary/synthetic_monitoring/index.md"
+sha256 = "7b109102ea3917a078ed30f8d35a6297be6f701df1e698a95dc366b0a59130d3"
+
+[[markdown]]
+source = "files/en-us/glossary/tcp_handshake/index.md"
+sha256 = "3917fc128c34ba3705cd8daf8dcac27f34fa783b9e890f1f1f64dea9980735e8"
+
+[[markdown]]
+source = "files/en-us/glossary/tcp_slow_start/index.md"
+sha256 = "afcd59362a52e188c24ac8c3f33e4ed84bdee56fc5bd22b85d2618590fceb90e"
+
+[[markdown]]
+source = "files/en-us/glossary/texel/index.md"
+sha256 = "7d7b91d2a34c934f46deb62a01f55c6b8eed3b9f65a595575ca6fbf15802d7ee"
+
+[[markdown]]
+source = "files/en-us/glossary/thread/index.md"
+sha256 = "1ece51a16ec6f2aecf9021c73ce13fbe1c11d004a9bec86e7ba3a0087578cdb1"
+
+[[markdown]]
+source = "files/en-us/glossary/throttle/index.md"
+sha256 = "76afe495af6732bd46b6c68c0b9984fa5b067d61b7f8f40d754067c717f77cb9"
+
+[[markdown]]
+source = "files/en-us/glossary/time_to_first_byte/index.md"
+sha256 = "e71787d8acaf2299b26a68fba892badee532fa884fa014d796743470f3254015"
+
+[[markdown]]
+source = "files/en-us/glossary/time_to_interactive/index.md"
+sha256 = "298eb11bee8e7eece927cd19f0fc1428ad88cb9d2730d6a8dd5212eafb7a3743"
+
+[[markdown]]
+source = "files/en-us/glossary/tld/index.md"
+sha256 = "a0a841841ec68816fc138793984097b565be4a640e02e48d5c1000a16486cd79"
+
+ # Generated bytes independently reproduced by builds1/2 on recorded tool versions.
+[[generated]]
+target = "00-digital/manual-300-pages.pdf"
+sha256 = "7253ccdf3c508002ec620655a6047fe0cedd7b2968abad58a565368f8b63d46d"
+bytes = 1663804
+kind = "digital_pdf"
+
+[[generated]]
+target = "00-digital/invoice-01.pdf"
+sha256 = "106b9c1a401e9cf869bc865be2821319bc55f12bba6054f616a9df649cce990d"
+bytes = 20864
+kind = "digital_pdf"
+
+[[generated]]
+target = "00-digital/invoice-02.pdf"
+sha256 = "d2d9d5cb5de1affb000a8e9bc9c2b56da5997604d844560ae16624de2ad19def"
+bytes = 20915
+kind = "digital_pdf"
+
+[[generated]]
+target = "00-digital/invoice-03.pdf"
+sha256 = "a3cc864224422b160953f283a789fff7ceec8435caaab08fb47e01f1e2eee538"
+bytes = 21155
+kind = "digital_pdf"
+
+[[generated]]
+target = "00-digital/invoice-04.pdf"
+sha256 = "6617d6e4f8d6e92b3870cb3a918932c125890808521970ca9923fba7d9c67b6d"
+bytes = 21003
+kind = "digital_pdf"
+
+[[generated]]
+target = "00-digital/invoice-05.pdf"
+sha256 = "d8fd280f7b89cccffccdf582bd81d9ecbcae28c6c2018246070b94594cc5a8b8"
+bytes = 21078
+kind = "digital_pdf"
+
+[[generated]]
+target = "01-scanned/2608.01507v1.pdf"
+sha256 = "519723c17886402b4c41d1d16a462305770c9a850e08b66a0e8ce1b85fd00805"
+bytes = 18471156
+kind = "scanned_pdf"
+
+[[generated]]
+target = "01-scanned/2603.03194v1.pdf"
+sha256 = "2e2977f0113685c4496283f5b5660d703e21f1199c4abf7140e937b3be42204d"
+bytes = 23898559
+kind = "scanned_pdf"
+
+[[generated]]
+target = "01-scanned/2606.11864v1.pdf"
+sha256 = "85d6dfaced49a06863a371cf8ffc6ced0396adde00a6284844fed3c282c02471"
+bytes = 18160261
+kind = "scanned_pdf"
+
+[[generated]]
+target = "01-scanned/2605.18561v1.pdf"
+sha256 = "a7ed179c321310fd6f183d2c6309e53a0d4e629b8d12c4f46d13138d44b97d04"
+bytes = 10834026
+kind = "scanned_pdf"
+
+[[generated]]
+target = "01-scanned/2603.27277v1.pdf"
+sha256 = "7fdf13934dcb1e28390bd4bc3d381618402688fb557162539c5b36b4303a4041"
+bytes = 8413061
+kind = "scanned_pdf"
+
+[[generated]]
+target = "01-scanned/2506.15655v1.pdf"
+sha256 = "bc8ac3dc53020bd1b6121a06824231a3500d80b2a670929a2660c8df4ea9788a"
+bytes = 8026937
+kind = "scanned_pdf"
+
+[[generated]]
+target = "01-scanned/2608.00181v1.pdf"
+sha256 = "3a02d2229945d7d5edb7213a2e059f1567f370a3b03fc8caf283cbd0a508682d"
+bytes = 8067315
+kind = "scanned_pdf"
+
+[[generated]]
+target = "01-scanned/2608.00227v1.pdf"
+sha256 = "f2bf0e6055a42c9f221c929ef14936f731ab5c786abc1efc1f4cb90c325036d6"
+bytes = 8532390
+kind = "scanned_pdf"
+
+[[generated]]
+target = "01-scanned/2608.00228v1.pdf"
+sha256 = "849618cda9c226b87741ebd1f5b9f90cf88627ab687a325ea4fef70aae49e0b1"
+bytes = 9171786
+kind = "scanned_pdf"
+
+[[generated]]
+target = "01-scanned/2608.00230v1.pdf"
+sha256 = "8ee8ceb4d35fba2d6d0bf4e0bbbba4db247da931c89379c22f5e4b9df8db4123"
+bytes = 10815978
+kind = "scanned_pdf"
+
+[[generated]]
+target = "02-office/office-01.docx"
+sha256 = "0b5562b2f4e8b290cf40cea8422095d54ad7948d6c989317bd209558c5283ec2"
+bytes = 34793
+kind = "office"
+
+[[generated]]
+target = "02-office/office-02.docx"
+sha256 = "8ee405675158643bc31f6585b2ee869b68da20f54a20edc167b00576a9126686"
+bytes = 34831
+kind = "office"
+
+[[generated]]
+target = "02-office/office-03.docx"
+sha256 = "6f1989acc334a42a7d5b5dca8b3da54ff6b6cbe32775d37effca3a2b63c64169"
+bytes = 34808
+kind = "office"
+
+[[generated]]
+target = "02-office/office-04.docx"
+sha256 = "6a9936c2a57092f6135ba18443b7f1e5b91cabcf2e9a27229a86a77922086a41"
+bytes = 34808
+kind = "office"
+
+[[generated]]
+target = "02-office/office-05.docx"
+sha256 = "60e8993bc0288d28efdac6a2efafdbf69734017da5a9aa1793627199e68bcc3c"
+bytes = 34776
+kind = "office"
+
+[[generated]]
+target = "02-office/office-06.docx"
+sha256 = "19ff7aa7b0d990faef5431176c77c3184be01addd441387efc4a60e024594c08"
+bytes = 34794
+kind = "office"
+
+[[generated]]
+target = "02-office/office-07.docx"
+sha256 = "b02367f973bad6b7492fab8c57a6d2afcab7cb4c554d8c018f559fb07f50e61f"
+bytes = 40448
+kind = "office"
+
+[[generated]]
+target = "02-office/office-08.xlsx"
+sha256 = "b19695e9119e3a36e4aee3219252b0dfeedb91229e2bcecead1e1ca0972e349e"
+bytes = 5492
+kind = "office"
+
+[[generated]]
+target = "02-office/office-09.xlsx"
+sha256 = "9bbd55d59195a05faf07e84e12c04033ea0ec5644434d96f75ef0a48690845ec"
+bytes = 5503
+kind = "office"
+
+[[generated]]
+target = "02-office/office-10.xlsx"
+sha256 = "bae02ba3004a349b0e88f4b976a51eb1ddea3a7c95b1f13b9dd5d6079374d0e3"
+bytes = 5472
+kind = "office"
+
+[[generated]]
+target = "02-office/office-11.xlsx"
+sha256 = "85e6c866b3f858c6be30fb2c2903a063de7c8d28911901036731486a27e3b78d"
+bytes = 5493
+kind = "office"
+
+[[generated]]
+target = "02-office/office-12.xlsx"
+sha256 = "9cb5142b301ea3a4772c56b302cd6d149f1610bf15fa2e96b7bbc42ddd714585"
+bytes = 5440
+kind = "office"
+
+[[generated]]
+target = "02-office/office-13.xlsx"
+sha256 = "3b580b42ac55f564dc6d625eb0c4f5a2b47e32327308be5981bdeb6b2b3a336d"
+bytes = 5479
+kind = "office"
+
+[[generated]]
+target = "02-office/office-14.xlsx"
+sha256 = "5859dc91ea0d6dec13b442463234697a025a6f158b8c947d62ebd605e8ec7ca2"
+bytes = 128
+kind = "office"
+
+[[generated]]
+target = "02-office/office-15.pptx"
+sha256 = "50c005b77f929d990f07993b069894ad257364f1063d70129be85326feb329e5"
+bytes = 29538
+kind = "office"
+
+[[generated]]
+target = "02-office/office-16.pptx"
+sha256 = "74a552395294a23a1f669ccc3cff7d7f85ce36067c366612d60d199fd6979423"
+bytes = 29511
+kind = "office"
+
+[[generated]]
+target = "02-office/office-17.pptx"
+sha256 = "82aba87f91835d2baf1ffa346d3f450ed2ff0a43955e4ff6b53302079d558b24"
+bytes = 29507
+kind = "office"
+
+[[generated]]
+target = "02-office/office-18.pptx"
+sha256 = "a6f6ed865a3aee6247bbb0441df003485625de9516d604bbde54b03e993da53b"
+bytes = 29513
+kind = "office"
+
+[[generated]]
+target = "02-office/office-19.pptx"
+sha256 = "7c9694352f915837663389e1a168ef462fa98b8185c9992232903bd892309760"
+bytes = 29524
+kind = "office"
+
+[[generated]]
+target = "02-office/office-20.pptx"
+sha256 = "6c55bedaddef86ab4f7dac1305abe4e421e01c1de512dbd05fcee6858e8ad9b0"
+bytes = 29467
+kind = "office"
+
+[[generated]]
+target = "03-images/oversized-container.webp"
+sha256 = "18416659c90e0557a90eda76af61b596a2358dc0320da887037289b73bd7fe24"
+bytes = 8388608
+kind = "oversized_image"
+
+[[generated]]
+target = "README.md"
+sha256 = "fbe073c950aeaa5008199f6af6e36502db6db979b20504fb8126b340acf6c181"
+bytes = 5775
+kind = "readme"
+
+[[generated]]
+target = "zz-hostile/large.json"
+sha256 = "82aa1db56af2860c937879adb40dcb68249f9a203783a9b67548d4319f85cb93"
+bytes = 209715200
+kind = "hostile_large_json"
+
+[[generated]]
+target = "zz-hostile/sparse.bin"
+sha256 = "7f06c62352aebd8125b2a1841e2b9e1ffcbed602f381c3dcb3200200e383d1d5"
+bytes = 5368709120
+kind = "hostile_sparse_binary"
+
+[[generated]]
+target = "zz-hostile/empty.txt"
+sha256 = "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+bytes = 0
+kind = "hostile_empty"
+
+[[generated]]
+target_bytes_hex = "7a7a2d686f7374696c652f696e76616c69642dff2e747874"
+sha256 = "0a1b144faaa132f527d3f416531d67d4e7613da54d7ba9dc0c7b21e6e17426c9"
+bytes = 32
+kind = "hostile_invalid_utf8"

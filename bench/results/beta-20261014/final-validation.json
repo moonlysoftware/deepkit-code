@@ -1,0 +1,112 @@
+{
+  "iteration": 10,
+  "selected_arm": 9,
+  "pass": true,
+  "reasons": [],
+  "baseline": {
+    "by_repo": {
+      "django": {
+        "cli_wall_ms_median": 137.18320199404843,
+        "cli_wall_ms_p95": 163.41946199827362,
+        "errors": 0,
+        "hit_file_at5": 0.25,
+        "negative_queries": 0,
+        "no_answer_empty": null,
+        "partial": 0,
+        "positive_queries": 4,
+        "queries": 4,
+        "recall_at10": 0.25
+      },
+      "hugo": {
+        "cli_wall_ms_median": 98.03172749525402,
+        "cli_wall_ms_p95": 102.00454300502315,
+        "errors": 0,
+        "hit_file_at5": 0.25,
+        "negative_queries": 0,
+        "no_answer_empty": null,
+        "partial": 0,
+        "positive_queries": 4,
+        "queries": 4,
+        "recall_at10": 0.375
+      },
+      "laravel": {
+        "cli_wall_ms_median": 139.41937699564733,
+        "cli_wall_ms_p95": 163.0741729895817,
+        "errors": 0,
+        "hit_file_at5": 0.25,
+        "negative_queries": 0,
+        "no_answer_empty": null,
+        "partial": 0,
+        "positive_queries": 4,
+        "queries": 4,
+        "recall_at10": 0.25
+      }
+    },
+    "total": {
+      "cli_wall_ms_median": 129.92858849611366,
+      "cli_wall_ms_p95": 163.41946199827362,
+      "errors": 0,
+      "hit_file_at5": 0.25,
+      "negative_queries": 0,
+      "no_answer_empty": null,
+      "partial": 0,
+      "positive_queries": 12,
+      "queries": 12,
+      "recall_at10": 0.2916666666666667
+    }
+  },
+  "candidate": {
+    "by_repo": {
+      "django": {
+        "cli_wall_ms_median": 123.93811000220012,
+        "cli_wall_ms_p95": 134.3158020026749,
+        "errors": 0,
+        "hit_file_at5": 0.25,
+        "negative_queries": 0,
+        "no_answer_empty": null,
+        "partial": 0,
+        "positive_queries": 4,
+        "queries": 4,
+        "recall_at10": 0.375
+      },
+      "hugo": {
+        "cli_wall_ms_median": 85.83650000218768,
+        "cli_wall_ms_p95": 94.15093300049193,
+        "errors": 0,
+        "hit_file_at5": 0.25,
+        "negative_queries": 0,
+        "no_answer_empty": null,
+        "partial": 0,
+        "positive_queries": 4,
+        "queries": 4,
+        "recall_at10": 0.375
+      },
+      "laravel": {
+        "cli_wall_ms_median": 113.21306400350295,
+        "cli_wall_ms_p95": 131.64106399926823,
+        "errors": 0,
+        "hit_file_at5": 0.25,
+        "negative_queries": 0,
+        "no_answer_empty": null,
+        "partial": 0,
+        "positive_queries": 4,
+        "queries": 4,
+        "recall_at10": 0.375
+      }
+    },
+    "total": {
+      "cli_wall_ms_median": 104.54133950406685,
+      "cli_wall_ms_p95": 134.3158020026749,
+      "errors": 0,
+      "hit_file_at5": 0.25,
+      "negative_queries": 0,
+      "no_answer_empty": null,
+      "partial": 0,
+      "positive_queries": 12,
+      "queries": 12,
+      "recall_at10": 0.375
+    }
+  },
+  "diagnostic_agent_authored_not_human_approved": true,
+  "next": "Integrate minimal implementation and verify if pass; do not tune after this holdout"
+}

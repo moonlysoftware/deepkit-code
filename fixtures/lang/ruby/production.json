@@ -1,0 +1,35 @@
+{
+  "edges": [
+    {
+      "kind": "Ref",
+      "line": 1,
+      "name": "value",
+      "owner": 0
+    },
+    {
+      "kind": "Ref",
+      "line": 2,
+      "name": "value",
+      "owner": 0
+    }
+  ],
+  "symbols": [
+    {
+      "end": 3,
+      "kind": "method",
+      "name": "should_retry",
+      "qualified": "should_retry",
+      "start": 1
+    }
+  ],
+  "units": [
+    {
+      "end": 3,
+      "header": "should_retry › def should_retry(value)",
+      "kind": "Symbol",
+      "scope": "should_retry",
+      "start": 1,
+      "text": "def should_retry(value)\n  value > 0\nend"
+    }
+  ]
+}

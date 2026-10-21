@@ -1,0 +1,2083 @@
+{
+  "baseline": "/home/lucky93/deepkit-code/notes/bench/search-tuning-20260925/arm-0.json",
+  "candidate_reports": [
+    "/home/lucky93/deepkit-code/notes/bench/search-tuning-20260925/arm-1.json",
+    "/home/lucky93/deepkit-code/notes/bench/search-tuning-20260925/arm-2.json",
+    "/home/lucky93/deepkit-code/notes/bench/search-tuning-20260925/arm-3.json",
+    "/home/lucky93/deepkit-code/notes/bench/search-tuning-20260925/arm-4.json",
+    "/home/lucky93/deepkit-code/notes/bench/search-tuning-20260925/arm-5.json",
+    "/home/lucky93/deepkit-code/notes/bench/search-tuning-20260925/arm-6.json",
+    "/home/lucky93/deepkit-code/notes/bench/search-tuning-20260925/arm-7.json",
+    "/home/lucky93/deepkit-code/notes/bench/search-tuning-20260925/arm-8.json",
+    "/home/lucky93/deepkit-code/notes/bench/search-tuning-20260925/arm-9.json"
+  ],
+  "selected_quality_finalist": 9,
+  "eligible_quality_order": [
+    9
+  ],
+  "comparisons": [
+    {
+      "arm": 1,
+      "eligible_quality_screen": false,
+      "reasons": [
+        "laravel:hit_file_at5_regressed"
+      ],
+      "summary": {
+        "cli_wall_ms_median": 94.27819050324615,
+        "cli_wall_ms_p95": 152.07913899212144,
+        "errors": 0,
+        "hit_file_at5": 0.675,
+        "negative_queries": 0,
+        "no_answer_empty": null,
+        "partial": 0,
+        "positive_queries": 120,
+        "queries": 120,
+        "recall_at10": 0.6833333333333333
+      },
+      "delta": {
+        "recall_at10": 0.03749999999999998,
+        "hit_file_at5": 0.01666666666666672
+      },
+      "by_repo": {
+        "django": {
+          "before": {
+            "cli_wall_ms_median": 124.5551440078998,
+            "cli_wall_ms_p95": 204.92836899938993,
+            "errors": 0,
+            "hit_file_at5": 0.5666666666666667,
+            "negative_queries": 0,
+            "no_answer_empty": null,
+            "partial": 0,
+            "positive_queries": 30,
+            "queries": 30,
+            "recall_at10": 0.6333333333333333
+          },
+          "after": {
+            "cli_wall_ms_median": 119.25624850118766,
+            "cli_wall_ms_p95": 204.76062600209843,
+            "errors": 0,
+            "hit_file_at5": 0.6333333333333333,
+            "negative_queries": 0,
+            "no_answer_empty": null,
+            "partial": 0,
+            "positive_queries": 30,
+            "queries": 30,
+            "recall_at10": 0.6333333333333333
+          },
+          "delta": {
+            "recall_at10": 0.0,
+            "hit_file_at5": 0.06666666666666665
+          }
+        },
+        "hugo": {
+          "before": {
+            "cli_wall_ms_median": 90.05771699594334,
+            "cli_wall_ms_p95": 106.9480550067965,
+            "errors": 0,
+            "hit_file_at5": 0.5666666666666667,
+            "negative_queries": 0,
+            "no_answer_empty": null,
+            "partial": 0,
+            "positive_queries": 30,
+            "queries": 30,
+            "recall_at10": 0.6166666666666667
+          },
+          "after": {
+            "cli_wall_ms_median": 87.80582749750465,
+            "cli_wall_ms_p95": 112.94304500916041,
+            "errors": 0,
+            "hit_file_at5": 0.5666666666666667,
+            "negative_queries": 0,
+            "no_answer_empty": null,
+            "partial": 0,
+            "positive_queries": 30,
+            "queries": 30,
+            "recall_at10": 0.6166666666666667
+          },
+          "delta": {
+            "recall_at10": 0.0,
+            "hit_file_at5": 0.0
+          }
+        },
+        "laravel": {
+          "before": {
+            "cli_wall_ms_median": 102.12028399837436,
+            "cli_wall_ms_p95": 155.46093799639493,
+            "errors": 0,
+            "hit_file_at5": 0.7333333333333333,
+            "negative_queries": 0,
+            "no_answer_empty": null,
+            "partial": 0,
+            "positive_queries": 30,
+            "queries": 30,
+            "recall_at10": 0.6333333333333333
+          },
+          "after": {
+            "cli_wall_ms_median": 106.07028899539728,
+            "cli_wall_ms_p95": 155.34194100473542,
+            "errors": 0,
+            "hit_file_at5": 0.7,
+            "negative_queries": 0,
+            "no_answer_empty": null,
+            "partial": 0,
+            "positive_queries": 30,
+            "queries": 30,
+            "recall_at10": 0.65
+          },
+          "delta": {
+            "recall_at10": 0.01666666666666672,
+            "hit_file_at5": -0.033333333333333326
+          }
+        },
+        "ripgrep": {
+          "before": {
+            "cli_wall_ms_median": 72.48716499452712,
+            "cli_wall_ms_p95": 78.71383799647447,
+            "errors": 0,
+            "hit_file_at5": 0.7666666666666667,
+            "negative_queries": 0,
+            "no_answer_empty": null,
+            "partial": 0,
+            "positive_queries": 30,
+            "queries": 30,
+            "recall_at10": 0.7
+          },
+          "after": {
+            "cli_wall_ms_median": 70.62384999881033,
+            "cli_wall_ms_p95": 73.62982199992985,
+            "errors": 0,
+            "hit_file_at5": 0.8,
+            "negative_queries": 0,
+            "no_answer_empty": null,
+            "partial": 0,
+            "positive_queries": 30,
+            "queries": 30,
+            "recall_at10": 0.8333333333333334
+          },
+          "delta": {
+            "recall_at10": 0.13333333333333341,
+            "hit_file_at5": 0.033333333333333326
+          }
+        }
+      },
+      "changed_path_lists": [
+        "django/django-001",
+        "django/django-002",
+        "django/django-003",
+        "django/django-004",
+        "django/django-005",
+        "django/django-006",
+        "django/django-007",
+        "django/django-008",
+        "django/django-009",
+        "django/django-010",
+        "django/django-011",
+        "django/django-012",
+        "django/django-013",
+        "django/django-014",
+        "django/django-016",
+        "django/django-017",
+        "django/django-018",
+        "django/django-019",
+        "django/django-020",
+        "django/django-021",
+        "django/django-023",
+        "django/django-024",
+        "django/django-025",
+        "django/django-026",
+        "django/django-027",
+        "django/django-028",
+        "django/django-029",
+        "django/django-030",
+        "hugo/hugo-001",
+        "hugo/hugo-002",
+        "hugo/hugo-003",
+        "hugo/hugo-004",
+        "hugo/hugo-005",
+        "hugo/hugo-006",
+        "hugo/hugo-007",
+        "hugo/hugo-008",
+        "hugo/hugo-009",
+        "hugo/hugo-010",
+        "hugo/hugo-011",
+        "hugo/hugo-012",
+        "hugo/hugo-013",
+        "hugo/hugo-015",
+        "hugo/hugo-018",
+        "hugo/hugo-019",
+        "hugo/hugo-020",
+        "hugo/hugo-021",
+        "hugo/hugo-024",
+        "hugo/hugo-026",
+        "hugo/hugo-027",
+        "hugo/hugo-028",
+        "hugo/hugo-029",
+        "hugo/hugo-030",
+        "laravel/laravel-002",
+        "laravel/laravel-003",
+        "laravel/laravel-004",
+        "laravel/laravel-005",
+        "laravel/laravel-006",
+        "laravel/laravel-008",
+        "laravel/laravel-009",
+        "laravel/laravel-010",
+        "laravel/laravel-011",
+        "laravel/laravel-012",
+        "laravel/laravel-013",
+        "laravel/laravel-014",
+        "laravel/laravel-015",
+        "laravel/laravel-017",
+        "laravel/laravel-018",
+        "laravel/laravel-019",
+        "laravel/laravel-020",
+        "laravel/laravel-021",
+        "laravel/laravel-024",
+        "laravel/laravel-026",
+        "laravel/laravel-027",
+        "laravel/laravel-028",
+        "laravel/laravel-029",
+        "laravel/laravel-030",
+        "ripgrep/rg-001",
+        "ripgrep/rg-002",
+        "ripgrep/rg-003",
+        "ripgrep/rg-004",
+        "ripgrep/rg-005",
+        "ripgrep/rg-006",
+        "ripgrep/rg-007",
+        "ripgrep/rg-008",
+        "ripgrep/rg-009",
+        "ripgrep/rg-010",
+        "ripgrep/rg-011",
+        "ripgrep/rg-012",
+        "ripgrep/rg-014",
+        "ripgrep/rg-015",
+        "ripgrep/rg-017",
+        "ripgrep/rg-018",
+        "ripgrep/rg-019",
+        "ripgrep/rg-020",
+        "ripgrep/rg-021",
+        "ripgrep/rg-022",
+        "ripgrep/rg-023",
+        "ripgrep/rg-024",
+        "ripgrep/rg-025",
+        "ripgrep/rg-026",
+        "ripgrep/rg-027",
+        "ripgrep/rg-028",
+        "ripgrep/rg-029",
+        "ripgrep/rg-030"
+      ],
+      "recall_improved_queries": [
+        "django/django-006",
+        "django/django-028",
+        "hugo/hugo-028",
+        "laravel/laravel-010",
+        "ripgrep/rg-002",
+        "ripgrep/rg-004",
+        "ripgrep/rg-005",
+        "ripgrep/rg-022",
+        "ripgrep/rg-026",
+        "ripgrep/rg-029",
+        "ripgrep/rg-030"
+      ],
+      "recall_regressed_queries": [
+        "django/django-024",
+        "hugo/hugo-027"
+      ],
+      "remaining": "Controls, counterbalanced finalist timing and final holdout must pass before integration"
+    },
+    {
+      "arm": 2,
+      "eligible_quality_screen": false,
+      "reasons": [
+        "fewer_than_two_repository_recall_gains"
+      ],
+      "summary": {
+        "cli_wall_ms_median": 95.23673350486206,
+        "cli_wall_ms_p95": 154.38717399956658,
+        "errors": 0,
+        "hit_file_at5": 0.6583333333333333,
+        "negative_queries": 0,
+        "no_answer_empty": null,
+        "partial": 0,
+        "positive_queries": 120,
+        "queries": 120,
+        "recall_at10": 0.6541666666666667
+      },
+      "delta": {
+        "recall_at10": 0.008333333333333304,
+        "hit_file_at5": 0.0
+      },
+      "by_repo": {
+        "django": {
+          "before": {
+            "cli_wall_ms_median": 124.5551440078998,
+            "cli_wall_ms_p95": 204.92836899938993,
+            "errors": 0,
+            "hit_file_at5": 0.5666666666666667,
+            "negative_queries": 0,
+            "no_answer_empty": null,
+            "partial": 0,
+            "positive_queries": 30,
+            "queries": 30,
+            "recall_at10": 0.6333333333333333
+          },
+          "after": {
+            "cli_wall_ms_median": 123.8681544928113,
+            "cli_wall_ms_p95": 209.400480001932,
+            "errors": 0,
+            "hit_file_at5": 0.5666666666666667,
+            "negative_queries": 0,
+            "no_answer_empty": null,
+            "partial": 0,
+            "positive_queries": 30,
+            "queries": 30,
+            "recall_at10": 0.6333333333333333
+          },
+          "delta": {
+            "recall_at10": 0.0,
+            "hit_file_at5": 0.0
+          }
+        },
+        "hugo": {
+          "before": {
+            "cli_wall_ms_median": 90.05771699594334,
+            "cli_wall_ms_p95": 106.9480550067965,
+            "errors": 0,
+            "hit_file_at5": 0.5666666666666667,
+            "negative_queries": 0,
+            "no_answer_empty": null,
+            "partial": 0,
+            "positive_queries": 30,
+            "queries": 30,
+            "recall_at10": 0.6166666666666667
+          },
+          "after": {
+            "cli_wall_ms_median": 89.56282649887726,
+            "cli_wall_ms_p95": 112.1401819982566,
+            "errors": 0,
+            "hit_file_at5": 0.5666666666666667,
+            "negative_queries": 0,
+            "no_answer_empty": null,
+            "partial": 0,
+            "positive_queries": 30,
+            "queries": 30,
+            "recall_at10": 0.6166666666666667
+          },
+          "delta": {
+            "recall_at10": 0.0,
+            "hit_file_at5": 0.0
+          }
+        },
+        "laravel": {
+          "before": {
+            "cli_wall_ms_median": 102.12028399837436,
+            "cli_wall_ms_p95": 155.46093799639493,
+            "errors": 0,
+            "hit_file_at5": 0.7333333333333333,
+            "negative_queries": 0,
+            "no_answer_empty": null,
+            "partial": 0,
+            "positive_queries": 30,
+            "queries": 30,
+            "recall_at10": 0.6333333333333333
+          },
+          "after": {
+            "cli_wall_ms_median": 100.61900250002509,
+            "cli_wall_ms_p95": 147.81294300337322,
+            "errors": 0,
+            "hit_file_at5": 0.7333333333333333,
+            "negative_queries": 0,
+            "no_answer_empty": null,
+            "partial": 0,
+            "positive_queries": 30,
+            "queries": 30,
+            "recall_at10": 0.6666666666666666
+          },
+          "delta": {
+            "recall_at10": 0.033333333333333326,
+            "hit_file_at5": 0.0
+          }
+        },
+        "ripgrep": {
+          "before": {
+            "cli_wall_ms_median": 72.48716499452712,
+            "cli_wall_ms_p95": 78.71383799647447,
+            "errors": 0,
+            "hit_file_at5": 0.7666666666666667,
+            "negative_queries": 0,
+            "no_answer_empty": null,
+            "partial": 0,
+            "positive_queries": 30,
+            "queries": 30,
+            "recall_at10": 0.7
+          },
+          "after": {
+            "cli_wall_ms_median": 70.29150650487281,
+            "cli_wall_ms_p95": 75.07415200234391,
+            "errors": 0,
+            "hit_file_at5": 0.7666666666666667,
+            "negative_queries": 0,
+            "no_answer_empty": null,
+            "partial": 0,
+            "positive_queries": 30,
+            "queries": 30,
+            "recall_at10": 0.7
+          },
+          "delta": {
+            "recall_at10": 0.0,
+            "hit_file_at5": 0.0
+          }
+        }
+      },
+      "changed_path_lists": [
+        "django/django-016",
+        "django/django-026",
+        "django/django-029",
+        "hugo/hugo-003",
+        "hugo/hugo-006",
+        "hugo/hugo-007",
+        "hugo/hugo-012",
+        "hugo/hugo-023",
+        "hugo/hugo-026",
+        "hugo/hugo-029",
+        "hugo/hugo-030",
+        "laravel/laravel-002",
+        "laravel/laravel-003",
+        "laravel/laravel-004",
+        "laravel/laravel-006",
+        "laravel/laravel-007",
+        "laravel/laravel-008",
+        "laravel/laravel-010",
+        "laravel/laravel-015",
+        "laravel/laravel-021",
+        "laravel/laravel-022",
+        "ripgrep/rg-006",
+        "ripgrep/rg-014",
+        "ripgrep/rg-029",
+        "ripgrep/rg-030"
+      ],
+      "recall_improved_queries": [
+        "laravel/laravel-004"
+      ],
+      "recall_regressed_queries": [],
+      "remaining": "Controls, counterbalanced finalist timing and final holdout must pass before integration"
+    },
+    {
+      "arm": 3,
+      "eligible_quality_screen": false,
+      "reasons": [
+        "no_aggregate_recall_gain",
+        "fewer_than_two_repository_recall_gains"
+      ],
+      "summary": {
+        "cli_wall_ms_median": 95.97332098928746,
+        "cli_wall_ms_p95": 149.47805799602065,
+        "errors": 0,
+        "hit_file_at5": 0.6583333333333333,
+        "negative_queries": 0,
+        "no_answer_empty": null,
+        "partial": 0,
+        "positive_queries": 120,
+        "queries": 120,
+        "recall_at10": 0.6458333333333334
+      },
+      "delta": {
+        "recall_at10": 0.0,
+        "hit_file_at5": 0.0
+      },
+      "by_repo": {
+        "django": {
+          "before": {
+            "cli_wall_ms_median": 124.5551440078998,
+            "cli_wall_ms_p95": 204.92836899938993,
+            "errors": 0,
+            "hit_file_at5": 0.5666666666666667,
+            "negative_queries": 0,
+            "no_answer_empty": null,
+            "partial": 0,
+            "positive_queries": 30,
+            "queries": 30,
+            "recall_at10": 0.6333333333333333
+          },
+          "after": {
+            "cli_wall_ms_median": 124.48359499830985,
+            "cli_wall_ms_p95": 199.25496600626502,
+            "errors": 0,
+            "hit_file_at5": 0.5666666666666667,
+            "negative_queries": 0,
+            "no_answer_empty": null,
+            "partial": 0,
+            "positive_queries": 30,
+            "queries": 30,
+            "recall_at10": 0.6333333333333333
+          },
+          "delta": {
+            "recall_at10": 0.0,
+            "hit_file_at5": 0.0
+          }
+        },
+        "hugo": {
+          "before": {
+            "cli_wall_ms_median": 90.05771699594334,
+            "cli_wall_ms_p95": 106.9480550067965,
+            "errors": 0,
+            "hit_file_at5": 0.5666666666666667,
+            "negative_queries": 0,
+            "no_answer_empty": null,
+            "partial": 0,
+            "positive_queries": 30,
+            "queries": 30,
+            "recall_at10": 0.6166666666666667
+          },
+          "after": {
+            "cli_wall_ms_median": 90.89553650119342,
+            "cli_wall_ms_p95": 106.52378801023588,
+            "errors": 0,
+            "hit_file_at5": 0.5666666666666667,
+            "negative_queries": 0,
+            "no_answer_empty": null,
+            "partial": 0,
+            "positive_queries": 30,
+            "queries": 30,
+            "recall_at10": 0.6166666666666667
+          },
+          "delta": {
+            "recall_at10": 0.0,
+            "hit_file_at5": 0.0
+          }
+        },
+        "laravel": {
+          "before": {
+            "cli_wall_ms_median": 102.12028399837436,
+            "cli_wall_ms_p95": 155.46093799639493,
+            "errors": 0,
+            "hit_file_at5": 0.7333333333333333,
+            "negative_queries": 0,
+            "no_answer_empty": null,
+            "partial": 0,
+            "positive_queries": 30,
+            "queries": 30,
+            "recall_at10": 0.6333333333333333
+          },
+          "after": {
+            "cli_wall_ms_median": 102.86855950107565,
+            "cli_wall_ms_p95": 147.09677100472618,
+            "errors": 0,
+            "hit_file_at5": 0.7333333333333333,
+            "negative_queries": 0,
+            "no_answer_empty": null,
+            "partial": 0,
+            "positive_queries": 30,
+            "queries": 30,
+            "recall_at10": 0.6333333333333333
+          },
+          "delta": {
+            "recall_at10": 0.0,
+            "hit_file_at5": 0.0
+          }
+        },
+        "ripgrep": {
+          "before": {
+            "cli_wall_ms_median": 72.48716499452712,
+            "cli_wall_ms_p95": 78.71383799647447,
+            "errors": 0,
+            "hit_file_at5": 0.7666666666666667,
+            "negative_queries": 0,
+            "no_answer_empty": null,
+            "partial": 0,
+            "positive_queries": 30,
+            "queries": 30,
+            "recall_at10": 0.7
+          },
+          "after": {
+            "cli_wall_ms_median": 71.08420399890747,
+            "cli_wall_ms_p95": 80.74789300735574,
+            "errors": 0,
+            "hit_file_at5": 0.7666666666666667,
+            "negative_queries": 0,
+            "no_answer_empty": null,
+            "partial": 0,
+            "positive_queries": 30,
+            "queries": 30,
+            "recall_at10": 0.7
+          },
+          "delta": {
+            "recall_at10": 0.0,
+            "hit_file_at5": 0.0
+          }
+        }
+      },
+      "changed_path_lists": [],
+      "recall_improved_queries": [],
+      "recall_regressed_queries": [],
+      "remaining": "Controls, counterbalanced finalist timing and final holdout must pass before integration"
+    },
+    {
+      "arm": 4,
+      "eligible_quality_screen": false,
+      "reasons": [
+        "django:recall_at10_regressed",
+        "django:hit_file_at5_regressed",
+        "no_aggregate_recall_gain",
+        "fewer_than_two_repository_recall_gains"
+      ],
+      "summary": {
+        "cli_wall_ms_median": 94.06536349706585,
+        "cli_wall_ms_p95": 150.96859600453172,
+        "errors": 0,
+        "hit_file_at5": 0.6416666666666667,
+        "negative_queries": 0,
+        "no_answer_empty": null,
+        "partial": 0,
+        "positive_queries": 120,
+        "queries": 120,
+        "recall_at10": 0.6041666666666666
+      },
+      "delta": {
+        "recall_at10": -0.04166666666666674,
+        "hit_file_at5": -0.016666666666666607
+      },
+      "by_repo": {
+        "django": {
+          "before": {
+            "cli_wall_ms_median": 124.5551440078998,
+            "cli_wall_ms_p95": 204.92836899938993,
+            "errors": 0,
+            "hit_file_at5": 0.5666666666666667,
+            "negative_queries": 0,
+            "no_answer_empty": null,
+            "partial": 0,
+            "positive_queries": 30,
+            "queries": 30,
+            "recall_at10": 0.6333333333333333
+          },
+          "after": {
+            "cli_wall_ms_median": 122.22017600288382,
+            "cli_wall_ms_p95": 182.47850400803145,
+            "errors": 0,
+            "hit_file_at5": 0.4666666666666667,
+            "negative_queries": 0,
+            "no_answer_empty": null,
+            "partial": 0,
+            "positive_queries": 30,
+            "queries": 30,
+            "recall_at10": 0.45
+          },
+          "delta": {
+            "recall_at10": -0.1833333333333333,
+            "hit_file_at5": -0.09999999999999998
+          }
+        },
+        "hugo": {
+          "before": {
+            "cli_wall_ms_median": 90.05771699594334,
+            "cli_wall_ms_p95": 106.9480550067965,
+            "errors": 0,
+            "hit_file_at5": 0.5666666666666667,
+            "negative_queries": 0,
+            "no_answer_empty": null,
+            "partial": 0,
+            "positive_queries": 30,
+            "queries": 30,
+            "recall_at10": 0.6166666666666667
+          },
+          "after": {
+            "cli_wall_ms_median": 90.23190500010969,
+            "cli_wall_ms_p95": 108.0328840034781,
+            "errors": 0,
+            "hit_file_at5": 0.6,
+            "negative_queries": 0,
+            "no_answer_empty": null,
+            "partial": 0,
+            "positive_queries": 30,
+            "queries": 30,
+            "recall_at10": 0.6166666666666667
+          },
+          "delta": {
+            "recall_at10": 0.0,
+            "hit_file_at5": 0.033333333333333326
+          }
+        },
+        "laravel": {
+          "before": {
+            "cli_wall_ms_median": 102.12028399837436,
+            "cli_wall_ms_p95": 155.46093799639493,
+            "errors": 0,
+            "hit_file_at5": 0.7333333333333333,
+            "negative_queries": 0,
+            "no_answer_empty": null,
+            "partial": 0,
+            "positive_queries": 30,
+            "queries": 30,
+            "recall_at10": 0.6333333333333333
+          },
+          "after": {
+            "cli_wall_ms_median": 104.49438449722948,
+            "cli_wall_ms_p95": 141.24605999677442,
+            "errors": 0,
+            "hit_file_at5": 0.7333333333333333,
+            "negative_queries": 0,
+            "no_answer_empty": null,
+            "partial": 0,
+            "positive_queries": 30,
+            "queries": 30,
+            "recall_at10": 0.6333333333333333
+          },
+          "delta": {
+            "recall_at10": 0.0,
+            "hit_file_at5": 0.0
+          }
+        },
+        "ripgrep": {
+          "before": {
+            "cli_wall_ms_median": 72.48716499452712,
+            "cli_wall_ms_p95": 78.71383799647447,
+            "errors": 0,
+            "hit_file_at5": 0.7666666666666667,
+            "negative_queries": 0,
+            "no_answer_empty": null,
+            "partial": 0,
+            "positive_queries": 30,
+            "queries": 30,
+            "recall_at10": 0.7
+          },
+          "after": {
+            "cli_wall_ms_median": 70.04765899910126,
+            "cli_wall_ms_p95": 77.73450900276657,
+            "errors": 0,
+            "hit_file_at5": 0.7666666666666667,
+            "negative_queries": 0,
+            "no_answer_empty": null,
+            "partial": 0,
+            "positive_queries": 30,
+            "queries": 30,
+            "recall_at10": 0.7166666666666667
+          },
+          "delta": {
+            "recall_at10": 0.01666666666666672,
+            "hit_file_at5": 0.0
+          }
+        }
+      },
+      "changed_path_lists": [
+        "django/django-003",
+        "django/django-011",
+        "django/django-012",
+        "django/django-013",
+        "django/django-014",
+        "django/django-015",
+        "django/django-016",
+        "django/django-017",
+        "django/django-018",
+        "django/django-019",
+        "django/django-020",
+        "django/django-021",
+        "django/django-024",
+        "django/django-026",
+        "django/django-027",
+        "hugo/hugo-003",
+        "hugo/hugo-009",
+        "hugo/hugo-011",
+        "hugo/hugo-012",
+        "hugo/hugo-013",
+        "hugo/hugo-014",
+        "hugo/hugo-015",
+        "hugo/hugo-016",
+        "hugo/hugo-017",
+        "hugo/hugo-018",
+        "hugo/hugo-019",
+        "laravel/laravel-012",
+        "laravel/laravel-015",
+        "laravel/laravel-016",
+        "laravel/laravel-026",
+        "ripgrep/rg-011",
+        "ripgrep/rg-012",
+        "ripgrep/rg-013",
+        "ripgrep/rg-014",
+        "ripgrep/rg-015",
+        "ripgrep/rg-017",
+        "ripgrep/rg-018",
+        "ripgrep/rg-019",
+        "ripgrep/rg-020",
+        "ripgrep/rg-024",
+        "ripgrep/rg-027"
+      ],
+      "recall_improved_queries": [
+        "ripgrep/rg-027"
+      ],
+      "recall_regressed_queries": [
+        "django/django-011",
+        "django/django-012",
+        "django/django-014",
+        "django/django-017",
+        "django/django-021",
+        "django/django-026"
+      ],
+      "remaining": "Controls, counterbalanced finalist timing and final holdout must pass before integration"
+    },
+    {
+      "arm": 5,
+      "eligible_quality_screen": false,
+      "reasons": [
+        "django:recall_at10_regressed",
+        "django:hit_file_at5_regressed",
+        "laravel:recall_at10_regressed",
+        "laravel:hit_file_at5_regressed"
+      ],
+      "summary": {
+        "cli_wall_ms_median": 106.31496750283986,
+        "cli_wall_ms_p95": 183.4693349956069,
+        "errors": 0,
+        "hit_file_at5": 0.6416666666666667,
+        "negative_queries": 0,
+        "no_answer_empty": null,
+        "partial": 0,
+        "positive_queries": 120,
+        "queries": 120,
+        "recall_at10": 0.6791666666666667
+      },
+      "delta": {
+        "recall_at10": 0.033333333333333326,
+        "hit_file_at5": -0.016666666666666607
+      },
+      "by_repo": {
+        "django": {
+          "before": {
+            "cli_wall_ms_median": 124.5551440078998,
+            "cli_wall_ms_p95": 204.92836899938993,
+            "errors": 0,
+            "hit_file_at5": 0.5666666666666667,
+            "negative_queries": 0,
+            "no_answer_empty": null,
+            "partial": 0,
+            "positive_queries": 30,
+            "queries": 30,
+            "recall_at10": 0.6333333333333333
+          },
+          "after": {
+            "cli_wall_ms_median": 127.03360698651522,
+            "cli_wall_ms_p95": 229.69019300944638,
+            "errors": 0,
+            "hit_file_at5": 0.5333333333333333,
+            "negative_queries": 0,
+            "no_answer_empty": null,
+            "partial": 0,
+            "positive_queries": 30,
+            "queries": 30,
+            "recall_at10": 0.6166666666666667
+          },
+          "delta": {
+            "recall_at10": -0.016666666666666607,
+            "hit_file_at5": -0.033333333333333326
+          }
+        },
+        "hugo": {
+          "before": {
+            "cli_wall_ms_median": 90.05771699594334,
+            "cli_wall_ms_p95": 106.9480550067965,
+            "errors": 0,
+            "hit_file_at5": 0.5666666666666667,
+            "negative_queries": 0,
+            "no_answer_empty": null,
+            "partial": 0,
+            "positive_queries": 30,
+            "queries": 30,
+            "recall_at10": 0.6166666666666667
+          },
+          "after": {
+            "cli_wall_ms_median": 99.63220999634359,
+            "cli_wall_ms_p95": 114.64678499032743,
+            "errors": 0,
+            "hit_file_at5": 0.6333333333333333,
+            "negative_queries": 0,
+            "no_answer_empty": null,
+            "partial": 0,
+            "positive_queries": 30,
+            "queries": 30,
+            "recall_at10": 0.7166666666666667
+          },
+          "delta": {
+            "recall_at10": 0.09999999999999998,
+            "hit_file_at5": 0.06666666666666665
+          }
+        },
+        "laravel": {
+          "before": {
+            "cli_wall_ms_median": 102.12028399837436,
+            "cli_wall_ms_p95": 155.46093799639493,
+            "errors": 0,
+            "hit_file_at5": 0.7333333333333333,
+            "negative_queries": 0,
+            "no_answer_empty": null,
+            "partial": 0,
+            "positive_queries": 30,
+            "queries": 30,
+            "recall_at10": 0.6333333333333333
+          },
+          "after": {
+            "cli_wall_ms_median": 143.3983060051105,
+            "cli_wall_ms_p95": 191.10950399772264,
+            "errors": 0,
+            "hit_file_at5": 0.6,
+            "negative_queries": 0,
+            "no_answer_empty": null,
+            "partial": 0,
+            "positive_queries": 30,
+            "queries": 30,
+            "recall_at10": 0.5833333333333334
+          },
+          "delta": {
+            "recall_at10": -0.04999999999999993,
+            "hit_file_at5": -0.1333333333333333
+          }
+        },
+        "ripgrep": {
+          "before": {
+            "cli_wall_ms_median": 72.48716499452712,
+            "cli_wall_ms_p95": 78.71383799647447,
+            "errors": 0,
+            "hit_file_at5": 0.7666666666666667,
+            "negative_queries": 0,
+            "no_answer_empty": null,
+            "partial": 0,
+            "positive_queries": 30,
+            "queries": 30,
+            "recall_at10": 0.7
+          },
+          "after": {
+            "cli_wall_ms_median": 76.43086100142682,
+            "cli_wall_ms_p95": 82.04532900708728,
+            "errors": 0,
+            "hit_file_at5": 0.8,
+            "negative_queries": 0,
+            "no_answer_empty": null,
+            "partial": 0,
+            "positive_queries": 30,
+            "queries": 30,
+            "recall_at10": 0.8
+          },
+          "delta": {
+            "recall_at10": 0.10000000000000009,
+            "hit_file_at5": 0.033333333333333326
+          }
+        }
+      },
+      "changed_path_lists": [
+        "django/django-001",
+        "django/django-002",
+        "django/django-003",
+        "django/django-004",
+        "django/django-005",
+        "django/django-006",
+        "django/django-007",
+        "django/django-008",
+        "django/django-009",
+        "django/django-010",
+        "django/django-011",
+        "django/django-012",
+        "django/django-013",
+        "django/django-014",
+        "django/django-015",
+        "django/django-016",
+        "django/django-017",
+        "django/django-018",
+        "django/django-019",
+        "django/django-020",
+        "django/django-021",
+        "django/django-022",
+        "django/django-023",
+        "django/django-024",
+        "django/django-025",
+        "django/django-026",
+        "django/django-027",
+        "django/django-028",
+        "django/django-029",
+        "django/django-030",
+        "hugo/hugo-001",
+        "hugo/hugo-002",
+        "hugo/hugo-003",
+        "hugo/hugo-004",
+        "hugo/hugo-005",
+        "hugo/hugo-006",
+        "hugo/hugo-007",
+        "hugo/hugo-008",
+        "hugo/hugo-009",
+        "hugo/hugo-010",
+        "hugo/hugo-011",
+        "hugo/hugo-012",
+        "hugo/hugo-013",
+        "hugo/hugo-014",
+        "hugo/hugo-015",
+        "hugo/hugo-016",
+        "hugo/hugo-017",
+        "hugo/hugo-018",
+        "hugo/hugo-019",
+        "hugo/hugo-020",
+        "hugo/hugo-021",
+        "hugo/hugo-022",
+        "hugo/hugo-023",
+        "hugo/hugo-024",
+        "hugo/hugo-025",
+        "hugo/hugo-026",
+        "hugo/hugo-027",
+        "hugo/hugo-028",
+        "hugo/hugo-029",
+        "hugo/hugo-030",
+        "laravel/laravel-001",
+        "laravel/laravel-002",
+        "laravel/laravel-003",
+        "laravel/laravel-004",
+        "laravel/laravel-005",
+        "laravel/laravel-006",
+        "laravel/laravel-007",
+        "laravel/laravel-008",
+        "laravel/laravel-009",
+        "laravel/laravel-010",
+        "laravel/laravel-011",
+        "laravel/laravel-012",
+        "laravel/laravel-013",
+        "laravel/laravel-014",
+        "laravel/laravel-015",
+        "laravel/laravel-016",
+        "laravel/laravel-017",
+        "laravel/laravel-018",
+        "laravel/laravel-019",
+        "laravel/laravel-020",
+        "laravel/laravel-021",
+        "laravel/laravel-022",
+        "laravel/laravel-023",
+        "laravel/laravel-024",
+        "laravel/laravel-025",
+        "laravel/laravel-026",
+        "laravel/laravel-027",
+        "laravel/laravel-028",
+        "laravel/laravel-029",
+        "laravel/laravel-030",
+        "ripgrep/rg-001",
+        "ripgrep/rg-002",
+        "ripgrep/rg-003",
+        "ripgrep/rg-004",
+        "ripgrep/rg-005",
+        "ripgrep/rg-006",
+        "ripgrep/rg-007",
+        "ripgrep/rg-008",
+        "ripgrep/rg-009",
+        "ripgrep/rg-010",
+        "ripgrep/rg-011",
+        "ripgrep/rg-012",
+        "ripgrep/rg-013",
+        "ripgrep/rg-014",
+        "ripgrep/rg-015",
+        "ripgrep/rg-016",
+        "ripgrep/rg-017",
+        "ripgrep/rg-018",
+        "ripgrep/rg-019",
+        "ripgrep/rg-020",
+        "ripgrep/rg-021",
+        "ripgrep/rg-022",
+        "ripgrep/rg-023",
+        "ripgrep/rg-024",
+        "ripgrep/rg-025",
+        "ripgrep/rg-026",
+        "ripgrep/rg-027",
+        "ripgrep/rg-028",
+        "ripgrep/rg-029",
+        "ripgrep/rg-030"
+      ],
+      "recall_improved_queries": [
+        "django/django-004",
+        "django/django-006",
+        "django/django-028",
+        "django/django-030",
+        "hugo/hugo-001",
+        "hugo/hugo-006",
+        "hugo/hugo-007",
+        "hugo/hugo-028",
+        "laravel/laravel-021",
+        "laravel/laravel-024",
+        "ripgrep/rg-003",
+        "ripgrep/rg-004",
+        "ripgrep/rg-005",
+        "ripgrep/rg-026",
+        "ripgrep/rg-029",
+        "ripgrep/rg-030"
+      ],
+      "recall_regressed_queries": [
+        "django/django-014",
+        "django/django-026",
+        "django/django-027",
+        "hugo/hugo-027",
+        "laravel/laravel-022",
+        "laravel/laravel-023",
+        "laravel/laravel-025",
+        "laravel/laravel-028"
+      ],
+      "remaining": "Controls, counterbalanced finalist timing and final holdout must pass before integration"
+    },
+    {
+      "arm": 6,
+      "eligible_quality_screen": false,
+      "reasons": [
+        "django:hit_file_at5_regressed",
+        "laravel:hit_file_at5_regressed",
+        "ripgrep:hit_file_at5_regressed"
+      ],
+      "summary": {
+        "cli_wall_ms_median": 96.80153150839033,
+        "cli_wall_ms_p95": 154.93359400716145,
+        "errors": 0,
+        "hit_file_at5": 0.6416666666666667,
+        "negative_queries": 0,
+        "no_answer_empty": null,
+        "partial": 0,
+        "positive_queries": 120,
+        "queries": 120,
+        "recall_at10": 0.6708333333333333
+      },
+      "delta": {
+        "recall_at10": 0.02499999999999991,
+        "hit_file_at5": -0.016666666666666607
+      },
+      "by_repo": {
+        "django": {
+          "before": {
+            "cli_wall_ms_median": 124.5551440078998,
+            "cli_wall_ms_p95": 204.92836899938993,
+            "errors": 0,
+            "hit_file_at5": 0.5666666666666667,
+            "negative_queries": 0,
+            "no_answer_empty": null,
+            "partial": 0,
+            "positive_queries": 30,
+            "queries": 30,
+            "recall_at10": 0.6333333333333333
+          },
+          "after": {
+            "cli_wall_ms_median": 121.37959100073203,
+            "cli_wall_ms_p95": 172.8082820045529,
+            "errors": 0,
+            "hit_file_at5": 0.5333333333333333,
+            "negative_queries": 0,
+            "no_answer_empty": null,
+            "partial": 0,
+            "positive_queries": 30,
+            "queries": 30,
+            "recall_at10": 0.6333333333333333
+          },
+          "delta": {
+            "recall_at10": 0.0,
+            "hit_file_at5": -0.033333333333333326
+          }
+        },
+        "hugo": {
+          "before": {
+            "cli_wall_ms_median": 90.05771699594334,
+            "cli_wall_ms_p95": 106.9480550067965,
+            "errors": 0,
+            "hit_file_at5": 0.5666666666666667,
+            "negative_queries": 0,
+            "no_answer_empty": null,
+            "partial": 0,
+            "positive_queries": 30,
+            "queries": 30,
+            "recall_at10": 0.6166666666666667
+          },
+          "after": {
+            "cli_wall_ms_median": 91.29918650432955,
+            "cli_wall_ms_p95": 111.68511401046999,
+            "errors": 0,
+            "hit_file_at5": 0.6333333333333333,
+            "negative_queries": 0,
+            "no_answer_empty": null,
+            "partial": 0,
+            "positive_queries": 30,
+            "queries": 30,
+            "recall_at10": 0.6333333333333333
+          },
+          "delta": {
+            "recall_at10": 0.016666666666666607,
+            "hit_file_at5": 0.06666666666666665
+          }
+        },
+        "laravel": {
+          "before": {
+            "cli_wall_ms_median": 102.12028399837436,
+            "cli_wall_ms_p95": 155.46093799639493,
+            "errors": 0,
+            "hit_file_at5": 0.7333333333333333,
+            "negative_queries": 0,
+            "no_answer_empty": null,
+            "partial": 0,
+            "positive_queries": 30,
+            "queries": 30,
+            "recall_at10": 0.6333333333333333
+          },
+          "after": {
+            "cli_wall_ms_median": 119.14755999896443,
+            "cli_wall_ms_p95": 167.5187009968795,
+            "errors": 0,
+            "hit_file_at5": 0.7,
+            "negative_queries": 0,
+            "no_answer_empty": null,
+            "partial": 0,
+            "positive_queries": 30,
+            "queries": 30,
+            "recall_at10": 0.7166666666666667
+          },
+          "delta": {
+            "recall_at10": 0.08333333333333337,
+            "hit_file_at5": -0.033333333333333326
+          }
+        },
+        "ripgrep": {
+          "before": {
+            "cli_wall_ms_median": 72.48716499452712,
+            "cli_wall_ms_p95": 78.71383799647447,
+            "errors": 0,
+            "hit_file_at5": 0.7666666666666667,
+            "negative_queries": 0,
+            "no_answer_empty": null,
+            "partial": 0,
+            "positive_queries": 30,
+            "queries": 30,
+            "recall_at10": 0.7
+          },
+          "after": {
+            "cli_wall_ms_median": 72.9490719968453,
+            "cli_wall_ms_p95": 77.93713000137359,
+            "errors": 0,
+            "hit_file_at5": 0.7,
+            "negative_queries": 0,
+            "no_answer_empty": null,
+            "partial": 0,
+            "positive_queries": 30,
+            "queries": 30,
+            "recall_at10": 0.7
+          },
+          "delta": {
+            "recall_at10": 0.0,
+            "hit_file_at5": -0.06666666666666676
+          }
+        }
+      },
+      "changed_path_lists": [
+        "django/django-001",
+        "django/django-002",
+        "django/django-003",
+        "django/django-004",
+        "django/django-005",
+        "django/django-006",
+        "django/django-007",
+        "django/django-008",
+        "django/django-009",
+        "django/django-010",
+        "django/django-011",
+        "django/django-012",
+        "django/django-013",
+        "django/django-014",
+        "django/django-015",
+        "django/django-016",
+        "django/django-017",
+        "django/django-018",
+        "django/django-019",
+        "django/django-020",
+        "django/django-021",
+        "django/django-022",
+        "django/django-023",
+        "django/django-024",
+        "django/django-025",
+        "django/django-026",
+        "django/django-027",
+        "django/django-028",
+        "django/django-029",
+        "django/django-030",
+        "hugo/hugo-001",
+        "hugo/hugo-002",
+        "hugo/hugo-003",
+        "hugo/hugo-004",
+        "hugo/hugo-005",
+        "hugo/hugo-007",
+        "hugo/hugo-008",
+        "hugo/hugo-009",
+        "hugo/hugo-010",
+        "hugo/hugo-011",
+        "hugo/hugo-012",
+        "hugo/hugo-013",
+        "hugo/hugo-014",
+        "hugo/hugo-015",
+        "hugo/hugo-016",
+        "hugo/hugo-017",
+        "hugo/hugo-019",
+        "hugo/hugo-020",
+        "hugo/hugo-021",
+        "hugo/hugo-022",
+        "hugo/hugo-023",
+        "hugo/hugo-024",
+        "hugo/hugo-025",
+        "hugo/hugo-026",
+        "hugo/hugo-027",
+        "hugo/hugo-028",
+        "hugo/hugo-029",
+        "hugo/hugo-030",
+        "laravel/laravel-001",
+        "laravel/laravel-002",
+        "laravel/laravel-003",
+        "laravel/laravel-004",
+        "laravel/laravel-006",
+        "laravel/laravel-007",
+        "laravel/laravel-008",
+        "laravel/laravel-009",
+        "laravel/laravel-010",
+        "laravel/laravel-011",
+        "laravel/laravel-012",
+        "laravel/laravel-013",
+        "laravel/laravel-014",
+        "laravel/laravel-015",
+        "laravel/laravel-016",
+        "laravel/laravel-017",
+        "laravel/laravel-018",
+        "laravel/laravel-019",
+        "laravel/laravel-020",
+        "laravel/laravel-021",
+        "laravel/laravel-022",
+        "laravel/laravel-023",
+        "laravel/laravel-024",
+        "laravel/laravel-025",
+        "laravel/laravel-026",
+        "laravel/laravel-027",
+        "laravel/laravel-028",
+        "laravel/laravel-029",
+        "laravel/laravel-030",
+        "ripgrep/rg-001",
+        "ripgrep/rg-002",
+        "ripgrep/rg-003",
+        "ripgrep/rg-004",
+        "ripgrep/rg-005",
+        "ripgrep/rg-006",
+        "ripgrep/rg-007",
+        "ripgrep/rg-008",
+        "ripgrep/rg-009",
+        "ripgrep/rg-010",
+        "ripgrep/rg-011",
+        "ripgrep/rg-012",
+        "ripgrep/rg-013",
+        "ripgrep/rg-014",
+        "ripgrep/rg-015",
+        "ripgrep/rg-016",
+        "ripgrep/rg-017",
+        "ripgrep/rg-018",
+        "ripgrep/rg-019",
+        "ripgrep/rg-020",
+        "ripgrep/rg-021",
+        "ripgrep/rg-022",
+        "ripgrep/rg-023",
+        "ripgrep/rg-024",
+        "ripgrep/rg-025",
+        "ripgrep/rg-026",
+        "ripgrep/rg-027",
+        "ripgrep/rg-028",
+        "ripgrep/rg-029",
+        "ripgrep/rg-030"
+      ],
+      "recall_improved_queries": [
+        "django/django-003",
+        "django/django-006",
+        "django/django-028",
+        "hugo/hugo-002",
+        "hugo/hugo-007",
+        "laravel/laravel-002",
+        "laravel/laravel-010",
+        "laravel/laravel-021",
+        "laravel/laravel-024",
+        "laravel/laravel-026",
+        "ripgrep/rg-026",
+        "ripgrep/rg-030"
+      ],
+      "recall_regressed_queries": [
+        "django/django-004",
+        "django/django-026",
+        "django/django-027",
+        "hugo/hugo-026",
+        "hugo/hugo-027",
+        "laravel/laravel-027",
+        "laravel/laravel-028",
+        "ripgrep/rg-007"
+      ],
+      "remaining": "Controls, counterbalanced finalist timing and final holdout must pass before integration"
+    },
+    {
+      "arm": 7,
+      "eligible_quality_screen": false,
+      "reasons": [
+        "hugo:recall_at10_regressed",
+        "no_aggregate_recall_gain",
+        "fewer_than_two_repository_recall_gains"
+      ],
+      "summary": {
+        "cli_wall_ms_median": 95.44063650537282,
+        "cli_wall_ms_p95": 157.6927840069402,
+        "errors": 0,
+        "hit_file_at5": 0.6666666666666666,
+        "negative_queries": 0,
+        "no_answer_empty": null,
+        "partial": 0,
+        "positive_queries": 120,
+        "queries": 120,
+        "recall_at10": 0.6416666666666667
+      },
+      "delta": {
+        "recall_at10": -0.004166666666666652,
+        "hit_file_at5": 0.008333333333333304
+      },
+      "by_repo": {
+        "django": {
+          "before": {
+            "cli_wall_ms_median": 124.5551440078998,
+            "cli_wall_ms_p95": 204.92836899938993,
+            "errors": 0,
+            "hit_file_at5": 0.5666666666666667,
+            "negative_queries": 0,
+            "no_answer_empty": null,
+            "partial": 0,
+            "positive_queries": 30,
+            "queries": 30,
+            "recall_at10": 0.6333333333333333
+          },
+          "after": {
+            "cli_wall_ms_median": 121.14644649409456,
+            "cli_wall_ms_p95": 221.45599500800017,
+            "errors": 0,
+            "hit_file_at5": 0.6,
+            "negative_queries": 0,
+            "no_answer_empty": null,
+            "partial": 0,
+            "positive_queries": 30,
+            "queries": 30,
+            "recall_at10": 0.6333333333333333
+          },
+          "delta": {
+            "recall_at10": 0.0,
+            "hit_file_at5": 0.033333333333333326
+          }
+        },
+        "hugo": {
+          "before": {
+            "cli_wall_ms_median": 90.05771699594334,
+            "cli_wall_ms_p95": 106.9480550067965,
+            "errors": 0,
+            "hit_file_at5": 0.5666666666666667,
+            "negative_queries": 0,
+            "no_answer_empty": null,
+            "partial": 0,
+            "positive_queries": 30,
+            "queries": 30,
+            "recall_at10": 0.6166666666666667
+          },
+          "after": {
+            "cli_wall_ms_median": 91.93328600667883,
+            "cli_wall_ms_p95": 113.45703099505045,
+            "errors": 0,
+            "hit_file_at5": 0.5666666666666667,
+            "negative_queries": 0,
+            "no_answer_empty": null,
+            "partial": 0,
+            "positive_queries": 30,
+            "queries": 30,
+            "recall_at10": 0.5833333333333334
+          },
+          "delta": {
+            "recall_at10": -0.033333333333333326,
+            "hit_file_at5": 0.0
+          }
+        },
+        "laravel": {
+          "before": {
+            "cli_wall_ms_median": 102.12028399837436,
+            "cli_wall_ms_p95": 155.46093799639493,
+            "errors": 0,
+            "hit_file_at5": 0.7333333333333333,
+            "negative_queries": 0,
+            "no_answer_empty": null,
+            "partial": 0,
+            "positive_queries": 30,
+            "queries": 30,
+            "recall_at10": 0.6333333333333333
+          },
+          "after": {
+            "cli_wall_ms_median": 105.81749549601227,
+            "cli_wall_ms_p95": 161.74515399325173,
+            "errors": 0,
+            "hit_file_at5": 0.7333333333333333,
+            "negative_queries": 0,
+            "no_answer_empty": null,
+            "partial": 0,
+            "positive_queries": 30,
+            "queries": 30,
+            "recall_at10": 0.6333333333333333
+          },
+          "delta": {
+            "recall_at10": 0.0,
+            "hit_file_at5": 0.0
+          }
+        },
+        "ripgrep": {
+          "before": {
+            "cli_wall_ms_median": 72.48716499452712,
+            "cli_wall_ms_p95": 78.71383799647447,
+            "errors": 0,
+            "hit_file_at5": 0.7666666666666667,
+            "negative_queries": 0,
+            "no_answer_empty": null,
+            "partial": 0,
+            "positive_queries": 30,
+            "queries": 30,
+            "recall_at10": 0.7
+          },
+          "after": {
+            "cli_wall_ms_median": 71.94380299915792,
+            "cli_wall_ms_p95": 79.19650000985712,
+            "errors": 0,
+            "hit_file_at5": 0.7666666666666667,
+            "negative_queries": 0,
+            "no_answer_empty": null,
+            "partial": 0,
+            "positive_queries": 30,
+            "queries": 30,
+            "recall_at10": 0.7166666666666667
+          },
+          "delta": {
+            "recall_at10": 0.01666666666666672,
+            "hit_file_at5": 0.0
+          }
+        }
+      },
+      "changed_path_lists": [
+        "django/django-003",
+        "django/django-012",
+        "django/django-013",
+        "django/django-014",
+        "django/django-017",
+        "django/django-018",
+        "django/django-019",
+        "django/django-021",
+        "django/django-022",
+        "django/django-024",
+        "django/django-026",
+        "hugo/hugo-003",
+        "hugo/hugo-009",
+        "hugo/hugo-011",
+        "hugo/hugo-012",
+        "hugo/hugo-013",
+        "hugo/hugo-015",
+        "hugo/hugo-018",
+        "hugo/hugo-019",
+        "laravel/laravel-015",
+        "laravel/laravel-026",
+        "ripgrep/rg-013",
+        "ripgrep/rg-014",
+        "ripgrep/rg-015",
+        "ripgrep/rg-016",
+        "ripgrep/rg-017",
+        "ripgrep/rg-018",
+        "ripgrep/rg-019",
+        "ripgrep/rg-020",
+        "ripgrep/rg-027"
+      ],
+      "recall_improved_queries": [
+        "ripgrep/rg-027"
+      ],
+      "recall_regressed_queries": [
+        "hugo/hugo-009"
+      ],
+      "remaining": "Controls, counterbalanced finalist timing and final holdout must pass before integration"
+    },
+    {
+      "arm": 8,
+      "eligible_quality_screen": false,
+      "reasons": [
+        "django:hit_file_at5_regressed",
+        "laravel:hit_file_at5_regressed",
+        "ripgrep:hit_file_at5_regressed",
+        "fewer_than_two_repository_recall_gains",
+        "graph_ablation_is_diagnostic_only"
+      ],
+      "summary": {
+        "cli_wall_ms_median": 78.90516800398473,
+        "cli_wall_ms_p95": 140.49791399156675,
+        "errors": 0,
+        "hit_file_at5": 0.6333333333333333,
+        "negative_queries": 0,
+        "no_answer_empty": null,
+        "partial": 0,
+        "positive_queries": 120,
+        "queries": 120,
+        "recall_at10": 0.6541666666666667
+      },
+      "delta": {
+        "recall_at10": 0.008333333333333304,
+        "hit_file_at5": -0.025000000000000022
+      },
+      "by_repo": {
+        "django": {
+          "before": {
+            "cli_wall_ms_median": 124.5551440078998,
+            "cli_wall_ms_p95": 204.92836899938993,
+            "errors": 0,
+            "hit_file_at5": 0.5666666666666667,
+            "negative_queries": 0,
+            "no_answer_empty": null,
+            "partial": 0,
+            "positive_queries": 30,
+            "queries": 30,
+            "recall_at10": 0.6333333333333333
+          },
+          "after": {
+            "cli_wall_ms_median": 95.46076550032012,
+            "cli_wall_ms_p95": 198.3543690002989,
+            "errors": 0,
+            "hit_file_at5": 0.5333333333333333,
+            "negative_queries": 0,
+            "no_answer_empty": null,
+            "partial": 0,
+            "positive_queries": 30,
+            "queries": 30,
+            "recall_at10": 0.6333333333333333
+          },
+          "delta": {
+            "recall_at10": 0.0,
+            "hit_file_at5": -0.033333333333333326
+          }
+        },
+        "hugo": {
+          "before": {
+            "cli_wall_ms_median": 90.05771699594334,
+            "cli_wall_ms_p95": 106.9480550067965,
+            "errors": 0,
+            "hit_file_at5": 0.5666666666666667,
+            "negative_queries": 0,
+            "no_answer_empty": null,
+            "partial": 0,
+            "positive_queries": 30,
+            "queries": 30,
+            "recall_at10": 0.6166666666666667
+          },
+          "after": {
+            "cli_wall_ms_median": 78.32270050130319,
+            "cli_wall_ms_p95": 108.96729199157562,
+            "errors": 0,
+            "hit_file_at5": 0.5666666666666667,
+            "negative_queries": 0,
+            "no_answer_empty": null,
+            "partial": 0,
+            "positive_queries": 30,
+            "queries": 30,
+            "recall_at10": 0.6166666666666667
+          },
+          "delta": {
+            "recall_at10": 0.0,
+            "hit_file_at5": 0.0
+          }
+        },
+        "laravel": {
+          "before": {
+            "cli_wall_ms_median": 102.12028399837436,
+            "cli_wall_ms_p95": 155.46093799639493,
+            "errors": 0,
+            "hit_file_at5": 0.7333333333333333,
+            "negative_queries": 0,
+            "no_answer_empty": null,
+            "partial": 0,
+            "positive_queries": 30,
+            "queries": 30,
+            "recall_at10": 0.6333333333333333
+          },
+          "after": {
+            "cli_wall_ms_median": 83.779439504724,
+            "cli_wall_ms_p95": 101.07028800121043,
+            "errors": 0,
+            "hit_file_at5": 0.7,
+            "negative_queries": 0,
+            "no_answer_empty": null,
+            "partial": 0,
+            "positive_queries": 30,
+            "queries": 30,
+            "recall_at10": 0.6333333333333333
+          },
+          "delta": {
+            "recall_at10": 0.0,
+            "hit_file_at5": -0.033333333333333326
+          }
+        },
+        "ripgrep": {
+          "before": {
+            "cli_wall_ms_median": 72.48716499452712,
+            "cli_wall_ms_p95": 78.71383799647447,
+            "errors": 0,
+            "hit_file_at5": 0.7666666666666667,
+            "negative_queries": 0,
+            "no_answer_empty": null,
+            "partial": 0,
+            "positive_queries": 30,
+            "queries": 30,
+            "recall_at10": 0.7
+          },
+          "after": {
+            "cli_wall_ms_median": 63.99845999840181,
+            "cli_wall_ms_p95": 75.28298800752964,
+            "errors": 0,
+            "hit_file_at5": 0.7333333333333333,
+            "negative_queries": 0,
+            "no_answer_empty": null,
+            "partial": 0,
+            "positive_queries": 30,
+            "queries": 30,
+            "recall_at10": 0.7333333333333333
+          },
+          "delta": {
+            "recall_at10": 0.033333333333333326,
+            "hit_file_at5": -0.03333333333333344
+          }
+        }
+      },
+      "changed_path_lists": [
+        "django/django-009",
+        "django/django-028",
+        "hugo/hugo-001",
+        "hugo/hugo-004",
+        "hugo/hugo-005",
+        "hugo/hugo-006",
+        "hugo/hugo-007",
+        "hugo/hugo-022",
+        "hugo/hugo-024",
+        "hugo/hugo-025",
+        "hugo/hugo-028",
+        "hugo/hugo-029",
+        "hugo/hugo-030",
+        "laravel/laravel-001",
+        "laravel/laravel-002",
+        "laravel/laravel-003",
+        "laravel/laravel-004",
+        "laravel/laravel-006",
+        "laravel/laravel-007",
+        "laravel/laravel-008",
+        "laravel/laravel-010",
+        "laravel/laravel-011",
+        "laravel/laravel-013",
+        "laravel/laravel-017",
+        "laravel/laravel-018",
+        "laravel/laravel-019",
+        "laravel/laravel-020",
+        "laravel/laravel-021",
+        "laravel/laravel-022",
+        "laravel/laravel-025",
+        "laravel/laravel-027",
+        "laravel/laravel-030",
+        "ripgrep/rg-001",
+        "ripgrep/rg-003",
+        "ripgrep/rg-004",
+        "ripgrep/rg-005",
+        "ripgrep/rg-006",
+        "ripgrep/rg-007",
+        "ripgrep/rg-008",
+        "ripgrep/rg-009",
+        "ripgrep/rg-010",
+        "ripgrep/rg-022",
+        "ripgrep/rg-023",
+        "ripgrep/rg-026",
+        "ripgrep/rg-028",
+        "ripgrep/rg-029",
+        "ripgrep/rg-030"
+      ],
+      "recall_improved_queries": [
+        "ripgrep/rg-026",
+        "ripgrep/rg-030"
+      ],
+      "recall_regressed_queries": [],
+      "remaining": "Controls, counterbalanced finalist timing and final holdout must pass before integration"
+    },
+    {
+      "arm": 9,
+      "eligible_quality_screen": true,
+      "reasons": [],
+      "summary": {
+        "cli_wall_ms_median": 85.6250170036219,
+        "cli_wall_ms_p95": 137.5947669876041,
+        "errors": 0,
+        "hit_file_at5": 0.6833333333333333,
+        "negative_queries": 0,
+        "no_answer_empty": null,
+        "partial": 0,
+        "positive_queries": 120,
+        "queries": 120,
+        "recall_at10": 0.7041666666666667
+      },
+      "delta": {
+        "recall_at10": 0.05833333333333335,
+        "hit_file_at5": 0.025000000000000022
+      },
+      "by_repo": {
+        "django": {
+          "before": {
+            "cli_wall_ms_median": 124.5551440078998,
+            "cli_wall_ms_p95": 204.92836899938993,
+            "errors": 0,
+            "hit_file_at5": 0.5666666666666667,
+            "negative_queries": 0,
+            "no_answer_empty": null,
+            "partial": 0,
+            "positive_queries": 30,
+            "queries": 30,
+            "recall_at10": 0.6333333333333333
+          },
+          "after": {
+            "cli_wall_ms_median": 112.39821300114272,
+            "cli_wall_ms_p95": 174.40863500814885,
+            "errors": 0,
+            "hit_file_at5": 0.6333333333333333,
+            "negative_queries": 0,
+            "no_answer_empty": null,
+            "partial": 0,
+            "positive_queries": 30,
+            "queries": 30,
+            "recall_at10": 0.65
+          },
+          "delta": {
+            "recall_at10": 0.01666666666666672,
+            "hit_file_at5": 0.06666666666666665
+          }
+        },
+        "hugo": {
+          "before": {
+            "cli_wall_ms_median": 90.05771699594334,
+            "cli_wall_ms_p95": 106.9480550067965,
+            "errors": 0,
+            "hit_file_at5": 0.5666666666666667,
+            "negative_queries": 0,
+            "no_answer_empty": null,
+            "partial": 0,
+            "positive_queries": 30,
+            "queries": 30,
+            "recall_at10": 0.6166666666666667
+          },
+          "after": {
+            "cli_wall_ms_median": 81.72264500171877,
+            "cli_wall_ms_p95": 103.56543099624105,
+            "errors": 0,
+            "hit_file_at5": 0.5666666666666667,
+            "negative_queries": 0,
+            "no_answer_empty": null,
+            "partial": 0,
+            "positive_queries": 30,
+            "queries": 30,
+            "recall_at10": 0.65
+          },
+          "delta": {
+            "recall_at10": 0.033333333333333326,
+            "hit_file_at5": 0.0
+          }
+        },
+        "laravel": {
+          "before": {
+            "cli_wall_ms_median": 102.12028399837436,
+            "cli_wall_ms_p95": 155.46093799639493,
+            "errors": 0,
+            "hit_file_at5": 0.7333333333333333,
+            "negative_queries": 0,
+            "no_answer_empty": null,
+            "partial": 0,
+            "positive_queries": 30,
+            "queries": 30,
+            "recall_at10": 0.6333333333333333
+          },
+          "after": {
+            "cli_wall_ms_median": 105.96591850480763,
+            "cli_wall_ms_p95": 142.86881900625303,
+            "errors": 0,
+            "hit_file_at5": 0.7333333333333333,
+            "negative_queries": 0,
+            "no_answer_empty": null,
+            "partial": 0,
+            "positive_queries": 30,
+            "queries": 30,
+            "recall_at10": 0.6833333333333333
+          },
+          "delta": {
+            "recall_at10": 0.050000000000000044,
+            "hit_file_at5": 0.0
+          }
+        },
+        "ripgrep": {
+          "before": {
+            "cli_wall_ms_median": 72.48716499452712,
+            "cli_wall_ms_p95": 78.71383799647447,
+            "errors": 0,
+            "hit_file_at5": 0.7666666666666667,
+            "negative_queries": 0,
+            "no_answer_empty": null,
+            "partial": 0,
+            "positive_queries": 30,
+            "queries": 30,
+            "recall_at10": 0.7
+          },
+          "after": {
+            "cli_wall_ms_median": 68.05643800180405,
+            "cli_wall_ms_p95": 75.95246999699157,
+            "errors": 0,
+            "hit_file_at5": 0.8,
+            "negative_queries": 0,
+            "no_answer_empty": null,
+            "partial": 0,
+            "positive_queries": 30,
+            "queries": 30,
+            "recall_at10": 0.8333333333333334
+          },
+          "delta": {
+            "recall_at10": 0.13333333333333341,
+            "hit_file_at5": 0.033333333333333326
+          }
+        }
+      },
+      "changed_path_lists": [
+        "django/django-001",
+        "django/django-002",
+        "django/django-003",
+        "django/django-004",
+        "django/django-005",
+        "django/django-006",
+        "django/django-007",
+        "django/django-008",
+        "django/django-009",
+        "django/django-010",
+        "django/django-011",
+        "django/django-012",
+        "django/django-013",
+        "django/django-014",
+        "django/django-016",
+        "django/django-017",
+        "django/django-018",
+        "django/django-019",
+        "django/django-020",
+        "django/django-021",
+        "django/django-022",
+        "django/django-023",
+        "django/django-024",
+        "django/django-025",
+        "django/django-026",
+        "django/django-027",
+        "django/django-028",
+        "django/django-029",
+        "django/django-030",
+        "hugo/hugo-001",
+        "hugo/hugo-002",
+        "hugo/hugo-003",
+        "hugo/hugo-004",
+        "hugo/hugo-005",
+        "hugo/hugo-006",
+        "hugo/hugo-007",
+        "hugo/hugo-008",
+        "hugo/hugo-009",
+        "hugo/hugo-010",
+        "hugo/hugo-011",
+        "hugo/hugo-012",
+        "hugo/hugo-013",
+        "hugo/hugo-014",
+        "hugo/hugo-015",
+        "hugo/hugo-018",
+        "hugo/hugo-019",
+        "hugo/hugo-020",
+        "hugo/hugo-021",
+        "hugo/hugo-022",
+        "hugo/hugo-023",
+        "hugo/hugo-024",
+        "hugo/hugo-025",
+        "hugo/hugo-026",
+        "hugo/hugo-027",
+        "hugo/hugo-028",
+        "hugo/hugo-029",
+        "hugo/hugo-030",
+        "laravel/laravel-001",
+        "laravel/laravel-002",
+        "laravel/laravel-003",
+        "laravel/laravel-004",
+        "laravel/laravel-005",
+        "laravel/laravel-006",
+        "laravel/laravel-007",
+        "laravel/laravel-008",
+        "laravel/laravel-009",
+        "laravel/laravel-010",
+        "laravel/laravel-011",
+        "laravel/laravel-012",
+        "laravel/laravel-013",
+        "laravel/laravel-014",
+        "laravel/laravel-015",
+        "laravel/laravel-016",
+        "laravel/laravel-017",
+        "laravel/laravel-018",
+        "laravel/laravel-019",
+        "laravel/laravel-020",
+        "laravel/laravel-021",
+        "laravel/laravel-022",
+        "laravel/laravel-023",
+        "laravel/laravel-024",
+        "laravel/laravel-025",
+        "laravel/laravel-026",
+        "laravel/laravel-027",
+        "laravel/laravel-028",
+        "laravel/laravel-029",
+        "laravel/laravel-030",
+        "ripgrep/rg-001",
+        "ripgrep/rg-002",
+        "ripgrep/rg-003",
+        "ripgrep/rg-004",
+        "ripgrep/rg-005",
+        "ripgrep/rg-006",
+        "ripgrep/rg-007",
+        "ripgrep/rg-008",
+        "ripgrep/rg-009",
+        "ripgrep/rg-010",
+        "ripgrep/rg-011",
+        "ripgrep/rg-012",
+        "ripgrep/rg-013",
+        "ripgrep/rg-014",
+        "ripgrep/rg-015",
+        "ripgrep/rg-016",
+        "ripgrep/rg-017",
+        "ripgrep/rg-018",
+        "ripgrep/rg-019",
+        "ripgrep/rg-020",
+        "ripgrep/rg-021",
+        "ripgrep/rg-022",
+        "ripgrep/rg-023",
+        "ripgrep/rg-024",
+        "ripgrep/rg-025",
+        "ripgrep/rg-026",
+        "ripgrep/rg-027",
+        "ripgrep/rg-028",
+        "ripgrep/rg-029",
+        "ripgrep/rg-030"
+      ],
+      "recall_improved_queries": [
+        "django/django-006",
+        "django/django-028",
+        "hugo/hugo-006",
+        "hugo/hugo-028",
+        "laravel/laravel-002",
+        "laravel/laravel-004",
+        "laravel/laravel-010",
+        "ripgrep/rg-002",
+        "ripgrep/rg-004",
+        "ripgrep/rg-005",
+        "ripgrep/rg-022",
+        "ripgrep/rg-026",
+        "ripgrep/rg-029",
+        "ripgrep/rg-030"
+      ],
+      "recall_regressed_queries": [
+        "django/django-024",
+        "hugo/hugo-027",
+        "laravel/laravel-003"
+      ],
+      "remaining": "Controls, counterbalanced finalist timing and final holdout must pass before integration"
+    }
+  ]
+}

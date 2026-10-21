@@ -1,0 +1,174 @@
+# Phase 4 v1 corpus: 24 repositories plus fixtures-docs and tiny. Public revisions
+# are immutable default-branch heads observed on 2026-09-20. Existing Phase 1–3
+# pins are preserved. Aurora was deferred beyond v1 by the human on 2026-09-25;
+# its unprovisioned entry is retained in corpus-deferred.toml.
+
+[[repo]]
+name = "laravel"
+url = "https://github.com/laravel/framework"
+path = "/data/dkc-corpus/laravel-framework"
+rev = "01d008c9b5f32cb7c5e50a9a22273113d810b2a2"
+golden = "goldens/laravel.yaml"
+groups = ["A"]
+
+[[repo]]
+name = "ripgrep"
+url = "https://github.com/BurntSushi/ripgrep"
+rev = "3fce3b5bb0236da2df6d99672afb8a719642eca7"
+golden = "goldens/ripgrep.yaml"
+extra_goldens = ["goldens/ripgrep-held-out.yaml"]
+config = "profiles/ripgrep.toml"
+groups = ["A"]
+
+[[repo]]
+name = "rust-analyzer"
+url = "https://github.com/rust-lang/rust-analyzer.git"
+rev = "f3120321073d8046795c6824976be8b0ae92c999"
+groups = ["B"]
+
+[[repo]]
+name = "vscode"
+url = "https://github.com/microsoft/vscode.git"
+rev = "832cf23c5887351668f61c8648eb9c2ec6ee7d23"
+groups = ["C"]
+
+[[repo]]
+name = "nextjs"
+url = "https://github.com/vercel/next.js.git"
+rev = "34433fd12ee8074ea3f47af9f36255c7390d0301"
+config = "profiles/nextjs.toml"
+groups = ["C"]
+
+[[repo]]
+name = "excalidraw"
+url = "https://github.com/excalidraw/excalidraw.git"
+rev = "97c68dd371e13c017a8dcca49f8b3995ba7890a8"
+groups = ["A"]
+
+[[repo]]
+name = "django"
+url = "https://github.com/django/django.git"
+rev = "2b30f6255b5ef84afbd827993643d52ef2c0963a"
+golden = "goldens/django.yaml"
+groups = ["B"]
+
+[[repo]]
+name = "fastapi"
+url = "https://github.com/fastapi/fastapi.git"
+rev = "50113da16fec53b66b80d75e80a89296de4fa5a5"
+groups = ["A"]
+
+[[repo]]
+name = "langchain"
+url = "https://github.com/langchain-ai/langchain.git"
+rev = "68754c23c956e16cdebec00dcfe076257b4278ed"
+groups = ["B"]
+
+[[repo]]
+name = "home-assistant"
+url = "https://github.com/home-assistant/core.git"
+rev = "949a484720ac3ebd2f474ce7e408a800c6c4ebdc"
+config = "profiles/home-assistant.toml"
+groups = ["B"]
+
+[[repo]]
+name = "kubernetes"
+url = "https://github.com/kubernetes/kubernetes.git"
+rev = "400031d69530e018d5c001a922d3c5d2afaba954"
+config = "profiles/kubernetes.toml"
+groups = ["C"]
+
+[[repo]]
+name = "hugo"
+url = "https://github.com/gohugoio/hugo.git"
+rev = "f425ff622dfc715315f6c210fb5aa4e0c500472c"
+golden = "goldens/hugo.yaml"
+groups = ["A"]
+
+[[repo]]
+name = "spring-boot"
+url = "https://github.com/spring-projects/spring-boot.git"
+rev = "adbbf047320013ee42284d6957293aaf75a56ad7"
+groups = ["A"]
+
+[[repo]]
+name = "ktor"
+url = "https://github.com/ktorio/ktor.git"
+rev = "9ff002937e2f992ce7429f486c5459b7c8710a32"
+groups = ["A"]
+
+[[repo]]
+name = "llama.cpp"
+url = "https://github.com/ggml-org/llama.cpp.git"
+rev = "4260903678a7525f43419dc234a942b551a8951e"
+groups = ["B"]
+
+[[repo]]
+name = "redis"
+url = "https://github.com/redis/redis.git"
+rev = "16e021b465fbbc73d5f070b4da5ce9f5ee4baea1"
+groups = ["B"]
+
+[[repo]]
+name = "rails"
+url = "https://github.com/rails/rails.git"
+rev = "6610cb45b39b6a2c1f260f90bbe920b5899f844b"
+groups = ["B"]
+
+[[repo]]
+name = "Alamofire"
+url = "https://github.com/Alamofire/Alamofire.git"
+rev = "bda9ed57d72988a3a2ada33d824583541f86eac6"
+config = "profiles/alamofire.toml"
+groups = ["A"]
+
+[[repo]]
+name = "jellyfin"
+url = "https://github.com/jellyfin/jellyfin.git"
+rev = "50866380c95758244f79bd4fbb01b9474e80bd81"
+groups = ["A"]
+
+[[repo]]
+name = "git"
+url = "https://github.com/git/git.git"
+rev = "b8242b093d9e941a34460d715e3ce616a34ac3fe"
+groups = ["B"]
+
+[[repo]]
+name = "googleapis"
+url = "https://github.com/googleapis/googleapis.git"
+rev = "9f99764bb7841a50f0e46c41fd958a296b108e60"
+groups = ["B"]
+
+[[repo]]
+name = "mdn-content"
+url = "https://github.com/mdn/content.git"
+rev = "8bc4e3fe45532906246a760bff0b06b7cd105c52"
+config = "profiles/docs-only.toml"
+groups = ["B"]
+
+[[repo]]
+name = "fastbook"
+url = "https://github.com/fastai/fastbook.git"
+rev = "4aefe0a9050d9894255a878c7d72c04458d60de8"
+groups = ["A"]
+
+[[repo]]
+name = "paddleocr"
+url = "https://github.com/PaddlePaddle/PaddleOCR.git"
+rev = "dab3fe35379033fdcb2d0e9572fac0b36c9a9ebf"
+config = "profiles/paddleocr.toml"
+groups = ["C"]
+
+[[repo]]
+name = "fixtures-docs"
+url = "local"
+rev = ""
+config = "profiles/fixtures-docs.toml"
+
+[[repo]]
+name = "tiny"
+url = "local"
+fixture = "../fixtures/tiny"
+rev = "5adeb2d562ae78aa49414b63bb5bfac9c7a31af1"
+groups = ["A"]

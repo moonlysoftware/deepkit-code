@@ -1,0 +1,18 @@
+# T3.9 document/VLM corpus: Moonly preset routing with two corpus-specific caps.
+# Inherit the normal model names, provider budgets, treatments and image cap.
+[embedder]
+profile = "remote"
+
+[llm]
+enabled = true
+
+[llm.extra_body.chat_template_kwargs]
+enable_thinking = false
+
+[limits]
+# The planned 100k-file directory must exercise a visible file-count refusal.
+max_files = 50_000
+# Real papers/scans exceed the normal 1 MiB source cap (largest scan ~24 MB).
+# The 200 MiB JSON and 5 GiB binary still exceed this cap; the separate default
+# 5 MiB image cap rejects the exact 8 MiB WebP container.
+max_file_bytes = "64 MiB"

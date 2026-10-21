@@ -1,0 +1,16 @@
+- id: held
+  cohort: held_out
+  query: repeat_me
+  kind: ident
+  expect_files: [lib.rs]
+- id: scoped
+  cohort: scoped
+  query: repeat_me
+  kind: ident
+  expect_files: [lib.rs]
+  scope: lib.rs
+- id: absent
+  cohort: no_answer
+  query: zxqneverpresent
+  kind: vague
+  expect_files: []

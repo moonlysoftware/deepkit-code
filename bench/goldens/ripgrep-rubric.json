@@ -1,0 +1,479 @@
+{
+  "repository": "ripgrep",
+  "revision": "3fce3b5bb0236da2df6d99672afb8a719642eca7",
+  "state": "frozen_before_experiment",
+  "questions": [
+    {
+      "id": "rg-001",
+      "cohort": "primary",
+      "query": "Where is the number of directory traversal workers chosen?",
+      "expect_files": ["crates/core/flags/hiargs.rs", "crates/ignore/src/walk.rs"],
+      "rubric": {
+        "facts": [
+          "HiArgs selects one thread for sorted output or one explicit file, otherwise it honors an explicit count or uses available parallelism capped at 12.",
+          "The selected count is passed to WalkBuilder::threads for parallel traversal."
+        ],
+        "evidence": ["crates/core/flags/hiargs.rs:177", "crates/core/flags/hiargs.rs:901", "crates/ignore/src/walk.rs:1537"]
+      }
+    },
+    {
+      "id": "rg-002",
+      "cohort": "primary",
+      "query": "Which code decides whether hidden files are skipped?",
+      "expect_files": ["crates/ignore/src/walk.rs", "crates/ignore/src/incremental.rs"],
+      "rubric": {
+        "facts": [
+          "WalkBuilder::hidden configures hidden-file filtering, and HiArgs enables that filtering unless --hidden was requested.",
+          "Incremental ignore matching applies hidden filtering after ignore rules, so an explicit whitelist match can take precedence."
+        ],
+        "evidence": ["crates/ignore/src/walk.rs:848", "crates/core/flags/hiargs.rs:906", "crates/ignore/src/incremental.rs:376"]
+      }
+    },
+    {
+      "id": "rg-003",
+      "cohort": "primary",
+      "query": "Where is searching stopped after encountering binary data?",
+      "expect_files": ["crates/searcher/src/searcher/mod.rs", "crates/searcher/src/searcher/core.rs"],
+      "rubric": {
+        "facts": [
+          "SearcherBuilder stores the binary-detection policy and Searcher can update the line buffer with it.",
+          "The search core records the first configured binary byte and stops when the policy is Quit; Convert reports binary data but continues."
+        ],
+        "evidence": ["crates/searcher/src/searcher/mod.rs:503", "crates/searcher/src/searcher/mod.rs:797", "crates/searcher/src/searcher/core.rs:215"]
+      }
+    },
+    {
+      "id": "rg-004",
+      "cohort": "primary",
+      "query": "Where does the program decide between streaming a file and mapping it into memory?",
+      "expect_files": ["crates/searcher/src/searcher/mod.rs", "crates/searcher/src/searcher/mmap.rs"],
+      "rubric": {
+        "facts": [
+          "Searcher tries the configured memory-map strategy for path searches and otherwise uses the generic streaming reader.",
+          "Memory-map feasibility is platform/configuration dependent, and a failed optional map falls back to ordinary reading."
+        ],
+        "evidence": ["crates/searcher/src/searcher/mod.rs:674", "crates/searcher/src/searcher/mod.rs:689", "crates/searcher/src/searcher/mmap.rs:65"]
+      }
+    },
+    {
+      "id": "rg-005",
+      "cohort": "primary",
+      "query": "Where are external programs selected to read compressed files?",
+      "expect_files": ["crates/cli/src/decompress.rs", "crates/core/search.rs"],
+      "rubric": {
+        "facts": [
+          "DecompressionMatcherBuilder compiles default and custom path-glob associations, with later associations taking precedence.",
+          "The search worker asks that matcher for a path's command and wraps the file in DecompressionReader when a command matches."
+        ],
+        "evidence": ["crates/cli/src/decompress.rs:40", "crates/cli/src/decompress.rs:173", "crates/core/search.rs:245", "crates/core/search.rs:326"]
+      }
+    },
+    {
+      "id": "rg-006",
+      "cohort": "primary",
+      "query": "How are rules from parent ignore files combined with local rules?",
+      "expect_files": ["crates/ignore/src/incremental.rs"],
+      "rubric": {
+        "facts": [
+          "The root matcher loads the parent ignore chain before adding rules for the root directory.",
+          "Traversal derives child matchers from their parent, caching the chain and layering each directory's local ignore rules on top."
+        ],
+        "evidence": ["crates/ignore/src/incremental.rs:325", "crates/ignore/src/incremental.rs:376", "crates/ignore/src/incremental.rs:413"]
+      }
+    },
+    {
+      "id": "rg-007",
+      "cohort": "primary",
+      "query": "Where are input bytes converted from another character encoding before matching?",
+      "expect_files": ["crates/searcher/src/searcher/mod.rs"],
+      "rubric": {
+        "facts": [
+          "SearcherBuilder configures DecodeReaderBytesBuilder with the selected encoding and BOM policy.",
+          "search_reader wraps the input in that decoder before either multiline or line-oriented matching."
+        ],
+        "evidence": ["crates/searcher/src/searcher/mod.rs:322", "crates/searcher/src/searcher/mod.rs:518", "crates/searcher/src/searcher/mod.rs:727"]
+      }
+    },
+    {
+      "id": "rg-008",
+      "cohort": "primary",
+      "query": "Where does case sensitivity depend on whether the pattern has capital letters?",
+      "expect_files": ["crates/regex/src/config.rs"],
+      "rubric": {
+        "facts": [
+          "Smart case selects case-insensitive matching only when a literal exists and the pattern contains no uppercase literal.",
+          "An explicit case-insensitive choice wins, while disabled smart case leaves matching case sensitive."
+        ],
+        "evidence": ["crates/regex/src/config.rs:82", "crates/regex/src/config.rs:191"]
+      }
+    },
+    {
+      "id": "rg-009",
+      "cohort": "primary",
+      "query": "Where is context around matching lines assembled for output?",
+      "expect_files": ["crates/searcher/src/searcher/core.rs"],
+      "rubric": {
+        "facts": [
+          "The search core retains the configured number of preceding lines and tracks visited lines so it can emit before and after context around matches.",
+          "Discontiguous context groups are signaled to the sink, where a printer can render a separator."
+        ],
+        "evidence": ["crates/searcher/src/searcher/core.rs:185", "crates/searcher/src/searcher/core.rs:198", "crates/searcher/src/searcher/core.rs:642"]
+      }
+    },
+    {
+      "id": "rg-010",
+      "cohort": "primary",
+      "query": "Where is an unsupported regular expression retried with the alternative engine?",
+      "expect_files": ["crates/core/flags/hiargs.rs"],
+      "rubric": {
+        "facts": [
+          "EngineChoice::Auto first builds the Rust matcher and returns it when successful.",
+          "Only after the Rust build fails does it try PCRE2; if both fail, it reports both compilation errors."
+        ],
+        "evidence": ["crates/core/flags/hiargs.rs:379", "crates/core/flags/hiargs.rs:388", "crates/core/flags/hiargs.rs:397"]
+      }
+    },
+    {
+      "id": "rg-011",
+      "cohort": "primary",
+      "query": "How does RegexMatcherBuilder build one matcher from several patterns?",
+      "expect_files": ["crates/regex/src/matcher.rs"],
+      "expect_symbols": ["RegexMatcherBuilder"],
+      "rubric": {
+        "facts": [
+          "build delegates one pattern to build_many, while build_many treats all patterns as one alternation.",
+          "It builds the configured HIR, applies whole-line or word wrapping, compiles the regex, and derives a literal prefilter where possible."
+        ],
+        "evidence": ["crates/regex/src/matcher.rs:40", "crates/regex/src/matcher.rs:49", "crates/regex/src/matcher.rs:57"]
+      }
+    },
+    {
+      "id": "rg-012",
+      "cohort": "primary",
+      "query": "Where does SearcherBuilder configure treatment of binary input?",
+      "expect_files": ["crates/searcher/src/searcher/mod.rs"],
+      "expect_symbols": ["SearcherBuilder"],
+      "rubric": {
+        "facts": [
+          "SearcherBuilder::binary_detection stores a BinaryDetection strategy in the searcher configuration.",
+          "The strategy controls both which byte marks binary data and whether the search quits or converts the detection into a report."
+        ],
+        "evidence": ["crates/searcher/src/searcher/mod.rs:503", "crates/searcher/src/searcher/mod.rs:510", "crates/searcher/src/searcher/mod.rs:797"]
+      }
+    },
+    {
+      "id": "rg-013",
+      "cohort": "primary",
+      "query": "How can WalkBuilder be told to follow symbolic links?",
+      "expect_files": ["crates/ignore/src/walk.rs"],
+      "expect_symbols": ["WalkBuilder"],
+      "rubric": {
+        "facts": [
+          "Call WalkBuilder::follow_links(true); the default is false.",
+          "The stored flag is passed into serial or parallel traversal, which follows symlinks while guarding against loops."
+        ],
+        "evidence": ["crates/ignore/src/walk.rs:567", "crates/ignore/src/walk.rs:593", "crates/ignore/src/walk.rs:756", "crates/ignore/src/walk.rs:1888"]
+      }
+    },
+    {
+      "id": "rg-014",
+      "cohort": "primary",
+      "query": "Where does GlobBuilder turn a wildcard pattern into a parsed glob?",
+      "expect_files": ["crates/globset/src/glob.rs"],
+      "expect_symbols": ["GlobBuilder"],
+      "rubric": {
+        "facts": [
+          "GlobBuilder::new stores the pattern and default options without compiling it.",
+          "build creates a Parser, parses wildcard tokens, validates alternates, and returns a Glob with its regex and tokens."
+        ],
+        "evidence": ["crates/globset/src/glob.rs:570", "crates/globset/src/glob.rs:578", "crates/globset/src/glob.rs:823"]
+      }
+    },
+    {
+      "id": "rg-015",
+      "cohort": "primary",
+      "query": "How does TypesBuilder select the file types that will be searched?",
+      "expect_files": ["crates/ignore/src/types.rs"],
+      "expect_symbols": ["TypesBuilder"],
+      "rubric": {
+        "facts": [
+          "select marks named type definitions for inclusion and negate marks definitions for exclusion before build compiles their globs.",
+          "When at least one type is selected, paths not matching a selected type are ignored; negated matches are also ignored."
+        ],
+        "evidence": ["crates/ignore/src/types.rs:263", "crates/ignore/src/types.rs:324", "crates/ignore/src/types.rs:385", "crates/ignore/src/types.rs:399"]
+      }
+    },
+    {
+      "id": "rg-016",
+      "cohort": "primary",
+      "query": "Where can StandardBuilder change the separator between context groups?",
+      "expect_files": ["crates/printer/src/standard.rs"],
+      "expect_symbols": ["StandardBuilder"],
+      "rubric": {
+        "facts": [
+          "StandardBuilder::separator_context replaces the optional separator bytes; the default is -- and None disables it.",
+          "The standard printer writes the configured separator between discontiguous context groups."
+        ],
+        "evidence": ["crates/printer/src/standard.rs:77", "crates/printer/src/standard.rs:391", "crates/printer/src/standard.rs:1421"]
+      }
+    },
+    {
+      "id": "rg-017",
+      "cohort": "primary",
+      "query": "How does JSONBuilder produce a sink for structured match events?",
+      "expect_files": ["crates/printer/src/json.rs"],
+      "expect_symbols": ["JSONBuilder"],
+      "rubric": {
+        "facts": [
+          "JSONBuilder::build creates a JSON printer with cloned configuration and a counting writer.",
+          "JSON::sink or sink_with_path binds a matcher and optional path into JSONSink, which emits begin, match/context, and end messages."
+        ],
+        "evidence": ["crates/printer/src/json.rs:493", "crates/printer/src/json.rs:504", "crates/printer/src/json.rs:525", "crates/printer/src/json.rs:677"]
+      }
+    },
+    {
+      "id": "rg-018",
+      "cohort": "primary",
+      "query": "Where does DecompressionMatcherBuilder obtain its default command associations?",
+      "expect_files": ["crates/cli/src/decompress.rs"],
+      "expect_symbols": ["DecompressionMatcherBuilder"],
+      "rubric": {
+        "facts": [
+          "Defaults are enabled on the builder, and build chains default_decompression_commands with custom associations.",
+          "The default loader finds installed decompressor executables and registers their known extension globs, skipping unavailable programs."
+        ],
+        "evidence": ["crates/cli/src/decompress.rs:40", "crates/cli/src/decompress.rs:173", "crates/cli/src/decompress.rs:490"]
+      }
+    },
+    {
+      "id": "rg-019",
+      "cohort": "primary",
+      "query": "How does parse_reader treat comments and empty lines in a ripgrep config file?",
+      "expect_files": ["crates/core/flags/config.rs"],
+      "expect_symbols": ["parse_reader"],
+      "rubric": {
+        "facts": [
+          "parse_reader trims each line, skips empty lines and lines whose first non-space character is #, and treats every remaining line as one full argument.",
+          "A bad line is recorded as an error without discarding valid arguments from other lines."
+        ],
+        "evidence": ["crates/core/flags/config.rs:73", "crates/core/flags/config.rs:81", "crates/core/flags/config.rs:91"]
+      }
+    },
+    {
+      "id": "rg-020",
+      "cohort": "primary",
+      "query": "How does search_parallel create and run the search workers?",
+      "expect_files": ["crates/core/main.rs"],
+      "expect_symbols": ["search_parallel"],
+      "rubric": {
+        "facts": [
+          "search_parallel creates one configured SearchWorker and clones it once per parallel walker worker.",
+          "Each directory result becomes a Haystack, is searched, contributes match/statistics state, and its buffered output is printed; errors continue and broken pipes quit."
+        ],
+        "evidence": ["crates/core/main.rs:159", "crates/core/main.rs:176", "crates/core/main.rs:181", "crates/core/main.rs:189"]
+      }
+    },
+    {
+      "id": "rg-021",
+      "cohort": "primary",
+      "query": "What should I put in a config file so every search uses my preferred options?",
+      "expect_files": ["GUIDE.md"],
+      "rubric": {
+        "facts": [
+          "Set RIPGREP_CONFIG_PATH to the desired file; ripgrep does not search a standard config location automatically.",
+          "Put one complete shell argument on each trimmed line, use leading # for comments, and do not use shell escaping; explicit CLI flags come later and normally override config flags."
+        ],
+        "evidence": ["GUIDE.md:540", "GUIDE.md:546", "GUIDE.md:553", "GUIDE.md:605"]
+      }
+    },
+    {
+      "id": "rg-022",
+      "cohort": "primary",
+      "query": "Which documented options let one match span several input lines?",
+      "expect_files": ["FAQ.md"],
+      "rubric": {
+        "facts": [
+          "Use -U or --multiline to permit matches and reported results that span multiple input lines."
+        ],
+        "evidence": ["FAQ.md:194", "FAQ.md:198"]
+      }
+    },
+    {
+      "id": "rg-023",
+      "cohort": "primary",
+      "query": "What does the documentation recommend when I need look-around or backreferences?",
+      "expect_files": ["FAQ.md"],
+      "rubric": {
+        "facts": [
+          "The default finite-state regex engine does not support lookaround or backreferences.",
+          "Use the optional PCRE2 engine with -P/--pcre2; the installed build must have PCRE2 support."
+        ],
+        "evidence": ["FAQ.md:202", "FAQ.md:206", "FAQ.md:212", "FAQ.md:225"]
+      }
+    },
+    {
+      "id": "rg-024",
+      "cohort": "primary",
+      "query": "How do I search a file whose text is encoded differently from UTF-8?",
+      "expect_files": ["GUIDE.md"],
+      "rubric": {
+        "facts": [
+          "Pass -E/--encoding with a WHATWG encoding label; ripgrep transcodes files from that encoding unless a BOM supplies the encoding.",
+          "Automatic mode detects UTF-16 BOMs, while -E none disables transcoding and BOM sniffing and searches raw bytes."
+        ],
+        "evidence": ["GUIDE.md:627", "GUIDE.md:641", "GUIDE.md:653", "GUIDE.md:661", "GUIDE.md:676"]
+      }
+    },
+    {
+      "id": "rg-025",
+      "cohort": "primary",
+      "query": "Where are the instructions for installing ripgrep or building it from source?",
+      "expect_files": ["README.md"],
+      "rubric": {
+        "facts": [
+          "README.md's Installation section links precompiled release archives and lists platform package-manager commands.",
+          "The same section documents cargo install ripgrep and cargo binstall ripgrep for Rust-based installation."
+        ],
+        "evidence": ["README.md:233", "README.md:237", "README.md:242", "README.md:430", "README.md:439"]
+      }
+    },
+    {
+      "id": "rg-026",
+      "cohort": "primary",
+      "query": "How do command-line glob overrides get from parsed options to directory filtering?",
+      "expect_files": ["crates/core/flags/hiargs.rs", "crates/ignore/src/overrides.rs"],
+      "rubric": {
+        "facts": [
+          "HiArgs builds an Override with the working-directory root, adds --glob values and case-insensitive --iglob values, then passes it to WalkBuilder::overrides.",
+          "The override matcher applies whitelist and ignore glob precedence while the walker filters each path."
+        ],
+        "evidence": ["crates/core/flags/hiargs.rs:904", "crates/core/flags/hiargs.rs:1244", "crates/ignore/src/overrides.rs:92", "crates/ignore/src/overrides.rs:154"]
+      }
+    },
+    {
+      "id": "rg-027",
+      "cohort": "primary",
+      "query": "How does selecting JSON output connect CLI configuration to match-event serialization?",
+      "expect_files": ["crates/core/flags/hiargs.rs", "crates/printer/src/json.rs"],
+      "rubric": {
+        "facts": [
+          "HiArgs::printer_json transfers CLI printer settings into JSONBuilder and builds the JSON printer selected for JSON search mode.",
+          "That printer creates a JSONSink whose begin, matched/context, and finish callbacks serialize one structured JSON message per event."
+        ],
+        "evidence": ["crates/core/flags/hiargs.rs:605", "crates/printer/src/json.rs:493", "crates/printer/src/json.rs:504", "crates/printer/src/json.rs:677"]
+      }
+    },
+    {
+      "id": "rg-028",
+      "cohort": "primary",
+      "query": "How do options read from a config file reach the normal command-line parser?",
+      "expect_files": ["crates/core/flags/config.rs", "crates/core/flags/parse.rs"],
+      "rubric": {
+        "facts": [
+          "config::args reads RIPGREP_CONFIG_PATH and turns the file into one argument per non-comment line.",
+          "parse_low first detects whether config is enabled, prepends those config arguments to the real CLI arguments, then runs the normal parser again so later CLI flags can override them."
+        ],
+        "evidence": ["crates/core/flags/config.rs:15", "crates/core/flags/config.rs:73", "crates/core/flags/parse.rs:56"]
+      }
+    },
+    {
+      "id": "rg-029",
+      "cohort": "primary",
+      "query": "How does a directory entry found by the parallel walker become a searchable input?",
+      "expect_files": ["crates/core/main.rs", "crates/core/haystack.rs"],
+      "rubric": {
+        "facts": [
+          "The parallel-walker callback passes each traversal result to HaystackBuilder::build_from_result.",
+          "HaystackBuilder logs traversal errors, accepts explicit inputs or file entries, rejects other entries, and returns the Haystack consumed by SearchWorker::search."
+        ],
+        "evidence": ["crates/core/main.rs:181", "crates/core/main.rs:189", "crates/core/haystack.rs:26", "crates/core/haystack.rs:49"]
+      }
+    },
+    {
+      "id": "rg-030",
+      "cohort": "primary",
+      "query": "How does a chosen character encoding reach the reader that supplies bytes to the matcher?",
+      "expect_files": ["crates/core/flags/hiargs.rs", "crates/searcher/src/searcher/mod.rs"],
+      "rubric": {
+        "facts": [
+          "HiArgs maps an explicit encoding to SearcherBuilder::encoding, leaves Auto at its default, or disables BOM sniffing for Disabled.",
+          "SearcherBuilder configures its decode reader, and search_reader wraps the source with that decoder before matching."
+        ],
+        "evidence": ["crates/core/flags/hiargs.rs:749", "crates/searcher/src/searcher/mod.rs:322", "crates/searcher/src/searcher/mod.rs:727"]
+      }
+    },
+    {
+      "id": "rg-held-001",
+      "cohort": "held_out",
+      "query": "Where does ripgrep turn non-printable path bytes into escaped display text?",
+      "expect_files": ["crates/cli/src/escape.rs"],
+      "rubric": {
+        "facts": [
+          "grep_cli::escape converts tabs, carriage returns, newlines, non-printable ASCII, and invalid UTF-8 bytes into readable escape sequences; escape_os applies it to OS strings."
+        ],
+        "evidence": ["crates/cli/src/escape.rs:5", "crates/cli/src/escape.rs:26", "crates/cli/src/escape.rs:30"]
+      }
+    },
+    {
+      "id": "rg-held-002",
+      "cohort": "held_out",
+      "query": "How can a caller collect total bytes searched and matches produced?",
+      "expect_files": ["crates/printer/src/stats.rs"],
+      "rubric": {
+        "facts": [
+          "Enable or obtain a printer Stats value and read bytes_searched() and matches(); one printer's Stats covers all searches executed with that printer.",
+          "Stats values support Add and AddAssign for aggregation across printers or searches."
+        ],
+        "evidence": ["crates/printer/src/stats.rs:8", "crates/printer/src/stats.rs:46", "crates/printer/src/stats.rs:64", "crates/printer/src/stats.rs:107"]
+      }
+    },
+    {
+      "id": "rg-scope-001",
+      "cohort": "scoped",
+      "query": "follow symbolic links",
+      "expect_files": ["crates/ignore/src/walk.rs"],
+      "rubric": {
+        "facts": [
+          "WalkBuilder::follow_links(true) enables following symbolic links during traversal; false is the default."
+        ],
+        "evidence": ["crates/ignore/src/walk.rs:567", "crates/ignore/src/walk.rs:756"]
+      }
+    },
+    {
+      "id": "rg-scope-002",
+      "cohort": "scoped",
+      "query": "configuration file",
+      "expect_files": ["GUIDE.md"],
+      "rubric": {
+        "facts": [
+          "The guide says to set RIPGREP_CONFIG_PATH and put one complete argument on each trimmed non-comment line; ripgrep does not auto-discover a config path."
+        ],
+        "evidence": ["GUIDE.md:540", "GUIDE.md:546", "GUIDE.md:553"]
+      }
+    },
+    {
+      "id": "rg-none-001",
+      "cohort": "no_answer",
+      "query": "Where does ripgrep store user login sessions?",
+      "expect_files": [],
+      "rubric": {
+        "facts": [
+          "It does not: ripgrep is a local line-oriented recursive search tool, and this repository contains no application login-session storage subsystem."
+        ],
+        "evidence": ["README.md:1", "README.md:3"]
+      }
+    },
+    {
+      "id": "rg-none-002",
+      "cohort": "no_answer",
+      "query": "Which ripgrep module submits credit-card payments to a checkout service?",
+      "expect_files": [],
+      "rubric": {
+        "facts": [
+          "None does: ripgrep is a local line-oriented recursive search tool, and this repository has no payment-processing or checkout subsystem."
+        ],
+        "evidence": ["README.md:1", "README.md:3"]
+      }
+    }
+  ]
+}

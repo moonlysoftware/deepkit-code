@@ -1,0 +1,16 @@
+/target
+.deepkit/
+notes/runs/*.log
+notes/runs/*.pid
+notes/runs/*.exit
+notes/runs/nightly-*.state.json
+*.gguf
+notes/runs/dkc-nightly.lock
+scripts/bench/__pycache__/
+
+# Development journals, raw runs and local checkpoints are archived, not shipped.
+/notes/*
+!/notes/README.md
+!/notes/STATE.md
+!/notes/QUESTIONS.md
+__pycache__/

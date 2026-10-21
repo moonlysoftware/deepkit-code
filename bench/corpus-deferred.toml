@@ -1,0 +1,9 @@
+# Deferred corpus qualification, outside the active v1 manifest.
+# Aurora was explicitly deferred beyond v1 by the human on 2026-09-25.
+# Preserve its original unprovisioned entry; this is not completed evidence.
+
+[[repo]]
+name = "aurora"
+url = "local"
+rev = ""
+config = "profiles/aurora.toml"

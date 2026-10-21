@@ -1,0 +1,3 @@
+# Repository-local Cargo settings are intentionally empty.
+# build.rs watches this tracked path for provenance; a missing watched file
+# makes Cargo rerun the build script and invalidate the crate on every command.

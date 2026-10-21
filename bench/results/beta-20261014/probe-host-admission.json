@@ -1,0 +1,10 @@
+{
+  "at": "2026-10-14T17:03:34.091599+00:00",
+  "cpu_sample_seconds": 3,
+  "cpu_busy_fraction": 0.0010709186101856005,
+  "loadavg": "0.27 2.11 3.20 1/666 308452",
+  "cargo_or_compiler_processes": [],
+  "gpu_query_exit": 0,
+  "gpu_compute_processes": "",
+  "purpose": "bounded quality diagnostic; not release latency qualification"
+}

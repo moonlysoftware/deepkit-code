@@ -1,0 +1,18 @@
+[
+  {
+    "kind": "doc_section",
+    "scope_path": "Indexer Manual › page 1 › Installation",
+    "header": "page 1 › Installation",
+    "text": "## Installation\n\nInstall the binary and open a repository directory.\n\nRun the index command to catalogue your source files.",
+    "line_start": 1,
+    "line_end": 5
+  },
+  {
+    "kind": "doc_section",
+    "scope_path": "Indexer Manual › page 2 › Searching",
+    "header": "page 2 › Searching",
+    "text": "## Searching\n\nSearch accepts words and returns matching source sections.\n\nOpen a result to inspect its original context.",
+    "line_start": 1,
+    "line_end": 5
+  }
+]

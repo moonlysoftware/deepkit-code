@@ -1,0 +1,18 @@
+[
+  {
+    "header": "sheet 1 › Documents",
+    "kind": "doc_section",
+    "line_end": 6,
+    "line_start": 1,
+    "scope_path": "sheet 1 › Documents",
+    "text": "## Documents\n\n| Path | Kind | Count |\n| --- | --- | --- |\n| manual.pdf | PDF | 2 |\n| guide.md | Markdown | 3 |"
+  },
+  {
+    "header": "sheet 2 › Operations",
+    "kind": "doc_section",
+    "line_end": 6,
+    "line_start": 1,
+    "scope_path": "sheet 2 › Operations",
+    "text": "## Operations\n\n| Command | Purpose |\n| --- | --- |\n| index | Refresh changed sources |\n| search | Find relevant sections |"
+  }
+]

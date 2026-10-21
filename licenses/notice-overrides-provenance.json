@@ -1,0 +1,499 @@
+[
+  {
+    "package": "alloc-stdlib-0.3.0",
+    "repository": "dropbox/rust-alloc-no-stdlib",
+    "revision": "0a81fd6928ea3b33c8cd484aa4575d50ffb98012",
+    "vcs_dirty": false,
+    "files": [
+      {
+        "path": "notice-overrides/alloc-stdlib-0.3.0/LICENSE",
+        "upstream_url": "https://raw.githubusercontent.com/dropbox/rust-alloc-no-stdlib/0a81fd6928ea3b33c8cd484aa4575d50ffb98012/LICENSE",
+        "git_blob": "cd496ba72eb37e83a44958358d1f89a8a28cbc15",
+        "sha256": "c0c56f26d9c051cac4d200c34c84e7ae9aaa853e01a982a1df08b09931e518ae"
+      }
+    ],
+    "error": null
+  },
+  {
+    "package": "defmt-parser-1.0.0",
+    "repository": "knurling-rs/defmt",
+    "revision": "4a8cdb44891ed57b8ff5a023b6bec7137c48708f",
+    "vcs_dirty": false,
+    "files": [
+      {
+        "path": "notice-overrides/defmt-parser-1.0.0/LICENSE-APACHE",
+        "upstream_url": "https://raw.githubusercontent.com/knurling-rs/defmt/4a8cdb44891ed57b8ff5a023b6bec7137c48708f/LICENSE-APACHE",
+        "git_blob": "11069edd79019f7dafbe3138841cf289209270dd",
+        "sha256": "8173d5c29b4f956d532781d2b86e4e30f83e6b7878dce18c919451d6ba707c90"
+      },
+      {
+        "path": "notice-overrides/defmt-parser-1.0.0/LICENSE-MIT",
+        "upstream_url": "https://raw.githubusercontent.com/knurling-rs/defmt/4a8cdb44891ed57b8ff5a023b6bec7137c48708f/LICENSE-MIT",
+        "git_blob": "e68a7ab37c8accca023db5f1505d48e4375d4324",
+        "sha256": "2710a622a896bba67356913d4d0492cab5465f61b2ecce6d880aeb483834fb50"
+      }
+    ],
+    "error": null
+  },
+  {
+    "package": "difflib-0.4.0",
+    "error": null,
+    "revision": "f035fb8e656f27119e23eca9d5b996df14f3885e",
+    "source_byte_identity": [
+      {
+        "path": "examples/example.rs",
+        "identical": true
+      },
+      {
+        "path": "src/differ.rs",
+        "identical": true
+      },
+      {
+        "path": "src/lib.rs",
+        "identical": true
+      },
+      {
+        "path": "src/sequencematcher.rs",
+        "identical": true
+      },
+      {
+        "path": "src/utils.rs",
+        "identical": true
+      },
+      {
+        "path": "tests/tests.rs",
+        "identical": true
+      }
+    ],
+    "files": [
+      {
+        "path": "notice-overrides/difflib-0.4.0/LICENSE",
+        "upstream_url": "https://raw.githubusercontent.com/DimaKudosh/difflib/f035fb8e656f27119e23eca9d5b996df14f3885e/LICENSE",
+        "sha256": "6725d1437fc6c77301f2ff0e7d52914cf4f9509213e1078dc77d9356dbe6eac5"
+      }
+    ]
+  },
+  {
+    "package": "find_cuda_helper-0.2.0",
+    "error": null,
+    "license_choice": "Apache-2.0",
+    "note": "Package manifest explicitly offers Apache-2.0; no copyright/NOTICE file in distributed crate. Standard license text retained for that option; no invented MIT attribution.",
+    "files": [
+      {
+        "path": "notice-overrides/find_cuda_helper-0.2.0/LICENSE-APACHE",
+        "sha256": "074e6e32c86a4c0ef8b3ed25b721ca23aca83df277cd88106ef7177c354615ff",
+        "source": "Standard Apache-2.0 text, project LICENSE-APACHE"
+      }
+    ]
+  },
+  {
+    "package": "llama-cpp-2-0.1.156",
+    "repository": "utilityai/llama-cpp-rs",
+    "revision": "63e549708237b16b39018288582655539e0a9d5b",
+    "vcs_dirty": false,
+    "files": [
+      {
+        "path": "notice-overrides/llama-cpp-2-0.1.156/LICENSE-APACHE",
+        "upstream_url": "https://raw.githubusercontent.com/utilityai/llama-cpp-rs/63e549708237b16b39018288582655539e0a9d5b/LICENSE-APACHE",
+        "git_blob": "1b5ec8b78e237b5c3b3d812a7c0a6589d0f7161d",
+        "sha256": "62c7a1e35f56406896d7aa7ca52d0cc0d272ac022b5d2796e7d6905db8a3636a"
+      },
+      {
+        "path": "notice-overrides/llama-cpp-2-0.1.156/LICENSE-MIT",
+        "upstream_url": "https://raw.githubusercontent.com/utilityai/llama-cpp-rs/63e549708237b16b39018288582655539e0a9d5b/LICENSE-MIT",
+        "git_blob": "7eadd8818796d258f5c90ef7980e0d47903a50b6",
+        "sha256": "763912bd05f42956dbfa900bd1a2f8037c704f5c64d778c623ec5952454e24aa"
+      }
+    ],
+    "error": null
+  },
+  {
+    "package": "llama-cpp-sys-2-0.1.156",
+    "repository": "utilityai/llama-cpp-rs",
+    "revision": "63e549708237b16b39018288582655539e0a9d5b",
+    "vcs_dirty": false,
+    "files": [
+      {
+        "path": "notice-overrides/llama-cpp-sys-2-0.1.156/LICENSE-APACHE",
+        "upstream_url": "https://raw.githubusercontent.com/utilityai/llama-cpp-rs/63e549708237b16b39018288582655539e0a9d5b/LICENSE-APACHE",
+        "git_blob": "1b5ec8b78e237b5c3b3d812a7c0a6589d0f7161d",
+        "sha256": "62c7a1e35f56406896d7aa7ca52d0cc0d272ac022b5d2796e7d6905db8a3636a"
+      },
+      {
+        "path": "notice-overrides/llama-cpp-sys-2-0.1.156/LICENSE-MIT",
+        "upstream_url": "https://raw.githubusercontent.com/utilityai/llama-cpp-rs/63e549708237b16b39018288582655539e0a9d5b/LICENSE-MIT",
+        "git_blob": "7eadd8818796d258f5c90ef7980e0d47903a50b6",
+        "sha256": "763912bd05f42956dbfa900bd1a2f8037c704f5c64d778c623ec5952454e24aa"
+      }
+    ],
+    "error": null
+  },
+  {
+    "package": "pear-0.2.9",
+    "repository": "SergioBenitez/Pear",
+    "revision": "f803fa9daf1a022f1a216a16da2a0778474ecd43",
+    "vcs_dirty": false,
+    "files": [
+      {
+        "path": "notice-overrides/pear-0.2.9/LICENSE-APACHE",
+        "sha256": "074e6e32c86a4c0ef8b3ed25b721ca23aca83df277cd88106ef7177c354615ff",
+        "source": "Standard Apache-2.0 text, project LICENSE-APACHE"
+      }
+    ],
+    "error": null,
+    "license_choice": "Apache-2.0",
+    "note": "Package manifest explicitly offers Apache-2.0; no copyright/NOTICE file in distributed crate. Standard license text retained for that option; no invented MIT attribution."
+  },
+  {
+    "package": "pear_codegen-0.2.9",
+    "repository": "SergioBenitez/Pear",
+    "revision": "f803fa9daf1a022f1a216a16da2a0778474ecd43",
+    "vcs_dirty": false,
+    "files": [
+      {
+        "path": "notice-overrides/pear_codegen-0.2.9/LICENSE-APACHE",
+        "sha256": "074e6e32c86a4c0ef8b3ed25b721ca23aca83df277cd88106ef7177c354615ff",
+        "source": "Standard Apache-2.0 text, project LICENSE-APACHE"
+      }
+    ],
+    "error": null,
+    "license_choice": "Apache-2.0",
+    "note": "Package manifest explicitly offers Apache-2.0; no copyright/NOTICE file in distributed crate. Standard license text retained for that option; no invented MIT attribution."
+  },
+  {
+    "package": "rmcp-3.2.0",
+    "repository": "modelcontextprotocol/rust-sdk",
+    "revision": "51ccb42993d6eb5075399672ce7a0c21a0e55eea",
+    "vcs_dirty": false,
+    "files": [
+      {
+        "path": "notice-overrides/rmcp-3.2.0/LICENSE",
+        "upstream_url": "https://raw.githubusercontent.com/modelcontextprotocol/rust-sdk/51ccb42993d6eb5075399672ce7a0c21a0e55eea/LICENSE",
+        "git_blob": "4a93985763241755401a10678395303de4e720ba",
+        "sha256": "0382b0057770ca05e9c350a50aa3b1c1fea84da0bc81d723bf00b9aa841be58a"
+      }
+    ],
+    "error": null
+  },
+  {
+    "package": "rmcp-macros-3.2.0",
+    "repository": "modelcontextprotocol/rust-sdk",
+    "revision": "51ccb42993d6eb5075399672ce7a0c21a0e55eea",
+    "vcs_dirty": false,
+    "files": [
+      {
+        "path": "notice-overrides/rmcp-macros-3.2.0/LICENSE",
+        "upstream_url": "https://raw.githubusercontent.com/modelcontextprotocol/rust-sdk/51ccb42993d6eb5075399672ce7a0c21a0e55eea/LICENSE",
+        "git_blob": "4a93985763241755401a10678395303de4e720ba",
+        "sha256": "0382b0057770ca05e9c350a50aa3b1c1fea84da0bc81d723bf00b9aa841be58a"
+      }
+    ],
+    "error": null
+  },
+  {
+    "package": "rsqlite-vfs-0.1.1",
+    "repository": "Spxg/sqlite-wasm-rs",
+    "revision": "1bb309784f25c401ddf95131dcde4c4cdad7aee7",
+    "vcs_dirty": false,
+    "files": [
+      {
+        "path": "notice-overrides/rsqlite-vfs-0.1.1/LICENSE",
+        "upstream_url": "https://raw.githubusercontent.com/Spxg/sqlite-wasm-rs/1bb309784f25c401ddf95131dcde4c4cdad7aee7/LICENSE",
+        "git_blob": "8839511c01e91a5d4ac8c9b753c165b52d86f530",
+        "sha256": "e1c1975c3474cce31722836f101a40ffaf1cc784e4d2f38ce3e77b9712934e78"
+      }
+    ],
+    "error": null
+  },
+  {
+    "package": "taffy-0.14.0",
+    "repository": "DioxusLabs/taffy",
+    "revision": "77f385683c1d698c91a23a259f87fdddf26925fb",
+    "vcs_dirty": false,
+    "files": [
+      {
+        "path": "notice-overrides/taffy-0.14.0/LICENSE",
+        "upstream_url": "https://raw.githubusercontent.com/DioxusLabs/taffy/77f385683c1d698c91a23a259f87fdddf26925fb/LICENSE",
+        "git_blob": "f6b3d8f95569d0dfca076b6b24901b2a4a89aca8",
+        "sha256": "f97daf1a0124413dccf399a4e6626b4b74acd05282f80b6d64ac82225650b77a"
+      }
+    ],
+    "error": null
+  },
+  {
+    "package": "tiktoken-rs-0.12.0",
+    "repository": "zurawiki/tiktoken-rs",
+    "revision": "32de8dc0526d67f2c266c4e5e7c6a8ec5a0ce3d7",
+    "vcs_dirty": false,
+    "files": [
+      {
+        "path": "notice-overrides/tiktoken-rs-0.12.0/LICENSE",
+        "upstream_url": "https://raw.githubusercontent.com/zurawiki/tiktoken-rs/32de8dc0526d67f2c266c4e5e7c6a8ec5a0ce3d7/LICENSE",
+        "git_blob": "39aa2a22b04e732499c3f3cf6df84f50215d8f5f",
+        "sha256": "f7c6ddf9d84fd7b8ad5917e4074d4c05e4c1dfb752a28a0058f06bd0f5e2edcc"
+      }
+    ],
+    "error": null
+  },
+  {
+    "package": "tree-sitter-cpp-0.23.4",
+    "repository": "tree-sitter/tree-sitter-cpp",
+    "revision": "f41e1a044c8a84ea9fa8577fdd2eab92ec96de02",
+    "vcs_dirty": false,
+    "files": [
+      {
+        "path": "notice-overrides/tree-sitter-cpp-0.23.4/LICENSE",
+        "upstream_url": "https://raw.githubusercontent.com/tree-sitter/tree-sitter-cpp/f41e1a044c8a84ea9fa8577fdd2eab92ec96de02/LICENSE",
+        "git_blob": "4b52d191cead337b11e274b79459a86f1b5a7779",
+        "sha256": "2e0110e07abef7c2548b26ec9d6969775617ca539a0dc8dbeeb14d6452c711d1"
+      }
+    ],
+    "error": null
+  },
+  {
+    "package": "tree-sitter-dockerfile-updated-0.2.0",
+    "repository": "c-gamble/tree-sitter-dockerfile",
+    "revision": "9bae81a7069d89d5bbb18dba97fee5b70f4f0169",
+    "vcs_dirty": false,
+    "files": [
+      {
+        "path": "notice-overrides/tree-sitter-dockerfile-updated-0.2.0/LICENSE",
+        "upstream_url": "https://raw.githubusercontent.com/c-gamble/tree-sitter-dockerfile/9bae81a7069d89d5bbb18dba97fee5b70f4f0169/LICENSE",
+        "git_blob": "97faf2b669c6a117400ede53c66691c542f400a0",
+        "sha256": "806b8fcd19c1cdf23e178eb25942acc844a38669e36b2c896c7baf5f8bcecbb4"
+      }
+    ],
+    "error": null
+  },
+  {
+    "package": "tree-sitter-haskell-0.23.1",
+    "repository": "tree-sitter/tree-sitter-haskell",
+    "revision": "c30d812bc90827f1a54106a25bc9a6307f5cdcec",
+    "vcs_dirty": false,
+    "files": [
+      {
+        "path": "notice-overrides/tree-sitter-haskell-0.23.1/LICENSE",
+        "upstream_url": "https://raw.githubusercontent.com/tree-sitter/tree-sitter-haskell/c30d812bc90827f1a54106a25bc9a6307f5cdcec/LICENSE",
+        "git_blob": "4b52d191cead337b11e274b79459a86f1b5a7779",
+        "sha256": "2e0110e07abef7c2548b26ec9d6969775617ca539a0dc8dbeeb14d6452c711d1"
+      }
+    ],
+    "error": null
+  },
+  {
+    "package": "tree-sitter-html-0.23.2",
+    "repository": "tree-sitter/tree-sitter-html",
+    "revision": "5a5ca8551a179998360b4a4ca2c0f366a35acc03",
+    "vcs_dirty": false,
+    "files": [
+      {
+        "path": "notice-overrides/tree-sitter-html-0.23.2/LICENSE",
+        "upstream_url": "https://raw.githubusercontent.com/tree-sitter/tree-sitter-html/5a5ca8551a179998360b4a4ca2c0f366a35acc03/LICENSE",
+        "git_blob": "4b52d191cead337b11e274b79459a86f1b5a7779",
+        "sha256": "2e0110e07abef7c2548b26ec9d6969775617ca539a0dc8dbeeb14d6452c711d1"
+      }
+    ],
+    "error": null
+  },
+  {
+    "package": "tree-sitter-java-0.23.5",
+    "repository": "tree-sitter/tree-sitter-java",
+    "revision": "94703d5a6bed02b98e438d7cad1136c01a60ba2c",
+    "vcs_dirty": false,
+    "files": [
+      {
+        "path": "notice-overrides/tree-sitter-java-0.23.5/LICENSE",
+        "upstream_url": "https://raw.githubusercontent.com/tree-sitter/tree-sitter-java/94703d5a6bed02b98e438d7cad1136c01a60ba2c/LICENSE",
+        "git_blob": "4e0446f76ca7d380d615e31b5500711df66a9ea2",
+        "sha256": "52ed137b039cd9c46409bc22e89938af911c95b157feae2d040b51e6084369a7"
+      }
+    ],
+    "error": null
+  },
+  {
+    "package": "tree-sitter-json-0.24.8",
+    "repository": "tree-sitter/tree-sitter-json",
+    "revision": "ee35a6ebefcef0c5c416c0d1ccec7370cfca5a24",
+    "vcs_dirty": false,
+    "files": [
+      {
+        "path": "notice-overrides/tree-sitter-json-0.24.8/LICENSE",
+        "upstream_url": "https://raw.githubusercontent.com/tree-sitter/tree-sitter-json/ee35a6ebefcef0c5c416c0d1ccec7370cfca5a24/LICENSE",
+        "git_blob": "4b52d191cead337b11e274b79459a86f1b5a7779",
+        "sha256": "2e0110e07abef7c2548b26ec9d6969775617ca539a0dc8dbeeb14d6452c711d1"
+      }
+    ],
+    "error": null
+  },
+  {
+    "package": "tree-sitter-kotlin-ng-1.1.0",
+    "repository": "tree-sitter-grammars/tree-sitter-kotlin",
+    "revision": "77dd60ea0a9003ce062c9728a513ffe1aaff8c82",
+    "vcs_dirty": false,
+    "files": [
+      {
+        "path": "notice-overrides/tree-sitter-kotlin-ng-1.1.0/LICENSE",
+        "upstream_url": "https://raw.githubusercontent.com/tree-sitter-grammars/tree-sitter-kotlin/77dd60ea0a9003ce062c9728a513ffe1aaff8c82/LICENSE",
+        "git_blob": "4e8c9b38350135b69d7137e508d29e8980794569",
+        "sha256": "0eea8dc45e89deeb03c7799bbbc7b4688f365fb274562f4540ecfebdea82e727"
+      }
+    ],
+    "error": null
+  },
+  {
+    "package": "tree-sitter-lua-0.5.0",
+    "repository": "tree-sitter-grammars/tree-sitter-lua",
+    "revision": "10fe0054734eec83049514ea2e718b2a56acd0c9",
+    "vcs_dirty": false,
+    "files": [
+      {
+        "path": "notice-overrides/tree-sitter-lua-0.5.0/LICENSE.md",
+        "upstream_url": "https://raw.githubusercontent.com/tree-sitter-grammars/tree-sitter-lua/10fe0054734eec83049514ea2e718b2a56acd0c9/LICENSE.md",
+        "git_blob": "ff0407e77c183db53bf525741a76314e15e8f6ea",
+        "sha256": "9a32b02e4c917b1ce6b5e79d8ea81e25cefd7f27d89c7235f2afb262c06cf32e"
+      }
+    ],
+    "error": null
+  },
+  {
+    "package": "tree-sitter-md-0.5.3",
+    "repository": "tree-sitter-grammars/tree-sitter-markdown",
+    "revision": "f969cd3ae3f9fbd4e43205431d0ae286014c05b5",
+    "vcs_dirty": false,
+    "files": [
+      {
+        "path": "notice-overrides/tree-sitter-md-0.5.3/LICENSE",
+        "upstream_url": "https://raw.githubusercontent.com/tree-sitter-grammars/tree-sitter-markdown/f969cd3ae3f9fbd4e43205431d0ae286014c05b5/LICENSE",
+        "git_blob": "c125939af9e397f845811e9d8f31e07dc69170db",
+        "sha256": "52ec8a1bf8256511e2a92613e0bb41ffefba3897f16fa958d7bb28c466dd4804"
+      }
+    ],
+    "error": null
+  },
+  {
+    "package": "tree-sitter-ruby-0.23.1",
+    "repository": "tree-sitter/tree-sitter-ruby",
+    "revision": "71bd32fb7607035768799732addba884a37a6210",
+    "vcs_dirty": false,
+    "files": [
+      {
+        "path": "notice-overrides/tree-sitter-ruby-0.23.1/LICENSE",
+        "upstream_url": "https://raw.githubusercontent.com/tree-sitter/tree-sitter-ruby/71bd32fb7607035768799732addba884a37a6210/LICENSE",
+        "git_blob": "2a79f435f473717691c5e2b356fbf3e758ba930d",
+        "sha256": "ee006f02a3d856df282e409be2a86e24a65bb573a98b9c28343771141351bb6b"
+      }
+    ],
+    "error": null
+  },
+  {
+    "package": "tree-sitter-sequel-0.3.11",
+    "repository": "derekstride/tree-sitter-sql",
+    "revision": "7b51ecda191d36b92f5a90a8d1bc3faef1c7b8b8",
+    "vcs_dirty": true,
+    "files": [
+      {
+        "path": "notice-overrides/tree-sitter-sequel-0.3.11/LICENSE",
+        "upstream_url": "https://raw.githubusercontent.com/derekstride/tree-sitter-sql/7b51ecda191d36b92f5a90a8d1bc3faef1c7b8b8/LICENSE",
+        "git_blob": "b976c9b4c70b2aad4bb31de3d6504193dc0be83c",
+        "sha256": "3b3e4e4252d5d7d1c18e1257005f23242bf0580ad619204fd093c99b8c56748d"
+      }
+    ],
+    "error": null
+  },
+  {
+    "package": "tree-sitter-toml-ng-0.7.0",
+    "repository": "tree-sitter-grammars/tree-sitter-toml",
+    "revision": "64b56832c2cffe41758f28e05c756a3a98d16f41",
+    "vcs_dirty": false,
+    "files": [
+      {
+        "path": "notice-overrides/tree-sitter-toml-ng-0.7.0/LICENSE",
+        "upstream_url": "https://raw.githubusercontent.com/tree-sitter-grammars/tree-sitter-toml/64b56832c2cffe41758f28e05c756a3a98d16f41/LICENSE",
+        "git_blob": "7bf071b1d83ca0644118769f568c978bb7ccf3ae",
+        "sha256": "b727eee929bee836e8102cecf749a795b199f291b58c885bcd81cae727ac5a46"
+      }
+    ],
+    "error": null
+  },
+  {
+    "package": "tree-sitter-typescript-0.23.2",
+    "repository": "tree-sitter/tree-sitter-typescript",
+    "revision": "f975a621f4e7f532fe322e13c4f79495e0a7b2e7",
+    "vcs_dirty": false,
+    "files": [
+      {
+        "path": "notice-overrides/tree-sitter-typescript-0.23.2/LICENSE",
+        "upstream_url": "https://raw.githubusercontent.com/tree-sitter/tree-sitter-typescript/f975a621f4e7f532fe322e13c4f79495e0a7b2e7/LICENSE",
+        "git_blob": "aa9f858db5722d9576104726471b11cc0e31f131",
+        "sha256": "49bf33cf78ef5897e4e161ce1517df7de1ae5042a65b6bcfd44401e0fc606559"
+      }
+    ],
+    "error": null
+  },
+  {
+    "package": "tree-sitter-zig-1.1.2",
+    "repository": "tree-sitter-grammars/tree-sitter-zig",
+    "revision": "b670c8df85a1568f498aa5c8cae42f51a90473c0",
+    "vcs_dirty": false,
+    "files": [
+      {
+        "path": "notice-overrides/tree-sitter-zig-1.1.2/LICENSE",
+        "upstream_url": "https://raw.githubusercontent.com/tree-sitter-grammars/tree-sitter-zig/b670c8df85a1568f498aa5c8cae42f51a90473c0/LICENSE",
+        "git_blob": "4e8c9b38350135b69d7137e508d29e8980794569",
+        "sha256": "0eea8dc45e89deeb03c7799bbbc7b4688f365fb274562f4540ecfebdea82e727"
+      }
+    ],
+    "error": null
+  },
+  {
+    "package": "valuable-0.1.1",
+    "repository": "tokio-rs/valuable",
+    "revision": "9efc29b6e58cef28f6566a47aa7e142a55fead77",
+    "vcs_dirty": false,
+    "files": [
+      {
+        "path": "notice-overrides/valuable-0.1.1/LICENSE",
+        "upstream_url": "https://raw.githubusercontent.com/tokio-rs/valuable/9efc29b6e58cef28f6566a47aa7e142a55fead77/LICENSE",
+        "git_blob": "4ca822a5cb54142a14070f5be388e60497781615",
+        "sha256": "ed60d479b8fd1f64e9cbc3de449a16a53ac1b3d1b6aeb9bf9d190a8e93061b44"
+      }
+    ],
+    "error": null
+  },
+  {
+    "package": "r-efi-5.3.0",
+    "license_choice": "Apache-2.0",
+    "files": [
+      {
+        "path": "notice-overrides/r-efi-5.3.0/LICENSE-APACHE",
+        "sha256": "074e6e32c86a4c0ef8b3ed25b721ca23aca83df277cd88106ef7177c354615ff",
+        "source": "standard Apache-2.0 text"
+      },
+      {
+        "path": "notice-overrides/r-efi-5.3.0/AUTHORS",
+        "sha256": "ff92bed461f50338dd703a9ba9aee496a425957873df1d91192776e4bdf5dda7",
+        "source": "Cargo.lock checksum-verified crate AUTHORS"
+      }
+    ],
+    "note": "Crate explicitly offers Apache-2.0; preserve package AUTHORS. LGPL option is not selected.",
+    "error": null
+  },
+  {
+    "package": "r-efi-6.0.0",
+    "license_choice": "Apache-2.0",
+    "files": [
+      {
+        "path": "notice-overrides/r-efi-6.0.0/LICENSE-APACHE",
+        "sha256": "074e6e32c86a4c0ef8b3ed25b721ca23aca83df277cd88106ef7177c354615ff",
+        "source": "standard Apache-2.0 text"
+      },
+      {
+        "path": "notice-overrides/r-efi-6.0.0/AUTHORS",
+        "sha256": "d027e91dbc9cdbb2f1190068e498bd6b61cff022b6a032b191021ba658d96111",
+        "source": "Cargo.lock checksum-verified crate AUTHORS"
+      }
+    ],
+    "note": "Crate explicitly offers Apache-2.0; preserve package AUTHORS. LGPL option is not selected.",
+    "error": null
+  }
+]

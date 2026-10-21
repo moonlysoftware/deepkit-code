@@ -1,0 +1,4 @@
+- kind: chunk
+  scope_path: text
+  header: text
+  has_code_fence: false

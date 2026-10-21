@@ -1,0 +1,57 @@
+--- a/src/search/query.rs
++++ b/src/search/query.rs
+@@ -36,7 +36,12 @@
+         }
+         let content = words
+             .into_iter()
+-            .filter(|word| !grammatical(word))
++            .filter(|word| {
++                self.ident_terms
++                    .iter()
++                    .any(|identifier| identifier.as_str() == *word)
++                    || !grammatical(word)
++            })
+             .collect::<Vec<_>>()
+             .join(" ");
+         let relaxed = build_or_match(&content);
+@@ -225,6 +230,14 @@
+     }
+ 
+     #[test]
++    fn relaxed_questions_preserve_identifiers_that_are_also_grammar_words() -> Result<(), Error> {
++        let parsed = parse("Where can CAN run", Mode::Hybrid)?;
++        assert_eq!(parsed.ident_terms, vec!["CAN"]);
++        assert_eq!(parsed.relaxed_match(), build_or_match("CAN run"));
++        Ok(())
++    }
++
++    #[test]
+     fn relaxed_filter_preserves_explicit_syntax_names_and_empty_remainders() -> Result<(), Error> {
+         for text in [
+             "lex:Where is retry",
+--- a/src/search/tests.rs
++++ b/src/search/tests.rs
+@@ -173,6 +173,23 @@
+             .collect::<Vec<_>>();
+         assert_eq!(actual, expected, "{explicit}");
+     }
++    Ok(())
++}
++
++#[test]
++fn relaxed_questions_keep_identifier_references_without_an_exact_name_match()
++-> Result<(), Box<dyn Error>> {
++    let db = tempfile::NamedTempFile::new()?;
++    let store = store::open(db.path(), StoreLimits::default())?;
++    add(&store, "src/noise.rs", "noise", "configured", None)?;
++    let target = add(&store, "src/input.rs", "load_input", "CAN terminal", None)?;
++    assert!(store.exact_name_units("CAN", 10, None, &[])?.is_empty());
++    let settings = Search {
++        graph_prior_weight: 0.0,
++        ..Search::default()
++    };
++    let hits = lexical(&store, "Where is CAN configured", 10, None, &settings)?;
++    assert!(hits.iter().any(|hit| hit.unit.id == target));
+     Ok(())
+ }
+ 

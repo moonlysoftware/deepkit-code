@@ -1,0 +1,15 @@
+{
+  "baseline": {
+    "n": 240,
+    "median_ms": 93.7217544997111,
+    "p95_ms": 152.36944900243543
+  },
+  "candidate": {
+    "n": 240,
+    "median_ms": 84.2715210019378,
+    "p95_ms": 137.94447999680415
+  },
+  "allowed_p95_ms": 167.60639390267897,
+  "results_and_inputs_repeat": true,
+  "pass": true
+}

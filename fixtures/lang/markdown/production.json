@@ -1,0 +1,14 @@
+{
+  "edges": null,
+  "symbols": null,
+  "units": [
+    {
+      "end": 3,
+      "header": "Retry",
+      "kind": "DocSection",
+      "scope": "Retry",
+      "start": 1,
+      "text": "# Retry\n\nUse `should_retry`."
+    }
+  ]
+}

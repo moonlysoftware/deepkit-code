@@ -1,0 +1,109 @@
+{
+  "archive_bytes": 207724,
+  "archive_sha256": "900a15b83da293bf02af7de42bcf03848444eb1255a90a5bec7f2d42f2dca034",
+  "build": {
+    "binary_blake3": "3272c06ef7f8098ead1a94813b7e66810bff02564924b4e85525592eebbc4a0d",
+    "binary_bytes": 124238520,
+    "commit": "572a0ed712365a70620fd1e459fd10550de7111d",
+    "features": "DEFAULT",
+    "flags_blake3": "d06d6d1e621e3198c6fc28e2d2ac7c23cfbc21a2723a0c80da64e70730e8c5ac",
+    "host": "x86_64-unknown-linux-gnu",
+    "opt_level": "3",
+    "profile": "release",
+    "rustc": "rustc 1.98.1 (48a229cea 2026-09-01)",
+    "source_blake3": "d990f025a3f770de15d4f1893edc65123b92c98919c3696fa305cb275d2cedf6",
+    "source_dirty": "false",
+    "target": "x86_64-unknown-linux-gnu"
+  },
+  "generated_at": "2026-09-21T05:25:59.318910+00:00",
+  "lane": "moonly",
+  "lossless_report_archive": "notes/bench/2026-09-21-final-A-moonly-ripgrep.json.gz",
+  "matrix_reason": "The corpus paired-search report has three commit-derived score repetitions but handwritten=null. The matrix importer requires handwritten scores per repetition for ripgrep; bench search --golden is a separate workload and cannot be fabricated from the lexical-only handwritten quality field.",
+  "matrix_status": "open_missing_paired_handwritten",
+  "observations": {
+    "index": {
+      "cold_ms": 9733.934944999999,
+      "content_edit_ms": 370.206153,
+      "incremental_ms": 160.16282800000002,
+      "peak_rss_bytes": 186208256,
+      "touched_files": 20
+    },
+    "model": {
+      "capacity_paused_jobs": 7,
+      "covered_units": 9051,
+      "indexed_units": 9886,
+      "ladder": {
+        "counting": "exact_highest_completed_level",
+        "l1": 835,
+        "l2": 9051,
+        "l3": 0,
+        "source": "persisted_occurrences"
+      },
+      "pending_jobs": 7,
+      "provider_pending_jobs": 7,
+      "throughput_units_per_second": 70.78749649021441
+    },
+    "paired_search": {
+      "capacity_pauses": {
+        "identities_blake3": "69bb73faabe5b8e2f72c59417cfa82b571ea900d949cbf45dc4a47d3cddc32b3",
+        "jobs": 7,
+        "reasons": {
+          "token_cap": 7
+        }
+      },
+      "goldens": 200,
+      "hybrid_hit_file_at_5": 0.765,
+      "hybrid_p95_ms": 84.319433,
+      "hybrid_recall_at_10": 0.7247499999999998,
+      "lexical_hit_file_at_5": 0.76,
+      "lexical_recall_at_10": 0.7185833333333332,
+      "repeats": 3,
+      "rerank_auto_reduced": false,
+      "reranked_hit_file_at_5": 0.875,
+      "reranked_p95_ms": 1235.5767799999999,
+      "reranked_recall_at_10": 0.8166666666666668,
+      "state": "complete"
+    },
+    "parse_failure_rates": {
+      "bash": 0.0,
+      "lua": 0.0,
+      "ruby": 0.0,
+      "rust": 0.0
+    },
+    "pr_reconstruction": {
+      "detected": 53,
+      "rate": 1.0,
+      "reconstructed": 53
+    },
+    "size": {
+      "checkout_bytes": 2192151,
+      "ratio": 24.06607938960409,
+      "total_db_bytes": 52756480
+    }
+  },
+  "release_misses": [
+    {
+      "actual": 24.06607938960409,
+      "detail": "full L2 vs admitted checkout text",
+      "kind": "release_gate",
+      "metric": "l2_footprint_ratio",
+      "target": "<=3.5"
+    },
+    {
+      "actual": 70.78749649021441,
+      "detail": "Moonly target",
+      "kind": "release_gate",
+      "metric": "l2_throughput_units_per_second",
+      "target": ">=80"
+    }
+  ],
+  "report_bytes": 4402030,
+  "report_local_path": "notes/bench/2026-09-21-final-A-moonly-ripgrep.json",
+  "report_sha256": "e3f3b8044c967b9952234fbb33bc2bbad23fd51e246d6f4383c8645167a30af5",
+  "schema": "dkc.t4-final-lane-evidence.v1",
+  "strict_audit_accepted": true,
+  "strict_audit_path": "notes/bench/2026-09-21-final-A-moonly-ripgrep-audit.json",
+  "strict_audit_sha256": "bb6a86a35b3cb3b03bb428df860c2aff07e2847f50f448bd74237efcfe0ca9b8",
+  "target": "ripgrep",
+  "unreviewed_handwritten_source": "unreviewed_draft"
+}

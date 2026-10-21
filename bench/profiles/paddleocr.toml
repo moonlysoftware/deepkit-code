@@ -1,0 +1,25 @@
+# PaddleOCR's Chinese and English documentation remains fully admitted for
+# multilingual dense retrieval. PCR-025 records the absent CJK prose-trigram key.
+[[treatments]]
+name = "generated"
+match = ["**/vendor/**", "**/third_party/**", "**/build/**", "**/dist/**", "**/*_pb2.py", "**/*.pb.go", "**/zz_generated*"]
+chunker = "none"
+max_level = 0
+
+[[treatments]]
+name = "source"
+match = ["ppocr/**", "paddlex/**", "tools/**"]
+chunker = "ast"
+max_level = 3
+
+[[treatments]]
+name = "tests"
+match = ["tests/**", "test/**", "**/test_*.py"]
+chunker = "ast"
+max_level = 1
+
+[[treatments]]
+name = "multilingual-docs"
+match = ["docs/**", "doc/**", "**/*.md", "**/*.rst"]
+chunker = "markdown"
+max_level = 3

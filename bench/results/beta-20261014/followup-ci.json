@@ -1,0 +1,200 @@
+{
+  "source_commit": "c5f69eba8cd63df6a40747341b733ea780dac737",
+  "product_source_unchanged_from": "ae9f1bea535c1a92985344fb77ffa47d7776ca57",
+  "runs": [
+    {
+      "conclusion": "failure",
+      "databaseId": 38611067348,
+      "event": "push",
+      "headSha": "c5f69eba8cd63df6a40747341b733ea780dac737",
+      "status": "completed",
+      "url": "https://github.com/bartscheffer/deepkit-code/actions/runs/38611067348",
+      "workflowName": "CI"
+    },
+    {
+      "conclusion": "success",
+      "databaseId": 38611079412,
+      "event": "pull_request",
+      "headSha": "c5f69eba8cd63df6a40747341b733ea780dac737",
+      "status": "completed",
+      "url": "https://github.com/bartscheffer/deepkit-code/actions/runs/38611079412",
+      "workflowName": "CI"
+    },
+    {
+      "conclusion": "success",
+      "databaseId": 38611079472,
+      "event": "pull_request",
+      "headSha": "c5f69eba8cd63df6a40747341b733ea780dac737",
+      "status": "completed",
+      "url": "https://github.com/bartscheffer/deepkit-code/actions/runs/38611079472",
+      "workflowName": "Beta Homebrew checks"
+    },
+    {
+      "conclusion": "success",
+      "databaseId": 38611079490,
+      "event": "pull_request",
+      "headSha": "c5f69eba8cd63df6a40747341b733ea780dac737",
+      "status": "completed",
+      "url": "https://github.com/bartscheffer/deepkit-code/actions/runs/38611079490",
+      "workflowName": "Release"
+    }
+  ],
+  "unresolved_failure": {
+    "run_id": 38611067348,
+    "job_id": 116014219023,
+    "test": "watch_native_and_polling_publish_changes_coalesce_bursts_and_exclude_self_writes",
+    "location": "tests/watch.rs:91",
+    "operation": "polling delete",
+    "deadline_ms": 1500,
+    "preceding_polling_timings_ms": {
+      "create": 1277.8,
+      "modify": 1008.9,
+      "rename": 911.2
+    },
+    "failed_log_sha256": "5f3f2b65cf9774cb3c57f92721b14d126c886c97a10e01e5c548a4e80c7d112a",
+    "diagnosis": "Publication deadline missed; retained log cannot distinguish late publication from lost event. Matching PR pass is not a repair.",
+    "deadline_changed": false,
+    "test_skipped": false
+  },
+  "scope": "Later documentation-only c5f69eb checks. Original ae9f1be passing receipts remain valid for their runs; this separate failure remains unresolved. Native jobs cover installation, not model inference; Release run plans only.",
+  "bounded_local_diagnostic": {
+    "state": "hosted_failure_not_reproduced_locally",
+    "attempts": 5,
+    "passed": 5,
+    "failures": 0,
+    "limit_unchanged_ms": 1500,
+    "command": [
+      "cargo",
+      "test",
+      "--locked",
+      "--test",
+      "watch",
+      "watch_native_and_polling_publish_changes_coalesce_bursts_and_exclude_self_writes",
+      "--",
+      "--exact",
+      "--nocapture"
+    ],
+    "source_manifest_sha256": "f3fd0812488322c4b414c463cefbee0aebffbe5aee35323e51816603ab8c8931",
+    "source_blake3": "274521317280f0fa3bdcb7d6f7016d62684fbbf1a1527eb205befde4cf2106be",
+    "polling_delete_ms": [
+      755.287177,
+      743.476813,
+      753.080826,
+      745.1361909999999,
+      757.4645519999999
+    ],
+    "attempt_results": [
+      {
+        "attempt": 1,
+        "exit_code": 0,
+        "wall_seconds": 16.657,
+        "log_sha256": "d4dd0abd9c0566ff54221590287a9c7a72aaf0b9a47ccc1ff99083fcd590e0bb",
+        "event_timings": [
+          "watch poll=false create_ms=659.090296",
+          "watch poll=false modify_ms=582.91973",
+          "watch poll=false rename_ms=627.8200400000001",
+          "watch poll=false delete_ms=615.1812570000001",
+          "watch poll=false burst_writes=1000 rescans=1 publication_ms=595.235992",
+          "watch poll=true create_ms=908.1590219999999",
+          "watch poll=true modify_ms=588.325471",
+          "watch poll=true rename_ms=870.310401",
+          "watch poll=true delete_ms=755.287177",
+          "watch poll=true burst_writes=1000 rescans=1 publication_ms=825.5314219999999"
+        ],
+        "test_summaries": [
+          "test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 2 filtered out; finished in 12.05s"
+        ]
+      },
+      {
+        "attempt": 2,
+        "exit_code": 0,
+        "wall_seconds": 12.254,
+        "log_sha256": "6eca811d4339cf4769fe64ad22570d7c44a6b403ed76a4f8fe8ad65860de92f1",
+        "event_timings": [
+          "watch poll=false create_ms=654.442771",
+          "watch poll=false modify_ms=580.389981",
+          "watch poll=false rename_ms=629.321287",
+          "watch poll=false delete_ms=619.279865",
+          "watch poll=false burst_writes=1000 rescans=1 publication_ms=581.818963",
+          "watch poll=true create_ms=910.341987",
+          "watch poll=true modify_ms=580.3035610000001",
+          "watch poll=true rename_ms=874.683154",
+          "watch poll=true delete_ms=743.476813",
+          "watch poll=true burst_writes=1000 rescans=1 publication_ms=830.3721889999999"
+        ],
+        "test_summaries": [
+          "test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 2 filtered out; finished in 12.05s"
+        ]
+      },
+      {
+        "attempt": 3,
+        "exit_code": 0,
+        "wall_seconds": 11.898,
+        "log_sha256": "461ab782f44f2e782eb16c52347e984f1843dc3c206ca153b53bf2dcdce48405",
+        "event_timings": [
+          "watch poll=false create_ms=664.925408",
+          "watch poll=false modify_ms=569.6972900000001",
+          "watch poll=false rename_ms=629.029052",
+          "watch poll=false delete_ms=627.370784",
+          "watch poll=false burst_writes=1000 rescans=1 publication_ms=580.5768810000001",
+          "watch poll=true create_ms=911.741714",
+          "watch poll=true modify_ms=579.6388430000001",
+          "watch poll=true rename_ms=745.34657",
+          "watch poll=true delete_ms=753.080826",
+          "watch poll=true burst_writes=1000 rescans=1 publication_ms=581.773399"
+        ],
+        "test_summaries": [
+          "test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 2 filtered out; finished in 11.68s"
+        ]
+      },
+      {
+        "attempt": 4,
+        "exit_code": 0,
+        "wall_seconds": 12.15,
+        "log_sha256": "c366205d1449fb2caf685bfec86c081d9892ddc0ebb0fd1c8ce17ed109381bf0",
+        "event_timings": [
+          "watch poll=false create_ms=658.175062",
+          "watch poll=false modify_ms=579.570618",
+          "watch poll=false rename_ms=627.963353",
+          "watch poll=false delete_ms=627.907707",
+          "watch poll=false burst_writes=1000 rescans=1 publication_ms=581.948037",
+          "watch poll=true create_ms=912.451408",
+          "watch poll=true modify_ms=578.3336909999999",
+          "watch poll=true rename_ms=875.287281",
+          "watch poll=true delete_ms=745.1361909999999",
+          "watch poll=true burst_writes=1000 rescans=1 publication_ms=710.5273920000001"
+        ],
+        "test_summaries": [
+          "test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 2 filtered out; finished in 11.92s"
+        ]
+      },
+      {
+        "attempt": 5,
+        "exit_code": 0,
+        "wall_seconds": 11.851,
+        "log_sha256": "3ee70f098aa32e376bc27c62790ba0e49f5ad5a868778086fcc7d16218dc5372",
+        "event_timings": [
+          "watch poll=false create_ms=663.008016",
+          "watch poll=false modify_ms=580.306094",
+          "watch poll=false rename_ms=616.7919440000001",
+          "watch poll=false delete_ms=625.330725",
+          "watch poll=false burst_writes=1000 rescans=1 publication_ms=592.7411689999999",
+          "watch poll=true create_ms=911.630704",
+          "watch poll=true modify_ms=579.8607900000001",
+          "watch poll=true rename_ms=744.4632799999999",
+          "watch poll=true delete_ms=757.4645519999999",
+          "watch poll=true burst_writes=1000 rescans=1 publication_ms=572.175974"
+        ],
+        "test_summaries": [
+          "test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 2 filtered out; finished in 11.66s"
+        ]
+      }
+    ],
+    "original_receipt_sha256": "4c8ffd9511f603ffb5719f9858466da7bac273f22e7a4fa3025056d4d35a40e7",
+    "limitations": [
+      "Linux local CPU debug; rustc 1.98.1 versus hosted 1.99.0.",
+      "RUST_LOG did not enable DKC traces; the test strips child DKC_* environment. Only recorded event timings are evidence.",
+      "No product repair; five local passes do not resolve the hosted deadline miss."
+    ]
+  }
+}

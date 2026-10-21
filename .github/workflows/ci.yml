@@ -1,0 +1,86 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  quality:
+    name: Rust quality gates
+    runs-on: ubuntu-latest
+    env:
+      # Full DWARF for every native-linked test binary exhausted hosted-runner disk.
+      # Keep the dev/test profiles and their debug assertions/overflow checks.
+      CARGO_PROFILE_DEV_DEBUG: "0"
+      CARGO_PROFILE_TEST_DEBUG: "0"
+      CARGO_INCREMENTAL: "0"
+      CARGO_BUILD_JOBS: "2"
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Install Rust toolchain
+        uses: dtolnay/rust-toolchain@stable
+        with:
+          components: clippy,rustfmt
+
+      - name: Check benchmark and release scripts
+        run: |
+          bash -n scripts/release/assert-rustls.sh scripts/release/mac-verify.sh scripts/release/smoke.sh scripts/release/zig-musl-tool.sh
+          python3 scripts/release/test_release_tools.py
+          python3 scripts/release/test_mac_verify.py
+          python3 scripts/release/test_zig_musl_tool.py
+          python3 scripts/release/test_brew_formula.py
+          python3 scripts/release/test_license_bundle.py
+          python3 scripts/release/generate-notices.py --check licenses/third-party-licenses.tar.gz
+
+      - name: Cache Rust build artifacts
+        uses: Swatinem/rust-cache@v2
+        with:
+          # Do not restore the older full-debug artifacts through a fallback key.
+          prefix-key: v1-ci-no-debuginfo
+
+      - name: Check formatting
+        run: cargo fmt --all --check
+
+      - name: Run Clippy
+        run: cargo clippy --locked --all-targets -- -D warnings
+
+      - name: Run tests
+        run: cargo test --locked
+
+      - name: Test benchmark and nightly tooling
+        run: python3 -m unittest discover -s scripts/bench -p 'test_*.py' -q
+
+      - name: Install cargo-deny
+        uses: taiki-e/install-action@cargo-deny
+
+      - name: Check dependencies
+        run: cargo deny check
+
+      - name: Guard agent-owned files on push
+        if: github.event_name == 'push'
+        env:
+          GUARD_RANGE: ${{ github.event.before }}..${{ github.sha }}
+        run: scripts/guard-plan.sh --ci
+
+      - name: Guard agent-owned files on pull request
+        if: github.event_name == 'pull_request'
+        env:
+          GUARD_RANGE: origin/${{ github.base_ref }}..HEAD
+        run: scripts/guard-plan.sh --ci
+
+      - name: Report build disk usage
+        if: always()
+        run: |
+          df -h .
+          du -sh target 2>/dev/null || true

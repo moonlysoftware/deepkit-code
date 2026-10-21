@@ -1,0 +1,333 @@
+{
+  "status": "private_tap_prepared_and_linux_lifecycle_passed",
+  "tap": "https://github.com/moonlysoftware/homebrew-tap",
+  "visibility": "private",
+  "source_repository": "https://github.com/moonlysoftware/deepkit-code",
+  "source_repository_visibility": "private",
+  "tap_tested_commit": "d9d53b63c1d91f623d59e79cce9b4964eb0ae210",
+  "preview_run_id": 38604704711,
+  "preview_manifest_sha256": "21da424f76663dd0a916e22a4adf97176a38ac4bd69df8a0158e0c44e44454fe",
+  "authenticated_linux_artifact_download": "passed",
+  "authenticated_download_log_sha256": "78b2cfbba19e0ef73f992115beb3aefcf5307118756e79124e628ce112afa4a0",
+  "archive_verification": "both actual ARM Mac and Linux GNU archives passed exact archive/build/binary/license checks",
+  "unit_tests": {
+    "passed": 25,
+    "failed": 0,
+    "platforms": [
+      "local Linux",
+      "hosted ubuntu-latest",
+      "hosted macos-15"
+    ]
+  },
+  "hosted_checks": {
+    "conclusion": "success",
+    "databaseId": 38628582047,
+    "headSha": "d9d53b63c1d91f623d59e79cce9b4964eb0ae210",
+    "jobs": [
+      {
+        "completedAt": "2026-10-14T20:01:54Z",
+        "conclusion": "success",
+        "databaseId": 116074003832,
+        "name": "Formula and preview checks (macos-15)",
+        "startedAt": "2026-10-14T20:01:46Z",
+        "status": "completed",
+        "steps": [
+          {
+            "completedAt": "2026-10-14T20:01:47Z",
+            "conclusion": "success",
+            "name": "Set up job",
+            "number": 1,
+            "startedAt": "2026-10-14T20:01:46Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-10-14T20:01:49Z",
+            "conclusion": "success",
+            "name": "Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+            "number": 2,
+            "startedAt": "2026-10-14T20:01:47Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-10-14T20:01:49Z",
+            "conclusion": "success",
+            "name": "Run actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1",
+            "number": 3,
+            "startedAt": "2026-10-14T20:01:49Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-10-14T20:01:49Z",
+            "conclusion": "success",
+            "name": "Check formula syntax and pinned metadata",
+            "number": 4,
+            "startedAt": "2026-10-14T20:01:49Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-10-14T20:01:50Z",
+            "conclusion": "success",
+            "name": "Test archive verification and private preparation",
+            "number": 5,
+            "startedAt": "2026-10-14T20:01:49Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-10-14T20:01:50Z",
+            "conclusion": "success",
+            "name": "Record scope",
+            "number": 6,
+            "startedAt": "2026-10-14T20:01:50Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-10-14T20:01:50Z",
+            "conclusion": "success",
+            "name": "Post Run actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1",
+            "number": 11,
+            "startedAt": "2026-10-14T20:01:50Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-10-14T20:01:50Z",
+            "conclusion": "success",
+            "name": "Post Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+            "number": 12,
+            "startedAt": "2026-10-14T20:01:50Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-10-14T20:01:50Z",
+            "conclusion": "success",
+            "name": "Complete job",
+            "number": 13,
+            "startedAt": "2026-10-14T20:01:50Z",
+            "status": "completed"
+          }
+        ],
+        "url": "https://github.com/moonlysoftware/homebrew-tap/actions/runs/38628582047/job/116074003832"
+      },
+      {
+        "completedAt": "2026-10-14T20:01:52Z",
+        "conclusion": "success",
+        "databaseId": 116074004234,
+        "name": "Formula and preview checks (ubuntu-latest)",
+        "startedAt": "2026-10-14T20:01:41Z",
+        "status": "completed",
+        "steps": [
+          {
+            "completedAt": "2026-10-14T20:01:45Z",
+            "conclusion": "success",
+            "name": "Set up job",
+            "number": 1,
+            "startedAt": "2026-10-14T20:01:42Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-10-14T20:01:48Z",
+            "conclusion": "success",
+            "name": "Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+            "number": 2,
+            "startedAt": "2026-10-14T20:01:45Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-10-14T20:01:48Z",
+            "conclusion": "success",
+            "name": "Run actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1",
+            "number": 3,
+            "startedAt": "2026-10-14T20:01:48Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-10-14T20:01:48Z",
+            "conclusion": "success",
+            "name": "Check formula syntax and pinned metadata",
+            "number": 4,
+            "startedAt": "2026-10-14T20:01:48Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-10-14T20:01:48Z",
+            "conclusion": "success",
+            "name": "Test archive verification and private preparation",
+            "number": 5,
+            "startedAt": "2026-10-14T20:01:48Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-10-14T20:01:48Z",
+            "conclusion": "success",
+            "name": "Record scope",
+            "number": 6,
+            "startedAt": "2026-10-14T20:01:48Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-10-14T20:01:49Z",
+            "conclusion": "success",
+            "name": "Post Run actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1",
+            "number": 11,
+            "startedAt": "2026-10-14T20:01:48Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-10-14T20:01:49Z",
+            "conclusion": "success",
+            "name": "Post Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803",
+            "number": 12,
+            "startedAt": "2026-10-14T20:01:49Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-10-14T20:01:49Z",
+            "conclusion": "success",
+            "name": "Complete job",
+            "number": 13,
+            "startedAt": "2026-10-14T20:01:49Z",
+            "status": "completed"
+          }
+        ],
+        "url": "https://github.com/moonlysoftware/homebrew-tap/actions/runs/38628582047/job/116074004234"
+      }
+    ],
+    "status": "completed",
+    "url": "https://github.com/moonlysoftware/homebrew-tap/actions/runs/38628582047"
+  },
+  "actual_homebrew_lifecycle": {
+    "tap_commit": "d9d53b63c1d91f623d59e79cce9b4964eb0ae210",
+    "platform": "Linux x86_64 GNU diagnostic",
+    "prefix": "/data/dkc-corpus/beta-homebrew-20261014",
+    "started_utc": "2026-10-14T20:02:23.761891+00:00",
+    "steps": [
+      {
+        "command": [
+          "brew",
+          "tap",
+          "moonlysoftware/tap",
+          "git@github.com:moonlysoftware/homebrew-tap.git"
+        ],
+        "exit_code": 0,
+        "log": "lifecycle-00.log",
+        "log_sha256": "88699a0a879f7415e75a019237fe12b89524e712d5dbc8e33d68ce3079f0a318"
+      },
+      {
+        "command": [
+          "python3",
+          "/data/dkc-corpus/beta-homebrew-20261014/Library/Taps/moonlysoftware/homebrew-tap/scripts/prepare-private.py"
+        ],
+        "exit_code": 0,
+        "log": "lifecycle-01.log",
+        "log_sha256": "78b2cfbba19e0ef73f992115beb3aefcf5307118756e79124e628ce112afa4a0"
+      },
+      {
+        "command": [
+          "brew",
+          "install",
+          "--formula",
+          "moonlysoftware/tap/dkc"
+        ],
+        "exit_code": 0,
+        "log": "lifecycle-02.log",
+        "log_sha256": "40d974de052561773936ffbbe0eee72a666e57a5a86fa8f333b5d3999d7e201b"
+      },
+      {
+        "command": [
+          "brew",
+          "test",
+          "moonlysoftware/tap/dkc"
+        ],
+        "exit_code": 0,
+        "log": "lifecycle-03.log",
+        "log_sha256": "c4de5c4d94d2b2494e1c1c6b4293dbcaf0f270d812d729e6147576a525a5981d"
+      },
+      {
+        "command": [
+          "/data/dkc-corpus/beta-homebrew-20261014/bin/dkc",
+          "--version"
+        ],
+        "exit_code": 0,
+        "log": "lifecycle-04.log",
+        "log_sha256": "4c895099afd013d494b6b46b23ac4d6c44c0b7801111fa88ea3f95bad35740ba"
+      },
+      {
+        "command": [
+          "python3",
+          "-c",
+          "import pathlib,subprocess; p=pathlib.Path(subprocess.check_output([\"brew\",\"--prefix\",\"moonlysoftware/tap/dkc\"],text=True).strip()); names=[\"LICENSE-MIT\",\"LICENSE-APACHE\",\"share/dkc/THIRD_PARTY_NOTICES.md\",\"share/dkc/third-party-licenses.tar.gz\"]; assert all((p/n).is_file() for n in names); print(\"Installed licenses and notice bundle present\")"
+        ],
+        "exit_code": 0,
+        "log": "lifecycle-05.log",
+        "log_sha256": "c492d46835328a68ee9705d9a41ab661de19ba4cbfc9e33c7db36cf8f933febb"
+      },
+      {
+        "command": [
+          "brew",
+          "uninstall",
+          "moonlysoftware/tap/dkc"
+        ],
+        "exit_code": 0,
+        "log": "lifecycle-06.log",
+        "log_sha256": "462554eab4f755b8cf25e54a2cbcbfbf905aa1db0fff2207384d566dd344a6b8"
+      },
+      {
+        "command": [
+          "brew",
+          "install",
+          "--formula",
+          "moonlysoftware/tap/dkc"
+        ],
+        "exit_code": 0,
+        "log": "lifecycle-07.log",
+        "log_sha256": "40d974de052561773936ffbbe0eee72a666e57a5a86fa8f333b5d3999d7e201b"
+      },
+      {
+        "command": [
+          "brew",
+          "reinstall",
+          "--formula",
+          "moonlysoftware/tap/dkc"
+        ],
+        "exit_code": 0,
+        "log": "lifecycle-08.log",
+        "log_sha256": "9a46d9373e5c86c25656fb82490e9361c8cc6d645ed5bfe34d2d613147d87f49"
+      },
+      {
+        "command": [
+          "brew",
+          "test",
+          "moonlysoftware/tap/dkc"
+        ],
+        "exit_code": 0,
+        "log": "lifecycle-09.log",
+        "log_sha256": "c4de5c4d94d2b2494e1c1c6b4293dbcaf0f270d812d729e6147576a525a5981d"
+      },
+      {
+        "command": [
+          "brew",
+          "uninstall",
+          "moonlysoftware/tap/dkc"
+        ],
+        "exit_code": 0,
+        "log": "lifecycle-10.log",
+        "log_sha256": "462554eab4f755b8cf25e54a2cbcbfbf905aa1db0fff2207384d566dd344a6b8"
+      }
+    ],
+    "result": "passed",
+    "completed_utc": "2026-10-14T20:02:37.355987+00:00",
+    "installed_binary_removed": true,
+    "upgrade_between_versions_tested": false,
+    "native_macos_current_tap_tested": false
+  },
+  "bounds": {
+    "new_tap_native_mac_install_tested": false,
+    "prior_native_mac_archive_install_tested": true,
+    "cross_version_upgrade_tested": false,
+    "model_inference_qualified": false,
+    "source_watch_ci_miss_resolved": false,
+    "source_pr_merged": false,
+    "release_or_tag_created": false,
+    "public_distribution": false
+  },
+  "expires_on": "2026-11-13"
+}

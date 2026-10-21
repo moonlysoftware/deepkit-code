@@ -1,0 +1,12 @@
+- kind: markdown
+  scope_path: Deepkit Code
+  header: Deepkit Code
+  has_code_fence: false
+- kind: markdown
+  scope_path: Deepkit Code › Install
+  header: Deepkit Code › Install
+  has_code_fence: true
+- kind: markdown
+  scope_path: Deepkit Code › Configuration
+  header: Deepkit Code › Configuration
+  has_code_fence: false

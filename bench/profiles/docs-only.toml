@@ -1,0 +1,13 @@
+# mdn/content is a prose corpus. Admit Markdown/HTML as documents and keep
+# metadata, generated output and non-document assets at L0.
+[[treatments]]
+name = "documents"
+match = ["**/*.md", "**/*.html"]
+chunker = "markdown"
+max_level = 3
+
+[[treatments]]
+name = "everything-else"
+match = ["**"]
+chunker = "none"
+max_level = 0

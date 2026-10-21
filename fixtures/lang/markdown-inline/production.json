@@ -1,0 +1,14 @@
+{
+  "edges": null,
+  "symbols": null,
+  "units": [
+    {
+      "end": 1,
+      "header": "document",
+      "kind": "DocSection",
+      "scope": "document",
+      "start": 1,
+      "text": "Use `should_retry` and [guide](guide.md)."
+    }
+  ]
+}

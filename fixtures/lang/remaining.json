@@ -1,0 +1,127 @@
+[
+  {
+    "language": "kotlin",
+    "file": "input.kt",
+    "expected_name": "shouldRetry"
+  },
+  {
+    "language": "c",
+    "file": "input.c",
+    "expected_name": "should_retry"
+  },
+  {
+    "language": "cpp",
+    "file": "input.cpp",
+    "expected_name": "should_retry"
+  },
+  {
+    "language": "csharp",
+    "file": "input.cs",
+    "expected_name": "ShouldRetry"
+  },
+  {
+    "language": "ruby",
+    "file": "input.rb",
+    "expected_name": "should_retry"
+  },
+  {
+    "language": "swift",
+    "file": "input.swift",
+    "expected_name": "shouldRetry"
+  },
+  {
+    "language": "scala",
+    "file": "input.scala",
+    "expected_name": "shouldRetry"
+  },
+  {
+    "language": "bash",
+    "file": "input.sh",
+    "expected_name": "should_retry"
+  },
+  {
+    "language": "html",
+    "file": "input.html",
+    "expected_name": "section"
+  },
+  {
+    "language": "css",
+    "file": "input.css",
+    "expected_name": "retry"
+  },
+  {
+    "language": "sql",
+    "file": "input.sql",
+    "expected_name": "retry"
+  },
+  {
+    "language": "dart",
+    "file": "input.dart",
+    "expected_name": "shouldRetry"
+  },
+  {
+    "language": "elixir",
+    "file": "input.ex",
+    "expected_name": "should_retry"
+  },
+  {
+    "language": "lua",
+    "file": "input.lua",
+    "expected_name": "should_retry"
+  },
+  {
+    "language": "zig",
+    "file": "input.zig",
+    "expected_name": "shouldRetry"
+  },
+  {
+    "language": "haskell",
+    "file": "input.hs",
+    "expected_name": "shouldRetry"
+  },
+  {
+    "language": "ocaml",
+    "file": "input.ml",
+    "expected_name": "should_retry"
+  },
+  {
+    "language": "ocaml-interface",
+    "file": "input.mli",
+    "expected_name": "should_retry"
+  },
+  {
+    "language": "protobuf",
+    "file": "input.proto",
+    "expected_name": "Retry"
+  },
+  {
+    "language": "json",
+    "file": "input.json",
+    "expected_name": "retry"
+  },
+  {
+    "language": "yaml",
+    "file": "input.yaml",
+    "expected_name": "retry"
+  },
+  {
+    "language": "toml",
+    "file": "input.toml",
+    "expected_name": "retry"
+  },
+  {
+    "language": "markdown",
+    "file": "input.md",
+    "expected_name": "Retry"
+  },
+  {
+    "language": "markdown-inline",
+    "file": "input.md",
+    "expected_name": "`should_retry`"
+  },
+  {
+    "language": "dockerfile",
+    "file": "Dockerfile",
+    "expected_name": "RETRY"
+  }
+]

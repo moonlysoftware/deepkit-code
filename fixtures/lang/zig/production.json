@@ -1,0 +1,22 @@
+{
+  "edges": [],
+  "symbols": [
+    {
+      "end": 3,
+      "kind": "function",
+      "name": "shouldRetry",
+      "qualified": "shouldRetry",
+      "start": 1
+    }
+  ],
+  "units": [
+    {
+      "end": 3,
+      "header": "shouldRetry › pub fn shouldRetry(value: i32) bool {",
+      "kind": "Symbol",
+      "scope": "shouldRetry",
+      "start": 1,
+      "text": "pub fn shouldRetry(value: i32) bool {\n    return value > 0;\n}"
+    }
+  ]
+}

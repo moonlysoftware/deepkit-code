@@ -1,0 +1,704 @@
+diff --git a/src/search/mod.rs b/src/search/mod.rs
+index 46eaa2d..f9f3eb9 100644
+--- a/src/search/mod.rs
++++ b/src/search/mod.rs
+@@ -8,7 +8,6 @@ use std::collections::{BTreeMap, BTreeSet};
+ use crate::{
+     config::Search,
+     store::{self, Store, StoredUnit},
+-    treat::fts::{build_match, build_or_match},
+ };
+ 
+ pub(crate) mod admission;
+@@ -16,6 +15,7 @@ pub(crate) mod collapse;
+ pub(crate) mod control;
+ pub(crate) mod dense;
+ pub(crate) mod embedding_query;
++mod experiment;
+ pub(crate) mod fusion;
+ pub(crate) mod host;
+ pub(crate) mod latency;
+@@ -367,12 +367,38 @@ fn lexical_leg_checked(
+             |check| store.query_fts_scoped_checked(query, LEXICAL_LIMIT, scope, exclude_ids, check),
+         )
+     };
+-    let mut lexical = fts(&build_match(query))?;
++    let arm = experiment::Arm::current(parsed.experimental_plain, query, &parsed.ident_terms);
++    let (strict_query, relaxed_query) = experiment::matches(arm, query, &parsed.ident_terms);
++    let mut lexical = fts(&strict_query)?;
+     check()?;
+-    if lexical.len() < k {
+-        lexical = fts(&build_or_match(query))?;
++    let fallback = lexical.len() < k;
++    if fallback {
++        let relaxed = fts(&relaxed_query)?;
++        lexical = experiment::relax(arm, lexical, relaxed);
+     }
+     check()?;
++    experiment::rank(
++        arm,
++        query,
++        &parsed.ident_terms,
++        fallback,
++        &mut lexical,
++        |queries, candidates| {
++            local_store_read(
++                work,
++                || store.query_fts_candidate_matches(queries, candidates, scope, exclude_ids),
++                |check| {
++                    store.query_fts_candidate_matches_checked(
++                        queries,
++                        candidates,
++                        scope,
++                        exclude_ids,
++                        check,
++                    )
++                },
++            )
++        },
++    )?;
+     let mut exact = BTreeSet::new();
+     let mut ordered = Vec::new();
+     let mut exact_associations = Vec::new();
+@@ -413,7 +439,9 @@ fn lexical_leg_checked(
+         |check| store.symbol_seeds_checked(&ordered, 20, check),
+     )?;
+     check()?;
+-    let (graph_hits, graph_associations) = if settings.graph_prior_weight > 0.0 {
++    let (graph_hits, graph_associations) = if settings.graph_prior_weight > 0.0
++        && !experiment::disable_graph(arm, &parsed.ident_terms)
++    {
+         local_store_read(
+             work,
+             || {
+diff --git a/src/search/query.rs b/src/search/query.rs
+index 674181e..1541232 100644
+--- a/src/search/query.rs
++++ b/src/search/query.rs
+@@ -8,6 +8,8 @@ pub(crate) struct Parsed {
+     pub(crate) lexical: Option<String>,
+     pub(crate) dense: Option<String>,
+     pub(crate) ident_terms: Vec<String>,
++    /// Research-only guard: explicit routing or quotes bypass query experiments.
++    pub(crate) experimental_plain: bool,
+ }
+ fn marker(text: &str) -> Option<(Mode, usize)> {
+     if text.starts_with("lex:") {
+@@ -132,6 +134,7 @@ pub(crate) fn parse(text: &str, mode: Mode) -> Result<Parsed, Error> {
+         lexical,
+         dense,
+         ident_terms,
++        experimental_plain: markers.is_empty() && !text.contains('"'),
+     })
+ }
+ 
+@@ -216,7 +219,8 @@ mod tests {
+             Some(Parsed {
+                 lexical: None,
+                 dense: None,
+-                ident_terms: vec![]
++                ident_terms: vec![],
++                experimental_plain: true,
+             })
+         );
+     }
+diff --git a/src/store/mod.rs b/src/store/mod.rs
+index fccc38e..3b5ad72 100644
+--- a/src/store/mod.rs
++++ b/src/store/mod.rs
+@@ -44,6 +44,7 @@ pub(crate) use occurrences::{IndexedUnitInput, PublicationOutcome};
+ pub(crate) use occurrences::{PublicationPoint, observe_publication, publication_observed};
+ 
+ use std::{
++    collections::BTreeSet,
+     fs,
+     path::Path,
+     sync::{
+@@ -1149,6 +1150,47 @@ impl Store {
+         })?
+     }
+ 
++    /// Tests research query clauses only against already admitted candidate IDs.
++    pub(crate) fn query_fts_candidate_matches(
++        &self,
++        queries: &[String],
++        candidates: &[i64],
++        scope: Option<&SearchScope>,
++        exclude_ids: &[i64],
++    ) -> Result<Vec<BTreeSet<i64>>, Error> {
++        self.with_reader(|connection| {
++            read_query_fts_candidate_matches(
++                connection,
++                queries,
++                candidates,
++                scope,
++                exclude_ids,
++                &|| Ok(()),
++            )
++        })
++    }
++
++    /// Bounds research membership reads with the same admission and row checks.
++    pub(crate) fn query_fts_candidate_matches_checked(
++        &self,
++        queries: &[String],
++        candidates: &[i64],
++        scope: Option<&SearchScope>,
++        exclude_ids: &[i64],
++        check: &dyn Fn() -> Result<(), Error>,
++    ) -> Result<Vec<BTreeSet<i64>>, Error> {
++        self.checked_read_snapshot(check, |connection| {
++            read_query_fts_candidate_matches(
++                connection,
++                queries,
++                candidates,
++                scope,
++                exclude_ids,
++                check,
++            )
++        })?
++    }
++
+     /// Resolves exact trigram names to scoped symbol occurrences before limiting candidates.
+     pub(crate) fn exact_name_units(
+         &self,
+@@ -2642,6 +2684,46 @@ fn read_query_fts(
+     Ok(hits)
+ }
+ 
++fn read_query_fts_candidate_matches(
++    connection: &Connection,
++    queries: &[String],
++    candidates: &[i64],
++    scope: Option<&SearchScope>,
++    exclude_ids: &[i64],
++    check: &dyn Fn() -> Result<(), Error>,
++) -> Result<Vec<BTreeSet<i64>>, Error> {
++    check()?;
++    let projection::Exclusions { prefix, predicate } = projection::exclusion_sql(exclude_ids, 4);
++    let scope_sql = projection::scope_sql(SEARCH_SCOPE_SQL);
++    let mut statement = connection.prepare(&format!(
++        "{prefix}SELECT u.id FROM fts_units
++         JOIN units u ON u.id = fts_units.rowid
++         LEFT JOIN files f ON f.id = u.file_id
++         WHERE fts_units MATCH ?1
++           AND u.id IN (SELECT value FROM json_each(?2))
++           AND (?3 IS NULL OR {scope_sql}) AND {predicate}
++         ORDER BY u.id"
++    ))?;
++    let candidates = serde_json::json!(candidates).to_string();
++    let excluded = serde_json::json!(exclude_ids).to_string();
++    let mut matches = Vec::with_capacity(queries.len());
++    for query in queries {
++        check()?;
++        let mut ids = BTreeSet::new();
++        if !query.is_empty() {
++            let mut rows = statement.query(params![query, &candidates, scope, &excluded])?;
++            loop {
++                check()?;
++                let Some(row) = rows.next()? else { break };
++                ids.insert(row.get(0)?);
++            }
++        }
++        matches.push(ids);
++    }
++    check()?;
++    Ok(matches)
++}
++
+ fn read_tool_symbols(
+     connection: &Connection,
+     check: &dyn Fn() -> Result<(), Error>,
+diff --git a/src/treat/mod.rs b/src/treat/mod.rs
+index 6ea80b0..ec9d68d 100644
+--- a/src/treat/mod.rs
++++ b/src/treat/mod.rs
+@@ -2159,6 +2159,11 @@ pub(crate) mod fts {
+     }
+ 
+     fn build_match_joined(query: &str, join: &str) -> String {
++        query_clauses(query).join(join)
++    }
++
++    /// Exposes existing query groups to the isolated search research prototype.
++    pub(crate) fn query_clauses(query: &str) -> Vec<String> {
+         let mut clauses = Vec::new();
+         let mut remainder = query;
+         while let Some(start) = remainder.find('"') {
+@@ -2176,7 +2181,23 @@ pub(crate) mod fts {
+             }
+         }
+         clauses.extend(identifier_clauses(remainder));
+-        clauses.join(join)
++        clauses
++    }
++
++    /// Routes explicit identifier spelling and subwords for one research arm.
++    pub(crate) fn column_identifier_clause(identifier: &str) -> String {
++        let exact = fts_quote(identifier);
++        let subtokens = identifier
++            .split('.')
++            .flat_map(split_identifier)
++            .map(|term| fts_quote(&term))
++            .collect::<Vec<_>>()
++            .join(" AND ");
++        if subtokens.is_empty() {
++            format!("idents:{exact}")
++        } else {
++            format!("(idents:{exact} OR body:({subtokens}))")
++        }
+     }
+ 
+     fn identifier_clauses(text: &str) -> Vec<String> {
+diff --git a/src/search/experiment.rs b/src/search/experiment.rs
+new file mode 100644
+index 0000000..802bd41
+--- /dev/null
++++ b/src/search/experiment.rs
+@@ -0,0 +1,446 @@
++//! Isolated, non-shipping lexical hypotheses for the 2026-09-25 research run.
++//! The default arm preserves v1 §9; each other arm is independent, not cumulative.
++
++use std::collections::BTreeSet;
++
++use super::Error;
++use crate::{
++    store::FtsHit,
++    treat::fts::{build_match, build_or_match, column_identifier_clause, query_clauses},
++};
++
++#[derive(Clone, Copy, Debug, PartialEq, Eq)]
++pub(super) struct Arm(u8);
++
++impl Arm {
++    /// Reads the research switch without changing configuration or database bytes.
++    pub(super) fn current(plain: bool, query: &str, identifiers: &[String]) -> Self {
++        let requested = std::env::var("DKC_SEARCH_EXPERIMENT")
++            .ok()
++            .and_then(|value| value.parse::<u8>().ok())
++            .unwrap_or(0);
++        // Frozen before scores: natural text has at least two lexical words and
++        // one non-identifier word. Standalone names and identifier-only queries
++        // keep baseline behavior except arm 3's rank-only rule. All arms bypass
++        // typed or quoted queries so the frozen ordered-identity controls hold.
++        Self::selected(requested, plain, natural_text(query, identifiers))
++    }
++
++    fn selected(requested: u8, plain: bool, natural: bool) -> Self {
++        if requested <= 9 && plain && (natural || requested == 3) {
++            Self(requested)
++        } else {
++            Self(0)
++        }
++    }
++}
++
++fn words(query: &str) -> Vec<&str> {
++    query
++        .split(|ch: char| !(ch.is_alphanumeric() || matches!(ch, '_' | '$' | '.')))
++        .filter(|word| !word.is_empty())
++        .collect()
++}
++
++fn natural_text(query: &str, identifiers: &[String]) -> bool {
++    let words = words(query);
++    words.len() >= 2
++        && words.iter().any(|word| {
++            !identifiers
++                .iter()
++                .any(|identifier| identifier.as_str() == *word)
++        })
++}
++
++fn strip_framing(query: &str) -> String {
++    let words = query.split_whitespace().collect::<Vec<_>>();
++    let remove = match words.as_slice() {
++        [first, second, ..]
++            if (first.eq_ignore_ascii_case("where")
++                && ["is", "does", "are"].contains(&second.to_ascii_lowercase().as_str()))
++                || (first.eq_ignore_ascii_case("how")
++                    && ["do", "does", "are"].contains(&second.to_ascii_lowercase().as_str())) =>
++        {
++            2
++        }
++        [first, ..]
++            if first.eq_ignore_ascii_case("which") || first.eq_ignore_ascii_case("what") =>
++        {
++            1
++        }
++        _ => 0,
++    };
++    let stripped = words[remove..].join(" ");
++    if build_match(&stripped).is_empty() {
++        query.to_owned()
++    } else {
++        stripped
++    }
++}
++
++fn distinct(clauses: Vec<String>) -> Vec<String> {
++    let mut seen = BTreeSet::new();
++    clauses
++        .into_iter()
++        .filter(|clause| seen.insert(clause.to_lowercase()))
++        .collect()
++}
++
++fn grammatical(word: &str) -> bool {
++    matches!(
++        word.to_ascii_lowercase().as_str(),
++        "a" | "an"
++            | "the"
++            | "is"
++            | "are"
++            | "was"
++            | "were"
++            | "be"
++            | "been"
++            | "being"
++            | "do"
++            | "does"
++            | "did"
++            | "can"
++            | "could"
++            | "would"
++            | "should"
++            | "where"
++            | "which"
++            | "what"
++            | "how"
++    )
++}
++
++/// Builds the independent arm's strict/relaxed expressions; dense text is untouched.
++pub(super) fn matches(arm: Arm, query: &str, identifiers: &[String]) -> (String, String) {
++    match arm.0 {
++        1 => {
++            let text = strip_framing(query);
++            (build_match(&text), build_or_match(&text))
++        }
++        2 => {
++            let clauses = distinct(query_clauses(query));
++            (clauses.join(" AND "), clauses.join(" OR "))
++        }
++        4 if !identifiers.is_empty() => {
++            let clauses = words(query)
++                .into_iter()
++                .flat_map(|word| {
++                    if identifiers
++                        .iter()
++                        .any(|identifier| identifier.as_str() == word)
++                    {
++                        vec![column_identifier_clause(word)]
++                    } else {
++                        query_clauses(word)
++                    }
++                })
++                .filter(|clause| !clause.is_empty())
++                .collect::<Vec<_>>();
++            (clauses.join(" AND "), clauses.join(" OR "))
++        }
++        9 => {
++            let content = words(query)
++                .into_iter()
++                .filter(|word| !grammatical(word))
++                .collect::<Vec<_>>()
++                .join(" ");
++            let relaxed = build_or_match(&content);
++            (
++                build_match(query),
++                if relaxed.is_empty() {
++                    build_or_match(query)
++                } else {
++                    relaxed
++                },
++            )
++        }
++        _ => (build_match(query), build_or_match(query)),
++    }
++}
++
++/// Arm 3 alone preserves strict rank before appending unseen relaxed occurrences.
++pub(super) fn relax(arm: Arm, mut strict: Vec<FtsHit>, relaxed: Vec<FtsHit>) -> Vec<FtsHit> {
++    if arm.0 != 3 || strict.is_empty() {
++        return relaxed;
++    }
++    let mut seen = strict
++        .iter()
++        .map(|hit| hit.unit_id)
++        .collect::<BTreeSet<_>>();
++    strict.extend(relaxed.into_iter().filter(|hit| seen.insert(hit.unit_id)));
++    strict.truncate(super::LEXICAL_LIMIT);
++    strict
++}
++
++fn phrase_clause(query: &str, identifiers: &[String]) -> Option<String> {
++    let words = words(query);
++    let phrases = words
++        .windows(2)
++        .filter(|pair| {
++            !pair.iter().any(|word| {
++                identifiers
++                    .iter()
++                    .any(|identifier| identifier.as_str() == *word)
++                    || word.contains(['_', '$', '.'])
++            })
++        })
++        .map(|pair| format!("\"{} {}\"", pair[0], pair[1]))
++        .collect::<Vec<_>>();
++    (!phrases.is_empty()).then(|| phrases.join(" OR "))
++}
++
++fn anchor_clause(query: &str, identifiers: &[String]) -> Option<String> {
++    let mixed = !identifiers.is_empty()
++        && words(query).iter().any(|word| {
++            !identifiers
++                .iter()
++                .any(|identifier| identifier.as_str() == *word)
++        });
++    mixed.then(|| {
++        identifiers
++            .iter()
++            .map(|identifier| format!("({})", build_match(identifier)))
++            .collect::<Vec<_>>()
++            .join(" OR ")
++    })
++}
++
++/// Reorders admitted candidates by a fixed key, retaining baseline BM25 ties.
++/// Membership comes from FTS itself, scoped and bounded to these candidate IDs.
++pub(super) fn rank(
++    arm: Arm,
++    query: &str,
++    identifiers: &[String],
++    fallback: bool,
++    lexical: &mut [FtsHit],
++    membership: impl FnOnce(&[String], &[i64]) -> Result<Vec<BTreeSet<i64>>, Error>,
++) -> Result<(), Error> {
++    if lexical.is_empty() {
++        return Ok(());
++    }
++    let clauses = match arm.0 {
++        5 if fallback => distinct(query_clauses(&strip_framing(query))),
++        6 => phrase_clause(query, identifiers).into_iter().collect(),
++        7 if fallback => anchor_clause(query, identifiers).into_iter().collect(),
++        _ => Vec::new(),
++    };
++    if clauses.is_empty() {
++        return Ok(());
++    }
++    let candidates = lexical.iter().map(|hit| hit.unit_id).collect::<Vec<_>>();
++    let matching = membership(&clauses, &candidates)?;
++    lexical.sort_by_cached_key(|hit| {
++        std::cmp::Reverse(
++            matching
++                .iter()
++                .filter(|ids| ids.contains(&hit.unit_id))
++                .count(),
++        )
++    });
++    Ok(())
++}
++
++/// Arm 8 skips graph votes only for untyped, unquoted text without explicit names.
++pub(super) fn disable_graph(arm: Arm, identifiers: &[String]) -> bool {
++    arm.0 == 8 && identifiers.is_empty()
++}
++
++#[cfg(test)]
++mod tests {
++    use super::*;
++    use crate::{search::fusion::Mode, store::StoreLimits};
++    use std::error::Error as StdError;
++
++    #[test]
++    fn routing_guards_preserve_dense_text_and_typed_quoted_rank() -> Result<(), Box<dyn StdError>> {
++        for text in [
++            "lex:Where is RetryPolicy",
++            "\"Where is RetryPolicy\"",
++            "vec:vague lex:retry",
++        ] {
++            let parsed = super::super::query::parse(text, Mode::Hybrid)?;
++            assert!(!parsed.experimental_plain);
++            for number in 1..=9 {
++                assert_eq!(Arm::selected(number, parsed.experimental_plain, true).0, 0);
++            }
++        }
++        let parsed = super::super::query::parse("Where is RetryPolicy", Mode::Hybrid)?;
++        assert!(parsed.experimental_plain);
++        let rewritten = matches(
++            Arm(1),
++            parsed.lexical.as_deref().unwrap_or_default(),
++            &parsed.ident_terms,
++        );
++        assert_eq!(rewritten.0, build_match("RetryPolicy"));
++        assert_eq!(parsed.dense.as_deref(), Some("Where is RetryPolicy"));
++        assert_eq!(Arm::selected(10, true, true), Arm(0));
++        assert_eq!(Arm::selected(3, true, false), Arm(3));
++        Ok(())
++    }
++
++    #[test]
++    fn independent_query_arms_have_frozen_rules_and_safe_empty_fallbacks() {
++        for prefix in [
++            "Where is",
++            "Where does",
++            "Where are",
++            "How do",
++            "How does",
++            "How are",
++            "Which",
++            "What",
++        ] {
++            assert_eq!(
++                matches(Arm(1), &format!("{prefix} retry policy"), &[]).0,
++                build_match("retry policy")
++            );
++        }
++        assert_eq!(
++            matches(Arm(1), "where was retry policy", &[]).0,
++            build_match("where was retry policy")
++        );
++        assert_eq!(matches(Arm(1), "Where is", &[]).0, build_match("Where is"));
++        assert_eq!(
++            matches(Arm(2), "retry Retry policy retry", &[]).0,
++            build_match("retry policy")
++        );
++        assert_eq!(
++            matches(Arm(4), "RetryPolicy from policy", &["RetryPolicy".into()]).0,
++            "(idents:\"RetryPolicy\" OR body:(\"retry\" AND \"policy\")) AND \"from\" AND \"policy\""
++        );
++        assert_eq!(
++            matches(Arm(9), "Where is the retry not from to without policy", &[]),
++            (
++                build_match("Where is the retry not from to without policy"),
++                build_or_match("retry not from to without policy")
++            )
++        );
++        assert_eq!(
++            matches(Arm(9), "where is the", &[]).1,
++            build_or_match("where is the")
++        );
++        assert_eq!(
++            matches(Arm(0), "RetryPolicy retry retry", &["RetryPolicy".into()]),
++            (
++                build_match("RetryPolicy retry retry"),
++                build_or_match("RetryPolicy retry retry")
++            )
++        );
++    }
++
++    fn hits(ids: &[i64]) -> Vec<FtsHit> {
++        ids.iter()
++            .map(|&unit_id| FtsHit {
++                unit_id,
++                score: -(unit_id as f64),
++            })
++            .collect()
++    }
++
++    #[test]
++    fn strict_fallback_and_coverage_preserve_stable_ties() -> Result<(), Error> {
++        let ids = |hits: Vec<FtsHit>| hits.into_iter().map(|hit| hit.unit_id).collect::<Vec<_>>();
++        assert_eq!(
++            ids(relax(Arm(3), hits(&[4]), hits(&[1, 4, 2]))),
++            vec![4, 1, 2]
++        );
++        assert_eq!(
++            ids(relax(Arm(0), hits(&[4]), hits(&[1, 4, 2]))),
++            vec![1, 4, 2]
++        );
++        assert_eq!(ids(relax(Arm(3), vec![], hits(&[1, 4, 2]))), vec![1, 4, 2]);
++        let mut ranked = hits(&[1, 2, 3, 4]);
++        rank(
++            Arm(5),
++            "Where is retry policy policy",
++            &[],
++            true,
++            &mut ranked,
++            |clauses, candidates| {
++                assert_eq!(clauses, &["\"retry\"", "\"policy\""]);
++                assert_eq!(candidates, &[1, 2, 3, 4]);
++                Ok(vec![BTreeSet::from([2, 3, 4]), BTreeSet::from([3, 4])])
++            },
++        )?;
++        assert_eq!(ids(ranked), vec![3, 4, 2, 1]);
++        Ok(())
++    }
++
++    #[test]
++    fn phrases_anchors_and_graph_ablation_have_explicit_applicability() {
++        assert!(!natural_text("RetryPolicy", &["RetryPolicy".into()]));
++        assert!(!natural_text(
++            "RetryPolicy snake_case",
++            &["RetryPolicy".into(), "snake_case".into()]
++        ));
++        assert!(!natural_text("retry", &[]));
++        assert!(natural_text("retry policy", &[]));
++        assert!(natural_text("Where RetryPolicy", &["RetryPolicy".into()]));
++        assert_eq!(
++            phrase_clause("retry network policy", &[]).as_deref(),
++            Some("\"retry network\" OR \"network policy\"")
++        );
++        assert!(phrase_clause("RetryPolicy retry", &["RetryPolicy".into()]).is_none());
++        assert!(anchor_clause("RetryPolicy", &["RetryPolicy".into()]).is_none());
++        assert!(anchor_clause("retry policy", &[]).is_none());
++        assert_eq!(
++            anchor_clause("where RetryPolicy", &["RetryPolicy".into()]),
++            Some(format!("({})", build_match("RetryPolicy")))
++        );
++        assert!(disable_graph(Arm(8), &[]));
++        assert!(!disable_graph(Arm(8), &["RetryPolicy".into()]));
++        assert!(!disable_graph(Arm(0), &[]));
++    }
++
++    #[test]
++    fn candidate_membership_keeps_scope_exclusions_and_row_checks() -> Result<(), Box<dyn StdError>>
++    {
++        let db = tempfile::NamedTempFile::new()?;
++        let store = crate::store::open(db.path(), StoreLimits::default())?;
++        let first =
++            super::super::tests::add(&store, "src/first.rs", "RetryPolicy", "retry policy", None)?;
++        let other = super::super::tests::add(
++            &store,
++            "other/next.rs",
++            "OtherPolicy",
++            "retry unrelated",
++            None,
++        )?;
++        let queries = vec![build_match("retry"), build_match("policy")];
++        assert_eq!(
++            store.query_fts_candidate_matches(&queries, &[first], None, &[])?,
++            vec![BTreeSet::from([first]), BTreeSet::from([first])]
++        );
++        let scope = crate::store::SearchScope::from("src/*");
++        let checked = std::cell::Cell::new(0);
++        let check = || {
++            checked.set(checked.get() + 1);
++            Ok(())
++        };
++        assert_eq!(
++            store.query_fts_candidate_matches_checked(
++                &queries,
++                &[first, other],
++                Some(&scope),
++                &[],
++                &check
++            )?,
++            vec![BTreeSet::from([first]), BTreeSet::from([first])]
++        );
++        assert!(checked.get() > 3);
++        assert_eq!(
++            store.query_fts_candidate_matches(&queries, &[first, other], Some(&scope), &[first])?,
++            vec![BTreeSet::new(), BTreeSet::new()]
++        );
++        assert!(
++            store
++                .query_fts_candidate_matches_checked(&queries, &[first], None, &[], &|| Err(
++                    crate::store::Error::L1InputsChanged
++                ))
++                .is_err()
++        );
++        Ok(())
++    }
++}

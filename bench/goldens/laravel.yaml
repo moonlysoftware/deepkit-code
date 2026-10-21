@@ -1,0 +1,191 @@
+# DRAFT: human review pending. Pinned laravel/framework 01d008c9b5f32cb7c5e50a9a22273113d810b2a2.
+- id: "laravel-001"
+  query: "Where does an incoming web request get matched to a route and passed through its middleware?"
+  kind: "vague"
+  expect_files: ["src/Illuminate/Routing/Router.php", "src/Illuminate/Foundation/Http/Kernel.php"]
+  scope: "code"
+  notes: "Ambiguous 1/5: the HTTP kernel builds the middleware path and the router selects and runs the route."
+- id: "laravel-002"
+  query: "Which code turns a requested service into a constructed object with its dependencies?"
+  kind: "vague"
+  expect_files: ["src/Illuminate/Container/Container.php", "src/Illuminate/Container/BoundMethod.php"]
+  scope: "code"
+  notes: "Ambiguous 2/5: object resolution and callable dependency injection are both legitimate entry points."
+- id: "laravel-003"
+  query: "Where is a model write split between inserting a new row and updating an existing row?"
+  kind: "vague"
+  expect_files: ["src/Illuminate/Database/Eloquent/Model.php", "src/Illuminate/Database/Eloquent/Concerns/HasEvents.php"]
+  scope: "code"
+  notes: "Ambiguous 3/5: persistence branching and its lifecycle events jointly govern the write."
+- id: "laravel-004"
+  query: "How does a queued task move from a worker reservation to the application handler?"
+  kind: "vague"
+  expect_files: ["src/Illuminate/Queue/Worker.php", "src/Illuminate/Queue/CallQueuedHandler.php"]
+  scope: "code"
+  notes: "Ambiguous 4/5: the worker owns reservation and execution while the queued handler resolves the command."
+- id: "laravel-005"
+  query: "Which code changes a template containing directives into executable output?"
+  kind: "vague"
+  expect_files: ["src/Illuminate/View/Compilers/BladeCompiler.php", "src/Illuminate/View/Engines/CompilerEngine.php"]
+  scope: "code"
+  notes: "Ambiguous 5/5: compilation and execution of the compiled template are separate valid answers."
+- id: "laravel-006"
+  query: "Where are nested field rules expanded before input values are checked?"
+  kind: "vague"
+  expect_files: ["src/Illuminate/Validation/ValidationRuleParser.php"]
+  scope: "code"
+  notes: "The rule parser expands wildcard and conditional rules before validation."
+- id: "laravel-007"
+  query: "How is a cached value computed only when its key is missing?"
+  kind: "vague"
+  expect_files: ["src/Illuminate/Cache/Repository.php"]
+  scope: "code"
+  notes: "The cache repository implements lookup followed by callback and storage."
+- id: "laravel-008"
+  query: "Where are event listeners selected and invoked for a dispatched event?"
+  kind: "vague"
+  expect_files: ["src/Illuminate/Events/Dispatcher.php"]
+  scope: "code"
+  notes: "The event dispatcher prepares listeners and calls them in order."
+- id: "laravel-009"
+  query: "How are request values converted before application middleware receives them?"
+  kind: "vague"
+  expect_files: ["src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php"]
+  scope: "code"
+  notes: "The shared request transformer recursively cleans parameter bags."
+- id: "laravel-010"
+  query: "Where does a view name become a file and then rendered text?"
+  kind: "vague"
+  expect_files: ["src/Illuminate/View/Factory.php", "src/Illuminate/View/View.php"]
+  scope: "code"
+  notes: "View creation resolves the file; the view object gathers data and renders it."
+- id: "laravel-011"
+  query: "How does Container::build instantiate a concrete class and fill constructor arguments?"
+  kind: "ident"
+  expect_files: ["src/Illuminate/Container/Container.php"]
+  expect_symbols: ["build"]
+  scope: "code"
+  notes: "Reflection-based object construction in the service container."
+- id: "laravel-012"
+  query: "Where does Router::dispatchToRoute begin route lookup for a request?"
+  kind: "ident"
+  expect_files: ["src/Illuminate/Routing/Router.php"]
+  expect_symbols: ["dispatchToRoute"]
+  scope: "code"
+  notes: "Router entry point immediately before route discovery and execution."
+- id: "laravel-013"
+  query: "How does Pipeline::then assemble and execute the configured pipes?"
+  kind: "ident"
+  expect_files: ["src/Illuminate/Pipeline/Pipeline.php"]
+  expect_symbols: ["then"]
+  scope: "code"
+  notes: "Pipeline terminal operation that reduces pipes around the destination."
+- id: "laravel-014"
+  query: "Where does Model::save decide whether to insert or update an Eloquent model?"
+  kind: "ident"
+  expect_files: ["src/Illuminate/Database/Eloquent/Model.php"]
+  expect_symbols: ["save"]
+  scope: "code"
+  notes: "Main model persistence method."
+- id: "laravel-015"
+  query: "How does Validator::validateAttribute apply one rule to one field?"
+  kind: "ident"
+  expect_files: ["src/Illuminate/Validation/Validator.php"]
+  expect_symbols: ["validateAttribute"]
+  scope: "code"
+  notes: "Per-attribute rule dispatch and failure recording."
+- id: "laravel-016"
+  query: "Where does BladeCompiler::compileString process a Blade template string?"
+  kind: "ident"
+  expect_files: ["src/Illuminate/View/Compilers/BladeCompiler.php"]
+  expect_symbols: ["compileString"]
+  scope: "code"
+  notes: "Top-level Blade string compilation."
+- id: "laravel-017"
+  query: "How does Dispatcher::dispatch find and call event listeners?"
+  kind: "ident"
+  expect_files: ["src/Illuminate/Events/Dispatcher.php"]
+  expect_symbols: ["dispatch"]
+  scope: "code"
+  notes: "Synchronous event dispatch entry point."
+- id: "laravel-018"
+  query: "Where does Repository::remember populate a missing cache entry?"
+  kind: "ident"
+  expect_files: ["src/Illuminate/Cache/Repository.php"]
+  expect_symbols: ["remember"]
+  scope: "code"
+  notes: "Cache-aside helper on the cache repository."
+- id: "laravel-019"
+  query: "How does Builder::create make and persist a new Eloquent model?"
+  kind: "ident"
+  expect_files: ["src/Illuminate/Database/Eloquent/Builder.php"]
+  expect_symbols: ["create"]
+  scope: "code"
+  notes: "Eloquent builder creation path."
+- id: "laravel-020"
+  query: "Where does Application::boot run the registered service providers?"
+  kind: "ident"
+  expect_files: ["src/Illuminate/Foundation/Application.php"]
+  expect_symbols: ["boot"]
+  scope: "code"
+  notes: "Application bootstrap stage that boots providers."
+- id: "laravel-021"
+  query: "What does this repository contain compared with the Laravel application repository?"
+  kind: "doc"
+  expect_files: ["README.md"]
+  scope: "docs"
+  notes: "The project overview distinguishes framework core from an application skeleton."
+- id: "laravel-022"
+  query: "How can the database component be configured and used without the full framework?"
+  kind: "doc"
+  expect_files: ["src/Illuminate/Database/README.md"]
+  scope: "docs"
+  notes: "Standalone database Capsule setup and examples."
+- id: "laravel-023"
+  query: "How can the queue component be configured as a standalone library?"
+  kind: "doc"
+  expect_files: ["src/Illuminate/Queue/README.md"]
+  scope: "docs"
+  notes: "Standalone queue Capsule setup and push example."
+- id: "laravel-024"
+  query: "What steps does the project use to publish a new framework release?"
+  kind: "doc"
+  expect_files: ["RELEASE.md"]
+  scope: "docs"
+  notes: "Manual workflow, version input, tagging, component splitting and release notes."
+- id: "laravel-025"
+  query: "Where should a security problem be reported privately?"
+  kind: "doc"
+  expect_files: [".github/SECURITY.md"]
+  scope: "docs"
+  notes: "The security policy gives the private reporting channel."
+- id: "laravel-026"
+  query: "How does an HTTP request travel from the framework kernel into route middleware execution?"
+  kind: "cross"
+  expect_files: ["src/Illuminate/Foundation/Http/Kernel.php", "src/Illuminate/Routing/Router.php"]
+  scope: "code"
+  notes: "Connect kernel request dispatch to the router's route stack."
+- id: "laravel-027"
+  query: "How does a service provider registration lead to container bindings being resolved?"
+  kind: "cross"
+  expect_files: ["src/Illuminate/Foundation/Application.php", "src/Illuminate/Container/Container.php"]
+  scope: "code"
+  notes: "Trace application provider registration into container construction."
+- id: "laravel-028"
+  query: "How does a queued command get resolved from its payload and sent through job middleware?"
+  kind: "cross"
+  expect_files: ["src/Illuminate/Queue/CallQueuedHandler.php", "src/Illuminate/Bus/Dispatcher.php"]
+  scope: "code"
+  notes: "Connect queue payload handling to command dispatch and middleware."
+- id: "laravel-029"
+  query: "How do model lifecycle events surround the database insert or update operation?"
+  kind: "cross"
+  expect_files: ["src/Illuminate/Database/Eloquent/Model.php", "src/Illuminate/Database/Eloquent/Concerns/HasEvents.php"]
+  scope: "code"
+  notes: "Connect persistence branches with Eloquent event dispatch."
+- id: "laravel-030"
+  query: "How does a Blade template move from compilation into the engine that evaluates the cached file?"
+  kind: "cross"
+  expect_files: ["src/Illuminate/View/Compilers/BladeCompiler.php", "src/Illuminate/View/Engines/CompilerEngine.php"]
+  scope: "code"
+  notes: "Trace compiled template generation into execution and exception handling."

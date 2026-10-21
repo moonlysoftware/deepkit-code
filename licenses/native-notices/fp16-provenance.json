@@ -1,0 +1,25 @@
+[
+  {
+    "path": "crates/sqlite-vector-sys/vendor/sqlite-vector/libs/fp16/fp16.h",
+    "upstream_url": "https://raw.githubusercontent.com/Maratyszcza/FP16/98b0a46bce017382a6351a19577ec43a715b6835/include/fp16/fp16.h",
+    "byte_identical": true,
+    "sha256": "c0e1100313e9e990360ef405b0d1353bf059d9e4c9e07344c015fc5800c4c897"
+  },
+  {
+    "path": "crates/sqlite-vector-sys/vendor/sqlite-vector/libs/fp16/bitcasts.h",
+    "upstream_url": "https://raw.githubusercontent.com/Maratyszcza/FP16/98b0a46bce017382a6351a19577ec43a715b6835/include/fp16/bitcasts.h",
+    "byte_identical": true,
+    "sha256": "f5682e7826c47714fa47508bf4f098a45392dc985ec116b203b16a37f5243e94"
+  },
+  {
+    "path": "crates/sqlite-vector-sys/vendor/sqlite-vector/libs/fp16/macros.h",
+    "upstream_url": "https://raw.githubusercontent.com/Maratyszcza/FP16/98b0a46bce017382a6351a19577ec43a715b6835/include/fp16/macros.h",
+    "byte_identical": true,
+    "sha256": "b3e945eec6485017e99cecec94c666ec00471405b1e0951aac0f7817011436e5"
+  },
+  {
+    "file": "FP16-LICENSE",
+    "upstream_url": "https://raw.githubusercontent.com/Maratyszcza/FP16/98b0a46bce017382a6351a19577ec43a715b6835/LICENSE",
+    "sha256": "17e4f539024be2749ee729d1e2f01d24cef12ece8c9bf18e91a4349be29c80bf"
+  }
+]

@@ -1,0 +1,29 @@
+{
+  "edges": [],
+  "symbols": [
+    {
+      "end": 3,
+      "kind": "module",
+      "name": "Retry",
+      "qualified": "Retry",
+      "start": 1
+    },
+    {
+      "end": 2,
+      "kind": "function",
+      "name": "should_retry",
+      "qualified": "Retry › should_retry",
+      "start": 2
+    }
+  ],
+  "units": [
+    {
+      "end": 3,
+      "header": "Retry › defmodule Retry do",
+      "kind": "Symbol",
+      "scope": "Retry",
+      "start": 1,
+      "text": "defmodule Retry do\n  def should_retry(value), do: value > 0\nend"
+    }
+  ]
+}

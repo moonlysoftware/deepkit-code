@@ -1,0 +1,26 @@
+[
+  {
+    "kind": "doc_section",
+    "scope_path": "Small search paper › page 1 › Search Evaluation",
+    "header": "page 1 › Search Evaluation",
+    "text": "# Search Evaluation\n\nAbstract: Search connects questions to source code.",
+    "line_start": 1,
+    "line_end": 3
+  },
+  {
+    "kind": "doc_section",
+    "scope_path": "Small search paper › page 1 › Search Evaluation › Method",
+    "header": "page 1 › Search Evaluation › Method",
+    "text": "## Method\n\nWe compare lexical retrieval with dense retrieval on code.",
+    "line_start": 5,
+    "line_end": 7
+  },
+  {
+    "kind": "doc_section",
+    "scope_path": "Small search paper › page 1 › Search Evaluation › Results",
+    "header": "page 1 › Search Evaluation › Results",
+    "text": "## Results\n\nRelevant files appear first. Older answers remain useful.",
+    "line_start": 9,
+    "line_end": 11
+  }
+]

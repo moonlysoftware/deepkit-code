@@ -1,0 +1,18 @@
+[
+  {
+    "header": "slide 1 › Indexing",
+    "kind": "doc_section",
+    "line_end": 5,
+    "line_start": 1,
+    "scope_path": "slide 1 › Indexing",
+    "text": "## Indexing\n\nRead code and documents.\n\nKeep page and heading context."
+  },
+  {
+    "header": "slide 2 › Searching",
+    "kind": "doc_section",
+    "line_end": 5,
+    "line_start": 1,
+    "scope_path": "slide 2 › Searching",
+    "text": "## Searching\n\nCombine relevant evidence.\n\nOpen the original source."
+  }
+]

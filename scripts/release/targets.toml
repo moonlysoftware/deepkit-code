@@ -1,0 +1,36 @@
+# Prepared target matrix for v1.md §12 / T1.R5; not a claim of verified builds.
+# No publishing or installer automation is enabled by this file.
+[[target]]
+triple = "aarch64-apple-darwin"
+features = ["metal"]
+host = "Apple Silicon macOS, macOS 13 deployment target"
+prerequisites = ["Rust stable", "Xcode SDK", "CMake", "Clang", "Metal framework"]
+validation = "Native build, Clippy, tests, tiny/ripgrep integration; human Metal performance later"
+
+[[target]]
+triple = "x86_64-apple-darwin"
+features = []
+host = "Intel macOS, macOS 13 deployment target"
+prerequisites = ["Rust stable", "Xcode SDK", "CMake", "Clang"]
+validation = "Native CPU build, Clippy, tests, tiny/ripgrep integration"
+
+[[target]]
+triple = "x86_64-unknown-linux-musl"
+features = []
+host = "x86_64 Linux musl build environment"
+prerequisites = ["Rust musl standard library", "musl C and C++ toolchain", "CMake", "Clang/libclang for bindgen"]
+validation = "CPU build, Clippy, tests, tiny/ripgrep integration; verify no glibc loader/NEEDED entries"
+
+[[target]]
+triple = "aarch64-unknown-linux-musl"
+features = []
+host = "aarch64 Linux musl build environment"
+prerequisites = ["Rust musl standard library", "aarch64 musl C and C++ toolchain", "CMake", "Clang/libclang for bindgen"]
+validation = "Native CPU build, Clippy, tests, tiny/ripgrep integration; verify no glibc loader/NEEDED entries"
+
+[[target]]
+triple = "x86_64-pc-windows-msvc"
+features = []
+host = "x86_64 Windows with MSVC"
+prerequisites = ["Rust stable", "Visual Studio C++ build tools", "Windows SDK", "CMake", "LLVM/libclang for bindgen"]
+validation = "Native CPU build, Clippy, tests, tiny/ripgrep integration; human MSI smoke test later"

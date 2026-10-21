@@ -1,0 +1,8 @@
+- kind: config_key
+  scope_path: package
+  header: package
+  idents: name,version
+- kind: config_key
+  scope_path: dependencies
+  header: dependencies
+  idents: serde

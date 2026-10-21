@@ -1,0 +1,107 @@
+{
+  "initial_harness_error": "Initial snapshot missed .git (18 setup failures); second missed the built DKC executable (2 setup failures). Third includes checkout identity and the existing immutable source-matching binary. Original logs retained; no product fixes or tests skipped.",
+  "scope": "Current tracked working tree copied without ignored historical files; no product or GPU qualification rerun.",
+  "checks": [
+    {
+      "command": [
+        "python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "scripts/bench",
+        "-p",
+        "test_*.py",
+        "-q"
+      ],
+      "exit_code": 0,
+      "log": "check-v3-0.log",
+      "log_sha256": "523b9b8c10e890d3207b02e61d6a3959333b7fafe7dc2a8c79203e3f29340eb6"
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/release/test_release_tools.py"
+      ],
+      "exit_code": 0,
+      "log": "check-v3-1.log",
+      "log_sha256": "5f0635b83af38a6c5d516fcb60dc3fa63c9c6ca4854e51a6a29ca33c92ccef16"
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/release/test_mac_verify.py"
+      ],
+      "exit_code": 0,
+      "log": "check-v3-2.log",
+      "log_sha256": "f8a81eab94f7a3c2c65d2a12e549a7558e11dfca1ba668adcb4824a26ff165ba"
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/release/test_zig_musl_tool.py"
+      ],
+      "exit_code": 0,
+      "log": "check-v3-3.log",
+      "log_sha256": "fa97c80fc3eb7334a7712f41052656d9ec705f0053004a58704211e91a7526ad"
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/release/test_brew_formula.py"
+      ],
+      "exit_code": 0,
+      "log": "check-v3-4.log",
+      "log_sha256": "489d8fec4214192d21ef621f802a943fb57007a29204410d590ff3ceb58c5003"
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/release/test_license_bundle.py"
+      ],
+      "exit_code": 0,
+      "log": "check-v3-5.log",
+      "log_sha256": "6bbebe1ad96eb5f292fac5606d8de50501b1719be4d19fd361a70738944d7e7c"
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/release/generate-notices.py",
+        "--check",
+        "licenses/third-party-licenses.tar.gz"
+      ],
+      "exit_code": 0,
+      "log": "check-v3-6.log",
+      "log_sha256": "194f07ba841401f0bfa663942e0290e029ee4a3338524034963d2ca1f32d1072"
+    },
+    {
+      "command": [
+        "check-v1-readiness.py",
+        "--require-ready"
+      ],
+      "exit_code": 2,
+      "expected_exit": 2,
+      "passed": true,
+      "receipt": "require-ready.json"
+    },
+    {
+      "command": [
+        "check-v1-readiness.py",
+        "--require-released"
+      ],
+      "exit_code": 2,
+      "expected_exit": 2,
+      "passed": true,
+      "receipt": "require-released.json"
+    }
+  ],
+  "relative_markdown_links": "passed",
+  "approved_guide_exact_match": true,
+  "archived_documents_absent": true,
+  "benchmark_tests": 100,
+  "release_tests": 37,
+  "product_source_unchanged_from": "ae9f1bea535c1a92985344fb77ffa47d7776ca57",
+  "protected_documents_removed": 33,
+  "history_rewritten": false,
+  "approved_patch_sha256": "115224bc124e0a6ef84d456f1dc6c2c0b01a9e003b63cfaa433284561dda2046"
+}

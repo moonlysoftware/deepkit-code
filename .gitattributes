@@ -1,0 +1,4 @@
+wix/*.wxs text eol=crlf whitespace=-blank-at-eol
+# Preserve original third-party notices and retained experimental patch bytes.
+licenses/notice-overrides/** -whitespace
+bench/results/beta-20261014/*.patch -whitespace

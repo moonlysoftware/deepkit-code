@@ -1,0 +1,32 @@
+[graph]
+all-features = false
+
+[advisories]
+unmaintained = "workspace"
+
+[licenses]
+confidence-threshold = 0.93
+allow = [
+  "Apache-2.0",
+  "BSD-2-Clause",
+  "BSD-3-Clause",
+  "ISC",
+  "MIT",
+  "MPL-2.0",
+  "Unicode-3.0",
+  "Zlib",
+]
+
+# T2.1's named debouncer uses notify's CC0-licensed native backends.
+[[licenses.exceptions]]
+name = "notify"
+version = "=8.2.0"
+allow = ["CC0-1.0"]
+
+[bans]
+multiple-versions = "warn"
+wildcards = "deny"
+
+[sources]
+unknown-registry = "deny"
+unknown-git = "deny"

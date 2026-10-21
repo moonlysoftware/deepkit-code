@@ -1,0 +1,16 @@
+[package]
+name = "sqlite-vector-sys"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.98"
+license = "MIT OR Apache-2.0"
+publish = false
+
+[lib]
+path = "src/lib.rs"
+
+[build-dependencies]
+cc = "1.2"
+
+[dependencies]
+libsqlite3-sys = { version = "0.38.2", features = ["bundled"] }

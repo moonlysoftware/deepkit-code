@@ -1,0 +1,10 @@
+[
+  {
+    "kind": "doc_section",
+    "scope_path": "page 1 › Invoice 1042",
+    "header": "page 1 › Invoice 1042",
+    "text": "## Invoice 1042\n\nCustomer: Example Workshop\n\nService: Repository document indexing\n\nQuantity: 2 Unit price: 25.00 Total: 50.00\n\nPayment is due within thirty days.",
+    "line_start": 1,
+    "line_end": 9
+  }
+]

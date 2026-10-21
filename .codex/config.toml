@@ -1,0 +1,24 @@
+# Project-scoped Codex settings for Deepkit Code (plan/07-dev-machine.md §3.7, plan/01-workflow.md §9).
+#
+# Codex loads this file only when the repository is trusted. On the bench machine, add once to ~/.codex/config.toml:
+#
+#   [projects."/absolute/path/to/deepkit-code"]
+#   trust_level = "trusted"
+#
+# Provider, auth, profile and model settings cannot live here (Codex ignores them in project config); they stay in
+# ~/.codex/config.toml. Verify with `/debug-config` inside `codex`, or `codex exec --full-auto 'print your sandbox mode'`.
+
+# Unattended loops (scripts/codex-loop.sh) need no approval prompts. Interactive sessions can override with
+# `codex --ask-for-approval on-request`.
+approval_policy = "never"
+sandbox_mode = "workspace-write"
+
+[sandbox_workspace_write]
+# Corpus and model caches live outside the repository (plan/07-dev-machine.md §3.5). Adjust to the real paths.
+writable_roots = ["/data/dkc-corpus", "/data/dkc-models"]
+# cargo, git, huggingface downloads and the gateway tests need the network. Domain filtering (features.network_proxy)
+# is experimental in Codex; when it is enabled, allow: crates.io, static.crates.io, index.crates.io, github.com,
+# objects.githubusercontent.com, huggingface.co, cdn-lfs.huggingface.co, gateway.moonly.ai, 127.0.0.1.
+network_access = true
+
+# AGENTS.md at the repository root is the instruction file; Codex picks it up by default, nothing to configure.

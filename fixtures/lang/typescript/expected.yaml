@@ -1,0 +1,5 @@
+- kind: symbol
+  scope_path: hello
+  header: hello › function hello(): void {}
+  line_start: 1
+  line_end: 1

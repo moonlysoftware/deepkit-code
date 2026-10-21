@@ -1,0 +1,18 @@
+[
+  {
+    "header": "**Repository Handbook**",
+    "kind": "doc_section",
+    "line_end": 3,
+    "line_start": 1,
+    "scope_path": "**Repository Handbook**",
+    "text": "# **Repository Handbook**\n\nIndex source files and documents into one searchable catalogue."
+  },
+  {
+    "header": "**Repository Handbook** › **Recovery**",
+    "kind": "doc_section",
+    "line_end": 12,
+    "line_start": 5,
+    "scope_path": "**Repository Handbook** › **Recovery**",
+    "text": "## **Recovery**\n\nAfter an interrupted update, restart indexing to finish pending work.\n\n| Task | State |\n| --- | --- |\n| Index | Complete |\n| Search | Ready |"
+  }
+]

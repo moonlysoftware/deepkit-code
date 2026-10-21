@@ -1,0 +1,22 @@
+{
+  "edges": [],
+  "symbols": [
+    {
+      "end": 3,
+      "kind": "function",
+      "name": "shouldRetry",
+      "qualified": "shouldRetry",
+      "start": 1
+    }
+  ],
+  "units": [
+    {
+      "end": 3,
+      "header": "shouldRetry › bool shouldRetry(int value) {",
+      "kind": "Symbol",
+      "scope": "shouldRetry",
+      "start": 1,
+      "text": "bool shouldRetry(int value) {\n    return value > 0;\n}"
+    }
+  ]
+}

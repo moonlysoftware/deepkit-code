@@ -1,0 +1,2 @@
+ALTER TABLE files ADD COLUMN rank REAL NOT NULL DEFAULT 0;
+CREATE INDEX files_rank ON files(rank DESC);

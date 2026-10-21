@@ -1,0 +1,348 @@
+{
+  "repository": "moonlysoftware/deepkit-code",
+  "source_head": "c2477b6c072fcc032358065d0975224a541e97ca",
+  "all_selected_runs_terminal_success": true,
+  "earlier_failure_status": "The c5f69eb push watcher deadline miss remains recorded and unresolved; later passes do not establish a causal repair.",
+  "artifact_pins": "Original private tap artifact pins unchanged; no new artifacts downloaded.",
+  "runs": [
+    {
+      "databaseId": 38628932540,
+      "headSha": "c2477b6c072fcc032358065d0975224a541e97ca",
+      "event": "pull_request",
+      "url": "https://github.com/moonlysoftware/deepkit-code/actions/runs/38628932540",
+      "status": "completed",
+      "conclusion": "success",
+      "createdAt": "2026-10-14T20:04:10Z",
+      "updatedAt": "2026-10-14T20:31:42Z",
+      "jobs": [
+        {
+          "databaseId": 116075214246,
+          "name": "Homebrew (native macOS ARM)",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/moonlysoftware/deepkit-code/actions/runs/38628932540/job/116075214246",
+          "startedAt": "2026-10-14T20:04:19Z",
+          "completedAt": "2026-10-14T20:31:41Z",
+          "step_counts": {
+            "success": 15,
+            "failure": 0,
+            "skipped": 0,
+            "cancelled": 0
+          },
+          "log_sha256": "05a443c6e7d8afe866fef40eff73e0b0b73234d527d4a49d335beb70658c37c7",
+          "log_bytes": 207761,
+          "successful_homebrew_test_invocations": 2,
+          "native_lifecycle_step": {
+            "name": "Install, test, remove and reinstall the local formula",
+            "conclusion": "success",
+            "startedAt": "2026-10-14T20:31:09Z",
+            "completedAt": "2026-10-14T20:31:36Z"
+          },
+          "scope": "Native local-archive install/search/uninstall/reinstall smoke; no public release or inference performance claim.",
+          "log_file": "run-38628932540-job-116075214246.log"
+        },
+        {
+          "databaseId": 116075214748,
+          "name": "Homebrew (Linux GNU diagnostic)",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/moonlysoftware/deepkit-code/actions/runs/38628932540/job/116075214748",
+          "startedAt": "2026-10-14T20:04:12Z",
+          "completedAt": "2026-10-14T20:30:35Z",
+          "step_counts": {
+            "success": 14,
+            "failure": 0,
+            "skipped": 1,
+            "cancelled": 0
+          },
+          "log_sha256": "c24a53bab68204e5ba7c8bf97a00aceff084c789a43b21eb142596709dba09b0",
+          "log_bytes": 164473,
+          "successful_homebrew_test_invocations": 2,
+          "native_lifecycle_step": {
+            "name": "Install, test, remove and reinstall the local formula",
+            "conclusion": "success",
+            "startedAt": "2026-10-14T20:27:48Z",
+            "completedAt": "2026-10-14T20:30:32Z"
+          },
+          "scope": "Native local-archive install/search/uninstall/reinstall smoke; no public release or inference performance claim.",
+          "log_file": "run-38628932540-job-116075214748.log"
+        }
+      ]
+    },
+    {
+      "databaseId": 38628932895,
+      "headSha": "c2477b6c072fcc032358065d0975224a541e97ca",
+      "event": "pull_request",
+      "url": "https://github.com/moonlysoftware/deepkit-code/actions/runs/38628932895",
+      "status": "completed",
+      "conclusion": "success",
+      "createdAt": "2026-10-14T20:04:10Z",
+      "updatedAt": "2026-10-14T20:32:35Z",
+      "jobs": [
+        {
+          "databaseId": 116075217712,
+          "name": "Rust quality gates",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/moonlysoftware/deepkit-code/actions/runs/38628932895/job/116075217712",
+          "startedAt": "2026-10-14T20:04:13Z",
+          "completedAt": "2026-10-14T20:32:34Z",
+          "step_counts": {
+            "success": 16,
+            "failure": 0,
+            "skipped": 1,
+            "cancelled": 0
+          },
+          "log_sha256": "ca36c703f78d88836d289fd040858b6f469ddbaf078391b0e6871fa260dd85c2",
+          "log_bytes": 592156,
+          "rust_tests": {
+            "groups": 42,
+            "passed": 1399,
+            "failed": 0,
+            "ignored": 17,
+            "counting_note": "Direct complete-suite summaries only; isolated child-process summary with filtered tests excluded to avoid double counting."
+          },
+          "watcher_test_result": [
+            "2026-10-14T20:32:04.3533295Z test watch_native_and_polling_publish_changes_coalesce_bursts_and_exclude_self_writes ... ok"
+          ],
+          "log_file": "run-38628932895-job-116075217712.log"
+        }
+      ]
+    },
+    {
+      "databaseId": 38628920940,
+      "headSha": "c2477b6c072fcc032358065d0975224a541e97ca",
+      "event": "push",
+      "url": "https://github.com/moonlysoftware/deepkit-code/actions/runs/38628920940",
+      "status": "completed",
+      "conclusion": "success",
+      "createdAt": "2026-10-14T20:04:06Z",
+      "updatedAt": "2026-10-14T20:33:02Z",
+      "jobs": [
+        {
+          "databaseId": 116075194234,
+          "name": "Rust quality gates",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/moonlysoftware/deepkit-code/actions/runs/38628920940/job/116075194234",
+          "startedAt": "2026-10-14T20:04:11Z",
+          "completedAt": "2026-10-14T20:33:01Z",
+          "step_counts": {
+            "success": 16,
+            "failure": 0,
+            "skipped": 1,
+            "cancelled": 0
+          },
+          "log_sha256": "a5f0e43ab248ab5979cc140371d4d58566d46ab0492a4d37706c6f853756ff85",
+          "log_bytes": 591121,
+          "rust_tests": {
+            "groups": 42,
+            "passed": 1399,
+            "failed": 0,
+            "ignored": 17,
+            "counting_note": "Direct complete-suite summaries only; isolated child-process summary with filtered tests excluded to avoid double counting."
+          },
+          "watcher_test_result": [
+            "2026-10-14T20:32:39.5129676Z test watch_native_and_polling_publish_changes_coalesce_bursts_and_exclude_self_writes ... ok"
+          ],
+          "log_file": "run-38628920940-job-116075194234.log"
+        }
+      ]
+    },
+    {
+      "databaseId": 38628932372,
+      "headSha": "c2477b6c072fcc032358065d0975224a541e97ca",
+      "event": "pull_request",
+      "url": "https://github.com/moonlysoftware/deepkit-code/actions/runs/38628932372",
+      "status": "completed",
+      "conclusion": "success",
+      "createdAt": "2026-10-14T20:04:10Z",
+      "updatedAt": "2026-10-14T20:04:37Z",
+      "jobs": [
+        {
+          "databaseId": 116075213760,
+          "name": "plan",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/moonlysoftware/deepkit-code/actions/runs/38628932372/job/116075213760",
+          "startedAt": "2026-10-14T20:04:13Z",
+          "completedAt": "2026-10-14T20:04:34Z",
+          "step_counts": {
+            "success": 8,
+            "failure": 0,
+            "skipped": 0,
+            "cancelled": 0
+          },
+          "log_sha256": "d0b85d7c8de890f48abfc9571f595746ca23c826f7e311fb40b06cbbea7fb45f",
+          "log_bytes": 69406,
+          "log_file": "run-38628932372-job-116075213760.log"
+        },
+        {
+          "databaseId": 116075418189,
+          "name": "custom-release-platforms",
+          "status": "completed",
+          "conclusion": "skipped",
+          "url": "https://github.com/moonlysoftware/deepkit-code/actions/runs/38628932372/job/116075418189",
+          "startedAt": "2026-10-14T20:04:35Z",
+          "completedAt": "2026-10-14T20:04:35Z",
+          "step_counts": {
+            "success": 0,
+            "failure": 0,
+            "skipped": 0,
+            "cancelled": 0
+          }
+        },
+        {
+          "databaseId": 116075418721,
+          "name": "build-local-artifacts (${{ join(matrix.targets, ', ') }})",
+          "status": "completed",
+          "conclusion": "skipped",
+          "url": "https://github.com/moonlysoftware/deepkit-code/actions/runs/38628932372/job/116075418721",
+          "startedAt": "2026-10-14T20:04:35Z",
+          "completedAt": "2026-10-14T20:04:35Z",
+          "step_counts": {
+            "success": 0,
+            "failure": 0,
+            "skipped": 0,
+            "cancelled": 0
+          }
+        },
+        {
+          "databaseId": 116075419846,
+          "name": "custom-release-sizes",
+          "status": "completed",
+          "conclusion": "skipped",
+          "url": "https://github.com/moonlysoftware/deepkit-code/actions/runs/38628932372/job/116075419846",
+          "startedAt": "2026-10-14T20:04:35Z",
+          "completedAt": "2026-10-14T20:04:35Z",
+          "step_counts": {
+            "success": 0,
+            "failure": 0,
+            "skipped": 0,
+            "cancelled": 0
+          }
+        },
+        {
+          "databaseId": 116075420339,
+          "name": "custom-release-acceptance",
+          "status": "completed",
+          "conclusion": "skipped",
+          "url": "https://github.com/moonlysoftware/deepkit-code/actions/runs/38628932372/job/116075420339",
+          "startedAt": "2026-10-14T20:04:35Z",
+          "completedAt": "2026-10-14T20:04:35Z",
+          "step_counts": {
+            "success": 0,
+            "failure": 0,
+            "skipped": 0,
+            "cancelled": 0
+          }
+        },
+        {
+          "databaseId": 116075420407,
+          "name": "build-global-artifacts",
+          "status": "completed",
+          "conclusion": "skipped",
+          "url": "https://github.com/moonlysoftware/deepkit-code/actions/runs/38628932372/job/116075420407",
+          "startedAt": "2026-10-14T20:04:35Z",
+          "completedAt": "2026-10-14T20:04:35Z",
+          "step_counts": {
+            "success": 0,
+            "failure": 0,
+            "skipped": 0,
+            "cancelled": 0
+          }
+        },
+        {
+          "databaseId": 116075423416,
+          "name": "host",
+          "status": "completed",
+          "conclusion": "skipped",
+          "url": "https://github.com/moonlysoftware/deepkit-code/actions/runs/38628932372/job/116075423416",
+          "startedAt": "2026-10-14T20:04:36Z",
+          "completedAt": "2026-10-14T20:04:35Z",
+          "step_counts": {
+            "success": 0,
+            "failure": 0,
+            "skipped": 0,
+            "cancelled": 0
+          }
+        },
+        {
+          "databaseId": 116075423548,
+          "name": "publish-homebrew-formula",
+          "status": "completed",
+          "conclusion": "skipped",
+          "url": "https://github.com/moonlysoftware/deepkit-code/actions/runs/38628932372/job/116075423548",
+          "startedAt": "2026-10-14T20:04:36Z",
+          "completedAt": "2026-10-14T20:04:35Z",
+          "step_counts": {
+            "success": 0,
+            "failure": 0,
+            "skipped": 0,
+            "cancelled": 0
+          }
+        },
+        {
+          "databaseId": 116075425234,
+          "name": "publish-npm",
+          "status": "completed",
+          "conclusion": "skipped",
+          "url": "https://github.com/moonlysoftware/deepkit-code/actions/runs/38628932372/job/116075425234",
+          "startedAt": "2026-10-14T20:04:36Z",
+          "completedAt": "2026-10-14T20:04:35Z",
+          "step_counts": {
+            "success": 0,
+            "failure": 0,
+            "skipped": 0,
+            "cancelled": 0
+          }
+        },
+        {
+          "databaseId": 116075425396,
+          "name": "announce",
+          "status": "completed",
+          "conclusion": "skipped",
+          "url": "https://github.com/moonlysoftware/deepkit-code/actions/runs/38628932372/job/116075425396",
+          "startedAt": "2026-10-14T20:04:36Z",
+          "completedAt": "2026-10-14T20:04:35Z",
+          "step_counts": {
+            "success": 0,
+            "failure": 0,
+            "skipped": 0,
+            "cancelled": 0
+          }
+        },
+        {
+          "databaseId": 116075427296,
+          "name": "custom-release-checksums",
+          "status": "completed",
+          "conclusion": "skipped",
+          "url": "https://github.com/moonlysoftware/deepkit-code/actions/runs/38628932372/job/116075427296",
+          "startedAt": "2026-10-14T20:04:36Z",
+          "completedAt": "2026-10-14T20:04:35Z",
+          "step_counts": {
+            "success": 0,
+            "failure": 0,
+            "skipped": 0,
+            "cancelled": 0
+          }
+        }
+      ],
+      "scope": "Release planning only; all native/platform/build/publication jobs skipped."
+    }
+  ],
+  "main_integration": {
+    "pull_request": "https://github.com/moonlysoftware/deepkit-code/pull/3",
+    "merged_at": "2026-10-14T20:35:16Z",
+    "merge_commit": "e1a1777feb1cbf99e29acef25e7723c6092690f7",
+    "previous_main": "dfc09d8295f48b139721adeb8870fe6751e0830b",
+    "method": "merge commit; no squash or history rewrite",
+    "preparation_commits_preserved": 97,
+    "merge_tree": "63288760b85b37c0ad5ff3b3caeffa78de9cd957",
+    "merge_tree_matches_reviewed_head": true,
+    "both_parent_commits_verified": true,
+    "older_pr_2_head_included": "a7e45b06ce1c40c7648c44359bb248c83f7b232b",
+    "publication_scope": "Private source integration only; no tag, release, visibility change or tap artifact repin.",
+    "followup_scope": "Documentation and evidence only; product, tests, dependencies and workflows unchanged. Automatically triggered main CI is separate from these terminal pre-merge receipts."
+  }
+}

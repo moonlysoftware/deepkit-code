@@ -1,0 +1,48 @@
+%PDF-1.7
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Count 1 /Kids [5 0 R] >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+5 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 6 0 R >>
+endobj
+6 0 obj
+<< /Length 452 >>
+stream
+BT /F2 18 Tf 50 740 Td (Search Evaluation) Tj ET
+BT /F1 11 Tf 50 700 Td (Abstract: Search connects questions to source code.) Tj ET
+BT /F2 14 Tf 50 650 Td (Method) Tj ET
+BT /F1 10 Tf 50 625 Td (We compare lexical retrieval) Tj ET
+BT /F1 10 Tf 50 610 Td (with dense retrieval on code.) Tj ET
+BT /F2 14 Tf 320 650 Td (Results) Tj ET
+BT /F1 10 Tf 320 625 Td (Relevant files appear first.) Tj ET
+BT /F1 10 Tf 320 610 Td (Older answers remain useful.) Tj ET
+endstream
+endobj
+7 0 obj
+<< /Title <feff0053006d0061006c006c0020007300650061007200630068002000700061007000650072> >>
+endobj
+xref
+0 8
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000121 00000 n 
+0000000191 00000 n 
+0000000266 00000 n 
+0000000402 00000 n 
+0000000905 00000 n 
+trailer
+<< /Size 8 /Root 1 0 R /Info 7 0 R >>
+startxref
+1012
+%%EOF

@@ -1,0 +1,191 @@
+# DRAFT: human review pending. Pinned Django 2b30f6255b5ef84afbd827993643d52ef2c0963a.
+- id: "django-001"
+  query: "Where does an incoming request pass through middleware before its view is called?"
+  kind: "vague"
+  expect_files: ["django/core/handlers/base.py", "django/core/handlers/exception.py"]
+  scope: "code"
+  notes: "Ambiguous 1/5: the base handler constructs the chain and the exception wrapper changes its behavior."
+- id: "django-002"
+  query: "Which code matches a requested path and turns captured text into typed arguments?"
+  kind: "vague"
+  expect_files: ["django/urls/resolvers.py", "django/urls/converters.py"]
+  scope: "code"
+  notes: "Ambiguous 2/5: pattern resolution and converter handling are separate legitimate answers."
+- id: "django-003"
+  query: "Where is a lazy database query changed into executable SQL?"
+  kind: "vague"
+  expect_files: ["django/db/models/sql/query.py", "django/db/models/sql/compiler.py"]
+  scope: "code"
+  notes: "Ambiguous 3/5: the query object represents the operation and the compiler emits backend SQL."
+- id: "django-004"
+  query: "How are migration dependencies loaded and then applied to a database?"
+  kind: "vague"
+  expect_files: ["django/db/migrations/loader.py", "django/db/migrations/executor.py"]
+  scope: "code"
+  notes: "Ambiguous 4/5: graph construction and plan execution jointly answer the question."
+- id: "django-005"
+  query: "Which code finds a template by name and turns it into rendered text?"
+  kind: "vague"
+  expect_files: ["django/template/engine.py", "django/template/base.py"]
+  scope: "code"
+  notes: "Ambiguous 5/5: template discovery/parsing and node rendering are distinct entry points."
+- id: "django-006"
+  query: "Where are submitted form values converted and validation errors collected?"
+  kind: "vague"
+  expect_files: ["django/forms/forms.py", "django/forms/fields.py"]
+  scope: "code"
+  notes: "The form coordinates field cleaning and stores field or form errors."
+- id: "django-007"
+  query: "How are registered receivers selected and called when an event is emitted?"
+  kind: "vague"
+  expect_files: ["django/dispatch/dispatcher.py"]
+  scope: "code"
+  notes: "The dispatcher resolves live receivers and supports synchronous and asynchronous calls."
+- id: "django-008"
+  query: "Where does a cache lookup compute and store a default value after a miss?"
+  kind: "vague"
+  expect_files: ["django/core/cache/backends/base.py"]
+  scope: "code"
+  notes: "The base cache backend provides the shared get-or-create behavior."
+- id: "django-009"
+  query: "How does the static file system search applications and configured directories?"
+  kind: "vague"
+  expect_files: ["django/contrib/staticfiles/finders.py"]
+  scope: "code"
+  notes: "Configured finder classes enumerate static roots and application storages."
+- id: "django-010"
+  query: "Where is a command name from the terminal resolved and executed?"
+  kind: "vague"
+  expect_files: ["django/core/management/__init__.py"]
+  scope: "code"
+  notes: "Management command discovery and command-line execution live together."
+- id: "django-011"
+  query: "How does BaseHandler.load_middleware build the request and response chain?"
+  kind: "ident"
+  expect_files: ["django/core/handlers/base.py"]
+  expect_symbols: ["load_middleware"]
+  scope: "code"
+  notes: "Middleware adaptation and chain construction."
+- id: "django-012"
+  query: "Where does URLResolver.resolve recursively match a URL path?"
+  kind: "ident"
+  expect_files: ["django/urls/resolvers.py"]
+  expect_symbols: ["resolve"]
+  scope: "code"
+  notes: "Recursive URL resolver entry point."
+- id: "django-013"
+  query: "How does Model.save choose and execute the database write?"
+  kind: "ident"
+  expect_files: ["django/db/models/base.py"]
+  expect_symbols: ["save"]
+  scope: "code"
+  notes: "Public model persistence entry point."
+- id: "django-014"
+  query: "Where does QuerySet.filter add conditions without evaluating the query?"
+  kind: "ident"
+  expect_files: ["django/db/models/query.py"]
+  expect_symbols: ["filter"]
+  scope: "code"
+  notes: "Lazy QuerySet filtering path."
+- id: "django-015"
+  query: "How does MigrationExecutor.migrate run a migration plan forwards or backwards?"
+  kind: "ident"
+  expect_files: ["django/db/migrations/executor.py"]
+  expect_symbols: ["migrate"]
+  scope: "code"
+  notes: "Migration plan execution and project-state updates."
+- id: "django-016"
+  query: "Where does Template.render bind a context and render the node list?"
+  kind: "ident"
+  expect_files: ["django/template/base.py"]
+  expect_symbols: ["render"]
+  scope: "code"
+  notes: "Top-level template rendering method."
+- id: "django-017"
+  query: "How does BaseForm.full_clean build cleaned_data and errors?"
+  kind: "ident"
+  expect_files: ["django/forms/forms.py"]
+  expect_symbols: ["full_clean"]
+  scope: "code"
+  notes: "Whole-form validation coordinator."
+- id: "django-018"
+  query: "Where does Signal.send invoke the connected receivers?"
+  kind: "ident"
+  expect_files: ["django/dispatch/dispatcher.py"]
+  expect_symbols: ["send"]
+  scope: "code"
+  notes: "Signal emission with receiver response collection."
+- id: "django-019"
+  query: "How does BaseCache.get_or_set handle a missing cache key?"
+  kind: "ident"
+  expect_files: ["django/core/cache/backends/base.py"]
+  expect_symbols: ["get_or_set"]
+  scope: "code"
+  notes: "Shared backend helper for safely storing defaults."
+- id: "django-020"
+  query: "Where does execute_from_command_line start management command handling?"
+  kind: "ident"
+  expect_files: ["django/core/management/__init__.py"]
+  expect_symbols: ["execute_from_command_line"]
+  scope: "code"
+  notes: "Public command-line management entry point."
+- id: "django-021"
+  query: "How does Django choose a view from the path in an HTTP request?"
+  kind: "doc"
+  expect_files: ["docs/topics/http/urls.txt"]
+  scope: "docs"
+  notes: "URL dispatcher overview and matching algorithm."
+- id: "django-022"
+  query: "How can database objects be filtered, combined, and retrieved through the model API?"
+  kind: "doc"
+  expect_files: ["docs/topics/db/queries.txt"]
+  scope: "docs"
+  notes: "Database query guide for QuerySets and lookups."
+- id: "django-023"
+  query: "How are templates configured, loaded, given context, and rendered?"
+  kind: "doc"
+  expect_files: ["docs/topics/templates.txt"]
+  scope: "docs"
+  notes: "Template system topic guide."
+- id: "django-024"
+  query: "What are the normal steps for displaying and processing an HTML form?"
+  kind: "doc"
+  expect_files: ["docs/topics/forms/index.txt"]
+  scope: "docs"
+  notes: "Forms topic guide from declaration through validation and rendering."
+- id: "django-025"
+  query: "What settings and operational checks should be reviewed before production deployment?"
+  kind: "doc"
+  expect_files: ["docs/howto/deployment/checklist.txt"]
+  scope: "docs"
+  notes: "Production deployment checklist."
+- id: "django-026"
+  query: "How does the request handler use the URL resolver to call the selected view?"
+  kind: "cross"
+  expect_files: ["django/core/handlers/base.py", "django/urls/resolvers.py"]
+  scope: "code"
+  notes: "Trace request resolution from handler into recursive URL matching."
+- id: "django-027"
+  query: "How does a QuerySet condition reach the backend-specific SQL compiler?"
+  kind: "cross"
+  expect_files: ["django/db/models/query.py", "django/db/models/sql/compiler.py"]
+  scope: "code"
+  notes: "Connect the public lazy query API to SQL generation."
+- id: "django-028"
+  query: "How does a migration graph become database schema operations?"
+  kind: "cross"
+  expect_files: ["django/db/migrations/loader.py", "django/db/migrations/executor.py"]
+  scope: "code"
+  notes: "Connect migration dependency loading to forward or backward execution."
+- id: "django-029"
+  query: "How does template lookup reach parsing and rendering of the chosen template?"
+  kind: "cross"
+  expect_files: ["django/template/engine.py", "django/template/base.py"]
+  scope: "code"
+  notes: "Trace template name resolution into parsed node rendering."
+- id: "django-030"
+  query: "How does form-wide cleaning coordinate individual field conversion and validation?"
+  kind: "cross"
+  expect_files: ["django/forms/forms.py", "django/forms/fields.py"]
+  scope: "code"
+  notes: "Connect the form cleaning sequence to each field's conversion and validators."

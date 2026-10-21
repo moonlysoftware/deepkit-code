@@ -1,0 +1,328 @@
+[
+  {
+    "crate": "tree-sitter-kotlin-ng",
+    "version": "1.1.0",
+    "checksum_verified": true,
+    "source_directory": "/tmp/dkc-t2-10-grammar-audit/tree-sitter-kotlin-ng-1.1.0",
+    "tag_queries": [],
+    "actual_public_exports": [
+      "LANGUAGE",
+      "NODE_TYPES"
+    ]
+  },
+  {
+    "crate": "tree-sitter-c",
+    "version": "0.24.2",
+    "checksum_verified": true,
+    "source_directory": "/tmp/dkc-t2-10-grammar-audit/tree-sitter-c-0.24.2",
+    "tag_queries": [
+      "queries/tags.scm"
+    ],
+    "actual_public_exports": [
+      "LANGUAGE",
+      "NODE_TYPES",
+      "HIGHLIGHT_QUERY",
+      "TAGS_QUERY"
+    ]
+  },
+  {
+    "crate": "tree-sitter-cpp",
+    "version": "0.23.4",
+    "checksum_verified": true,
+    "source_directory": "/tmp/dkc-t2-10-grammar-audit/tree-sitter-cpp-0.23.4",
+    "tag_queries": [
+      "queries/tags.scm"
+    ],
+    "actual_public_exports": [
+      "LANGUAGE",
+      "NODE_TYPES",
+      "HIGHLIGHT_QUERY",
+      "TAGS_QUERY"
+    ]
+  },
+  {
+    "crate": "tree-sitter-c-sharp",
+    "version": "0.23.5",
+    "checksum_verified": true,
+    "source_directory": "/tmp/dkc-t2-10-grammar-audit/tree-sitter-c-sharp-0.23.5",
+    "tag_queries": [
+      "queries/tags.scm"
+    ],
+    "actual_public_exports": [
+      "LANGUAGE",
+      "NODE_TYPES",
+      "HIGHLIGHTS_QUERY",
+      "INJECTIONS_QUERY",
+      "LOCALS_QUERY",
+      "TAGS_QUERY"
+    ]
+  },
+  {
+    "crate": "tree-sitter-ruby",
+    "version": "0.23.1",
+    "checksum_verified": true,
+    "source_directory": "/tmp/dkc-t2-10-grammar-audit/tree-sitter-ruby-0.23.1",
+    "tag_queries": [
+      "queries/tags.scm"
+    ],
+    "actual_public_exports": [
+      "LANGUAGE",
+      "NODE_TYPES",
+      "HIGHLIGHTS_QUERY",
+      "LOCALS_QUERY",
+      "TAGS_QUERY"
+    ]
+  },
+  {
+    "crate": "tree-sitter-swift",
+    "version": "0.7.3",
+    "checksum_verified": true,
+    "source_directory": "/tmp/dkc-t2-10-grammar-audit/tree-sitter-swift-0.7.3",
+    "tag_queries": [
+      "queries/tags.scm"
+    ],
+    "actual_public_exports": [
+      "LANGUAGE",
+      "NODE_TYPES",
+      "HIGHLIGHTS_QUERY",
+      "INJECTIONS_QUERY",
+      "LOCALS_QUERY",
+      "TAGS_QUERY"
+    ]
+  },
+  {
+    "crate": "tree-sitter-scala",
+    "version": "0.26.2",
+    "checksum_verified": true,
+    "source_directory": "/tmp/dkc-t2-10-grammar-audit/tree-sitter-scala-0.26.2",
+    "tag_queries": [
+      "queries/tags.scm"
+    ],
+    "actual_public_exports": [
+      "LANGUAGE",
+      "NODE_TYPES",
+      "HIGHLIGHTS_QUERY",
+      "LOCALS_QUERY"
+    ]
+  },
+  {
+    "crate": "tree-sitter-bash",
+    "version": "0.25.1",
+    "checksum_verified": true,
+    "source_directory": "/tmp/dkc-t2-10-grammar-audit/tree-sitter-bash-0.25.1",
+    "tag_queries": [],
+    "actual_public_exports": [
+      "LANGUAGE",
+      "NODE_TYPES",
+      "HIGHLIGHT_QUERY"
+    ]
+  },
+  {
+    "crate": "tree-sitter-html",
+    "version": "0.23.2",
+    "checksum_verified": true,
+    "source_directory": "/tmp/dkc-t2-10-grammar-audit/tree-sitter-html-0.23.2",
+    "tag_queries": [],
+    "actual_public_exports": [
+      "LANGUAGE",
+      "NODE_TYPES",
+      "HIGHLIGHTS_QUERY",
+      "INJECTIONS_QUERY"
+    ]
+  },
+  {
+    "crate": "tree-sitter-css",
+    "version": "0.25.0",
+    "checksum_verified": true,
+    "source_directory": "/tmp/dkc-t2-10-grammar-audit/tree-sitter-css-0.25.0",
+    "tag_queries": [],
+    "actual_public_exports": [
+      "LANGUAGE",
+      "NODE_TYPES",
+      "HIGHLIGHTS_QUERY"
+    ]
+  },
+  {
+    "crate": "tree-sitter-sequel",
+    "version": "0.3.11",
+    "checksum_verified": true,
+    "source_directory": "/tmp/dkc-t2-10-grammar-audit/tree-sitter-sequel-0.3.11",
+    "tag_queries": [],
+    "actual_public_exports": [
+      "LANGUAGE",
+      "NODE_TYPES",
+      "HIGHLIGHTS_QUERY"
+    ]
+  },
+  {
+    "crate": "tree-sitter-dart",
+    "version": "0.2.0",
+    "checksum_verified": true,
+    "source_directory": "/tmp/dkc-t2-10-grammar-audit/tree-sitter-dart-0.2.0",
+    "tag_queries": [
+      "queries/tags.scm"
+    ],
+    "actual_public_exports": [
+      "LANGUAGE",
+      "NODE_TYPES",
+      "HIGHLIGHTS_QUERY",
+      "LOCALS_QUERY",
+      "TAGS_QUERY"
+    ]
+  },
+  {
+    "crate": "tree-sitter-elixir",
+    "version": "0.3.5",
+    "checksum_verified": true,
+    "source_directory": "/tmp/dkc-t2-10-grammar-audit/tree-sitter-elixir-0.3.5",
+    "tag_queries": [
+      "queries/tags.scm"
+    ],
+    "actual_public_exports": [
+      "LANGUAGE",
+      "NODE_TYPES",
+      "HIGHLIGHTS_QUERY",
+      "INJECTIONS_QUERY",
+      "TAGS_QUERY"
+    ]
+  },
+  {
+    "crate": "tree-sitter-lua",
+    "version": "0.5.0",
+    "checksum_verified": true,
+    "source_directory": "/tmp/dkc-t2-10-grammar-audit/tree-sitter-lua-0.5.0",
+    "tag_queries": [
+      "queries/tags.scm"
+    ],
+    "actual_public_exports": [
+      "LANGUAGE",
+      "NODE_TYPES",
+      "HIGHLIGHTS_QUERY",
+      "INJECTIONS_QUERY",
+      "LOCALS_QUERY",
+      "TAGS_QUERY"
+    ]
+  },
+  {
+    "crate": "tree-sitter-zig",
+    "version": "1.1.2",
+    "checksum_verified": true,
+    "source_directory": "/tmp/dkc-t2-10-grammar-audit/tree-sitter-zig-1.1.2",
+    "tag_queries": [],
+    "actual_public_exports": [
+      "LANGUAGE",
+      "NODE_TYPES",
+      "HIGHLIGHTS_QUERY",
+      "INJECTIONS_QUERY"
+    ]
+  },
+  {
+    "crate": "tree-sitter-haskell",
+    "version": "0.23.1",
+    "checksum_verified": true,
+    "source_directory": "/tmp/dkc-t2-10-grammar-audit/tree-sitter-haskell-0.23.1",
+    "tag_queries": [],
+    "actual_public_exports": [
+      "LANGUAGE",
+      "NODE_TYPES",
+      "HIGHLIGHTS_QUERY",
+      "INJECTIONS_QUERY",
+      "LOCALS_QUERY"
+    ]
+  },
+  {
+    "crate": "tree-sitter-ocaml",
+    "version": "0.25.0",
+    "checksum_verified": true,
+    "source_directory": "/tmp/dkc-t2-10-grammar-audit/tree-sitter-ocaml-0.25.0",
+    "tag_queries": [
+      "queries/tags.scm"
+    ],
+    "actual_public_exports": [
+      "LANGUAGE_OCAML",
+      "LANGUAGE_OCAML_INTERFACE",
+      "LANGUAGE_OCAML_TYPE",
+      "OCAML_NODE_TYPES",
+      "INTERFACE_NODE_TYPES",
+      "TYPE_NODE_TYPES",
+      "HIGHLIGHTS_QUERY",
+      "LOCALS_QUERY",
+      "TAGS_QUERY"
+    ]
+  },
+  {
+    "crate": "tree-sitter-proto",
+    "version": "0.6.0",
+    "checksum_verified": true,
+    "source_directory": "/tmp/dkc-t2-10-grammar-audit/tree-sitter-proto-0.6.0",
+    "tag_queries": [],
+    "actual_public_exports": [
+      "LANGUAGE",
+      "NODE_TYPES"
+    ]
+  },
+  {
+    "crate": "tree-sitter-json",
+    "version": "0.24.8",
+    "checksum_verified": true,
+    "source_directory": "/tmp/dkc-t2-10-grammar-audit/tree-sitter-json-0.24.8",
+    "tag_queries": [],
+    "actual_public_exports": [
+      "LANGUAGE",
+      "NODE_TYPES",
+      "HIGHLIGHTS_QUERY"
+    ]
+  },
+  {
+    "crate": "tree-sitter-yaml",
+    "version": "0.7.2",
+    "checksum_verified": true,
+    "source_directory": "/tmp/dkc-t2-10-grammar-audit/tree-sitter-yaml-0.7.2",
+    "tag_queries": [],
+    "actual_public_exports": [
+      "LANGUAGE",
+      "NODE_TYPES",
+      "HIGHLIGHTS_QUERY"
+    ]
+  },
+  {
+    "crate": "tree-sitter-toml-ng",
+    "version": "0.7.0",
+    "checksum_verified": true,
+    "source_directory": "/tmp/dkc-t2-10-grammar-audit/tree-sitter-toml-ng-0.7.0",
+    "tag_queries": [],
+    "actual_public_exports": [
+      "LANGUAGE",
+      "NODE_TYPES",
+      "HIGHLIGHTS_QUERY"
+    ]
+  },
+  {
+    "crate": "tree-sitter-md",
+    "version": "0.5.3",
+    "checksum_verified": true,
+    "source_directory": "/tmp/dkc-t2-10-grammar-audit/tree-sitter-md-0.5.3",
+    "tag_queries": [],
+    "actual_public_exports": [
+      "LANGUAGE",
+      "INLINE_LANGUAGE",
+      "HIGHLIGHT_QUERY_BLOCK",
+      "INJECTION_QUERY_BLOCK",
+      "HIGHLIGHT_QUERY_INLINE",
+      "INJECTION_QUERY_INLINE",
+      "NODE_TYPES_BLOCK",
+      "NODE_TYPES_INLINE"
+    ]
+  },
+  {
+    "crate": "tree-sitter-dockerfile-updated",
+    "version": "0.2.0",
+    "checksum_verified": true,
+    "source_directory": "/tmp/dkc-t2-10-grammar-audit/tree-sitter-dockerfile-updated-0.2.0",
+    "tag_queries": [],
+    "actual_public_exports": [
+      "language",
+      "NODE_TYPES"
+    ]
+  }
+]

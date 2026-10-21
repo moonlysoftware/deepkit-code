@@ -1,0 +1,35 @@
+{
+  "edges": [
+    {
+      "kind": "Ref",
+      "line": 1,
+      "name": "bool",
+      "owner": 0
+    },
+    {
+      "kind": "Ref",
+      "line": 1,
+      "name": "int",
+      "owner": 0
+    }
+  ],
+  "symbols": [
+    {
+      "end": 1,
+      "kind": "constant",
+      "name": "should_retry",
+      "qualified": "should_retry",
+      "start": 1
+    }
+  ],
+  "units": [
+    {
+      "end": 1,
+      "header": "should_retry › val should_retry : int -> bool",
+      "kind": "Symbol",
+      "scope": "should_retry",
+      "start": 1,
+      "text": "val should_retry : int -> bool"
+    }
+  ]
+}

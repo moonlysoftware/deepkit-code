@@ -1,0 +1,358 @@
+{
+  "schema_version": 1,
+  "purpose": "Final held-out diagnostic for the ten bounded search optimization iterations; not a release quality gate.",
+  "status": "frozen_agent_authored_unreviewed",
+  "author": "/root/golden_review_sheet",
+  "authored_at_utc": "2026-09-25T21:01:00.466239+00:00",
+  "question_count": 12,
+  "cross_file_question_count": 6,
+  "human_reviewed": false,
+  "roots": {
+    "laravel": {
+      "root": "/data/dkc-corpus/laravel-framework",
+      "head": "01d008c9b5f32cb7c5e50a9a22273113d810b2a2"
+    },
+    "django": {
+      "root": "/data/dkc-corpus/django",
+      "head": "2b30f6255b5ef84afbd827993643d52ef2c0963a"
+    },
+    "hugo": {
+      "root": "/data/dkc-corpus/hugo",
+      "head": "f425ff622dfc715315f6c210fb5aa4e0c500472c"
+    }
+  },
+  "query_and_expectation_payload_sha256": "3147cfe1ae2927791a0bac83f0143b02c6d5226b17fac00a06fdc44bf48b2ab0",
+  "payload_hash_format": "SHA256 of UTF-8 JSON array of {id,repo,query,expect_files}, preserving question/file order, ensure_ascii=false, sort_keys=true, separators=(comma,colon).",
+  "authoring_constraints": [
+    "Authored independently without reading search-tuning experiment outputs or running DKC searches.",
+    "Inspected pinned source behavior and existing public golden questions only; no evaluation scores or result ordering used for labels.",
+    "Questions cover behavior outside the existing 90 Laravel/Django/Hugo draft question subjects; no full query copied from those drafts or inspected source.",
+    "No function or class identifier is embedded as a search hint in query wording.",
+    "Exactly four questions per repository; exactly two cross-file questions per repository.",
+    "Expected paths exist at the specified pinned HEAD and inspected working file bytes equal git show at that HEAD.",
+    "Do not adjust these labels after viewing search results; preserve failures and author any correction as a separately versioned input.",
+    "Not human-reviewed, not representative quality proof, and not a substitute for public golden review or full Phase 4 acceptance."
+  ],
+  "scoring_notes": {
+    "hit_file_at_5": "At least one expected file in first five distinct result file paths.",
+    "expected_file_recall_at_10": "Fraction of distinct expected files present in first ten distinct result file paths; report separately so a cross-file hit is not misreported as complete coverage.",
+    "cross_file_complete_at_10": "For six cross-file questions, all expected files must appear in first ten distinct result file paths.",
+    "tool_runs": "No tool searches have been run by the author; root supplies frozen protocol and reports measurements only at final validation."
+  },
+  "questions": [
+    {
+      "id": "final-holdout-laravel-01",
+      "repo": "laravel",
+      "query": "Our API starts returning 429 after repeated calls. Where are the request counter and waiting period checked before letting another call through?",
+      "kind": "cross",
+      "scope": "code",
+      "expect_files": [
+        "src/Illuminate/Routing/Middleware/ThrottleRequests.php",
+        "src/Illuminate/Cache/RateLimiter.php"
+      ],
+      "source_evidence": [
+        {
+          "path": "src/Illuminate/Routing/Middleware/ThrottleRequests.php",
+          "line_start": 154,
+          "line_end": 183,
+          "sha256": "fca89bf4357713f91e9940e368f6d174aaae70a63a3b6f19ff5b877397ae1290",
+          "git_blob": "48759be62dfc7dc396f6dfbacc2a9b8a3fce2bbd"
+        },
+        {
+          "path": "src/Illuminate/Cache/RateLimiter.php",
+          "line_start": 128,
+          "line_end": 175,
+          "sha256": "254712e9339fa17a68d0ffd09af53ffef4bf1c27b02c7f339e32d1afdabddca9",
+          "git_blob": "b6d0f98d04f3f982779b186ce8530bff4c0b334f"
+        }
+      ],
+      "rationale": "Request middleware rejects a limit already reached and records admitted calls. The cache-backed limiter checks the counter and expiry timer before deciding whether the limit remains active.",
+      "query_sha256": "59e38c93401e3f3f76e51a477d19d2e4f607367ddb95ede7627aabd26596a35c"
+    },
+    {
+      "id": "final-holdout-laravel-02",
+      "repo": "laravel",
+      "query": "Why can an emailed password recovery link be rejected when it is old, and what prevents using the same link again after a successful change?",
+      "kind": "cross",
+      "scope": "code",
+      "expect_files": [
+        "src/Illuminate/Auth/Passwords/PasswordBroker.php",
+        "src/Illuminate/Auth/Passwords/DatabaseTokenRepository.php"
+      ],
+      "source_evidence": [
+        {
+          "path": "src/Illuminate/Auth/Passwords/PasswordBroker.php",
+          "line_start": 122,
+          "line_end": 167,
+          "sha256": "b491c7ab4e4bf5860d231f84792bf7472059f476a4ff2d40ef7fda68645c41d4",
+          "git_blob": "d955f3e42e1d88ac87f5777cd4c1321a37003c0a"
+        },
+        {
+          "path": "src/Illuminate/Auth/Passwords/DatabaseTokenRepository.php",
+          "line_start": 82,
+          "line_end": 102,
+          "sha256": "7807588b17de852f9e6c5c1731a0e45ab8fd96996c3c76074b9c05113d04782f",
+          "git_blob": "7290152e2d6490fdb78eff43e6cc4bf6f0ea8dfa"
+        }
+      ],
+      "rationale": "The broker validates the user and token, calls the application password update, and deletes the token. The database repository verifies the stored hash and expiration time.",
+      "query_sha256": "5bf8875b185e3cfe5034a98e280014fc04ab59ab1963fbb82b73f4cb942f1b23"
+    },
+    {
+      "id": "final-holdout-laravel-03",
+      "repo": "laravel",
+      "query": "Where is a deleted record brought back by clearing its deletion date, including the option for an event listener to cancel the operation?",
+      "kind": "vague",
+      "scope": "code",
+      "expect_files": [
+        "src/Illuminate/Database/Eloquent/SoftDeletes.php"
+      ],
+      "source_evidence": [
+        {
+          "path": "src/Illuminate/Database/Eloquent/SoftDeletes.php",
+          "line_start": 165,
+          "line_end": 189,
+          "sha256": "8b2e86482b44cad900e57bf26b0eb8153a3c32d42b3f7600c06976de305d113c",
+          "git_blob": "d5bc17083cde0f469586b10d0f630f606060c75d"
+        }
+      ],
+      "rationale": "Restoration first allows the restoring event to reject the action, then nulls the deletion timestamp, saves the existing record, and emits the restored event after success.",
+      "query_sha256": "5d726086986da866abfa5c63cf16061a0bcaa209c2e40aab0e6cae06b59424de"
+    },
+    {
+      "id": "final-holdout-laravel-04",
+      "repo": "laravel",
+      "query": "When the database reports a deadlock, where is the decision made to retry the whole transaction or give up after the allowed attempts?",
+      "kind": "vague",
+      "scope": "code",
+      "expect_files": [
+        "src/Illuminate/Database/Concerns/ManagesTransactions.php"
+      ],
+      "source_evidence": [
+        {
+          "path": "src/Illuminate/Database/Concerns/ManagesTransactions.php",
+          "line_start": 26,
+          "line_end": 112,
+          "sha256": "ef4d06e1b405485b1285b402760aa53ecb6f0a2f033025e39cc0cf58ea5c70ad",
+          "git_blob": "6bb423dd58121f6d0aeff1d0a025ee4afdeb0eb7"
+        }
+      ],
+      "rationale": "The transaction loop delegates errors to rollback/retry handling; the handler limits retries and treats nested concurrency failures specially.",
+      "query_sha256": "1c7de4ec5f6d200acff8b48a382be64715804f9d91b808c9f2257bcbb8b8704c"
+    },
+    {
+      "id": "final-holdout-django-01",
+      "repo": "django",
+      "query": "A user can still sign in with a password stored using our old hashing settings. Where does a successful check cause the saved hash to be upgraded?",
+      "kind": "cross",
+      "scope": "code",
+      "expect_files": [
+        "django/contrib/auth/hashers.py",
+        "django/contrib/auth/base_user.py"
+      ],
+      "source_evidence": [
+        {
+          "path": "django/contrib/auth/hashers.py",
+          "line_start": 39,
+          "line_end": 87,
+          "sha256": "383f05a125b68ac62ebdc46e01b9c28c460c6b22cae722fb8be90006f8848c7a",
+          "git_blob": "8cfda79da53611de57096aa26a8ce045961b9354"
+        },
+        {
+          "path": "django/contrib/auth/base_user.py",
+          "line_start": 97,
+          "line_end": 109,
+          "sha256": "8f0851c891464b42def6cdf433e09cc70dc52351279eee8303a1c6076a888da0",
+          "git_blob": "f19b2d89b963e1942bd12fd72038cdffea5628ab"
+        }
+      ],
+      "rationale": "Password verification reports whether the stored algorithm or work factor needs an update. A successful check invokes the user-provided setter, which stores a new hash and saves only the password field.",
+      "query_sha256": "847a73b5668c859525cb9477125ec447e1918c01cdb77544d3053b67bfe347c6"
+    },
+    {
+      "id": "final-holdout-django-02",
+      "repo": "django",
+      "query": "I want an email task to run only after database work succeeds, and never if it rolls back. Where are those deferred callbacks registered and later run or discarded?",
+      "kind": "cross",
+      "scope": "code",
+      "expect_files": [
+        "django/db/transaction.py",
+        "django/db/backends/base/base.py"
+      ],
+      "source_evidence": [
+        {
+          "path": "django/db/transaction.py",
+          "line_start": 142,
+          "line_end": 148,
+          "sha256": "d3e0d2dd56cd61587d3b84ae4fe8e1b2c74ca4c26c2f8c6f9632a4880bab4b92",
+          "git_blob": "06189f7117cee0d2c43b65b89f430ad9d19a3ff0"
+        },
+        {
+          "path": "django/db/backends/base/base.py",
+          "line_start": 323,
+          "line_end": 342,
+          "sha256": "e3e63238ea9d22c542fa452ef0d71192224755d0f53f89bfc95b4c5f052c6d4b",
+          "git_blob": "23015a57a3eb7ec1cf7e74975006e0d52de6773c"
+        },
+        {
+          "path": "django/db/backends/base/base.py",
+          "line_start": 727,
+          "line_end": 766,
+          "sha256": "e3e63238ea9d22c542fa452ef0d71192224755d0f53f89bfc95b4c5f052c6d4b",
+          "git_blob": "23015a57a3eb7ec1cf7e74975006e0d52de6773c"
+        }
+      ],
+      "rationale": "The transaction helper delegates registration to the connection. The connection queues callbacks inside atomic work, clears them on rollback, and runs queued commit hooks after a successful commit.",
+      "query_sha256": "606a92405769bd18aa5ebfe42f91a7a6752f84117ff687e18dd1a84141dbd06b"
+    },
+    {
+      "id": "final-holdout-django-03",
+      "repo": "django",
+      "query": "A form submitted over HTTPS is rejected even though its token looks valid. Where are the browser origin and referring address checked before the form can reach the view?",
+      "kind": "vague",
+      "scope": "code",
+      "expect_files": [
+        "django/middleware/csrf.py"
+      ],
+      "source_evidence": [
+        {
+          "path": "django/middleware/csrf.py",
+          "line_start": 414,
+          "line_end": 468,
+          "sha256": "5251f4b23dc85f291c8da9e3d11be03e925a631fae2ec53e97955ef4cf0e2ade",
+          "git_blob": "d70c3efe3fc3a1ac10eb4ab5bdad759f15cea797"
+        }
+      ],
+      "rationale": "Unsafe requests undergo origin verification, or strict HTTPS referer verification if Origin is absent, before the token check; rejected requests return before the view.",
+      "query_sha256": "9ddc95f3612d5c597e1b70a09c7297c358ac888aeb9368219b62704c4fb249da"
+    },
+    {
+      "id": "final-holdout-django-04",
+      "repo": "django",
+      "query": "Where does the upload pipeline decide whether to hold incoming file bytes in memory or let a temporary disk file handle a larger upload?",
+      "kind": "vague",
+      "scope": "code",
+      "expect_files": [
+        "django/core/files/uploadhandler.py"
+      ],
+      "source_evidence": [
+        {
+          "path": "django/core/files/uploadhandler.py",
+          "line_start": 161,
+          "line_end": 249,
+          "sha256": "c8d989eef378ad5f28b8b071ea935582e418d3de5908d190b30dcf28bed0d21a",
+          "git_blob": "e8347b4637abaed4e9891a6f84dd7b503f280a53"
+        }
+      ],
+      "rationale": "The memory handler compares incoming length with the memory size limit. It accepts and buffers small files, otherwise passes chunks onward; the temporary-file handler writes chunks to disk.",
+      "query_sha256": "693dbc2fd5ca5d66e5763e21af1deb554b7432a213bfe2e42bf5ba9a031223c7"
+    },
+    {
+      "id": "final-holdout-hugo-01",
+      "repo": "hugo",
+      "query": "A template needs a value from the process environment but access is denied. Where does the template call reach the policy that decides which variable names are allowed?",
+      "kind": "cross",
+      "scope": "code",
+      "expect_files": [
+        "tpl/os/os.go",
+        "config/security/securityConfig.go"
+      ],
+      "source_evidence": [
+        {
+          "path": "tpl/os/os.go",
+          "line_start": 62,
+          "line_end": 74,
+          "sha256": "d8a56abde0ef3bdafc57de0d06674ab6d8e771c5105580ed535fb5c3c43b4767",
+          "git_blob": "22eaee5936662490dbbad4e0056ff221708ed1bf"
+        },
+        {
+          "path": "config/security/securityConfig.go",
+          "line_start": 192,
+          "line_end": 201,
+          "sha256": "58517e2849a6fe217735cda771c438732d4ac8a440d635030129032737e1312b",
+          "git_blob": "a2708288a3213f58c02be97b7156d5beddd25014"
+        }
+      ],
+      "rationale": "The template environment lookup checks the configured security policy before reading the process environment. That policy accepts a whitelist match or returns an access-denied error.",
+      "query_sha256": "5bd65d6cc275dbfad48e40c184a331c320fc8af9a2e5d48fb3076bcf7ab55899"
+    },
+    {
+      "id": "final-holdout-hugo-02",
+      "repo": "hugo",
+      "query": "After renaming a page, how are its old addresses turned into small HTML pages that send visitors to the new address?",
+      "kind": "cross",
+      "scope": "code",
+      "expect_files": [
+        "hugolib/alias.go",
+        "tpl/tplimpl/embedded/templates/alias.html"
+      ],
+      "source_evidence": [
+        {
+          "path": "hugolib/alias.go",
+          "line_start": 50,
+          "line_end": 116,
+          "sha256": "496adf2198e9321bc2f1fc4029a26269b7b72e1f59aed1d0433f3d81216ea257",
+          "git_blob": "32058833e3a2e3e12fbc81fa3f1838194abc353a"
+        },
+        {
+          "path": "tpl/tplimpl/embedded/templates/alias.html",
+          "line_start": 1,
+          "line_end": 9,
+          "sha256": "7336595fd091f227ad8ccb9919150e60772a4233e954d6f90b2966c53af8a9a5",
+          "git_blob": "94dcf9dfe3f86df7438cec409658e8995cd054dd"
+        }
+      ],
+      "rationale": "The alias publisher determines an output path, renders the alias layout with the destination permalink, and publishes it. The built-in HTML layout contains the immediate browser redirect.",
+      "query_sha256": "e5a53558043111f9e00ffabf22d1d08f2214aafd6217ad6b21cf40d6396a343e"
+    },
+    {
+      "id": "final-holdout-hugo-03",
+      "repo": "hugo",
+      "query": "Where is a long collection of articles divided into numbered result pages, including the behavior when the collection is empty?",
+      "kind": "vague",
+      "scope": "code",
+      "expect_files": [
+        "resources/page/pagination.go"
+      ],
+      "source_evidence": [
+        {
+          "path": "resources/page/pagination.go",
+          "line_start": 211,
+          "line_end": 218,
+          "sha256": "c9ccbc2ddbd319281c93c2ead43538bd127e5699806c5bdcd39c947665ed393e",
+          "git_blob": "b0310f7cf5cdcef5d2e37de3459a41cb8afd4f24"
+        },
+        {
+          "path": "resources/page/pagination.go",
+          "line_start": 358,
+          "line_end": 399,
+          "sha256": "c9ccbc2ddbd319281c93c2ead43538bd127e5699806c5bdcd39c947665ed393e",
+          "git_blob": "b0310f7cf5cdcef5d2e37de3459a41cb8afd4f24"
+        }
+      ],
+      "rationale": "Pagination slices a collection into bounded groups and creates numbered pager objects. An empty result still gets one pager rather than an empty pager list.",
+      "query_sha256": "8ab2ac6361a278ca49946aa53d1b5f017e98e243428a8a0e508764605b2847b2"
+    },
+    {
+      "id": "final-holdout-hugo-04",
+      "repo": "hugo",
+      "query": "Which code keeps unpublished drafts, articles scheduled for a later date, and expired articles out of the generated site unless their inclusion is requested?",
+      "kind": "vague",
+      "scope": "code",
+      "expect_files": [
+        "hugolib/site.go"
+      ],
+      "source_evidence": [
+        {
+          "path": "hugolib/site.go",
+          "line_start": 1747,
+          "line_end": 1769,
+          "sha256": "e178ce201bf2f69f3ea74911a75996d3bb6b865a9d35ae9139c5a5ab380feb5b",
+          "git_blob": "42562cf3ee17711d8165c42f40287c9cc86a869b"
+        }
+      ],
+      "rationale": "The site build predicate checks draft status and publish/expiry dates against the current time, with independent flags allowing each otherwise excluded category.",
+      "query_sha256": "b73fc0f33883d77c3d8c36bf2bbc9a21ca8975d4b5d6609cb7bd59b88aa7097a"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "header": "cell 1 › Name normalization",
+    "kind": "chunk",
+    "line_end": 3,
+    "line_start": 1,
+    "scope_path": "cell 1 › Name normalization",
+    "text": "# Name normalization\n\nNormalize names before placing them in the catalogue."
+  },
+  {
+    "header": "cell 2 › def normalize_name(value):",
+    "kind": "chunk",
+    "line_end": 3,
+    "line_start": 1,
+    "scope_path": "cell 2 › normalize_name",
+    "text": "def normalize_name(value):\n    \"\"\"Normalize a name for stable lookup.\"\"\"\n    return value.strip().lower()"
+  },
+  {
+    "header": "cell 5 › Usage",
+    "kind": "chunk",
+    "line_end": 3,
+    "line_start": 1,
+    "scope_path": "cell 5 › Usage",
+    "text": "## Usage\n\nPass the normalized name to the search command."
+  }
+]

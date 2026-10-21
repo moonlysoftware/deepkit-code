@@ -1,0 +1,31 @@
+# next.js contains thousands of complete examples and nested test fixtures. Keep
+# them catalogued at L0 so product/packages sources do not compete with copies.
+[[treatments]]
+name = "examples-and-fixtures"
+match = ["examples/**", "test/**/fixtures/**", "**/__fixtures__/**"]
+chunker = "none"
+max_level = 0
+
+[[treatments]]
+name = "generated"
+match = ["**/vendor/**", "**/node_modules/**", "**/dist/**", "**/build/**", "**/*.min.js", "**/*_pb2.py", "**/*.pb.go", "**/zz_generated*"]
+chunker = "none"
+max_level = 0
+
+[[treatments]]
+name = "source"
+match = ["src/**", "lib/**", "app/**", "packages/*/src/**"]
+chunker = "ast"
+max_level = 3
+
+[[treatments]]
+name = "tests"
+match = ["tests/**", "test/**", "**/*_test.*", "**/*.spec.*", "**/*.test.*"]
+chunker = "ast"
+max_level = 1
+
+[[treatments]]
+name = "docs"
+match = ["docs/**", "**/*.md", "**/*.rst", "**/*.pdf"]
+max_level = 3
+enrich = ["vlm_page"]

@@ -1,0 +1,11 @@
+- id: ident
+  query: repeat_me
+  kind: ident
+  expect_files: [lib.rs]
+  expect_symbols: [repeat_me]
+  scope: code
+- id: docs
+  query: instructions
+  kind: doc
+  expect_files: [README.md]
+  scope: docs

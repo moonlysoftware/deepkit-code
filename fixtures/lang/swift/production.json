@@ -1,0 +1,22 @@
+{
+  "edges": [],
+  "symbols": [
+    {
+      "end": 2,
+      "kind": "function",
+      "name": "shouldRetry",
+      "qualified": "shouldRetry",
+      "start": 1
+    }
+  ],
+  "units": [
+    {
+      "end": 2,
+      "header": "shouldRetry › func shouldRetry(_ value: Int) -> Bool {",
+      "kind": "Symbol",
+      "scope": "shouldRetry",
+      "start": 1,
+      "text": "func shouldRetry(_ value: Int) -> Bool {\n    return value > 0 }"
+    }
+  ]
+}

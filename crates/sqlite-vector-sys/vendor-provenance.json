@@ -1,0 +1,301 @@
+{
+  "old_revision": "235a7c51b18858e1fea9fb2895e115e4cbbd9f7d",
+  "apache_revision": "cfe78ae17c108938b3c87713775b94f7ffe24b87",
+  "license_sha256": "421717de661f6707b9829bd7d459994af9fc5c7b400335da822a817ffd8a42a1",
+  "files": [
+    {
+      "path": "API.md",
+      "old_upstream_git_blob": "755036f54a68d904e1bb24b991d161bc5739593e",
+      "apache_upstream_git_blob": "755036f54a68d904e1bb24b991d161bc5739593e",
+      "upstream_bytes_identical": true,
+      "current_git_blob": "755036f54a68d904e1bb24b991d161bc5739593e",
+      "dkc_modified": false,
+      "current_sha256": "ada25996c985e976ba2627795c7dc6299827291c4996af93e79510672912c6f8",
+      "apache_upstream_sha256": "ada25996c985e976ba2627795c7dc6299827291c4996af93e79510672912c6f8",
+      "apache_url": "https://raw.githubusercontent.com/sqliteai/sqlite-vector/cfe78ae17c108938b3c87713775b94f7ffe24b87/API.md"
+    },
+    {
+      "path": "LICENSE.md",
+      "old_upstream_git_blob": "69b13f21d75cba62afd71d4ea2b067aecfc76024",
+      "apache_upstream_git_blob": "659bab5bf20066c3b95e36fcfb6bec4c5ca053f8",
+      "upstream_bytes_identical": false,
+      "current_git_blob": "69b13f21d75cba62afd71d4ea2b067aecfc76024",
+      "dkc_modified": false,
+      "current_sha256": "481ddcc70ab088dc87a04a52791ecec84aeda0d6d1e6e58b9730fac4c3b7c728",
+      "apache_upstream_sha256": "421717de661f6707b9829bd7d459994af9fc5c7b400335da822a817ffd8a42a1",
+      "apache_url": "https://raw.githubusercontent.com/sqliteai/sqlite-vector/cfe78ae17c108938b3c87713775b94f7ffe24b87/LICENSE.md"
+    },
+    {
+      "path": "libs/fp16/bitcasts.h",
+      "old_upstream_git_blob": "1de8d24297a0455f638f8ea552c236c4921d9f55",
+      "apache_upstream_git_blob": "1de8d24297a0455f638f8ea552c236c4921d9f55",
+      "upstream_bytes_identical": true,
+      "current_git_blob": "1de8d24297a0455f638f8ea552c236c4921d9f55",
+      "dkc_modified": false,
+      "current_sha256": "f5682e7826c47714fa47508bf4f098a45392dc985ec116b203b16a37f5243e94",
+      "apache_upstream_sha256": "f5682e7826c47714fa47508bf4f098a45392dc985ec116b203b16a37f5243e94",
+      "apache_url": "https://raw.githubusercontent.com/sqliteai/sqlite-vector/cfe78ae17c108938b3c87713775b94f7ffe24b87/libs/fp16/bitcasts.h"
+    },
+    {
+      "path": "libs/fp16/fp16.h",
+      "old_upstream_git_blob": "95fa0c2de8c0bbc76a0927304f20160737cb9f7b",
+      "apache_upstream_git_blob": "95fa0c2de8c0bbc76a0927304f20160737cb9f7b",
+      "upstream_bytes_identical": true,
+      "current_git_blob": "95fa0c2de8c0bbc76a0927304f20160737cb9f7b",
+      "dkc_modified": false,
+      "current_sha256": "c0e1100313e9e990360ef405b0d1353bf059d9e4c9e07344c015fc5800c4c897",
+      "apache_upstream_sha256": "c0e1100313e9e990360ef405b0d1353bf059d9e4c9e07344c015fc5800c4c897",
+      "apache_url": "https://raw.githubusercontent.com/sqliteai/sqlite-vector/cfe78ae17c108938b3c87713775b94f7ffe24b87/libs/fp16/fp16.h"
+    },
+    {
+      "path": "libs/fp16/macros.h",
+      "old_upstream_git_blob": "4018b0c9d0f87a29a7f2f4e7e40a29eb17103898",
+      "apache_upstream_git_blob": "4018b0c9d0f87a29a7f2f4e7e40a29eb17103898",
+      "upstream_bytes_identical": true,
+      "current_git_blob": "4018b0c9d0f87a29a7f2f4e7e40a29eb17103898",
+      "dkc_modified": false,
+      "current_sha256": "b3e945eec6485017e99cecec94c666ec00471405b1e0951aac0f7817011436e5",
+      "apache_upstream_sha256": "b3e945eec6485017e99cecec94c666ec00471405b1e0951aac0f7817011436e5",
+      "apache_url": "https://raw.githubusercontent.com/sqliteai/sqlite-vector/cfe78ae17c108938b3c87713775b94f7ffe24b87/libs/fp16/macros.h"
+    },
+    {
+      "path": "libs/sqlite3ext.h",
+      "old_upstream_git_blob": "cf775dfbde0fdf634df5e64f9bef34e050e67df1",
+      "apache_upstream_git_blob": "cf775dfbde0fdf634df5e64f9bef34e050e67df1",
+      "upstream_bytes_identical": true,
+      "current_git_blob": "cf775dfbde0fdf634df5e64f9bef34e050e67df1",
+      "dkc_modified": false,
+      "current_sha256": "9a91de0d5e5ccc04ec59041275c67972d6f8894f7543a10033e387b69987beb5",
+      "apache_upstream_sha256": "9a91de0d5e5ccc04ec59041275c67972d6f8894f7543a10033e387b69987beb5",
+      "apache_url": "https://raw.githubusercontent.com/sqliteai/sqlite-vector/cfe78ae17c108938b3c87713775b94f7ffe24b87/libs/sqlite3ext.h"
+    },
+    {
+      "path": "src/distance-avx2.c",
+      "old_upstream_git_blob": "1b980ac65364f54418f026461fa0d7a31b76969a",
+      "apache_upstream_git_blob": "1b980ac65364f54418f026461fa0d7a31b76969a",
+      "upstream_bytes_identical": true,
+      "current_git_blob": "37b4d693f4426e3631d6e69003466f8e695c5e4d",
+      "dkc_modified": true,
+      "current_sha256": "ab9e9bb5009eb5bd3db2b496f1a5145b6acd06e852abe54ac4c825a5b32533db",
+      "apache_upstream_sha256": "80a7d6f2c7015ee1cf29395768b48313794d2bbd7c909132eb0316cc6117ec42",
+      "apache_url": "https://raw.githubusercontent.com/sqliteai/sqlite-vector/cfe78ae17c108938b3c87713775b94f7ffe24b87/src/distance-avx2.c"
+    },
+    {
+      "path": "src/distance-avx2.h",
+      "old_upstream_git_blob": "f804a06df4a68c3cc11f943b2d5e08a3ba35d116",
+      "apache_upstream_git_blob": "f804a06df4a68c3cc11f943b2d5e08a3ba35d116",
+      "upstream_bytes_identical": true,
+      "current_git_blob": "f804a06df4a68c3cc11f943b2d5e08a3ba35d116",
+      "dkc_modified": false,
+      "current_sha256": "25d67917cf8b8fec3b171243be4db52662454a9dd57421442a2f1769c392c82a",
+      "apache_upstream_sha256": "25d67917cf8b8fec3b171243be4db52662454a9dd57421442a2f1769c392c82a",
+      "apache_url": "https://raw.githubusercontent.com/sqliteai/sqlite-vector/cfe78ae17c108938b3c87713775b94f7ffe24b87/src/distance-avx2.h"
+    },
+    {
+      "path": "src/distance-avx512.c",
+      "old_upstream_git_blob": "febf8362849025708ca996b6886ea9830ecbdf15",
+      "apache_upstream_git_blob": "febf8362849025708ca996b6886ea9830ecbdf15",
+      "upstream_bytes_identical": true,
+      "current_git_blob": "febf8362849025708ca996b6886ea9830ecbdf15",
+      "dkc_modified": false,
+      "current_sha256": "121ed8f9f8ff3e5a64b8fe84af5f16de5e6e0d6e97536fa306fc03ae5b4f88c1",
+      "apache_upstream_sha256": "121ed8f9f8ff3e5a64b8fe84af5f16de5e6e0d6e97536fa306fc03ae5b4f88c1",
+      "apache_url": "https://raw.githubusercontent.com/sqliteai/sqlite-vector/cfe78ae17c108938b3c87713775b94f7ffe24b87/src/distance-avx512.c"
+    },
+    {
+      "path": "src/distance-avx512.h",
+      "old_upstream_git_blob": "351ce22b33c95b8ef116eaf087c0499ea7e2acf7",
+      "apache_upstream_git_blob": "351ce22b33c95b8ef116eaf087c0499ea7e2acf7",
+      "upstream_bytes_identical": true,
+      "current_git_blob": "351ce22b33c95b8ef116eaf087c0499ea7e2acf7",
+      "dkc_modified": false,
+      "current_sha256": "32dad6fb92b0740f69efe67123f46e5ba0d3af5bb2361122d04b1d35b0f63445",
+      "apache_upstream_sha256": "32dad6fb92b0740f69efe67123f46e5ba0d3af5bb2361122d04b1d35b0f63445",
+      "apache_url": "https://raw.githubusercontent.com/sqliteai/sqlite-vector/cfe78ae17c108938b3c87713775b94f7ffe24b87/src/distance-avx512.h"
+    },
+    {
+      "path": "src/distance-cpu.c",
+      "old_upstream_git_blob": "a7ce8376a89c1d0990259cfa717e0938927ed366",
+      "apache_upstream_git_blob": "a7ce8376a89c1d0990259cfa717e0938927ed366",
+      "upstream_bytes_identical": true,
+      "current_git_blob": "64ddf7ac20ed1cd6be355eda1bc37c32a9f5cfd8",
+      "dkc_modified": true,
+      "current_sha256": "6fc8210aa4745807badb87a47806ff7ca386e7831074f334d6f77a91e5e35675",
+      "apache_upstream_sha256": "dea3595567c051027306d64d2fdf8c1e83614daa9d3f0e38384de808ff734824",
+      "apache_url": "https://raw.githubusercontent.com/sqliteai/sqlite-vector/cfe78ae17c108938b3c87713775b94f7ffe24b87/src/distance-cpu.c"
+    },
+    {
+      "path": "src/distance-cpu.h",
+      "old_upstream_git_blob": "f6cbe8156f835232ef7f03435cf42b278985b9ed",
+      "apache_upstream_git_blob": "f6cbe8156f835232ef7f03435cf42b278985b9ed",
+      "upstream_bytes_identical": true,
+      "current_git_blob": "f6cbe8156f835232ef7f03435cf42b278985b9ed",
+      "dkc_modified": false,
+      "current_sha256": "d7c8f09f7aa5ce2a55176c22accd85fd8726a62c1bfe187c51ca6b04ba6919fe",
+      "apache_upstream_sha256": "d7c8f09f7aa5ce2a55176c22accd85fd8726a62c1bfe187c51ca6b04ba6919fe",
+      "apache_url": "https://raw.githubusercontent.com/sqliteai/sqlite-vector/cfe78ae17c108938b3c87713775b94f7ffe24b87/src/distance-cpu.h"
+    },
+    {
+      "path": "src/distance-neon.c",
+      "old_upstream_git_blob": "4b4b4979713ed3317024e2b6763a864e2544ec87",
+      "apache_upstream_git_blob": "4b4b4979713ed3317024e2b6763a864e2544ec87",
+      "upstream_bytes_identical": true,
+      "current_git_blob": "4b4b4979713ed3317024e2b6763a864e2544ec87",
+      "dkc_modified": false,
+      "current_sha256": "b97edfa7bc47f5d42951593d5a986e4ba803ee50e539d7125f2b27bf9b6264b4",
+      "apache_upstream_sha256": "b97edfa7bc47f5d42951593d5a986e4ba803ee50e539d7125f2b27bf9b6264b4",
+      "apache_url": "https://raw.githubusercontent.com/sqliteai/sqlite-vector/cfe78ae17c108938b3c87713775b94f7ffe24b87/src/distance-neon.c"
+    },
+    {
+      "path": "src/distance-neon.h",
+      "old_upstream_git_blob": "001883270ac53de12dcd45b26c181c9f8b1fa02d",
+      "apache_upstream_git_blob": "001883270ac53de12dcd45b26c181c9f8b1fa02d",
+      "upstream_bytes_identical": true,
+      "current_git_blob": "001883270ac53de12dcd45b26c181c9f8b1fa02d",
+      "dkc_modified": false,
+      "current_sha256": "38a8b401801a63725213eb67dc424c2c31492788726eed2a56eed464e8383292",
+      "apache_upstream_sha256": "38a8b401801a63725213eb67dc424c2c31492788726eed2a56eed464e8383292",
+      "apache_url": "https://raw.githubusercontent.com/sqliteai/sqlite-vector/cfe78ae17c108938b3c87713775b94f7ffe24b87/src/distance-neon.h"
+    },
+    {
+      "path": "src/distance-rvv.c",
+      "old_upstream_git_blob": "4ae96b729a47b42385dec7a498f51ca901755d52",
+      "apache_upstream_git_blob": "4ae96b729a47b42385dec7a498f51ca901755d52",
+      "upstream_bytes_identical": true,
+      "current_git_blob": "4ae96b729a47b42385dec7a498f51ca901755d52",
+      "dkc_modified": false,
+      "current_sha256": "2cd9bcf37f90dd6757bc0c8778d17bc0fe4caa867e0304efd579d3a61b300add",
+      "apache_upstream_sha256": "2cd9bcf37f90dd6757bc0c8778d17bc0fe4caa867e0304efd579d3a61b300add",
+      "apache_url": "https://raw.githubusercontent.com/sqliteai/sqlite-vector/cfe78ae17c108938b3c87713775b94f7ffe24b87/src/distance-rvv.c"
+    },
+    {
+      "path": "src/distance-rvv.h",
+      "old_upstream_git_blob": "ba4e8484b7ae1fa9e098adc53ccd0788e42b4127",
+      "apache_upstream_git_blob": "ba4e8484b7ae1fa9e098adc53ccd0788e42b4127",
+      "upstream_bytes_identical": true,
+      "current_git_blob": "ba4e8484b7ae1fa9e098adc53ccd0788e42b4127",
+      "dkc_modified": false,
+      "current_sha256": "113b69c45c054e5c49c38f86698e26774392af9c22a2dab43da2c7055f0ed631",
+      "apache_upstream_sha256": "113b69c45c054e5c49c38f86698e26774392af9c22a2dab43da2c7055f0ed631",
+      "apache_url": "https://raw.githubusercontent.com/sqliteai/sqlite-vector/cfe78ae17c108938b3c87713775b94f7ffe24b87/src/distance-rvv.h"
+    },
+    {
+      "path": "src/distance-sse2.c",
+      "old_upstream_git_blob": "06db31664f54069f853502347e23a09eb3bdbc89",
+      "apache_upstream_git_blob": "06db31664f54069f853502347e23a09eb3bdbc89",
+      "upstream_bytes_identical": true,
+      "current_git_blob": "06db31664f54069f853502347e23a09eb3bdbc89",
+      "dkc_modified": false,
+      "current_sha256": "021455ab75bc6e7403e324e43a30f8f4417999500b9456e8a10bededb2d6f829",
+      "apache_upstream_sha256": "021455ab75bc6e7403e324e43a30f8f4417999500b9456e8a10bededb2d6f829",
+      "apache_url": "https://raw.githubusercontent.com/sqliteai/sqlite-vector/cfe78ae17c108938b3c87713775b94f7ffe24b87/src/distance-sse2.c"
+    },
+    {
+      "path": "src/distance-sse2.h",
+      "old_upstream_git_blob": "fab3115a38e36080d042cbd5af5abbc44f000f2b",
+      "apache_upstream_git_blob": "fab3115a38e36080d042cbd5af5abbc44f000f2b",
+      "upstream_bytes_identical": true,
+      "current_git_blob": "fab3115a38e36080d042cbd5af5abbc44f000f2b",
+      "dkc_modified": false,
+      "current_sha256": "cf7ad30f40d1a7ec69996a6fe609c30a22051b1b601ac907d550bd6065136f8c",
+      "apache_upstream_sha256": "cf7ad30f40d1a7ec69996a6fe609c30a22051b1b601ac907d550bd6065136f8c",
+      "apache_url": "https://raw.githubusercontent.com/sqliteai/sqlite-vector/cfe78ae17c108938b3c87713775b94f7ffe24b87/src/distance-sse2.h"
+    },
+    {
+      "path": "src/sqlite-vector.c",
+      "old_upstream_git_blob": "9048b99434c3bb32a28f4d1dfc4ccffb099e6ae5",
+      "apache_upstream_git_blob": "9048b99434c3bb32a28f4d1dfc4ccffb099e6ae5",
+      "upstream_bytes_identical": true,
+      "current_git_blob": "ee080c51039fcc23c7db0a097e1affce6019fc53",
+      "dkc_modified": true,
+      "current_sha256": "e4a1febabf1e741bf9fe4e108db1c5305d3227c125c45c6deb3d0e2dd3a437b8",
+      "apache_upstream_sha256": "0522e335c27bbed4e30793f13e1cca5f0273be0f058d5704cd4497e0de4dee35",
+      "apache_url": "https://raw.githubusercontent.com/sqliteai/sqlite-vector/cfe78ae17c108938b3c87713775b94f7ffe24b87/src/sqlite-vector.c"
+    },
+    {
+      "path": "src/sqlite-vector.h",
+      "old_upstream_git_blob": "68556e8218f8c76d78fbdfbdb4e1795a4490af98",
+      "apache_upstream_git_blob": "68556e8218f8c76d78fbdfbdb4e1795a4490af98",
+      "upstream_bytes_identical": true,
+      "current_git_blob": "68556e8218f8c76d78fbdfbdb4e1795a4490af98",
+      "dkc_modified": false,
+      "current_sha256": "bbb3568a1b47a67532a1019055119abe9effe65238b1d2885351d71be02ad55b",
+      "apache_upstream_sha256": "bbb3568a1b47a67532a1019055119abe9effe65238b1d2885351d71be02ad55b",
+      "apache_url": "https://raw.githubusercontent.com/sqliteai/sqlite-vector/cfe78ae17c108938b3c87713775b94f7ffe24b87/src/sqlite-vector.h"
+    }
+  ],
+  "all_non_license_upstream_bytes_identical": true,
+  "modified_source_paths": [
+    "src/distance-avx2.c",
+    "src/distance-cpu.c",
+    "src/sqlite-vector.c"
+  ],
+  "upstream_diff_files": [
+    {
+      "sha": "462ef4c23ec87dd7034716e4418553414e966245",
+      "filename": "CHANGELOG.md",
+      "status": "modified",
+      "additions": 27,
+      "deletions": 0,
+      "changes": 27,
+      "blob_url": "https://github.com/sqliteai/sqlite-vector/blob/cfe78ae17c108938b3c87713775b94f7ffe24b87/CHANGELOG.md",
+      "raw_url": "https://github.com/sqliteai/sqlite-vector/raw/cfe78ae17c108938b3c87713775b94f7ffe24b87/CHANGELOG.md",
+      "contents_url": "https://api.github.com/repos/sqliteai/sqlite-vector/contents/CHANGELOG.md?ref=cfe78ae17c108938b3c87713775b94f7ffe24b87",
+      "patch": "@@ -6,6 +6,33 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).\n \n ## [Unreleased]\n \n+Documentation and tooling only \u2014 the extension itself is unchanged from 1.1.0, so a build\n+from this revision produces the same binaries.\n+\n+### Changed\n+\n+- **`make benchmark` now uses a file-backed database, never `:memory:`.** An in-memory\n+  database keeps the whole index in the process however the scan is configured, which made\n+  the memory figures meaningless: the point of a streamed scan is that the index is *not*\n+  resident. Reported figures move accordingly \u2014 the exact `FLOAT32` scan goes from 148 to\n+  484 ms/query because it now pays to read 3 GB, and a streamed `INT8` scan from 56 to\n+  114 ms. A preloaded scan is essentially unchanged at 37.6 ms, because after the one-time\n+  load it reads the extension's own buffer and never returns to SQLite.\n+- **The README benchmark table now compares hardware rather than modes**, two rows per\n+  machine, with the peak memory measured rather than the configured limit read back.\n+  `make benchmark HARDWARE=\"<your CPU>\"` prints those rows ready to paste; it appends the\n+  backend the build actually selected rather than trusting a hand-written label, and\n+  refuses to print rows at all when the run's parameters differ from the ones the table is\n+  built on.\n+\n+### Fixed\n+\n+- **Corrected a claim in the README**: TurboQuant was described as slower than the exact\n+  scan, which was an artifact of measuring in memory. File-backed, `TURBO4` is **3.2x\n+  faster** than the exact scan \u2014 it does beat brute force. What holds is the comparison\n+  that mattered: `INT8` is 4x faster again at twice the index size, so TurboQuant's\n+  argument is memory rather than throughput.\n+\n ## [1.1.0] - 2026-08-24\n \n A source audit closed thirteen defects, including two crashes and four memory-safety"
+    },
+    {
+      "sha": "659bab5bf20066c3b95e36fcfb6bec4c5ca053f8",
+      "filename": "LICENSE.md",
+      "status": "modified",
+      "additions": 201,
+      "deletions": 41,
+      "changes": 242,
+      "blob_url": "https://github.com/sqliteai/sqlite-vector/blob/cfe78ae17c108938b3c87713775b94f7ffe24b87/LICENSE.md",
+      "raw_url": "https://github.com/sqliteai/sqlite-vector/raw/cfe78ae17c108938b3c87713775b94f7ffe24b87/LICENSE.md",
+      "contents_url": "https://api.github.com/repos/sqliteai/sqlite-vector/contents/LICENSE.md?ref=cfe78ae17c108938b3c87713775b94f7ffe24b87",
+      "patch": "@@ -1,41 +1,201 @@\n-Elastic License 2.0 (modified for open-source use)\n-\n-Copyright \u00a9 2025 SQLite Cloud, Inc.\n-\n-This software is licensed under the Elastic License 2.0, with the additional grant described below.\n-\n-You may not use this file except in compliance with the Elastic License 2.0 and the conditions outlined here.\n-\n-You may obtain a copy of the Elastic License 2.0 at:\n-\n-```\n-https://www.elastic.co/licensing/elastic-license\n-```\n-\n-Software distributed under the Elastic License is distributed on an \"AS IS\" BASIS,\n-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n-\n-See the Elastic License 2.0 for the specific language governing permissions and limitations under the license.\n-\n----\n-\n-## Additional Grant for Open-Source Projects\n-\n-In addition to the permissions granted under the Elastic License 2.0:\n-\n-* **Free Use in Open-Source Projects**:\n-  You may use, copy, distribute, and prepare derivative works of the software \u2014 in source or object form, with or without modification \u2014 freely and without fee, provided the software is incorporated into or used by an **open-source project** licensed under an OSI-approved open-source license.\n-\n----\n-\n-## Conditions\n-\n-1. For **open-source projects**, the software may be used, copied, modified, and distributed without restriction or fee.\n-\n-2. For **non\u2013open-source or commercial production use**, you may use, copy, distribute, and prepare derivative works of the software only with a commercial license from SQLite Cloud, Inc.\n-\n-3. You may not provide the software to third parties as a managed service, such as a hosted or cloud-based service, unless you have a license for that use.\n-\n-4. The software may not be used to circumvent the license grant limitations.\n-\n-5. Any permitted use is subject to compliance with the Elastic License 2.0, this additional grant, and applicable law.\n+                                 Apache License\n+                           Version 2.0, January 2004\n+                        http://www.apache.org/licenses/\n+\n+   TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION\n+\n+   1. Definitions.\n+\n+      \"License\" shall mean the terms and conditions for use, reproduction,\n+      and distribution as defined by Sections 1 through 9 of this document.\n+\n+      \"Licensor\" shall mean the copyright owner or entity authorized by\n+      the copyright owner that is granting the License.\n+\n+      \"Legal Entity\" shall mean the union of the acting entity and all\n+      other entities that control, are controlled by, or are under common\n+      control with that entity. For the purposes of this definition,\n+      \"control\" means (i) the power, direct or indirect, to cause the\n+      direction or management of such entity, whether by contract or\n+      otherwise, or (ii) ownership of fifty percent (50%) or more of the\n+      outstanding shares, or (iii) beneficial ownership of such entity.\n+\n+      \"You\" (or \"Your\") shall mean an individual or Legal Entity\n+      exercising permissions granted by this License.\n+\n+      \"Source\" form shall mean the preferred form for making modifications,\n+      including but not limited to software source code, documentation\n+      source, and configuration files.\n+\n+      \"Object\" form shall mean any form resulting from mechanical\n+      transformation or translation of a Source form, including but\n+      not limited to compiled object code, generated documentation,\n+      and conversions to other media types.\n+\n+      \"Work\" shall mean the work of authorship, whether in Source or\n+      Object form, made available under the License, as indicated by a\n+      copyright notice that is included in or attached to the work\n+      (an example is provided in the Appendix below).\n+\n+      \"Derivative Works\" shall mean any work, whether in Source or Object\n+      form, that is based on (or derived from) the Work and for which the\n+      editorial revisions, annotations, elaborations, or other modifications\n+      represent, as a whole, an original work of authorship. For the purposes\n+      of this License, Derivative Works shall not include works that remain\n+      separable from, or merely link (or bind by name) to the interfaces of,\n+      the Work and Derivative Works thereof.\n+\n+      \"Contribution\" shall mean any work of authorship, including\n+      the original version of the Work and any modifications or additions\n+      to that Work or Derivative Works thereof, that is intentionally\n+      submitted to Licensor for inclusion in the Work by the copyright owner\n+      or by an individual or Legal Entity authorized to submit on behalf of\n+      the copyright owner. For the purposes of this definition, \"submitted\"\n+      means any form of electronic, verbal, or written communication sent\n+      to the Licensor or its representatives, including but not limited to\n+      communication on electronic mailing lists, source code control systems,\n+      and issue tracking systems that are managed by, or on behalf of, the\n+      Licensor for the purpose of discussing and improving the Work, but\n+      excluding communication that is conspicuously marked or otherwise\n+      designated in writing by the copyright owner as \"Not a Contribution.\"\n+\n+      \"Contributor\" shall mean Licensor and any individual or Legal Entity\n+      on behalf of whom a Contribution has been received by Licensor and\n+      subsequently incorporated within the Work.\n+\n+   2. Grant of Copyright License. Subject to the terms and conditions of\n+      this License, each Contributor hereby grants to You a perpetual,\n+      worldwide, non-exclusive, no-charge, royalty-free, irrevocable\n+      copyright license to reproduce, prepare Derivative Works of,\n+      publicly display, publicly perform, sublicense, and distribute the\n+      Work and such Derivative Works in Source or Object form.\n+\n+   3. Grant of Patent License. Subject to the terms and conditions of\n+      this License, each Contributor hereby grants to You a perpetual,\n+      worldwide, non-exclusive, no-charge, royalty-free, irrevocable\n+      (except as stated in this section) patent license to make, have made,\n+      use, offer to sell, sell, import, and otherwise transfer the Work,\n+      where such license applies only to those patent claims licensable\n+      by such Contributor that are necessarily infringed by their\n+      Contribution(s) alone or by combination of their Contribution(s)\n+      with the Work to which such Contribution(s) was submitted. If You\n+      institute patent litigation against any entity (including a\n+      cross-claim or counterclaim in a lawsuit) alleging that the Work\n+      or a Contribution incorporated within the Work constitutes direct\n+      or contributory patent infringement, then any patent licenses\n+      granted to You under this License for that Work shall terminate\n+      as of the date such litigation is filed.\n+\n+   4. Redistribution. You may reproduce and distribute copies of the\n+      Work or Derivative Works thereof in any medium, with or without\n+      modifications, and in Source or Object form, provided that You\n+      meet the following conditions:\n+\n+      (a) You must give any other recipients of the Work or\n+          Derivative Works a copy of this License; and\n+\n+      (b) You must cause any modified files to carry prominent notices\n+          stating that You changed the files; and\n+\n+      (c) You must retain, in the Source form of any Derivative Works\n+          that You distribute, all copyright, patent, trademark, and\n+          attribution notices from the Source form of the Work,\n+          excluding those notices that do not pertain to any part of\n+          the Derivative Works; and\n+\n+      (d) If the Work includes a \"NOTICE\" text file as part of its\n+          distribution, then any Derivative Works that You distribute must\n+          include a readable copy of the attribution notices contained\n+          within such NOTICE file, excluding those notices that do not\n+          pertain to any part of the Derivative Works, in at least one\n+          of the following places: within a NOTICE text file distributed\n+          as part of the Derivative Works; within the Source form or\n+          documentation, if provided along with the Derivative Works; or,\n+          within a display generated by the Derivative Works, if and\n+          wherever such third-party notices normally appear. The contents\n+          of the NOTICE file are for informational purposes only and\n+          do not modify the License. You may add Your own attribution\n+          notices within Derivative Works that You distribute, alongside\n+          or as an addendum to the NOTICE text from the Work, provided\n+          that such additional attribution notices cannot be construed\n+          as modifying the License.\n+\n+      You may add Your own copyright statement to Your modifications and\n+      may provide additional or different license terms and conditions\n+      for use, reproduction, or distribution of Your modifications, or\n+      for any such Derivative Works as a whole, provided Your use,\n+      reproduction, and distribution of the Work otherwise complies with\n+      the conditions stated in this License.\n+\n+   5. Submission of Contributions. Unless You explicitly state otherwise,\n+      any Contribution intentionally submitted for inclusion in the Work\n+      by You to the Licensor shall be under the terms and conditions of\n+      this License, without any additional terms or conditions.\n+      Notwithstanding the above, nothing herein shall supersede or modify\n+      the terms of any separate license agreement you may have executed\n+      with Licensor regarding such Contributions.\n+\n+   6. Trademarks. This License does not grant permission to use the trade\n+      names, trademarks, service marks, or product names of the Licensor,\n+      except as required for reasonable and customary use in describing the\n+      origin of the Work and reproducing the content of the NOTICE file.\n+\n+   7. Disclaimer of Warranty. Unless required by applicable law or\n+      agreed to in writing, Licensor provides the Work (and each\n+      Contributor provides its Contributions) on an \"AS IS\" BASIS,\n+      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or\n+      implied, including, without limitation, any warranties or conditions\n+      of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A\n+      PARTICULAR PURPOSE. You are solely responsible for determining the\n+      appropriateness of using or redistributing the Work and assume any\n+      risks associated with Your exercise of permissions under this License.\n+\n+   8. Limitation of Liability. In no event and under no legal theory,\n+      whether in tort (including negligence), contract, or otherwise,\n+      unless required by applicable law (such as deliberate and grossly\n+      negligent acts) or agreed to in writing, shall any Contributor be\n+      liable to You for damages, including any direct, indirect, special,\n+      incidental, or consequential damages of any character arising as a\n+      result of this License or out of the use or inability to use the\n+      Work (including but not limited to damages for loss of goodwill,\n+      work stoppage, computer failure or malfunction, or any and all\n+      other commercial damages or losses), even if such Contributor\n+      has been advised of the possibility of such damages.\n+\n+   9. Accepting Warranty or Additional Liability. While redistributing\n+      the Work or Derivative Works thereof, You may choose to offer,\n+      and charge a fee for, acceptance of support, warranty, indemnity,\n+      or other liability obligations and/or rights consistent with this\n+      License. However, in accepting such obligations, You may act only\n+      on Your own behalf and on Your sole responsibility, not on behalf\n+      of any other Contributor, and only if You agree to indemnify,\n+      defend, and hold each Contributor harmless for any liability\n+      incurred by, or claims asserted against, such Contributor by reason\n+      of your accepting any such warranty or additional liability.\n+\n+   END OF TERMS AND CONDITIONS\n+\n+   APPENDIX: How to apply the Apache License to your work.\n+\n+      To apply the Apache License to your work, attach the following\n+      boilerplate notice, with the fields enclosed by brackets \"[]\"\n+      replaced with your own identifying information. (Don't include\n+      the brackets!)  The text should be enclosed in the appropriate\n+      comment syntax for the file format. We also recommend that a\n+      file or class name and description of purpose be included on the\n+      same \"printed page\" as the copyright notice for easier\n+      identification within third-party archives.\n+\n+   Copyright 2026 - SQLite Cloud, Inc.\n+\n+   Licensed under the Apache License, Version 2.0 (the \"License\");\n+   you may not use this file except in compliance with the License.\n+   You may obtain a copy of the License at\n+\n+       http://www.apache.org/licenses/LICENSE-2.0\n+\n+   Unless required by applicable law or agreed to in writing, software\n+   distributed under the License is distributed on an \"AS IS\" BASIS,\n+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n+   See the License for the specific language governing permissions and\n+   limitations under the License."
+    },
+    {
+      "sha": "6738d678d5b617b7960795b2d59d0d7b921b282e",
+      "filename": "Makefile",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 1,
+      "changes": 5,
+      "blob_url": "https://github.com/sqliteai/sqlite-vector/blob/cfe78ae17c108938b3c87713775b94f7ffe24b87/Makefile",
+      "raw_url": "https://github.com/sqliteai/sqlite-vector/raw/cfe78ae17c108938b3c87713775b94f7ffe24b87/Makefile",
+      "contents_url": "https://api.github.com/repos/sqliteai/sqlite-vector/contents/Makefile?ref=cfe78ae17c108938b3c87713775b94f7ffe24b87",
+      "patch": "@@ -188,11 +188,14 @@ unittest-simd: $(BUILD_DIR)/backend $(BUILD_DIR)/test_vector_simd\n #   make benchmark                                    k=20 over 1M vectors of dim 768\n #   make benchmark NVECS=100000 DIM=384 K=10          smaller, for a quick look\n #   make benchmark DISTANCE=l2                        a different metric\n+#   make benchmark HARDWARE=\"Apple M5 Pro\"            name the machine; the backend is appended\n NVECS ?= 1000000\n DIM ?= 768\n K ?= 20\n NQUERIES ?= 20\n DISTANCE ?= cosine\n+# names the row this run contributes to the README hardware table\n+HARDWARE ?=\n \n BENCH_OBJ = $(patsubst %.c, $(BUILD_DIR)/bm-%.o, $(notdir $(SRC_FILES))) $(BUILD_DIR)/bm-sqlite3.o\n \n@@ -203,7 +206,7 @@ $(BUILD_DIR)/bm-%.o: %.c\n \t$(CC) $(CFLAGS) $(ISA_CFLAGS) -DSQLITE_CORE -O3 -c $< -o $@\n \n $(BUILD_DIR)/benchmark: test/benchmark.c $(BENCH_OBJ)\n-\t$(CC) $(CFLAGS) -DSQLITE_CORE -O3 -DNVECS=$(NVECS) -DDIM=$(DIM) -DK=$(K) -DNQUERIES=$(NQUERIES) -DDISTANCE='\"$(DISTANCE)\"' $< $(BENCH_OBJ) -o $@ -lm -lpthread\n+\t$(CC) $(CFLAGS) -DSQLITE_CORE -O3 -DNVECS=$(NVECS) -DDIM=$(DIM) -DK=$(K) -DNQUERIES=$(NQUERIES) -DDISTANCE='\"$(DISTANCE)\"' -DHARDWARE='\"$(HARDWARE)\"' $< $(BENCH_OBJ) -o $@ -lm -lpthread\n \n benchmark: $(BUILD_DIR)/benchmark\n \t./$(BUILD_DIR)/benchmark"
+    },
+    {
+      "sha": "6b6d6c6930a75d7b4078c9d5396ed15f39743244",
+      "filename": "README.md",
+      "status": "modified",
+      "additions": 97,
+      "deletions": 58,
+      "changes": 155,
+      "blob_url": "https://github.com/sqliteai/sqlite-vector/blob/cfe78ae17c108938b3c87713775b94f7ffe24b87/README.md",
+      "raw_url": "https://github.com/sqliteai/sqlite-vector/raw/cfe78ae17c108938b3c87713775b94f7ffe24b87/README.md",
+      "contents_url": "https://api.github.com/repos/sqliteai/sqlite-vector/contents/README.md?ref=cfe78ae17c108938b3c87713775b94f7ffe24b87",
+      "patch": "@@ -147,67 +147,108 @@ SELECT e.id, v.distance FROM images AS e\n \n ## Benchmark\n \n-Every number below comes from one command, so you can reproduce it and compare machines:\n+To add your machine to the table, one command \u2014 pass the CPU name and nothing else:\n \n ```bash\n-make benchmark\n+make benchmark HARDWARE=\"Apple M5 Pro\"\n ```\n \n-That builds `test/benchmark.c` at `-O3` with the same per-translation-unit SIMD flags the\n-shipped extension uses, then searches **k=20 over 1,000,000 vectors of dimension 768**\n-with cosine distance, 20 queries, reporting the best. Recall is the overlap with the exact\n-full-precision top-20. Override any of it:\n+It builds `test/benchmark.c` at `-O3` with the same per-translation-unit SIMD flags the\n+shipped extension uses, runs **k=20 over 1,000,000 vectors of dimension 768** with cosine\n+distance and 20 queries reporting the best, and prints two rows ready to paste, unedited,\n+into the table below.\n+\n+Two things it does so a pasted row cannot be wrong. The backend is **appended by the\n+binary** from what the build actually selected, not typed by hand, so a row cannot claim\n+`AVX512` on a build that fell back to `SSE2`. And a run whose parameters differ from the\n+ones the table is built on **prints an explanation instead of rows**, because a row\n+measured on a different workload would sit in that table looking comparable without being\n+comparable.\n+\n+That second guard exists because the parameters *are* adjustable, just not for this table:\n \n ```bash\n make benchmark NVECS=100000 DIM=384 K=10 DISTANCE=l2\n ```\n \n-### Apple M5 Pro (6P+12E, 64 GB, macOS 26.6.2) \u2014 NEON backend\n+That run prints the mode table for whatever you asked for, and no paste-ready rows.\n+\n+Common to every row: the database is **a file, never `:memory:`** \u2014 an in-memory database\n+puts the whole index in the process no matter how it is configured, which makes any memory\n+figure meaningless. Vectors are uniform random with a fixed seed, so two machines measure\n+the same data. The `INT8` index is **740 MB** on disk against 2930 MB of raw `FLOAT32`.\n+Recall is the overlap with the exact `FLOAT32` scan, the baseline everything is compared\n+against, 100% by definition; on the reference machine that scan takes **484 ms/query**,\n+because it reads 3 GB per query.\n+\n+The two rows per machine are the two ways the same index gets deployed. *Preloaded* holds\n+it in the process after `vector_quantize_preload()`. *Streamed* walks it through a bounded\n+buffer set by `max_memory=30MB`, the default, and what a device with less RAM than the\n+index actually does. **Max memory** is measured, not the parameter echoed back: it is the\n+peak the extension and SQLite had allocated during the scan.\n+\n+### Hardware\n+\n+| Hardware | Vectors | Index | Max memory | ms/query | Mvec/s | Recall@20 |\n+| --- | ---: | --- | ---: | ---: | ---: | ---: |\n+| Apple M5 Pro - NEON | 1,000,000 | `INT8` preloaded | 740 MB | 37.6 | 26.6 | 99.5% |\n+| Apple M5 Pro - NEON | 1,000,000 | `INT8` streamed | 30 MB | 114.4 | 8.7 | 99.5% |\n+\n+*Results from other CPUs welcome \u2014 run the command above and open a PR adding the two rows\n+it prints.*\n+\n+The trade is **25x less memory for 3x the latency**, with recall untouched: both rows read\n+the same index, only how much of it is resident differs.\n \n-| Mode | Index | ms/query | Mvec/s | Recall@20 |\n+Two things the timings do not show. They are best-of-20, so the file is in the operating\n+system's page cache by then \u2014 that cache lives outside the process and is evicted under\n+pressure, so it is not in the memory column, but it is why the streamed row is not paying\n+for storage reads. On a device where the index genuinely does not fit in RAM, add\n+`index size / storage bandwidth` to the streamed number. And the preloaded row is almost\n+unaffected by where the database lives, because after the one-time preload the scan reads\n+the extension's own buffer and never goes back to SQLite.\n+\n+Recall is repeated on every row on purpose: it depends on the data, not the hardware, so a\n+row that disagrees with the others is a sign that machine selected a different SIMD\n+backend than it should have.\n+\n+### Choosing a mode\n+\n+`INT8` is in the table above because it is the mode to reach for first. The others, same\n+machine, same data, all preloaded:\n+\n+| Mode | Index | ms/query | vs exact | Recall@20 |\n | --- | ---: | ---: | ---: | ---: |\n-| `FLOAT32` exact | 2930 MB | 147.8 | 6.8 | 100.0% |\n-| `UINT8` | 740 MB | 55.4 | 18.0 | 33.8% |\n-| `UINT8` preloaded | 740 MB | 37.2 | 26.9 | 33.8% |\n-| `INT8` | 740 MB | 56.4 | 17.7 | 99.5% |\n-| **`INT8` preloaded** | **740 MB** | **37.7** | **26.5** | **99.5%** |\n-| `1BIT` | 99 MB | 5.3 | 187.5 | 10.0% |\n-| `1BIT` preloaded | 99 MB | 2.7 | 377.6 | 10.0% |\n-| `TURBO2` | 195 MB | 53.0 | 18.9 | 45.2% |\n-| `TURBO2` preloaded | 195 MB | 48.2 | 20.7 | 45.2% |\n-| `TURBO4` | 378 MB | 160.4 | 6.2 | 81.8% |\n-| `TURBO4` preloaded | 378 MB | 151.8 | 6.6 | 81.8% |\n-\n-*Contributions from other CPUs welcome \u2014 run the command above and open a PR adding a\n-section.*\n-\n-### Reading the table\n-\n-**The data is uniform random**, which is the worst case for every quantizer: real\n-embeddings have structure that quantization exploits, so recall on your own vectors will\n-be higher, often much higher. Treat the recall column as a floor and a way to rank the\n-modes against each other, not as a prediction for your dataset.\n-\n-Three things are worth knowing before you pick a mode.\n-\n-**For cosine, use `INT8`, not `UINT8`.** They cost exactly the same and store exactly the\n-same number of bytes, but `UINT8` recall collapses to 33.8% while `INT8` holds 99.5%.\n+| `FLOAT32` exact | 2930 MB | 484.4 | 1.0x | 100.0% |\n+| `UINT8` | 740 MB | 37.3 | 13.0x | 33.8% |\n+| `INT8` | 740 MB | 37.6 | 12.9x | 99.5% |\n+| `1BIT` | 99 MB | 2.5 | 195x | 10.0% |\n+| `TURBO2` | 195 MB | 48.0 | 10.1x | 45.2% |\n+| `TURBO4` | 378 MB | 151.5 | 3.2x | 81.8% |\n+\n+**The data is uniform random**, the worst case for every quantizer: real embeddings have\n+structure quantization exploits, so recall on your own vectors will be higher, often much\n+higher. Read that column as a floor and a way to rank the modes, not as a prediction.\n+\n+Three things are worth knowing before choosing.\n+\n+**For cosine, use `INT8`, not `UINT8`.** Same size, same speed, 33.8% recall against 99.5%.\n Unsigned quantization subtracts the dataset minimum before scaling, and cosine measures\n-angle, which that shift destroys. `UINT8` is the right choice for L2, where a common\n-translation cancels out. If you do not set `qtype`, the extension picks `UINT8` for\n-non-negative data and `INT8` otherwise \u2014 which is the correct call for L2 and the wrong\n-one for cosine, so set it explicitly when you use cosine.\n-\n-**`1BIT` is a filter, not an answer.** 377 Mvec/s and 30x less memory, at 10% recall on\n-this data. It earns its place as a first pass whose survivors you re-rank at full\n-precision, not as the final ranking.\n-\n-**TurboQuant trades speed for size, not for speed.** `TURBO4` here is *slower* than the\n-exact scan (160 ms against 148 ms) while using 8x less memory and returning 81.8% recall.\n-The lookup-table scan is one table gather per row, and at dimension 768 that is 384\n-gathers into a 393 KB table for every vector \u2014 already about one lookup per cycle, so\n-there is no headroom left in the current storage layout. Choose TurboQuant when the\n-memory budget is what binds; choose `INT8` when throughput is.\n+angle, which that shift destroys. `UINT8` is right for L2, where a common translation\n+cancels. If you omit `qtype` the extension picks `UINT8` for non-negative data \u2014 correct\n+for L2, wrong for cosine \u2014 so set it explicitly when you use cosine.\n+\n+**`1BIT` is a filter, not an answer.** 195x faster than exact and 30x smaller, at 10%\n+recall here. It earns its place as a first pass whose survivors you re-rank at full\n+precision.\n+\n+**TurboQuant buys memory against `INT8`, not speed.** `TURBO4` is 3.2x faster than the\n+exact scan, so it is a real win over brute force \u2014 but `INT8` is 4x faster again at twice\n+the size, and `TURBO2` is both smaller and faster than `TURBO4` if 45% recall is enough.\n+TurboQuant's lookup scan is one table gather per row: at dimension 768 that is 384 gathers\n+into a 384 KB table per vector, already about one lookup per cycle, so its current storage\n+layout has no headroom left ([#57](https://github.com/sqliteai/sqlite-vector/issues/57)).\n+Reach for it when the memory budget is what binds.\n \n ## TurboQuant Benchmark and Recall\n \n@@ -221,15 +262,13 @@ SELECT vector_quantize('images', 'embedding', 'qtype=TURBO,qbits=4');\n SELECT vector_quantize('images', 'embedding', 'qtype=TURBO2');\n ```\n \n-An earlier synthetic benchmark reported speedups of 15x for 4-bit and 38x for 2-bit\n-against `vector_full_scan()`. Those numbers were measured with a **file-backed** database,\n-where the full scan reads 3 GB of raw vectors off disk and the comparison is dominated by\n-I/O rather than by arithmetic \u2014 and before the distance kernels were rewritten, which made\n-the full-precision scan itself substantially faster. Against an in-memory baseline on\n-current code the picture is different: see [Benchmark](#benchmark) below, where `TURBO4`\n-is marginally slower than the exact scan and its argument is memory, not speed. Both\n-measurements are real; they answer different questions. If your working set does not fit\n-in RAM, the file-backed comparison is the one that describes your deployment.\n+An earlier synthetic benchmark on this dataset reported speedups of 15x for 4-bit and 38x\n+for 2-bit against `vector_full_scan()`, with DOT distance and k=10. The [Benchmark](#benchmark)\n+section above measures the same shape with cosine and k=20 and lands lower \u2014 3.2x for\n+4-bit, 10.2x for 2-bit \u2014 mostly because the distance kernels have since been rewritten,\n+which made the full-precision baseline it is compared against substantially faster. The\n+direction is the same: TurboQuant beats brute force, and `INT8` beats TurboQuant on speed\n+while costing twice the memory.\n \n For comparison, the raw `FLOAT32` vectors alone are about **3.07 GB** for 1M x 768 before SQLite row/page overhead. TurboQuant 4-bit reduces the scan representation to about **13%** of that raw vector payload, TurboQuant 3-bit to about **10%**, and TurboQuant 2-bit to about **7%**. Actual resident memory depends on whether the database is in-memory or file-backed, SQLite cache settings, preloading, page cache behavior, and the host allocator.\n "
+    },
+    {
+      "sha": "9126c96e195cc870a0ea96f9fc60b8fce5eec0be",
+      "filename": "test/benchmark.c",
+      "status": "modified",
+      "additions": 117,
+      "deletions": 10,
+      "changes": 127,
+      "blob_url": "https://github.com/sqliteai/sqlite-vector/blob/cfe78ae17c108938b3c87713775b94f7ffe24b87/test%2Fbenchmark.c",
+      "raw_url": "https://github.com/sqliteai/sqlite-vector/raw/cfe78ae17c108938b3c87713775b94f7ffe24b87/test%2Fbenchmark.c",
+      "contents_url": "https://api.github.com/repos/sqliteai/sqlite-vector/contents/test%2Fbenchmark.c?ref=cfe78ae17c108938b3c87713775b94f7ffe24b87",
+      "patch": "@@ -9,8 +9,15 @@\n //  Defaults to k=20 over 1,000,000 vectors of dimension 768. Override at build time:\n //      make benchmark NVECS=100000 DIM=384 K=10 NQUERIES=20\n //\n-//  The database is in memory, so \"on disk\" below means the index is read back through\n-//  SQLite rather than from the extension's preloaded buffer - not filesystem I/O.\n+//  The database is a file, never :memory:. An in-memory database puts the whole index in\n+//  the process regardless of configuration, which makes the memory column meaningless -\n+//  the point of the streamed row is that the index is not resident.\n+//\n+//  Timings are best-of-N, so they are the warm case: after the first query the file is in\n+//  the operating system's page cache. That cache is outside the process and is evicted\n+//  under pressure, so it does not appear in the memory column - but it is why a streamed\n+//  scan is not paying for storage reads here. A cold read of the whole index would add\n+//  index_size / storage_bandwidth to every number below.\n //\n \n #include <math.h>\n@@ -39,6 +46,18 @@ extern int sqlite3_vector_init (sqlite3 *db, char **pzErrMsg, const sqlite3_api_\n #ifndef DISTANCE\n #define DISTANCE    \"cosine\"\n #endif\n+#ifndef HARDWARE\n+#define HARDWARE    \"\"\n+#endif\n+\n+// The hardware table only means anything if every row measured the same thing, and the\n+// overrides above make it easy to paste a row from a different workload. These are the\n+// values the table is built on; a run that differs prints an explanation instead of rows.\n+#define TABLE_NVECS     1000000\n+#define TABLE_DIM       768\n+#define TABLE_K         20\n+#define TABLE_NQUERIES  20\n+#define TABLE_DISTANCE  \"cosine\"\n \n // xorshift64*: the data must be identical from run to run and from machine to machine,\n // and rand() is neither fast enough nor portable enough for that\n@@ -116,6 +135,19 @@ static sqlite3_int64 index_bytes (sqlite3 *db) {\n     return bytes;\n }\n \n+// 1000000 is hard to read in a table cell\n+static const char *with_separators (long long n, char *buf, size_t cap) {\n+    char digits[32];\n+    snprintf(digits, sizeof(digits), \"%lld\", n);\n+    size_t len = strlen(digits), out = 0;\n+    for (size_t i = 0; i < len && out + 2 < cap; ++i) {\n+        if (i > 0 && ((len - i) % 3) == 0) buf[out++] = ',';\n+        buf[out++] = digits[i];\n+    }\n+    buf[out] = 0;\n+    return buf;\n+}\n+\n static void report (const char *label, sqlite3_int64 bytes, double seconds, double recall) {\n     printf(\"| %-24s | %8.1f | %9.2f | %9.1f | %6.1f |\\n\",\n            label,\n@@ -126,16 +158,33 @@ static void report (const char *label, sqlite3_int64 bytes, double seconds, doub\n }\n \n int main (void) {\n+    const char *dbpath = \"build/benchmark.db\";\n+    remove(dbpath);\n+    remove(\"build/benchmark.db-journal\");\n+\n     sqlite3 *db = NULL;\n-    if (sqlite3_open(\":memory:\", &db) != SQLITE_OK) die(db, \"open\", NULL);\n+    if (sqlite3_open(dbpath, &db) != SQLITE_OK) die(db, \"open\", NULL);\n     if (sqlite3_vector_init(db, NULL, NULL) != SQLITE_OK) die(db, \"vector_init\", NULL);\n \n+    // this database is a throwaway fixture, so skip the durability machinery while\n+    // building it - it does not affect the read-only measurements below\n+    run_sql(db, \"PRAGMA journal_mode=OFF;\");\n+    run_sql(db, \"PRAGMA synchronous=OFF;\");\n+\n     sqlite3_stmt *stmt = NULL;\n     sqlite3_prepare_v2(db, \"SELECT vector_backend();\", -1, &stmt, NULL);\n     sqlite3_step(stmt);\n-    printf(\"sqlite-vector benchmark - backend %s, SQLite %s\\n\", sqlite3_column_text(stmt, 0), sqlite3_libversion());\n+    char backend[32];\n+    snprintf(backend, sizeof(backend), \"%s\", (const char *)sqlite3_column_text(stmt, 0));\n+    printf(\"sqlite-vector benchmark - backend %s, SQLite %s\\n\", backend, sqlite3_libversion());\n     sqlite3_finalize(stmt);\n     printf(\"%d vectors, dimension %d, %s distance, k=%d, %d queries, best of run\\n\", NVECS, DIM, DISTANCE, K, NQUERIES);\n+    printf(\"file-backed database at %s, SQLite page cache left at its default\\n\", dbpath);\n+    if (HARDWARE[0] == 0) {\n+        printf(\"\\nNOTE: HARDWARE is not set, so this run will not print rows for the README\\n\");\n+        printf(\"      table. Stop now and re-run as: make benchmark HARDWARE=\\\"Apple M5 Pro\\\"\\n\");\n+        printf(\"      Give the CPU only - the backend (%s here) is appended automatically.\\n\", backend);\n+    }\n     printf(\"data is uniform random, which is the worst case for quantization recall:\\n\");\n     printf(\"real embeddings have structure that the quantizers exploit\\n\\n\");\n \n@@ -172,14 +221,20 @@ int main (void) {\n     double exact_time = measure(db, \"vector_full_scan\", NULL, NULL);\n     report(\"FLOAT32 exact\", 0, exact_time, 100.0);\n \n+    // max_memory bounds the chunk the scan streams through when the index is not\n+    // preloaded, and is the whole point of that configuration: the index here is 740 MB,\n+    // the scan walks it 30 MB at a time\n     struct { const char *opts; const char *label; } modes[] = {\n-        { \"qtype=UINT8\",           \"UINT8\" },\n-        { \"qtype=INT8\",            \"INT8\" },\n-        { \"qtype=1BIT\",            \"1BIT\" },\n-        { \"qtype=TURBO,qbits=2\",   \"TURBO2\" },\n-        { \"qtype=TURBO,qbits=4\",   \"TURBO4\" },\n+        { \"qtype=UINT8,max_memory=30MB\",         \"UINT8\" },\n+        { \"qtype=INT8,max_memory=30MB\",          \"INT8\" },\n+        { \"qtype=1BIT,max_memory=30MB\",          \"1BIT\" },\n+        { \"qtype=TURBO,qbits=2,max_memory=30MB\", \"TURBO2\" },\n+        { \"qtype=TURBO,qbits=4,max_memory=30MB\", \"TURBO4\" },\n     };\n \n+    double int8_stream_ms = 0, int8_pre_ms = 0, int8_recall = 0;\n+    sqlite3_int64 int8_bytes = 0, int8_stream_mem = 0, int8_pre_mem = 0;\n+\n     for (unsigned m = 0; m < sizeof(modes) / sizeof(modes[0]); ++m) {\n         char sql[160], label[64];\n         fprintf(stderr, \"quantizing %s...\\n\", modes[m].label);\n@@ -188,18 +243,70 @@ int main (void) {\n         sqlite3_int64 bytes = index_bytes(db);\n \n         double recall = 0.0;\n+        sqlite3_int64 before = sqlite3_memory_used();\n+        sqlite3_memory_highwater(1);\n         double t = measure(db, \"vector_quantize_scan\", exact, &recall);\n-        snprintf(label, sizeof(label), \"%s\", modes[m].label);\n+        sqlite3_int64 stream_peak = sqlite3_memory_highwater(0) - before;\n+        snprintf(label, sizeof(label), \"%s (30 MB)\", modes[m].label);\n         report(label, bytes, t, recall);\n+        if (strcmp(modes[m].label, \"INT8\") == 0) { int8_stream_ms = t; int8_stream_mem = stream_peak; }\n \n+        before = sqlite3_memory_used();\n         run_sql(db, \"SELECT vector_quantize_preload('t','v');\");\n+        sqlite3_int64 preload_held = sqlite3_memory_used() - before;\n         t = measure(db, \"vector_quantize_scan\", exact, &recall);\n         snprintf(label, sizeof(label), \"%s preloaded\", modes[m].label);\n         report(label, bytes, t, recall);\n \n+        if (strcmp(modes[m].label, \"INT8\") == 0) {\n+            int8_bytes = bytes;\n+            int8_recall = recall;\n+            int8_pre_ms = t;\n+            int8_pre_mem = preload_held;\n+        }\n+\n         run_sql(db, \"SELECT vector_quantize_cleanup('t','v');\");\n     }\n \n+    // The README table compares hardware, so it carries the two configurations that\n+    // differ by deployment rather than by accuracy: the whole index in RAM, and the same\n+    // index streamed in 30 MB. Everything else about INT8 is a property of the data.\n+    printf(\"\\n\");\n+    int canonical = (NVECS == TABLE_NVECS) && (DIM == TABLE_DIM) && (K == TABLE_K) &&\n+                    (NQUERIES == TABLE_NQUERIES) && (strcmp(DISTANCE, TABLE_DISTANCE) == 0);\n+    if (!canonical) {\n+        printf(\"These parameters are not the ones the README hardware table is built on, so\\n\");\n+        printf(\"no rows are printed - a row measured on a different workload would sit in that\\n\");\n+        printf(\"table looking comparable without being comparable.\\n\\n\");\n+        printf(\"  this run   NVECS=%d DIM=%d K=%d NQUERIES=%d DISTANCE=%s\\n\", NVECS, DIM, K, NQUERIES, DISTANCE);\n+        printf(\"  the table  NVECS=%d DIM=%d K=%d NQUERIES=%d DISTANCE=%s\\n\\n\",\n+               TABLE_NVECS, TABLE_DIM, TABLE_K, TABLE_NQUERIES, TABLE_DISTANCE);\n+        printf(\"For the table, run: make benchmark HARDWARE=\\\"<your CPU>\\\"\\n\");\n+        sqlite3_close(db);\n+        remove(dbpath);\n+        return 0;\n+    }\n+    if (HARDWARE[0] == 0) {\n+        printf(\"No rows printed: HARDWARE was not set. Re-run as\\n\\n\");\n+        printf(\"  make benchmark HARDWARE=\\\"Apple M5 Pro\\\"\\n\");\n+        sqlite3_close(db);\n+        remove(dbpath);\n+        return 0;\n+    }\n+\n+    char nbuf[32];\n+    with_separators(NVECS, nbuf, sizeof(nbuf));\n+    printf(\"Paste these two rows into the hardware table in README.md:\\n\\n\");\n+    printf(\"| %s - %s | %s | `INT8` preloaded | %.0f MB | %.1f | %.1f | %.1f%% |\\n\",\n+           HARDWARE, backend, nbuf, (double)int8_pre_mem / (1024.0 * 1024.0),\n+           int8_pre_ms * 1000.0, NVECS / int8_pre_ms / 1e6, int8_recall);\n+    printf(\"| %s - %s | %s | `INT8` streamed | %.0f MB | %.1f | %.1f | %.1f%% |\\n\",\n+           HARDWARE, backend, nbuf, (double)int8_stream_mem / (1024.0 * 1024.0),\n+           int8_stream_ms * 1000.0, NVECS / int8_stream_ms / 1e6, int8_recall);\n+    printf(\"\\nreference for this machine: FLOAT32 exact %.1f ms/query, index on disk %.0f MB\\n\",\n+           exact_time * 1000.0, (double)int8_bytes / (1024.0 * 1024.0));\n+\n     sqlite3_close(db);\n+    remove(dbpath);\n     return 0;\n }"
+    }
+  ],
+  "dkc_modification_notices": {
+    "distance-avx2.c": "d50aa95f2fafc8fa40a3a29e6a1a0ba278aefdc7684e21eee041e8da565c18ed",
+    "distance-cpu.c": "0a3b6ef0677c67de828f605c9b072d642dd85dc0ca09a35d660c19ec25ca8962",
+    "sqlite-vector.c": "edb1ed3e34ef6b5fac89f47ea4b0e3972a2590e9e9ab6a7f6fa717d1559dbbf5"
+  },
+  "notice_note": "Local modification notices added after the original upstream-byte inventory; upstream old/new hashes are unchanged."
+}

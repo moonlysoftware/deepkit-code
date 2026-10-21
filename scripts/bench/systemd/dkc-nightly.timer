@@ -1,0 +1,9 @@
+[Unit]
+Description=Run Deepkit Code regression at 02:00 local
+
+[Timer]
+OnCalendar=*-*-* 02:00:00
+Persistent=true
+
+[Install]
+WantedBy=timers.target

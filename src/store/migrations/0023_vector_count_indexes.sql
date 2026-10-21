@@ -1,0 +1,1 @@
+-- Dynamic vector-table count indexes are created by vectors::migrate_count_indexes.

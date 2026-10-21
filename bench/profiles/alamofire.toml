@@ -1,0 +1,26 @@
+# Alamofire commits a generated Jazzy site under docs/, including a duplicate
+# docset. Catalogue it at L0 so HTML tags do not compete with maintained Swift
+# symbols; the authored Markdown under Documentation/ remains searchable.
+[[treatments]]
+name = "generated-api-site"
+match = ["docs/**"]
+chunker = "none"
+max_level = 0
+
+[[treatments]]
+name = "source"
+match = ["Source/**", "Package*.swift"]
+chunker = "ast"
+max_level = 3
+
+[[treatments]]
+name = "tests"
+match = ["Tests/**"]
+chunker = "ast"
+max_level = 1
+
+[[treatments]]
+name = "authored-docs"
+match = ["Documentation/**", "**/*.md"]
+chunker = "markdown"
+max_level = 3

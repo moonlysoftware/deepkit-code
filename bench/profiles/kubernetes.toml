@@ -1,0 +1,24 @@
+# Kubernetes vendors dependency trees and checks in generated Go/protobuf
+# output. Catalogue those at L0 so measurements represent maintained source.
+[[treatments]]
+name = "generated"
+match = ["vendor/**", "**/vendor/**", "_output/**", "**/zz_generated*", "**/*.pb.go", "**/*_pb2.py", "**/generated.pb.go"]
+chunker = "none"
+max_level = 0
+
+[[treatments]]
+name = "source"
+match = ["cmd/**", "pkg/**", "staging/src/**", "plugin/**"]
+chunker = "ast"
+max_level = 3
+
+[[treatments]]
+name = "tests"
+match = ["test/**", "tests/**", "**/*_test.go"]
+chunker = "ast"
+max_level = 1
+
+[[treatments]]
+name = "docs"
+match = ["docs/**", "**/*.md", "**/*.rst"]
+max_level = 3

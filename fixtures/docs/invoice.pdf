@@ -1,0 +1,41 @@
+%PDF-1.7
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Count 1 /Kids [5 0 R] >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+5 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 6 0 R >>
+endobj
+6 0 obj
+<< /Length 314 >>
+stream
+BT /F2 18 Tf 50 740 Td (Invoice 1042) Tj ET
+BT /F1 11 Tf 50 700 Td (Customer: Example Workshop) Tj ET
+BT /F1 11 Tf 50 680 Td (Service: Repository document indexing) Tj ET
+BT /F1 11 Tf 50 660 Td (Quantity: 2   Unit price: 25.00   Total: 50.00) Tj ET
+BT /F1 11 Tf 50 620 Td (Payment is due within thirty days.) Tj ET
+endstream
+endobj
+xref
+0 7
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000121 00000 n 
+0000000191 00000 n 
+0000000266 00000 n 
+0000000402 00000 n 
+trailer
+<< /Size 7 /Root 1 0 R >>
+startxref
+767
+%%EOF

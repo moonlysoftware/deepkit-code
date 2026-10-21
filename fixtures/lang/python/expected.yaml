@@ -1,0 +1,5 @@
+- kind: symbol
+  scope_path: hello
+  header: hello › def hello():
+  line_start: 1
+  line_end: 2

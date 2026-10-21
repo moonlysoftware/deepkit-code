@@ -1,0 +1,230 @@
+{
+  "status": "approved_cleanup_verified_watcher_ci_latency_miss_unresolved",
+  "audit_anchor": "a7e45b06ce1c40c7648c44359bb248c83f7b232b",
+  "source_checks": {
+    "cpu_before_vendor_provenance_completion": {
+      "passed": 1399,
+      "ignored": 17,
+      "full_groups": 42
+    },
+    "cuda": {
+      "passed": 1399,
+      "ignored": 19,
+      "full_groups": 42
+    },
+    "cpu": {
+      "passed": 1399,
+      "ignored": 17,
+      "full_groups": 42,
+      "log_sha256": "fb8a07f4ef4f443f9f90d7873c6299e396f898258bc5a868f1e52944686d774e",
+      "exit_code": 0
+    }
+  },
+  "combined_gate": {
+    "exit_code": 0,
+    "log_sha256": "14ff3b2060665b4e6e223ae8f9cfc7aac34baf524a84a4ea902e221d2803d3c1",
+    "fmt": "passed",
+    "cpu_clippy": "passed",
+    "cuda_clippy": "passed",
+    "cargo_deny": "passed"
+  },
+  "final_cpu_and_optimized_build": "passed",
+  "python": {
+    "benchmark_tests": 100,
+    "release_tests": 37,
+    "passed": true
+  },
+  "clean_tree_without_old_notes": {
+    "benchmark_tests": 100,
+    "release_tests": 36,
+    "passed": true,
+    "note": "One later publication-graph regression passed separately in the 37-test release suite."
+  },
+  "licenses": {
+    "packages": 580,
+    "notice_files": 1099,
+    "bundle_bytes": 327151,
+    "bundle_sha256": "55164db5f1e49edb6478a16d976d6e3b08567f53ae8bfd699f81d53ff25b5221"
+  },
+  "cleanup": {
+    "removed_tracked_note_files": 5708,
+    "retained_note_maps": 3,
+    "history_rewritten": false,
+    "protected_internal_files": "33 internal documents archived; prepared AGENTS.md contributor guide installed with owner approval",
+    "protected_cleanup_approved_on": "2026-10-14",
+    "protected_cleanup_patch_sha256": "115224bc124e0a6ef84d456f1dc6c2c0b01a9e003b63cfaa433284561dda2046",
+    "history_retention_review_approved": true,
+    "merge_transfer_publication_authorized": false,
+    "verification_receipt": "cleanup-verification.json",
+    "verification_sha256": "8dce70b445db60d53f038a72e8567b9490e483283418fbe5e7d978b1aad924c3"
+  },
+  "not_claimed": [
+    "ignored tests passed",
+    "native Mac validation on Linux",
+    "Windows runtime support",
+    "full v1 acceptance",
+    "published release or tap"
+  ],
+  "build": {
+    "binary_blake3": "ee2e824448dce10750fa8d16fd870b43af3243b11217af43151925237a3d4650",
+    "binary_bytes": 124370656,
+    "commit": "a7e45b06ce1c40c7648c44359bb248c83f7b232b",
+    "features": "DEFAULT",
+    "flags_blake3": "d06d6d1e621e3198c6fc28e2d2ac7c23cfbc21a2723a0c80da64e70730e8c5ac",
+    "host": "x86_64-unknown-linux-gnu",
+    "opt_level": "3",
+    "profile": "release",
+    "rustc": "rustc 1.98.1 (48a229cea 2026-09-01)",
+    "source_blake3": "274521317280f0fa3bdcb7d6f7016d62684fbbf1a1527eb205befde4cf2106be",
+    "source_dirty": "true",
+    "target": "x86_64-unknown-linux-gnu"
+  },
+  "binary_sha256": "3b4244e6ad47a6c639a38c435ffb551fec3f8700b9a7fad9bdf4b2de6f183075",
+  "binary_scope": "immutable dirty-source preparation diagnostic; clean native release artifacts require their own provenance and install tests",
+  "package": {
+    "archive": "target/beta-20261014/artifacts-diagnostic/deepkit-code-x86_64-unknown-linux-gnu.tar.gz",
+    "sha256": "aeeff342c91eeb092373d5d3b3183b25ddaa0ae743eb5bd375ef3cf5102f603b",
+    "bytes": 29279198,
+    "build": {
+      "binary_blake3": "ee2e824448dce10750fa8d16fd870b43af3243b11217af43151925237a3d4650",
+      "binary_bytes": 124370656,
+      "commit": "a7e45b06ce1c40c7648c44359bb248c83f7b232b",
+      "features": "DEFAULT",
+      "flags_blake3": "d06d6d1e621e3198c6fc28e2d2ac7c23cfbc21a2723a0c80da64e70730e8c5ac",
+      "host": "x86_64-unknown-linux-gnu",
+      "opt_level": "3",
+      "profile": "release",
+      "rustc": "rustc 1.98.1 (48a229cea 2026-09-01)",
+      "source_blake3": "274521317280f0fa3bdcb7d6f7016d62684fbbf1a1527eb205befde4cf2106be",
+      "source_dirty": "true",
+      "target": "x86_64-unknown-linux-gnu"
+    },
+    "diagnostic": true
+  },
+  "homebrew_local": {
+    "state": "passed",
+    "exit_code": 0,
+    "target": "x86_64-unknown-linux-gnu",
+    "diagnostic": true,
+    "prefix": "/data/dkc-corpus/beta-homebrew-20261014",
+    "brew_commit": "d108ec4d28d48bcf0ecb1d279091cdcd3550b9e8",
+    "operations": [
+      "install",
+      "formula L1/index/search/status test",
+      "license installation assertions",
+      "uninstall",
+      "install",
+      "reinstall",
+      "formula test",
+      "uninstall"
+    ],
+    "log_sha256": "59dc72d2c8aabb63e62e0cff63903d7e562e8de230ef013e249da3cd0c816a59",
+    "log": "local archive: notes/runs/beta-20261014-local-brew.log",
+    "scope": "Custom Linux Homebrew prefix; not native Mac or portable musl qualification."
+  },
+  "native_homebrew_ci": {
+    "state": "passed",
+    "workflow": ".github/workflows/beta-homebrew.yml",
+    "run_id": 38604704711,
+    "receipt": "native-homebrew.json",
+    "receipt_sha256": "7cfd3d6807c0cf98ecb667f3c8045ea2ca9fb159d38d5c740ee685b21249dbd9",
+    "targets": [
+      "aarch64-apple-darwin",
+      "x86_64-unknown-linux-gnu"
+    ],
+    "source_matches_local_checks": true,
+    "scope": "Native Homebrew local-archive lifecycle and L1/lexical smoke; no public tap download or model inference qualification. GNU/Linux is diagnostic, not portable musl qualification. Release assets must be rebuilt from the reviewed final main/tag commit."
+  },
+  "vague_probe": {
+    "state": "complete",
+    "sha256": "ba03f447539d3df6b21d9f183adb9a34de9bdaba0d4d0cacb1cad7375ba450f1",
+    "summary": {
+      "lexical": {
+        "scheduled": 10,
+        "completed": 10,
+        "hit_file_at5": 0.6,
+        "recall_at10": 0.6,
+        "failed_or_not_run": 0
+      },
+      "hybrid": {
+        "scheduled": 10,
+        "completed": 10,
+        "hit_file_at5": 0.9,
+        "recall_at10": 0.85,
+        "failed_or_not_run": 0
+      },
+      "reranked": {
+        "scheduled": 10,
+        "completed": 10,
+        "hit_file_at5": 0.8,
+        "recall_at10": 0.75,
+        "failed_or_not_run": 0
+      }
+    },
+    "logical_inputs_unchanged": true,
+    "fresh_holdout": false,
+    "repetitions": 1
+  },
+  "shipping_ranking_replay": {
+    "sha256": "ce69d016e63a8dc529c41ee6d25657a6086b1a880fac9bbcffd30d3e0e15fc91",
+    "strict_initial_harness_pass": false,
+    "audited_rank_projection_parity": true,
+    "queries": 144,
+    "uppercase_identifier": true,
+    "scope": "Ordered id/path/lines/kind projection plus cohort labels/completeness; not full response bytes. Initial strict run failed on empty WAL removal. Token-budget used_tokens differences retained."
+  },
+  "public_formula_preview": {
+    "state": "generated_and_ruby_syntax_passed",
+    "target": "aarch64-apple-darwin",
+    "formula_sha256": "21e272cd135a38d8b48dd2ae133343257e32a2519e008bbf642b8602739203d1",
+    "archive_sha256": "2d34f9199657bfa958a40783001a16b372b26004e24d5a36a5f51b33b1824cde",
+    "published": false,
+    "public_download_tested": false,
+    "scope": "Review-only formula from the actual clean PR Mac artifact. Regenerate from the final published archive after merge; this is not the final tap formula."
+  },
+  "hosted_ci": {
+    "state": "passed",
+    "source_commit": "ae9f1bea535c1a92985344fb77ffa47d7776ca57",
+    "receipt": "hosted-ci.json",
+    "receipt_sha256": "52f93c14b93d2f64ec01652853cdc3924daecc035f089e7b0c9b0ce57982f0af",
+    "runs": [
+      38604704711,
+      38604704620,
+      38604671146,
+      38604704675
+    ],
+    "cpu_test_counts": [
+      {
+        "run_id": 38604704620,
+        "passed": 1399,
+        "failed": 0,
+        "ignored": 17,
+        "full_groups": 42
+      },
+      {
+        "run_id": 38604671146,
+        "passed": 1399,
+        "failed": 0,
+        "ignored": 17,
+        "full_groups": 42
+      }
+    ],
+    "release_scope": "planning only; publishing/native full-v1 jobs skipped"
+  },
+  "later_ci": {
+    "source_commit": "c5f69eba8cd63df6a40747341b733ea780dac737",
+    "receipt": "followup-ci.json",
+    "push": "failed_watcher_polling_delete_deadline",
+    "pull_request": "passed",
+    "native_homebrew": "passed",
+    "failure_resolved": false,
+    "scope": "Documentation-only follow-up; preserved failure, not a replacement for earlier terminal receipts.",
+    "receipt_sha256": "81868d8896597802cae071cc36a75a37dba7946bf42ccdcbec58f84834984d90",
+    "focused_local_watcher_tests": {
+      "passed": 5,
+      "failures": 0,
+      "failure_reproduced": false,
+      "threshold_changed": false
+    }
+  }
+}

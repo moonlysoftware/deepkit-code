@@ -1,0 +1,4 @@
+header: deepkit code src auth retry policy rs retry policy get user by id
+idents: Configures RetryPolicy Returns User a body fn getUserById get_user_by_id let maxRetries never pub retries secret struct u32 u64 user user_id
+body: pub struct retry policy max retries u32 pub fn get user by id user id u64 user let secret get user by id user id
+prose: Configures retries. never body Returns a user.

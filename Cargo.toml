@@ -1,0 +1,150 @@
+[package]
+name = "deepkit-code"
+version = "0.1.0-beta.1"
+edition = "2024"
+rust-version = "1.98"
+license = "MIT OR Apache-2.0"
+publish = false
+authors = ["Deepkit Code contributors"]
+description = "Local hybrid code and document search for IDE agents"
+homepage = "https://github.com/moonlysoftware/deepkit-code"
+repository = "https://github.com/moonlysoftware/deepkit-code"
+readme = "README.md"
+
+[[bin]]
+name = "dkc"
+path = "src/main.rs"
+
+[workspace]
+members = [".", "crates/sqlite-vector-sys"]
+exclude = ["vendor/gix-index"]
+resolver = "3"
+
+[features]
+default = []
+cuda = ["llama-cpp-2/cuda"]
+vulkan = ["llama-cpp-2/vulkan"]
+metal = ["llama-cpp-2/metal"]
+pdfium = ["dep:pdfium-render"]
+
+[dependencies]
+dialoguer = { version = "0.12.0", default-features = false, features = ["password"] }
+anyhow = "1.0.102"
+async-trait = "0.1.89"
+backon = { version = "1.6.0", default-features = false, features = ["tokio-sleep"] }
+base64 = "0.22.1"
+blake3 = "1.8.2"
+clap = { version = "4.5.60", features = ["derive"] }
+figment = { version = "0.10.19", features = ["env", "toml"] }
+gix = { version = "0.87.1", default-features = false, features = ["index", "sha1", "sha256", "blob-diff"] }
+globset = "0.4.18"
+regex = "=1.13.1"
+half = "2.7.1"
+ignore = "0.4.25"
+llama-cpp-2 = { version = "=0.1.156", default-features = false }
+num_cpus = "1.17.0"
+notify-debouncer-full = "=0.7.0"
+petgraph = "0.8.3"
+httpdate = "1.0.3"
+reqwest = { version = "0.12.28", default-features = false, features = ["blocking", "json", "rustls-tls-native-roots"] }
+rusqlite = { version = "0.40.2", features = ["bundled"] }
+serde = { version = "1.0.229", features = ["derive"] }
+serde_json = { version = "1.0.149", features = ["float_roundtrip"] }
+serde_yaml_ng = "0.10.0"
+sha2 = "0.11.0"
+sqlite-vector-sys = { version = "0.1.0", path = "crates/sqlite-vector-sys" }
+text-splitter = { version = "0.32.0", features = ["markdown", "tiktoken-rs"] }
+thiserror = "2.0.20"
+tiktoken-rs = "0.12.0"
+tokio = { version = "1.48.0", features = ["macros", "rt", "rt-multi-thread", "signal", "time"] }
+toml = "1.0.3"
+tracing = "0.1.44"
+tracing-subscriber = { version = "0.3.22", features = ["env-filter", "json"] }
+tree-sitter = "0.27.0"
+tree-sitter-tags = "0.27.0"
+tree-sitter-go = "0.25.0"
+tree-sitter-java = "0.23.5"
+tree-sitter-javascript = "0.25.0"
+tree-sitter-php = "0.24.2"
+tree-sitter-python = "0.25.0"
+tree-sitter-rust = "0.24.2"
+tree-sitter-typescript = "0.23.2"
+rmcp = { version = "3.2.0", default-features = false, features = ["server", "macros", "transport-io", "transport-streamable-http-server"] }
+schemars = "1"
+axum = { version = "0.8", default-features = false, features = ["http1", "tokio"] }
+
+tree-sitter-kotlin-ng = "=1.1.0"
+tree-sitter-c = "=0.24.2"
+tree-sitter-cpp = "=0.23.4"
+tree-sitter-c-sharp = "=0.23.5"
+tree-sitter-ruby = "=0.23.1"
+tree-sitter-swift = "=0.7.3"
+tree-sitter-scala = "=0.26.2"
+tree-sitter-bash = "=0.25.1"
+tree-sitter-html = "=0.23.2"
+tree-sitter-css = "=0.25.0"
+tree-sitter-sequel = "=0.3.11"
+tree-sitter-dart = "=0.2.0"
+tree-sitter-elixir = "=0.3.5"
+tree-sitter-lua = "=0.5.0"
+tree-sitter-zig = "=1.1.2"
+tree-sitter-haskell = "=0.23.1"
+tree-sitter-ocaml = "=0.25.0"
+tree-sitter-proto = "=0.6.0"
+tree-sitter-json = "=0.24.8"
+tree-sitter-yaml = "=0.7.2"
+tree-sitter-toml-ng = "=0.7.0"
+tree-sitter-md = "=0.5.3"
+tree-sitter-dockerfile-updated = "=0.2.0"
+pdf_oxide = { version = "=0.3.78", default-features = false }
+pdfium-render = { version = "=0.9.4", optional = true, default-features = false, features = ["pdfium_7881", "image_025", "thread_safe"] }
+flate2 = "=1.1.10"
+image = { version = "=0.25.10", default-features = false, features = ["png", "jpeg", "webp", "gif"] }
+office_oxide = { version = "=0.1.11", default-features = false }
+
+[target.'cfg(unix)'.dependencies]
+rustix = { version = "1.1.4", features = ["fs", "process"] }
+
+[dev-dependencies]
+assert_cmd = "2.1.2"
+proptest = "1.9.0"
+rmcp = { version = "3.2.0", default-features = false, features = ["client", "transport-child-process", "transport-streamable-http-client-reqwest"] }
+tempfile = "3.23.0"
+wiremock = "0.6.5"
+
+[target.'cfg(all(target_os = "macos", target_arch = "aarch64"))'.dependencies]
+llama-cpp-2 = { version = "=0.1.156", default-features = false, features = ["metal"] }
+
+[build-dependencies]
+blake3 = "1.8.2"
+
+[patch.crates-io]
+gix-index = { path = "vendor/gix-index" }
+
+# The profile that 'dist' will build with
+[profile.dist]
+inherits = "release"
+lto = "fat"
+codegen-units = 1
+strip = "symbols"
+
+[package.metadata.dist]
+dist = true
+formula = "dkc"
+npm-package = "deepkit-code"
+
+[package.metadata.binstall]
+pkg-url = "{ repo }/releases/download/v{ version }/{ name }-{ target }{ archive-suffix }"
+bin-dir = "{ name }-{ target }/{ bin }{ binary-ext }"
+pkg-fmt = "tgz"
+disabled-strategies = ["quick-install"]
+
+[package.metadata.binstall.overrides.x86_64-pc-windows-msvc]
+pkg-fmt = "zip"
+bin-dir = "{ bin }{ binary-ext }"
+
+[package.metadata.wix]
+upgrade-guid = "DA8A943B-AD61-4C90-8A43-269DCEA6EDBA"
+path-guid = "2B6EE4B8-9323-4886-99F9-FA9709B414D9"
+license = false
+eula = false

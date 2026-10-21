@@ -1,0 +1,2120 @@
+{
+  "after": {
+    "binary_sha256": "9d79ab4c2f7ee4cd6f2f32530ea471acea06aa5c9050a15b327c85c7e0a8d7ce",
+    "external_config": {
+      "config_environment_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "user_config_sha256": null
+    },
+    "queries": {
+      "/home/lucky93/deepkit-code/notes/bench/search-tuning-20260925/final-holdout.json": "29bbfc2f3b4988ca097c942d166e8bce76dd5443949d2c37a16c07d373bd15b3"
+    },
+    "roots": {
+      "django": {
+        "config": null,
+        "db": {
+          "bytes": 135970816,
+          "sha256": "1905034b4973e4abf37cdbe0f2bea324d55233e8ce360ce6573cdb93e7d06556"
+        },
+        "local_config": null,
+        "source": {
+          "files": 7091,
+          "head": "2b30f6255b5ef84afbd827993643d52ef2c0963a",
+          "sha256": "3a6258fd09b3c43d5a05830ffc8a2bfec46cd249fce71a56a6211ae3c0762641"
+        },
+        "wal": null
+      },
+      "hugo": {
+        "config": null,
+        "db": {
+          "bytes": 76333056,
+          "sha256": "d19af80c730f50b731fbd1a8653c9d0348b14d255411250637656d29542d87b0"
+        },
+        "local_config": null,
+        "source": {
+          "files": 2564,
+          "head": "f425ff622dfc715315f6c210fb5aa4e0c500472c",
+          "sha256": "02ef018b92b625810b54abeb4dfc0de677302ed9b724f479c32739bda9e957a5"
+        },
+        "wal": null
+      },
+      "laravel": {
+        "config": null,
+        "db": {
+          "bytes": 121110528,
+          "sha256": "1d1f92b7e47ddbdb700fc225d7c2c378504e1c13d881907ddf745794272a2bfb"
+        },
+        "local_config": null,
+        "source": {
+          "files": 3397,
+          "head": "01d008c9b5f32cb7c5e50a9a22273113d810b2a2",
+          "sha256": "077a7a0710ccfbcc7e3f7f8dc11f51498f924a64efa65a2b995b5f565128b4dc"
+        },
+        "wal": null
+      }
+    }
+  },
+  "arm": 9,
+  "before": {
+    "binary_sha256": "9d79ab4c2f7ee4cd6f2f32530ea471acea06aa5c9050a15b327c85c7e0a8d7ce",
+    "external_config": {
+      "config_environment_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "user_config_sha256": null
+    },
+    "queries": {
+      "/home/lucky93/deepkit-code/notes/bench/search-tuning-20260925/final-holdout.json": "29bbfc2f3b4988ca097c942d166e8bce76dd5443949d2c37a16c07d373bd15b3"
+    },
+    "roots": {
+      "django": {
+        "config": null,
+        "db": {
+          "bytes": 135970816,
+          "sha256": "1905034b4973e4abf37cdbe0f2bea324d55233e8ce360ce6573cdb93e7d06556"
+        },
+        "local_config": null,
+        "source": {
+          "files": 7091,
+          "head": "2b30f6255b5ef84afbd827993643d52ef2c0963a",
+          "sha256": "3a6258fd09b3c43d5a05830ffc8a2bfec46cd249fce71a56a6211ae3c0762641"
+        },
+        "wal": null
+      },
+      "hugo": {
+        "config": null,
+        "db": {
+          "bytes": 76333056,
+          "sha256": "d19af80c730f50b731fbd1a8653c9d0348b14d255411250637656d29542d87b0"
+        },
+        "local_config": null,
+        "source": {
+          "files": 2564,
+          "head": "f425ff622dfc715315f6c210fb5aa4e0c500472c",
+          "sha256": "02ef018b92b625810b54abeb4dfc0de677302ed9b724f479c32739bda9e957a5"
+        },
+        "wal": null
+      },
+      "laravel": {
+        "config": null,
+        "db": {
+          "bytes": 121110528,
+          "sha256": "1d1f92b7e47ddbdb700fc225d7c2c378504e1c13d881907ddf745794272a2bfb"
+        },
+        "local_config": null,
+        "source": {
+          "files": 3397,
+          "head": "01d008c9b5f32cb7c5e50a9a22273113d810b2a2",
+          "sha256": "077a7a0710ccfbcc7e3f7f8dc11f51498f924a64efa65a2b995b5f565128b4dc"
+        },
+        "wal": null
+      }
+    }
+  },
+  "binary": "/home/lucky93/deepkit-code/target/search-tuning-20260925/dkc-prototype",
+  "diagnostic_only": true,
+  "errors": [],
+  "finished_at": "2026-09-25T21:22:51.804761+00:00",
+  "identities_unchanged": true,
+  "jsonl": "/home/lucky93/deepkit-code/notes/bench/search-tuning-20260925/final-candidate.json.jsonl",
+  "latency_protocol": "fresh CLI process per query, spawn through exit, no warmup; p95 nearest rank",
+  "release_timing": false,
+  "respect_scope": false,
+  "reverse_order": false,
+  "roots": "/data/dkc-corpus/search-tuning-20260925",
+  "rows": [
+    {
+      "arm": 9,
+      "assertion": null,
+      "category": null,
+      "effective_scope": "source",
+      "error": null,
+      "exit_code": 0,
+      "expect_files": [
+        "src/Illuminate/Cache/RateLimiter.php",
+        "src/Illuminate/Routing/Middleware/ThrottleRequests.php"
+      ],
+      "hit_file_at5": false,
+      "hits": [
+        {
+          "id": "u_5c370765b3d3",
+          "kind": "symbol",
+          "lines": [
+            2849,
+            2872
+          ],
+          "path": "src/Illuminate/Database/Eloquent/Model.php"
+        },
+        {
+          "id": "u_2a9b67cb0219",
+          "kind": "symbol",
+          "lines": [
+            894,
+            970
+          ],
+          "path": "src/Illuminate/Container/Container.php"
+        },
+        {
+          "id": "u_58e1b1b24ee0",
+          "kind": "symbol",
+          "lines": [
+            19,
+            127
+          ],
+          "path": "tests/Integration/Console/CallbackSchedulingTest.php"
+        },
+        {
+          "id": "u_1622e44a9538",
+          "kind": "symbol",
+          "lines": [
+            8,
+            71
+          ],
+          "path": "src/Illuminate/Support/Traits/ForwardsCalls.php"
+        },
+        {
+          "id": "u_c12829b57ecc",
+          "kind": "symbol",
+          "lines": [
+            451,
+            475
+          ],
+          "path": "tests/Integration/Console/Scheduling/ScheduleGroupTest.php"
+        },
+        {
+          "id": "u_fe7ffc573485",
+          "kind": "symbol",
+          "lines": [
+            480,
+            501
+          ],
+          "path": "tests/Container/ResolvingCallbackTest.php"
+        },
+        {
+          "id": "u_e1aeb84f1881",
+          "kind": "symbol",
+          "lines": [
+            248,
+            325
+          ],
+          "path": "tests/Integration/Http/ThrottleRequestsTest.php"
+        },
+        {
+          "id": "u_5385695b7d7f",
+          "kind": "symbol",
+          "lines": [
+            164,
+            186
+          ],
+          "path": "tests/Validation/ValidationPasswordRuleTest.php"
+        },
+        {
+          "id": "u_03d02f83e512",
+          "kind": "symbol",
+          "lines": [
+            294,
+            317
+          ],
+          "path": "tests/Integration/Queue/DebouncedJobTest.php"
+        },
+        {
+          "id": "u_79962466ab56",
+          "kind": "symbol",
+          "lines": [
+            503,
+            517
+          ],
+          "path": "tests/Container/ResolvingCallbackTest.php"
+        }
+      ],
+      "id": "final-holdout-laravel-01",
+      "index": {
+        "branch_resync": {
+          "state": "not_needed"
+        },
+        "degraded": false,
+        "dense": "not_requested",
+        "dirty_files": null,
+        "dirty_files_state": "not_checked",
+        "fresh": {
+          "reason": "source_not_verified",
+          "state": "unknown"
+        },
+        "freshness_refusals": {},
+        "head": "01d008c9b5f32cb7c5e50a9a22273113d810b2a2",
+        "indexed_head": "01d008c9b5f32cb7c5e50a9a22273113d810b2a2",
+        "l1_pending_files": 0,
+        "lazy_resync": {
+          "attempted_files": 0,
+          "published_files": 0,
+          "refused_files": 0
+        },
+        "lexical": "complete",
+        "partial": false,
+        "rerank": "off",
+        "reranked": false,
+        "suppressed_hits": 0,
+        "took_ms": 91
+      },
+      "no_answer_empty": null,
+      "partial": false,
+      "partial_reason": null,
+      "paths": [
+        "src/Illuminate/Database/Eloquent/Model.php",
+        "src/Illuminate/Container/Container.php",
+        "tests/Integration/Console/CallbackSchedulingTest.php",
+        "src/Illuminate/Support/Traits/ForwardsCalls.php",
+        "tests/Integration/Console/Scheduling/ScheduleGroupTest.php",
+        "tests/Container/ResolvingCallbackTest.php",
+        "tests/Integration/Http/ThrottleRequestsTest.php",
+        "tests/Validation/ValidationPasswordRuleTest.php",
+        "tests/Integration/Queue/DebouncedJobTest.php",
+        "tests/Container/ResolvingCallbackTest.php"
+      ],
+      "query": "Our API starts returning 429 after repeated calls. Where are the request counter and waiting period checked before letting another call through?",
+      "query_file": "/home/lucky93/deepkit-code/notes/bench/search-tuning-20260925/final-holdout.json",
+      "recall_at10": 0.0,
+      "repo": "laravel",
+      "result_budget": {
+        "considered": 10,
+        "limit": 1500,
+        "returned": 10,
+        "truncated": false,
+        "used_tokens": 1491
+      },
+      "scope": "code",
+      "wall_ms": 105.38423999969382
+    },
+    {
+      "arm": 9,
+      "assertion": null,
+      "category": null,
+      "effective_scope": "source",
+      "error": null,
+      "exit_code": 0,
+      "expect_files": [
+        "src/Illuminate/Auth/Passwords/DatabaseTokenRepository.php",
+        "src/Illuminate/Auth/Passwords/PasswordBroker.php"
+      ],
+      "hit_file_at5": false,
+      "hits": [
+        {
+          "id": "u_448c0b53b5e2",
+          "kind": "chunk",
+          "lines": [
+            3,
+            22
+          ],
+          "path": "src/Illuminate/Translation/lang/en/passwords.php"
+        },
+        {
+          "id": "u_000122694df3",
+          "kind": "symbol",
+          "lines": [
+            457,
+            474
+          ],
+          "path": "tests/Support/SupportStringableTest.php"
+        },
+        {
+          "id": "u_e1b2b143b6ea",
+          "kind": "symbol",
+          "lines": [
+            9,
+            108
+          ],
+          "path": "src/Illuminate/Database/LostConnectionDetector.php"
+        },
+        {
+          "id": "u_8b862f4fa185",
+          "kind": "symbol",
+          "lines": [
+            191,
+            246
+          ],
+          "path": "tests/Integration/Http/ThrottleRequestsTest.php"
+        },
+        {
+          "id": "u_dfacee3f435d",
+          "kind": "symbol",
+          "lines": [
+            22,
+            36
+          ],
+          "path": "tests/Http/Middleware/VitePreloadingTest.php"
+        },
+        {
+          "id": "u_6d7e2827af11",
+          "kind": "symbol",
+          "lines": [
+            75,
+            113
+          ],
+          "path": "src/Illuminate/Auth/Passwords/PasswordBroker.php"
+        },
+        {
+          "id": "u_4ffa5d5729bc",
+          "kind": "symbol",
+          "lines": [
+            9,
+            41
+          ],
+          "path": "src/Illuminate/Http/Middleware/AddLinkHeadersForPreloadedAssets.php"
+        },
+        {
+          "id": "u_7d5f78778bcc",
+          "kind": "chunk",
+          "lines": [
+            1562,
+            1606
+          ],
+          "path": "src/Illuminate/Database/Eloquent/Concerns/HasAttributes.php"
+        },
+        {
+          "id": "u_c514e5348df5",
+          "kind": "symbol",
+          "lines": [
+            7,
+            20
+          ],
+          "path": "src/Illuminate/Auth/Events/PasswordResetLinkSent.php"
+        },
+        {
+          "id": "u_e1aeb84f1881",
+          "kind": "symbol",
+          "lines": [
+            248,
+            325
+          ],
+          "path": "tests/Integration/Http/ThrottleRequestsTest.php"
+        }
+      ],
+      "id": "final-holdout-laravel-02",
+      "index": {
+        "branch_resync": {
+          "state": "not_needed"
+        },
+        "degraded": false,
+        "dense": "not_requested",
+        "dirty_files": null,
+        "dirty_files_state": "not_checked",
+        "fresh": {
+          "reason": "source_not_verified",
+          "state": "unknown"
+        },
+        "freshness_refusals": {},
+        "head": "01d008c9b5f32cb7c5e50a9a22273113d810b2a2",
+        "indexed_head": "01d008c9b5f32cb7c5e50a9a22273113d810b2a2",
+        "l1_pending_files": 0,
+        "lazy_resync": {
+          "attempted_files": 0,
+          "published_files": 0,
+          "refused_files": 0
+        },
+        "lexical": "complete",
+        "partial": false,
+        "rerank": "off",
+        "reranked": false,
+        "suppressed_hits": 0,
+        "took_ms": 109
+      },
+      "no_answer_empty": null,
+      "partial": false,
+      "partial_reason": null,
+      "paths": [
+        "src/Illuminate/Translation/lang/en/passwords.php",
+        "tests/Support/SupportStringableTest.php",
+        "src/Illuminate/Database/LostConnectionDetector.php",
+        "tests/Integration/Http/ThrottleRequestsTest.php",
+        "tests/Http/Middleware/VitePreloadingTest.php",
+        "src/Illuminate/Auth/Passwords/PasswordBroker.php",
+        "src/Illuminate/Http/Middleware/AddLinkHeadersForPreloadedAssets.php",
+        "src/Illuminate/Database/Eloquent/Concerns/HasAttributes.php",
+        "src/Illuminate/Auth/Events/PasswordResetLinkSent.php",
+        "tests/Integration/Http/ThrottleRequestsTest.php"
+      ],
+      "query": "Why can an emailed password recovery link be rejected when it is old, and what prevents using the same link again after a successful change?",
+      "query_file": "/home/lucky93/deepkit-code/notes/bench/search-tuning-20260925/final-holdout.json",
+      "recall_at10": 0.5,
+      "repo": "laravel",
+      "result_budget": {
+        "considered": 10,
+        "limit": 1500,
+        "returned": 10,
+        "truncated": false,
+        "used_tokens": 1488
+      },
+      "scope": "code",
+      "wall_ms": 121.04188800731208
+    },
+    {
+      "arm": 9,
+      "assertion": null,
+      "category": null,
+      "effective_scope": "source",
+      "error": null,
+      "exit_code": 0,
+      "expect_files": [
+        "src/Illuminate/Database/Eloquent/SoftDeletes.php"
+      ],
+      "hit_file_at5": false,
+      "hits": [
+        {
+          "id": "u_1acd8fda6819",
+          "kind": "symbol",
+          "lines": [
+            1490,
+            1526
+          ],
+          "path": "src/Illuminate/Database/Eloquent/Model.php"
+        },
+        {
+          "id": "u_a53b6c80a1f4",
+          "kind": "symbol",
+          "lines": [
+            11,
+            176
+          ],
+          "path": "src/Illuminate/Support/Testing/Fakes/BatchFake.php"
+        },
+        {
+          "id": "u_8d4013c3e004",
+          "kind": "symbol",
+          "lines": [
+            1730,
+            1769
+          ],
+          "path": "src/Illuminate/Database/Eloquent/Model.php"
+        },
+        {
+          "id": "u_ee84532dfe85",
+          "kind": "symbol",
+          "lines": [
+            10,
+            70
+          ],
+          "path": "src/Illuminate/Foundation/Cloud/CloudJob.php"
+        },
+        {
+          "id": "u_d85af1cbcb03",
+          "kind": "symbol",
+          "lines": [
+            285,
+            323
+          ],
+          "path": "src/Illuminate/Database/Console/Migrations/MigrateCommand.php"
+        },
+        {
+          "id": "u_e1b2b143b6ea",
+          "kind": "symbol",
+          "lines": [
+            9,
+            108
+          ],
+          "path": "src/Illuminate/Database/LostConnectionDetector.php"
+        },
+        {
+          "id": "u_4f19e2025f97",
+          "kind": "symbol",
+          "lines": [
+            14,
+            93
+          ],
+          "path": "src/Illuminate/Queue/Console/ClearCommand.php"
+        },
+        {
+          "id": "u_c5bb2b5bd472",
+          "kind": "symbol",
+          "lines": [
+            9,
+            184
+          ],
+          "path": "src/Illuminate/Queue/Failed/DatabaseUuidFailedJobProvider.php"
+        },
+        {
+          "id": "u_d87842062563",
+          "kind": "symbol",
+          "lines": [
+            16,
+            335
+          ],
+          "path": "src/Illuminate/Foundation/Exceptions/Renderer/Mappers/BladeMapper.php"
+        },
+        {
+          "id": "u_ca3478109470",
+          "kind": "symbol",
+          "lines": [
+            1376,
+            1423
+          ],
+          "path": "src/Illuminate/Database/Eloquent/Model.php"
+        }
+      ],
+      "id": "final-holdout-laravel-03",
+      "index": {
+        "branch_resync": {
+          "state": "not_needed"
+        },
+        "degraded": false,
+        "dense": "not_requested",
+        "dirty_files": null,
+        "dirty_files_state": "not_checked",
+        "fresh": {
+          "reason": "source_not_verified",
+          "state": "unknown"
+        },
+        "freshness_refusals": {},
+        "head": "01d008c9b5f32cb7c5e50a9a22273113d810b2a2",
+        "indexed_head": "01d008c9b5f32cb7c5e50a9a22273113d810b2a2",
+        "l1_pending_files": 0,
+        "lazy_resync": {
+          "attempted_files": 0,
+          "published_files": 0,
+          "refused_files": 0
+        },
+        "lexical": "complete",
+        "partial": false,
+        "rerank": "off",
+        "reranked": false,
+        "suppressed_hits": 0,
+        "took_ms": 120
+      },
+      "no_answer_empty": null,
+      "partial": false,
+      "partial_reason": null,
+      "paths": [
+        "src/Illuminate/Database/Eloquent/Model.php",
+        "src/Illuminate/Support/Testing/Fakes/BatchFake.php",
+        "src/Illuminate/Database/Eloquent/Model.php",
+        "src/Illuminate/Foundation/Cloud/CloudJob.php",
+        "src/Illuminate/Database/Console/Migrations/MigrateCommand.php",
+        "src/Illuminate/Database/LostConnectionDetector.php",
+        "src/Illuminate/Queue/Console/ClearCommand.php",
+        "src/Illuminate/Queue/Failed/DatabaseUuidFailedJobProvider.php",
+        "src/Illuminate/Foundation/Exceptions/Renderer/Mappers/BladeMapper.php",
+        "src/Illuminate/Database/Eloquent/Model.php"
+      ],
+      "query": "Where is a deleted record brought back by clearing its deletion date, including the option for an event listener to cancel the operation?",
+      "query_file": "/home/lucky93/deepkit-code/notes/bench/search-tuning-20260925/final-holdout.json",
+      "recall_at10": 0.0,
+      "repo": "laravel",
+      "result_budget": {
+        "considered": 10,
+        "limit": 1500,
+        "returned": 10,
+        "truncated": false,
+        "used_tokens": 1367
+      },
+      "scope": "code",
+      "wall_ms": 131.64106399926823
+    },
+    {
+      "arm": 9,
+      "assertion": null,
+      "category": null,
+      "effective_scope": "source",
+      "error": null,
+      "exit_code": 0,
+      "expect_files": [
+        "src/Illuminate/Database/Concerns/ManagesTransactions.php"
+      ],
+      "hit_file_at5": true,
+      "hits": [
+        {
+          "id": "u_8cca7684f6c1",
+          "kind": "symbol",
+          "lines": [
+            1099,
+            1122
+          ],
+          "path": "tests/Support/SupportHelpersTest.php"
+        },
+        {
+          "id": "u_5bb8b0f302cd",
+          "kind": "symbol",
+          "lines": [
+            5,
+            173
+          ],
+          "path": "src/Illuminate/Contracts/Queue/Job.php"
+        },
+        {
+          "id": "u_8625fafcca6a",
+          "kind": "chunk",
+          "lines": [
+            88,
+            115
+          ],
+          "path": "src/Illuminate/Database/Concerns/ManagesTransactions.php"
+        },
+        {
+          "id": "u_e1b2b143b6ea",
+          "kind": "symbol",
+          "lines": [
+            9,
+            108
+          ],
+          "path": "src/Illuminate/Database/LostConnectionDetector.php"
+        },
+        {
+          "id": "u_ced8258eaaaa",
+          "kind": "symbol",
+          "lines": [
+            10,
+            39
+          ],
+          "path": "src/Illuminate/Database/ConcurrencyErrorDetector.php"
+        },
+        {
+          "id": "u_3bca2328c830",
+          "kind": "symbol",
+          "lines": [
+            1025,
+            1046
+          ],
+          "path": "tests/Support/SupportHelpersTest.php"
+        },
+        {
+          "id": "u_8c8c36fbd6a6",
+          "kind": "symbol",
+          "lines": [
+            1139,
+            1161
+          ],
+          "path": "tests/Support/SupportHelpersTest.php"
+        },
+        {
+          "id": "u_dc3ec29a7275",
+          "kind": "chunk",
+          "lines": [
+            26,
+            76
+          ],
+          "path": "src/Illuminate/Database/Concerns/ManagesTransactions.php"
+        },
+        {
+          "id": "u_a1a5ea58fb4a",
+          "kind": "symbol",
+          "lines": [
+            380,
+            394
+          ],
+          "path": "tests/Database/DatabaseConnectionTest.php"
+        },
+        {
+          "id": "u_c36441144c6c",
+          "kind": "symbol",
+          "lines": [
+            229,
+            249
+          ],
+          "path": "tests/Container/ContainerCallTest.php"
+        }
+      ],
+      "id": "final-holdout-laravel-04",
+      "index": {
+        "branch_resync": {
+          "state": "not_needed"
+        },
+        "degraded": false,
+        "dense": "not_requested",
+        "dirty_files": null,
+        "dirty_files_state": "not_checked",
+        "fresh": {
+          "reason": "source_not_verified",
+          "state": "unknown"
+        },
+        "freshness_refusals": {},
+        "head": "01d008c9b5f32cb7c5e50a9a22273113d810b2a2",
+        "indexed_head": "01d008c9b5f32cb7c5e50a9a22273113d810b2a2",
+        "l1_pending_files": 0,
+        "lazy_resync": {
+          "attempted_files": 0,
+          "published_files": 0,
+          "refused_files": 0
+        },
+        "lexical": "complete",
+        "partial": false,
+        "rerank": "off",
+        "reranked": false,
+        "suppressed_hits": 0,
+        "took_ms": 93
+      },
+      "no_answer_empty": null,
+      "partial": false,
+      "partial_reason": null,
+      "paths": [
+        "tests/Support/SupportHelpersTest.php",
+        "src/Illuminate/Contracts/Queue/Job.php",
+        "src/Illuminate/Database/Concerns/ManagesTransactions.php",
+        "src/Illuminate/Database/LostConnectionDetector.php",
+        "src/Illuminate/Database/ConcurrencyErrorDetector.php",
+        "tests/Support/SupportHelpersTest.php",
+        "tests/Support/SupportHelpersTest.php",
+        "src/Illuminate/Database/Concerns/ManagesTransactions.php",
+        "tests/Database/DatabaseConnectionTest.php",
+        "tests/Container/ContainerCallTest.php"
+      ],
+      "query": "When the database reports a deadlock, where is the decision made to retry the whole transaction or give up after the allowed attempts?",
+      "query_file": "/home/lucky93/deepkit-code/notes/bench/search-tuning-20260925/final-holdout.json",
+      "recall_at10": 1.0,
+      "repo": "laravel",
+      "result_budget": {
+        "considered": 10,
+        "limit": 1500,
+        "returned": 10,
+        "truncated": false,
+        "used_tokens": 1414
+      },
+      "scope": "code",
+      "wall_ms": 103.69843900843989
+    },
+    {
+      "arm": 9,
+      "assertion": null,
+      "category": null,
+      "effective_scope": "source",
+      "error": null,
+      "exit_code": 0,
+      "expect_files": [
+        "django/contrib/auth/base_user.py",
+        "django/contrib/auth/hashers.py"
+      ],
+      "hit_file_at5": true,
+      "hits": [
+        {
+          "id": "u_8750b83af133",
+          "kind": "doc_section",
+          "lines": [
+            775,
+            811
+          ],
+          "path": "docs/releases/1.4.txt"
+        },
+        {
+          "id": "u_5ede58126533",
+          "kind": "chunk",
+          "lines": [
+            345,
+            407
+          ],
+          "path": "tests/auth_tests/test_hashers.py"
+        },
+        {
+          "id": "u_e84dc20a0b11",
+          "kind": "chunk",
+          "lines": [
+            408,
+            470
+          ],
+          "path": "tests/auth_tests/test_hashers.py"
+        },
+        {
+          "id": "u_a4566101aaaf",
+          "kind": "symbol",
+          "lines": [
+            385,
+            484
+          ],
+          "path": "django/contrib/auth/hashers.py"
+        },
+        {
+          "id": "u_994459035da2",
+          "kind": "doc_section",
+          "lines": [
+            1,
+            39
+          ],
+          "path": "docs/topics/auth/passwords.txt"
+        },
+        {
+          "id": "u_9c4bc3507051",
+          "kind": "chunk",
+          "lines": [
+            183,
+            242
+          ],
+          "path": "tests/auth_tests/test_hashers.py"
+        },
+        {
+          "id": "u_9197eab8dc72",
+          "kind": "doc_section",
+          "lines": [
+            153,
+            188
+          ],
+          "path": "docs/releases/3.1.txt"
+        },
+        {
+          "id": "u_a484e6a0e263",
+          "kind": "symbol",
+          "lines": [
+            560,
+            575
+          ],
+          "path": "django/contrib/auth/hashers.py"
+        },
+        {
+          "id": "u_89010cb14c1d",
+          "kind": "doc_section",
+          "lines": [
+            298,
+            363
+          ],
+          "path": "docs/topics/auth/passwords.txt"
+        },
+        {
+          "id": "u_f9a7bdd067ec",
+          "kind": "doc_section",
+          "lines": [
+            274,
+            344
+          ],
+          "path": "docs/ref/contrib/staticfiles.txt"
+        }
+      ],
+      "id": "final-holdout-django-01",
+      "index": {
+        "branch_resync": {
+          "state": "not_needed"
+        },
+        "degraded": false,
+        "dense": "not_requested",
+        "dirty_files": null,
+        "dirty_files_state": "not_checked",
+        "fresh": {
+          "reason": "source_not_verified",
+          "state": "unknown"
+        },
+        "freshness_refusals": {},
+        "head": "2b30f6255b5ef84afbd827993643d52ef2c0963a",
+        "indexed_head": "2b30f6255b5ef84afbd827993643d52ef2c0963a",
+        "l1_pending_files": 0,
+        "lazy_resync": {
+          "attempted_files": 0,
+          "published_files": 0,
+          "refused_files": 0
+        },
+        "lexical": "complete",
+        "partial": false,
+        "rerank": "off",
+        "reranked": false,
+        "suppressed_hits": 0,
+        "took_ms": 122
+      },
+      "no_answer_empty": null,
+      "partial": false,
+      "partial_reason": null,
+      "paths": [
+        "docs/releases/1.4.txt",
+        "tests/auth_tests/test_hashers.py",
+        "tests/auth_tests/test_hashers.py",
+        "django/contrib/auth/hashers.py",
+        "docs/topics/auth/passwords.txt",
+        "tests/auth_tests/test_hashers.py",
+        "docs/releases/3.1.txt",
+        "django/contrib/auth/hashers.py",
+        "docs/topics/auth/passwords.txt",
+        "docs/ref/contrib/staticfiles.txt"
+      ],
+      "query": "A user can still sign in with a password stored using our old hashing settings. Where does a successful check cause the saved hash to be upgraded?",
+      "query_file": "/home/lucky93/deepkit-code/notes/bench/search-tuning-20260925/final-holdout.json",
+      "recall_at10": 0.5,
+      "repo": "django",
+      "result_budget": {
+        "considered": 10,
+        "limit": 1500,
+        "returned": 10,
+        "truncated": false,
+        "used_tokens": 1389
+      },
+      "scope": "code",
+      "wall_ms": 134.3158020026749
+    },
+    {
+      "arm": 9,
+      "assertion": null,
+      "category": null,
+      "effective_scope": "source",
+      "error": null,
+      "exit_code": 0,
+      "expect_files": [
+        "django/db/backends/base/base.py",
+        "django/db/transaction.py"
+      ],
+      "hit_file_at5": false,
+      "hits": [
+        {
+          "id": "u_4528ae1f5ca4",
+          "kind": "doc_section",
+          "lines": [
+            403,
+            437
+          ],
+          "path": "docs/topics/db/transactions.txt"
+        },
+        {
+          "id": "u_199e00eb5554",
+          "kind": "doc_section",
+          "lines": [
+            248,
+            311
+          ],
+          "path": "docs/topics/db/transactions.txt"
+        },
+        {
+          "id": "u_3d3c81ab3124",
+          "kind": "doc_section",
+          "lines": [
+            317,
+            353
+          ],
+          "path": "docs/topics/db/transactions.txt"
+        },
+        {
+          "id": "u_ee17f2f0286a",
+          "kind": "doc_section",
+          "lines": [
+            1,
+            33
+          ],
+          "path": "docs/topics/tasks.txt"
+        },
+        {
+          "id": "u_3d96c1263075",
+          "kind": "doc_section",
+          "lines": [
+            108,
+            154
+          ],
+          "path": "docs/topics/checks.txt"
+        },
+        {
+          "id": "u_f249c45f2e7e",
+          "kind": "doc_section",
+          "lines": [
+            371,
+            398
+          ],
+          "path": "docs/topics/async.txt"
+        },
+        {
+          "id": "u_d74b09dbe12b",
+          "kind": "doc_section",
+          "lines": [
+            281,
+            324
+          ],
+          "path": "docs/internals/contributing/writing-code/working-with-git.txt"
+        },
+        {
+          "id": "u_5f352602d3ae",
+          "kind": "doc_section",
+          "lines": [
+            353,
+            399
+          ],
+          "path": "docs/topics/testing/overview.txt"
+        },
+        {
+          "id": "u_f8246ff8a82f",
+          "kind": "doc_section",
+          "lines": [
+            70,
+            99
+          ],
+          "path": "docs/releases/1.2.5.txt"
+        },
+        {
+          "id": "u_2a942c1816b5",
+          "kind": "doc_section",
+          "lines": [
+            255,
+            298
+          ],
+          "path": "docs/releases/1.1.txt"
+        }
+      ],
+      "id": "final-holdout-django-02",
+      "index": {
+        "branch_resync": {
+          "state": "not_needed"
+        },
+        "degraded": false,
+        "dense": "not_requested",
+        "dirty_files": null,
+        "dirty_files_state": "not_checked",
+        "fresh": {
+          "reason": "source_not_verified",
+          "state": "unknown"
+        },
+        "freshness_refusals": {},
+        "head": "2b30f6255b5ef84afbd827993643d52ef2c0963a",
+        "indexed_head": "2b30f6255b5ef84afbd827993643d52ef2c0963a",
+        "l1_pending_files": 0,
+        "lazy_resync": {
+          "attempted_files": 0,
+          "published_files": 0,
+          "refused_files": 0
+        },
+        "lexical": "complete",
+        "partial": false,
+        "rerank": "off",
+        "reranked": false,
+        "suppressed_hits": 0,
+        "took_ms": 116
+      },
+      "no_answer_empty": null,
+      "partial": false,
+      "partial_reason": null,
+      "paths": [
+        "docs/topics/db/transactions.txt",
+        "docs/topics/db/transactions.txt",
+        "docs/topics/db/transactions.txt",
+        "docs/topics/tasks.txt",
+        "docs/topics/checks.txt",
+        "docs/topics/async.txt",
+        "docs/internals/contributing/writing-code/working-with-git.txt",
+        "docs/topics/testing/overview.txt",
+        "docs/releases/1.2.5.txt",
+        "docs/releases/1.1.txt"
+      ],
+      "query": "I want an email task to run only after database work succeeds, and never if it rolls back. Where are those deferred callbacks registered and later run or discarded?",
+      "query_file": "/home/lucky93/deepkit-code/notes/bench/search-tuning-20260925/final-holdout.json",
+      "recall_at10": 0.0,
+      "repo": "django",
+      "result_budget": {
+        "considered": 10,
+        "limit": 1500,
+        "returned": 10,
+        "truncated": false,
+        "used_tokens": 1223
+      },
+      "scope": "code",
+      "wall_ms": 129.93023000308312
+    },
+    {
+      "arm": 9,
+      "assertion": null,
+      "category": null,
+      "effective_scope": "source",
+      "error": null,
+      "exit_code": 0,
+      "expect_files": [
+        "django/middleware/csrf.py"
+      ],
+      "hit_file_at5": false,
+      "hits": [
+        {
+          "id": "u_a67ce8a6bd46",
+          "kind": "doc_section",
+          "lines": [
+            38,
+            67
+          ],
+          "path": "docs/ref/csrf.txt"
+        },
+        {
+          "id": "u_54118553f4d1",
+          "kind": "doc_section",
+          "lines": [
+            1,
+            31
+          ],
+          "path": "docs/releases/2.2.9.txt"
+        },
+        {
+          "id": "u_8f85253d93bc",
+          "kind": "doc_section",
+          "lines": [
+            1,
+            31
+          ],
+          "path": "docs/releases/1.11.27.txt"
+        },
+        {
+          "id": "u_68dabed1c6c3",
+          "kind": "doc_section",
+          "lines": [
+            37,
+            69
+          ],
+          "path": "docs/topics/forms/index.txt"
+        },
+        {
+          "id": "u_c0a54ae987a9",
+          "kind": "doc_section",
+          "lines": [
+            1,
+            35
+          ],
+          "path": "docs/releases/3.0.1.txt"
+        },
+        {
+          "id": "u_b7d52d7a5c6c",
+          "kind": "doc_section",
+          "lines": [
+            403,
+            455
+          ],
+          "path": "docs/topics/class-based-views/mixins.txt"
+        },
+        {
+          "id": "u_c76047281bc2",
+          "kind": "symbol",
+          "lines": [
+            10,
+            178
+          ],
+          "path": "tests/view_tests/tests/test_csrf.py"
+        },
+        {
+          "id": "u_ffe21b85277e",
+          "kind": "doc_section",
+          "lines": [
+            118,
+            208
+          ],
+          "path": "docs/howto/csrf.txt"
+        },
+        {
+          "id": "u_d3923bfc34fa",
+          "kind": "doc_section",
+          "lines": [
+            172,
+            203
+          ],
+          "path": "docs/ref/forms/api.txt"
+        },
+        {
+          "id": "u_dc24846acd23",
+          "kind": "doc_section",
+          "lines": [
+            135,
+            162
+          ],
+          "path": "docs/topics/forms/index.txt"
+        }
+      ],
+      "id": "final-holdout-django-03",
+      "index": {
+        "branch_resync": {
+          "state": "not_needed"
+        },
+        "degraded": false,
+        "dense": "not_requested",
+        "dirty_files": null,
+        "dirty_files_state": "not_checked",
+        "fresh": {
+          "reason": "source_not_verified",
+          "state": "unknown"
+        },
+        "freshness_refusals": {},
+        "head": "2b30f6255b5ef84afbd827993643d52ef2c0963a",
+        "indexed_head": "2b30f6255b5ef84afbd827993643d52ef2c0963a",
+        "l1_pending_files": 0,
+        "lazy_resync": {
+          "attempted_files": 0,
+          "published_files": 0,
+          "refused_files": 0
+        },
+        "lexical": "complete",
+        "partial": false,
+        "rerank": "off",
+        "reranked": false,
+        "suppressed_hits": 0,
+        "took_ms": 89
+      },
+      "no_answer_empty": null,
+      "partial": false,
+      "partial_reason": null,
+      "paths": [
+        "docs/ref/csrf.txt",
+        "docs/releases/2.2.9.txt",
+        "docs/releases/1.11.27.txt",
+        "docs/topics/forms/index.txt",
+        "docs/releases/3.0.1.txt",
+        "docs/topics/class-based-views/mixins.txt",
+        "tests/view_tests/tests/test_csrf.py",
+        "docs/howto/csrf.txt",
+        "docs/ref/forms/api.txt",
+        "docs/topics/forms/index.txt"
+      ],
+      "query": "A form submitted over HTTPS is rejected even though its token looks valid. Where are the browser origin and referring address checked before the form can reach the view?",
+      "query_file": "/home/lucky93/deepkit-code/notes/bench/search-tuning-20260925/final-holdout.json",
+      "recall_at10": 0.0,
+      "repo": "django",
+      "result_budget": {
+        "considered": 10,
+        "limit": 1500,
+        "returned": 10,
+        "truncated": false,
+        "used_tokens": 1270
+      },
+      "scope": "code",
+      "wall_ms": 103.6450679966947
+    },
+    {
+      "arm": 9,
+      "assertion": null,
+      "category": null,
+      "effective_scope": "source",
+      "error": null,
+      "exit_code": 0,
+      "expect_files": [
+        "django/core/files/uploadhandler.py"
+      ],
+      "hit_file_at5": false,
+      "hits": [
+        {
+          "id": "u_80d7b7085455",
+          "kind": "doc_section",
+          "lines": [
+            247,
+            326
+          ],
+          "path": "docs/topics/http/file-uploads.txt"
+        },
+        {
+          "id": "u_5570b0908f48",
+          "kind": "doc_section",
+          "lines": [
+            208,
+            245
+          ],
+          "path": "docs/topics/http/file-uploads.txt"
+        },
+        {
+          "id": "u_a3bc5ab4423a",
+          "kind": "doc_section",
+          "lines": [
+            76,
+            113
+          ],
+          "path": "docs/ref/files/uploads.txt"
+        },
+        {
+          "id": "u_7b6ea02e7cee",
+          "kind": "chunk",
+          "lines": [
+            294,
+            345
+          ],
+          "path": "django/conf/global_settings.py"
+        },
+        {
+          "id": "u_6a1e0c76572b",
+          "kind": "symbol",
+          "lines": [
+            74,
+            97
+          ],
+          "path": "django/core/files/uploadedfile.py"
+        },
+        {
+          "id": "u_f1ba0b3d1ac6",
+          "kind": "doc_section",
+          "lines": [
+            115,
+            157
+          ],
+          "path": "docs/ref/files/uploads.txt"
+        },
+        {
+          "id": "u_8e426f63d6ea",
+          "kind": "doc_section",
+          "lines": [
+            1030,
+            1068
+          ],
+          "path": "docs/ref/settings.txt"
+        },
+        {
+          "id": "u_739188fff55e",
+          "kind": "doc_section",
+          "lines": [
+            1,
+            57
+          ],
+          "path": "docs/topics/http/file-uploads.txt"
+        },
+        {
+          "id": "u_ce5ced34da52",
+          "kind": "chunk",
+          "lines": [
+            164,
+            185
+          ],
+          "path": "django/http/multipartparser.py"
+        },
+        {
+          "id": "u_5bc4035b6133",
+          "kind": "symbol",
+          "lines": [
+            194,
+            252
+          ],
+          "path": "django/core/files/uploadhandler.py"
+        }
+      ],
+      "id": "final-holdout-django-04",
+      "index": {
+        "branch_resync": {
+          "state": "not_needed"
+        },
+        "degraded": false,
+        "dense": "not_requested",
+        "dirty_files": null,
+        "dirty_files_state": "not_checked",
+        "fresh": {
+          "reason": "source_not_verified",
+          "state": "unknown"
+        },
+        "freshness_refusals": {},
+        "head": "2b30f6255b5ef84afbd827993643d52ef2c0963a",
+        "indexed_head": "2b30f6255b5ef84afbd827993643d52ef2c0963a",
+        "l1_pending_files": 0,
+        "lazy_resync": {
+          "attempted_files": 0,
+          "published_files": 0,
+          "refused_files": 0
+        },
+        "lexical": "complete",
+        "partial": false,
+        "rerank": "off",
+        "reranked": false,
+        "suppressed_hits": 0,
+        "took_ms": 104
+      },
+      "no_answer_empty": null,
+      "partial": false,
+      "partial_reason": null,
+      "paths": [
+        "docs/topics/http/file-uploads.txt",
+        "docs/topics/http/file-uploads.txt",
+        "docs/ref/files/uploads.txt",
+        "django/conf/global_settings.py",
+        "django/core/files/uploadedfile.py",
+        "docs/ref/files/uploads.txt",
+        "docs/ref/settings.txt",
+        "docs/topics/http/file-uploads.txt",
+        "django/http/multipartparser.py",
+        "django/core/files/uploadhandler.py"
+      ],
+      "query": "Where does the upload pipeline decide whether to hold incoming file bytes in memory or let a temporary disk file handle a larger upload?",
+      "query_file": "/home/lucky93/deepkit-code/notes/bench/search-tuning-20260925/final-holdout.json",
+      "recall_at10": 1.0,
+      "repo": "django",
+      "result_budget": {
+        "considered": 10,
+        "limit": 1500,
+        "returned": 10,
+        "truncated": false,
+        "used_tokens": 1304
+      },
+      "scope": "code",
+      "wall_ms": 117.94599000131711
+    },
+    {
+      "arm": 9,
+      "assertion": null,
+      "category": null,
+      "effective_scope": "source",
+      "error": null,
+      "exit_code": 0,
+      "expect_files": [
+        "config/security/securityConfig.go",
+        "tpl/os/os.go"
+      ],
+      "hit_file_at5": true,
+      "hits": [
+        {
+          "id": "u_423d4ef79413",
+          "kind": "doc_section",
+          "lines": [
+            15,
+            35
+          ],
+          "path": "docs/content/en/configuration/security.md"
+        },
+        {
+          "id": "u_7f4d8d645481",
+          "kind": "symbol",
+          "lines": [
+            467,
+            472
+          ],
+          "path": "config/security/securityConfig.go"
+        },
+        {
+          "id": "u_ac8f6d7f9b44",
+          "kind": "symbol",
+          "lines": [
+            39,
+            87
+          ],
+          "path": "config/security/securityConfig.go"
+        },
+        {
+          "id": "u_d17c18687592",
+          "kind": "symbol",
+          "lines": [
+            42,
+            63
+          ],
+          "path": "config/env.go"
+        },
+        {
+          "id": "u_28bf052663aa",
+          "kind": "symbol",
+          "lines": [
+            474,
+            476
+          ],
+          "path": "config/security/securityConfig.go"
+        },
+        {
+          "id": "u_64f2842b3426",
+          "kind": "chunk",
+          "lines": [
+            256,
+            317
+          ],
+          "path": "tpl/internal/go_templates/texttemplate/doc.go"
+        },
+        {
+          "id": "u_3fc167b26571",
+          "kind": "doc_section",
+          "lines": [
+            1,
+            9
+          ],
+          "path": "docs/content/en/quick-reference/glossary/environment.md"
+        },
+        {
+          "id": "u_f25849b661b6",
+          "kind": "doc_section",
+          "lines": [
+            140,
+            169
+          ],
+          "path": "docs/content/en/functions/css/PostCSS.md"
+        },
+        {
+          "id": "u_1b8f84de0bd5",
+          "kind": "doc_section",
+          "lines": [
+            19,
+            31
+          ],
+          "path": "docs/content/en/about/security.md"
+        },
+        {
+          "id": "u_f2d76f50311b",
+          "kind": "doc_section",
+          "lines": [
+            5,
+            44
+          ],
+          "path": "docs/content/en/_common/functions/js/options.md"
+        }
+      ],
+      "id": "final-holdout-hugo-01",
+      "index": {
+        "branch_resync": {
+          "state": "not_needed"
+        },
+        "degraded": false,
+        "dense": "not_requested",
+        "dirty_files": null,
+        "dirty_files_state": "not_checked",
+        "fresh": {
+          "reason": "source_not_verified",
+          "state": "unknown"
+        },
+        "freshness_refusals": {},
+        "head": "f425ff622dfc715315f6c210fb5aa4e0c500472c",
+        "indexed_head": "f425ff622dfc715315f6c210fb5aa4e0c500472c",
+        "l1_pending_files": 0,
+        "lazy_resync": {
+          "attempted_files": 0,
+          "published_files": 0,
+          "refused_files": 0
+        },
+        "lexical": "complete",
+        "partial": false,
+        "rerank": "off",
+        "reranked": false,
+        "suppressed_hits": 0,
+        "took_ms": 71
+      },
+      "no_answer_empty": null,
+      "partial": false,
+      "partial_reason": null,
+      "paths": [
+        "docs/content/en/configuration/security.md",
+        "config/security/securityConfig.go",
+        "config/security/securityConfig.go",
+        "config/env.go",
+        "config/security/securityConfig.go",
+        "tpl/internal/go_templates/texttemplate/doc.go",
+        "docs/content/en/quick-reference/glossary/environment.md",
+        "docs/content/en/functions/css/PostCSS.md",
+        "docs/content/en/about/security.md",
+        "docs/content/en/_common/functions/js/options.md"
+      ],
+      "query": "A template needs a value from the process environment but access is denied. Where does the template call reach the policy that decides which variable names are allowed?",
+      "query_file": "/home/lucky93/deepkit-code/notes/bench/search-tuning-20260925/final-holdout.json",
+      "recall_at10": 0.5,
+      "repo": "hugo",
+      "result_budget": {
+        "considered": 10,
+        "limit": 1500,
+        "returned": 10,
+        "truncated": false,
+        "used_tokens": 1382
+      },
+      "scope": "code",
+      "wall_ms": 83.16981799725909
+    },
+    {
+      "arm": 9,
+      "assertion": null,
+      "category": null,
+      "effective_scope": "source",
+      "error": null,
+      "exit_code": 0,
+      "expect_files": [
+        "hugolib/alias.go",
+        "tpl/tplimpl/embedded/templates/alias.html"
+      ],
+      "hit_file_at5": false,
+      "hits": [
+        {
+          "id": "u_8caba05e2baf",
+          "kind": "symbol",
+          "lines": [
+            24,
+            28
+          ],
+          "path": "common/types/hstring/stringtypes.go"
+        },
+        {
+          "id": "u_80169083c7d9",
+          "kind": "symbol",
+          "lines": [
+            38,
+            42
+          ],
+          "path": "tpl/safe/safe.go"
+        },
+        {
+          "id": "u_fbad5b4429b5",
+          "kind": "doc_section",
+          "lines": [
+            209,
+            235
+          ],
+          "path": "docs/content/en/content-management/urls.md"
+        },
+        {
+          "id": "u_862dd36eadce",
+          "kind": "chunk",
+          "lines": [
+            188,
+            258
+          ],
+          "path": "hugolib/page_test.go"
+        },
+        {
+          "id": "u_f6a93dd32cff",
+          "kind": "symbol",
+          "lines": [
+            670,
+            687
+          ],
+          "path": "hugolib/page_test.go"
+        },
+        {
+          "id": "u_e715c73d8918",
+          "kind": "doc_section",
+          "lines": [
+            301,
+            335
+          ],
+          "path": "docs/content/en/templates/introduction.md"
+        },
+        {
+          "id": "u_01551f507f42",
+          "kind": "symbol",
+          "lines": [
+            158,
+            200
+          ],
+          "path": "resources/resource_factories/create/create.go"
+        },
+        {
+          "id": "u_e4179c078b43",
+          "kind": "doc_section",
+          "lines": [
+            37,
+            51
+          ],
+          "path": "docs/content/en/configuration/security.md"
+        },
+        {
+          "id": "u_27fb7d8777b3",
+          "kind": "doc_section",
+          "lines": [
+            9409,
+            9444
+          ],
+          "path": "hugolib/testdata/what-is-markdown.md"
+        },
+        {
+          "id": "u_432d56df9e24",
+          "kind": "doc_section",
+          "lines": [
+            1,
+            29
+          ],
+          "path": "docs/content/en/functions/partials/IncludeCached.md"
+        }
+      ],
+      "id": "final-holdout-hugo-02",
+      "index": {
+        "branch_resync": {
+          "state": "not_needed"
+        },
+        "degraded": false,
+        "dense": "not_requested",
+        "dirty_files": null,
+        "dirty_files_state": "not_checked",
+        "fresh": {
+          "reason": "source_not_verified",
+          "state": "unknown"
+        },
+        "freshness_refusals": {},
+        "head": "f425ff622dfc715315f6c210fb5aa4e0c500472c",
+        "indexed_head": "f425ff622dfc715315f6c210fb5aa4e0c500472c",
+        "l1_pending_files": 0,
+        "lazy_resync": {
+          "attempted_files": 0,
+          "published_files": 0,
+          "refused_files": 0
+        },
+        "lexical": "complete",
+        "partial": false,
+        "rerank": "off",
+        "reranked": false,
+        "suppressed_hits": 0,
+        "took_ms": 84
+      },
+      "no_answer_empty": null,
+      "partial": false,
+      "partial_reason": null,
+      "paths": [
+        "common/types/hstring/stringtypes.go",
+        "tpl/safe/safe.go",
+        "docs/content/en/content-management/urls.md",
+        "hugolib/page_test.go",
+        "hugolib/page_test.go",
+        "docs/content/en/templates/introduction.md",
+        "resources/resource_factories/create/create.go",
+        "docs/content/en/configuration/security.md",
+        "hugolib/testdata/what-is-markdown.md",
+        "docs/content/en/functions/partials/IncludeCached.md"
+      ],
+      "query": "After renaming a page, how are its old addresses turned into small HTML pages that send visitors to the new address?",
+      "query_file": "/home/lucky93/deepkit-code/notes/bench/search-tuning-20260925/final-holdout.json",
+      "recall_at10": 0.0,
+      "repo": "hugo",
+      "result_budget": {
+        "considered": 10,
+        "limit": 1500,
+        "returned": 10,
+        "truncated": false,
+        "used_tokens": 1496
+      },
+      "scope": "code",
+      "wall_ms": 94.15093300049193
+    },
+    {
+      "arm": 9,
+      "assertion": null,
+      "category": null,
+      "effective_scope": "source",
+      "error": null,
+      "exit_code": 0,
+      "expect_files": [
+        "resources/page/pagination.go"
+      ],
+      "hit_file_at5": false,
+      "hits": [
+        {
+          "id": "u_029ca6c61eef",
+          "kind": "doc_section",
+          "lines": [
+            1,
+            38
+          ],
+          "path": "docs/content/en/methods/page/Paginate.md"
+        },
+        {
+          "id": "u_477c75ee1064",
+          "kind": "doc_section",
+          "lines": [
+            1,
+            16
+          ],
+          "path": "docs/content/en/methods/page/Rotate.md"
+        },
+        {
+          "id": "u_e7deb5925bb3",
+          "kind": "doc_section",
+          "lines": [
+            1,
+            33
+          ],
+          "path": "docs/content/en/methods/page/Paginator.md"
+        },
+        {
+          "id": "u_6611a60c994f",
+          "kind": "doc_section",
+          "lines": [
+            39,
+            52
+          ],
+          "path": "docs/content/en/templates/pagination.md"
+        },
+        {
+          "id": "u_4bdeff29414d",
+          "kind": "doc_section",
+          "lines": [
+            54,
+            91
+          ],
+          "path": "docs/content/en/templates/pagination.md"
+        },
+        {
+          "id": "u_696087ba1146",
+          "kind": "doc_section",
+          "lines": [
+            29,
+            56
+          ],
+          "path": "docs/content/en/functions/collections/Where.md"
+        },
+        {
+          "id": "u_5bf5ef356668",
+          "kind": "doc_section",
+          "lines": [
+            1,
+            46
+          ],
+          "path": "docs/content/en/_common/methods/pages/next-and-prev.md"
+        },
+        {
+          "id": "u_3d2f8e9b9557",
+          "kind": "doc_section",
+          "lines": [
+            1,
+            44
+          ],
+          "path": "docs/content/en/_common/methods/page/next-and-prev.md"
+        },
+        {
+          "id": "u_1c99e1328ddd",
+          "kind": "symbol",
+          "lines": [
+            53,
+            66
+          ],
+          "path": "resources/images/meta/meta.go"
+        },
+        {
+          "id": "u_f9acaa5c817f",
+          "kind": "doc_section",
+          "lines": [
+            1,
+            44
+          ],
+          "path": "docs/content/en/_common/methods/page/nextinsection-and-previnsection.md"
+        }
+      ],
+      "id": "final-holdout-hugo-03",
+      "index": {
+        "branch_resync": {
+          "state": "not_needed"
+        },
+        "degraded": false,
+        "dense": "not_requested",
+        "dirty_files": null,
+        "dirty_files_state": "not_checked",
+        "fresh": {
+          "reason": "source_not_verified",
+          "state": "unknown"
+        },
+        "freshness_refusals": {},
+        "head": "f425ff622dfc715315f6c210fb5aa4e0c500472c",
+        "indexed_head": "f425ff622dfc715315f6c210fb5aa4e0c500472c",
+        "l1_pending_files": 0,
+        "lazy_resync": {
+          "attempted_files": 0,
+          "published_files": 0,
+          "refused_files": 0
+        },
+        "lexical": "complete",
+        "partial": false,
+        "rerank": "off",
+        "reranked": false,
+        "suppressed_hits": 0,
+        "took_ms": 69
+      },
+      "no_answer_empty": null,
+      "partial": false,
+      "partial_reason": null,
+      "paths": [
+        "docs/content/en/methods/page/Paginate.md",
+        "docs/content/en/methods/page/Rotate.md",
+        "docs/content/en/methods/page/Paginator.md",
+        "docs/content/en/templates/pagination.md",
+        "docs/content/en/templates/pagination.md",
+        "docs/content/en/functions/collections/Where.md",
+        "docs/content/en/_common/methods/pages/next-and-prev.md",
+        "docs/content/en/_common/methods/page/next-and-prev.md",
+        "resources/images/meta/meta.go",
+        "docs/content/en/_common/methods/page/nextinsection-and-previnsection.md"
+      ],
+      "query": "Where is a long collection of articles divided into numbered result pages, including the behavior when the collection is empty?",
+      "query_file": "/home/lucky93/deepkit-code/notes/bench/search-tuning-20260925/final-holdout.json",
+      "recall_at10": 0.0,
+      "repo": "hugo",
+      "result_budget": {
+        "considered": 10,
+        "limit": 1500,
+        "returned": 10,
+        "truncated": false,
+        "used_tokens": 1222
+      },
+      "scope": "code",
+      "wall_ms": 80.86316900153179
+    },
+    {
+      "arm": 9,
+      "assertion": null,
+      "category": null,
+      "effective_scope": "source",
+      "error": null,
+      "exit_code": 0,
+      "expect_files": [
+        "hugolib/site.go"
+      ],
+      "hit_file_at5": false,
+      "hits": [
+        {
+          "id": "u_3ed5fd6c8926",
+          "kind": "config_key",
+          "lines": [
+            1,
+            28
+          ],
+          "path": "docs/data/articles.toml"
+        },
+        {
+          "id": "u_69837e817302",
+          "kind": "symbol",
+          "lines": [
+            41,
+            61
+          ],
+          "path": "hugolib/content_map_page_assembler.go"
+        },
+        {
+          "id": "u_997b66997fd8",
+          "kind": "config_key",
+          "lines": [
+            1,
+            33
+          ],
+          "path": "docs/data/articles.toml"
+        },
+        {
+          "id": "u_56afb81b175e",
+          "kind": "doc_section",
+          "lines": [
+            1,
+            26
+          ],
+          "path": "docs/content/en/configuration/sitemap.md"
+        },
+        {
+          "id": "u_8b0638fee5ec",
+          "kind": "doc_section",
+          "lines": [
+            52,
+            67
+          ],
+          "path": "docs/content/en/content-management/sections.md"
+        },
+        {
+          "id": "u_8a521b7707c4",
+          "kind": "symbol",
+          "lines": [
+            1755,
+            1769
+          ],
+          "path": "hugolib/site.go"
+        },
+        {
+          "id": "u_c79cdcf7f8ef",
+          "kind": "doc_section",
+          "lines": [
+            155,
+            171
+          ],
+          "path": "docs/content/en/functions/go-template/range.md"
+        },
+        {
+          "id": "u_757de21b7a8d",
+          "kind": "doc_section",
+          "lines": [
+            56,
+            86
+          ],
+          "path": "docs/content/en/getting-started/external-learning-resources/index.md"
+        },
+        {
+          "id": "u_7f00ddd5c634",
+          "kind": "config_key",
+          "lines": [
+            1,
+            29
+          ],
+          "path": "docs/data/articles.toml"
+        },
+        {
+          "id": "u_99739e65ac4e",
+          "kind": "doc_section",
+          "lines": [
+            43,
+            62
+          ],
+          "path": "docs/content/en/configuration/cascade.md"
+        }
+      ],
+      "id": "final-holdout-hugo-04",
+      "index": {
+        "branch_resync": {
+          "state": "not_needed"
+        },
+        "degraded": false,
+        "dense": "not_requested",
+        "dirty_files": null,
+        "dirty_files_state": "not_checked",
+        "fresh": {
+          "reason": "source_not_verified",
+          "state": "unknown"
+        },
+        "freshness_refusals": {},
+        "head": "f425ff622dfc715315f6c210fb5aa4e0c500472c",
+        "indexed_head": "f425ff622dfc715315f6c210fb5aa4e0c500472c",
+        "l1_pending_files": 0,
+        "lazy_resync": {
+          "attempted_files": 0,
+          "published_files": 0,
+          "refused_files": 0
+        },
+        "lexical": "complete",
+        "partial": false,
+        "rerank": "off",
+        "reranked": false,
+        "suppressed_hits": 0,
+        "took_ms": 75
+      },
+      "no_answer_empty": null,
+      "partial": false,
+      "partial_reason": null,
+      "paths": [
+        "docs/data/articles.toml",
+        "hugolib/content_map_page_assembler.go",
+        "docs/data/articles.toml",
+        "docs/content/en/configuration/sitemap.md",
+        "docs/content/en/content-management/sections.md",
+        "hugolib/site.go",
+        "docs/content/en/functions/go-template/range.md",
+        "docs/content/en/getting-started/external-learning-resources/index.md",
+        "docs/data/articles.toml",
+        "docs/content/en/configuration/cascade.md"
+      ],
+      "query": "Which code keeps unpublished drafts, articles scheduled for a later date, and expired articles out of the generated site unless their inclusion is requested?",
+      "query_file": "/home/lucky93/deepkit-code/notes/bench/search-tuning-20260925/final-holdout.json",
+      "recall_at10": 1.0,
+      "repo": "hugo",
+      "result_budget": {
+        "considered": 10,
+        "limit": 1500,
+        "returned": 10,
+        "truncated": false,
+        "used_tokens": 1354
+      },
+      "scope": "code",
+      "wall_ms": 88.50318200711627
+    }
+  ],
+  "scheduled_queries": 12,
+  "score_protocol": "all scheduled rows retained; positive-label errors score zero; empty labels have separate no-answer score; partial responses score delivered hits and fail the run",
+  "selected_repos": null,
+  "started_at": "2026-09-25T21:22:49.548875+00:00",
+  "state": "complete",
+  "summary": {
+    "by_repo": {
+      "django": {
+        "cli_wall_ms_median": 123.93811000220012,
+        "cli_wall_ms_p95": 134.3158020026749,
+        "errors": 0,
+        "hit_file_at5": 0.25,
+        "negative_queries": 0,
+        "no_answer_empty": null,
+        "partial": 0,
+        "positive_queries": 4,
+        "queries": 4,
+        "recall_at10": 0.375
+      },
+      "hugo": {
+        "cli_wall_ms_median": 85.83650000218768,
+        "cli_wall_ms_p95": 94.15093300049193,
+        "errors": 0,
+        "hit_file_at5": 0.25,
+        "negative_queries": 0,
+        "no_answer_empty": null,
+        "partial": 0,
+        "positive_queries": 4,
+        "queries": 4,
+        "recall_at10": 0.375
+      },
+      "laravel": {
+        "cli_wall_ms_median": 113.21306400350295,
+        "cli_wall_ms_p95": 131.64106399926823,
+        "errors": 0,
+        "hit_file_at5": 0.25,
+        "negative_queries": 0,
+        "no_answer_empty": null,
+        "partial": 0,
+        "positive_queries": 4,
+        "queries": 4,
+        "recall_at10": 0.375
+      }
+    },
+    "total": {
+      "cli_wall_ms_median": 104.54133950406685,
+      "cli_wall_ms_p95": 134.3158020026749,
+      "errors": 0,
+      "hit_file_at5": 0.25,
+      "negative_queries": 0,
+      "no_answer_empty": null,
+      "partial": 0,
+      "positive_queries": 12,
+      "queries": 12,
+      "recall_at10": 0.375
+    }
+  },
+  "timeout_seconds": 15
+}

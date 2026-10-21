@@ -1,0 +1,139 @@
+name: Beta Homebrew checks
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  native-homebrew:
+    name: Homebrew (${{ matrix.scope }})
+    runs-on: ${{ matrix.runner }}
+    timeout-minutes: 90
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - runner: macos-14
+            target: aarch64-apple-darwin
+            scope: native macOS ARM
+          - runner: ubuntu-22.04
+            target: x86_64-unknown-linux-gnu
+            scope: Linux GNU diagnostic
+    defaults:
+      run:
+        shell: bash
+    env:
+      CARGO_INCREMENTAL: "0"
+      CARGO_BUILD_JOBS: "2"
+      CMAKE_BUILD_PARALLEL_LEVEL: "2"
+      DKC_EXPECTED_TARGET: ${{ matrix.target }}
+      HOMEBREW_NO_ANALYTICS: "1"
+      HOMEBREW_NO_AUTO_UPDATE: "1"
+      HOMEBREW_NO_INSTALL_CLEANUP: "1"
+
+    steps:
+      - name: Check out the tested source
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          persist-credentials: false
+          submodules: recursive
+
+      - name: Install Rust toolchain
+        uses: dtolnay/rust-toolchain@686976e191b89faba57d3206551f0f330d8cb249 # stable
+
+      - name: Install packaging Python
+        uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
+        with:
+          python-version: '3.12'
+
+      - name: Set the supported macOS deployment target
+        if: runner.os == 'macOS'
+        run: echo "MACOSX_DEPLOYMENT_TARGET=13.0" >> "$GITHUB_ENV"
+
+      - name: Build native release from clean source
+        run: |
+          mkdir -p "$RUNNER_TEMP/beta-homebrew-logs"
+          exec > >(tee "$RUNNER_TEMP/beta-homebrew-logs/build.log") 2>&1
+          git rev-parse HEAD
+          test -z "$(git status --porcelain --untracked-files=all)"
+          rustc -vV
+          test "$(rustc -vV | sed -n 's/^host: //p')" = "$DKC_EXPECTED_TARGET"
+          python3 --version
+          cmake --version
+          # No CUDA or model downloads. ARM macOS retains its Cargo-selected
+          # Metal dependency; the Homebrew test exercises local L1/lexical only.
+          cargo build --release --locked --bin dkc
+
+      - name: Package the actual native binary and licenses
+        run: |
+          python3 scripts/release/package-beta.py \
+            --binary target/release/dkc --out target/beta-artifacts \
+            2>&1 | tee "$RUNNER_TEMP/beta-homebrew-logs/package.log"
+
+      - name: Set up native Homebrew
+        uses: Homebrew/actions/setup-homebrew@f9676f1ffe2e1a720f81b2c54c51cfb99915ec14
+        with:
+          stable: true
+          brew-gh-api-token: ""
+
+      - name: Install, test, remove and reinstall the local formula
+        run: |
+          exec > >(tee "$RUNNER_TEMP/beta-homebrew-logs/homebrew.log") 2>&1
+          set -x
+          brew config
+          brew tap-new --no-git dkc-local/beta
+          if brew command trust >/dev/null 2>&1; then
+            brew trust --tap dkc-local/beta
+          fi
+          dkc_formula="$(brew --repository dkc-local/beta)/Formula/dkc.rb"
+          dkc_version="$(python3 -c 'import pathlib, tomllib; print(tomllib.loads(pathlib.Path("Cargo.toml").read_text())["package"]["version"])')"
+          python3 scripts/release/brew-formula.py \
+            --artifacts target/beta-artifacts --version "$dkc_version" \
+            --targets "$DKC_EXPECTED_TARGET" --out "$dkc_formula" --local-test
+          cp "$dkc_formula" target/beta-artifacts/local-test-dkc.rb
+          brew install --formula dkc-local/beta/dkc
+          "$(brew --prefix)/bin/dkc" --version
+          brew test dkc-local/beta/dkc
+          test -f "$(brew --prefix dkc-local/beta/dkc)/share/dkc/THIRD_PARTY_NOTICES.md"
+          test -f "$(brew --prefix dkc-local/beta/dkc)/share/dkc/third-party-licenses.tar.gz"
+          test -f "$(brew --prefix dkc-local/beta/dkc)/LICENSE-MIT"
+          test -f "$(brew --prefix dkc-local/beta/dkc)/LICENSE-APACHE"
+          brew uninstall dkc-local/beta/dkc
+          test ! -e "$(brew --prefix)/bin/dkc"
+          brew install --formula dkc-local/beta/dkc
+          brew reinstall dkc-local/beta/dkc
+          brew test dkc-local/beta/dkc
+          brew uninstall dkc-local/beta/dkc
+          test ! -e "$(brew --prefix)/bin/dkc"
+
+      - name: Record coverage scope
+        if: always()
+        env:
+          DKC_CHECK_SCOPE: ${{ matrix.scope }}
+          DKC_CHECK_RESULT: ${{ job.status }}
+        run: |
+          {
+            echo "Homebrew scope: $DKC_CHECK_SCOPE ($DKC_EXPECTED_TARGET)"
+            echo "Job result before artifact upload: $DKC_CHECK_RESULT"
+            echo "Local archive install and L1/lexical formula test; no publication or model inference."
+            echo "Linux GNU is diagnostic coverage, not portable Linux musl qualification."
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Retain immutable archives, checksums, formula and logs
+        if: always()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7
+        with:
+          name: beta-homebrew-${{ matrix.target }}-${{ github.run_id }}-${{ github.run_attempt }}
+          path: |
+            target/beta-artifacts/
+            ${{ runner.temp }}/beta-homebrew-logs/
+          if-no-files-found: warn
+          compression-level: 0
+          retention-days: 30
