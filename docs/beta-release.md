@@ -113,10 +113,10 @@ Exact local results and artifact identities are in the
    artifacts whose embedded commit is the exact commit you will tag.
    Record the actual supported target(s), complete archive hashes and install
    results. Do not advertise untested targets.
-4. **Publish the reviewed beta assets.** After approving public history, change
-   repository visibility. Temporarily disable the generated **Release** workflow
+4. **Publish the reviewed beta assets after owner approval.** The source
+   repository is already public. Temporarily disable the generated **Release** workflow
    before creating the beta tag: its default five-platform route still includes
-   unsupported Windows smoke tests. Create `v0.1.0-beta.1` at the exact reviewed
+   unsupported Windows smoke tests. Create `v0.1.0-beta.2` at the exact reviewed
    commit as a GitHub **prerelease**, upload the qualified archives and checksums,
    then re-enable that workflow. This is a manual beta publication; keep the
    full v1 checks intact. GitHub documents [disabling and enabling workflows](https://docs.github.com/en/actions/how-tos/manage-workflow-runs/disable-and-enable-workflows).
@@ -157,7 +157,7 @@ From the DKC checkout, with final uploaded archives downloaded to
 ```sh
 python3 scripts/release/brew-formula.py \
   --artifacts ./release-assets \
-  --version 0.1.0-beta.1 \
+  --version 0.1.0-beta.2 \
   --targets aarch64-apple-darwin \
   --out /tmp/dkc-beta-formula.rb
 ```
