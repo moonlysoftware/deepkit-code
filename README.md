@@ -9,24 +9,14 @@ with CLI and MCP interfaces.
 
 ## Install
 
-**Beta for macOS and Linux.** The source is public. Homebrew packages currently
-require access to the private `moonlysoftware/homebrew-tap` and
-`moonlysoftware/deepkit-code-history` repositories.
-
-For invited Apple Silicon testers (or the x86-64 Linux diagnostic), with Python
-3.11+ and authenticated Git and GitHub CLI access
-([setup](docs/usage.md#private-homebrew-preview)):
+**Beta for Apple Silicon Macs.** Install with Homebrew:
 
 ```sh
-brew tap moonlysoftware/tap
-python3 "$(brew --repository moonlysoftware/tap)/scripts/prepare-private.py"
-brew install --formula moonlysoftware/tap/dkc
-brew test moonlysoftware/tap/dkc
+brew install moonlysoftware/tap/dkc
 ```
 
-The helper downloads and verifies the preview before installation. Already
-installed? Follow the [upgrade instructions](docs/usage.md#update-the-homebrew-preview).
-Without private access, [build from the public source](docs/usage.md#build-from-source).
+Already installed? Run `brew update && brew upgrade moonlysoftware/tap/dkc`.
+[Build from source](docs/usage.md#build-from-source) for other supported setups.
 
 ## Try it
 

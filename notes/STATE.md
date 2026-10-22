@@ -1,22 +1,48 @@
 # Current development state
 
-## Public Homebrew preparation — 22 October 2026
+## Public Homebrew release — 22 October 2026
 
-The source repository is public. The owner requested preparation of public
-Homebrew distribution; the tap and history repository remain private. Branch
-`codex/public-homebrew` prepares `0.1.0-beta.2` for Apple Silicon, replacing the
-private preview's authenticated artifact path with a checksum-bound release
-formula after candidate validation. Publication and tap visibility are pending
-owner review of the completed candidate.
+The owner authorized merging both preparation PRs, publishing beta.2 and making
+the tap public. Source PR #1 merged as `eb1cd7773722417b861d8217af1fcc51804f1a5e`;
+tap PR #4 merged as `df1a1ebb34dc24424c30be440a377feb83c469df`.
+[Version 0.1.0-beta.2](https://github.com/moonlysoftware/deepkit-code/releases/tag/v0.1.0-beta.2)
+was published at 17:04:30 UTC, with tag `v0.1.0-beta.2` at exact tested commit
+`f9abf48625e012c572b22fdcc13514acea70dfb2`. Source and tap are public;
+`moonlysoftware/deepkit-code-history` remains private.
 
-Baseline source CI at `203c14c` passed formatting, Clippy, 1,416 Rust tests
-(17 ignored) and 100 tooling tests, then failed the dependency advisory gate.
-The candidate updates OfficeOxide/ZIP and rustls-webpki, refreshes the Office
-extractor fingerprint and complete license bundle, and moves native Mac builds
-to macOS 15. Full candidate checks run on hosted CI to avoid a local Rust rebuild;
-candidate results remain pending until those runs complete.
+The Apple Silicon formula uses the public release archive and pinned SHA-256,
+with no private helper or artifact-cache preparation. Install with
+`brew install moonlysoftware/tap/dkc`. Anonymous Git access to the public tap
+and an HTTP 200 download of the 28,129,829-byte archive passed. A public Homebrew
+reinstall from a fresh cache and the formula test passed locally at
+17:06:11–17:06:21 UTC; installed identities matched the manifest, with the tap
+unchanged and earlier kegs preserved. Fresh hosted ARM Mac
+[run 39819875391](https://github.com/moonlysoftware/homebrew-tap/actions/runs/39819875391)
+also passed the anonymous public install, formula test and all installed-file
+identity checks at tap commit `a869bd24289300902cf891dbee050a399890e81a`, on
+macOS 15.7.9 with Homebrew 6.0.22. The first workflow was rejected during
+validation because `runner.temp` was used in job-level environment configuration;
+`a869bd2` moved that cache setting to `GITHUB_ENV` before the successful run.
 
-## Current handoff — 21 October 2026
+Final source push/PR CI passed formatting, strict Clippy, 1,416 Rust tests
+(17 ignored), 39 release-tool tests, 100 benchmark-tool tests and dependency
+checks. Merge CI `39812848540` also passed at `eb1cd77`.
+Exact-commit native run `39768490488` and PR native run `39768457278`
+passed on Mac ARM and the Linux GNU diagnostic. The local Mac upgrade from
+`0.1.0-beta.1_1` to beta.2 and formula test passed; installed binary and license
+identities matched the manifest, with the original tap and older kegs preserved.
+Homebrew reported Tier 2 toolchain warnings. Tap push/PR checks passed on Ubuntu
+and macOS at `a55b05c`. These package tests do not qualify model inference or v1.
+
+The earlier `203c14c` baseline passed Rust checks but failed the dependency
+advisory gate. Beta.2 updates OfficeOxide/ZIP and rustls-webpki, refreshes Office
+extraction fingerprints and the complete license bundle, and uses macOS 15
+native builds. Full checks ran on hosted CI without a local Rust rebuild.
+See [the beta handover](../docs/beta-release.md) and the
+[tap validation record](https://github.com/moonlysoftware/homebrew-tap/blob/main/docs/public-validation.md)
+for release identities and evidence limits. The records below are historical.
+
+## Previous handoff — 21 October 2026
 
 The owner requested a fresh private `moonlysoftware/deepkit-code` with one
 initial commit. The original private repository is renamed to
