@@ -1,6 +1,6 @@
 [package]
 name = "deepkit-code"
-version = "0.1.0-beta.1"
+version = "0.1.0-beta.2"
 edition = "2024"
 rust-version = "1.98"
 license = "MIT OR Apache-2.0"
@@ -100,7 +100,7 @@ pdf_oxide = { version = "=0.3.78", default-features = false }
 pdfium-render = { version = "=0.9.4", optional = true, default-features = false, features = ["pdfium_7881", "image_025", "thread_safe"] }
 flate2 = "=1.1.10"
 image = { version = "=0.25.10", default-features = false, features = ["png", "jpeg", "webp", "gif"] }
-office_oxide = { version = "=0.1.11", default-features = false }
+office_oxide = { version = "=0.1.15", default-features = false }
 
 [target.'cfg(unix)'.dependencies]
 rustix = { version = "1.1.4", features = ["fs", "process"] }

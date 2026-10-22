@@ -1089,10 +1089,20 @@ mod tests {
     #[test]
     fn branch_processing_accounts_for_incomplete_discovery_and_cap_deferrals() {
         let (root, context) = fixture();
-        target(&context, "other.rs", Default::default()).unwrap();
+        // The discovery cap applies before sorting filesystem entries. Seed the
+        // admitted file so either traversal order exercises retained cap deferral.
+        let candidates = sync::discovery::discover(root.path(), 1, Default::default()).unwrap();
+        assert_eq!(candidates.paths.len(), 1);
+        let retained_path = &candidates.paths[0];
+        let pending_path = if retained_path == "other.rs" {
+            "source.rs"
+        } else {
+            "other.rs"
+        };
+        target(&context, retained_path, Default::default()).unwrap();
         let old = context
             .store
-            .unit_by_path("other.rs", None, None)
+            .unit_by_path(retained_path, None, None)
             .unwrap()
             .unwrap();
         fs::write(
@@ -1104,6 +1114,7 @@ mod tests {
         let (prepared, publication) = branch_catalogue(&capped, Default::default())
             .unwrap()
             .unwrap();
+        assert_eq!(prepared.candidates.paths, candidates.paths);
         let progress =
             process_branch(&capped, &prepared, &publication, Default::default()).unwrap();
         assert_eq!(progress.processed_files, 1);
@@ -1113,13 +1124,13 @@ mod tests {
         assert_eq!(
             context
                 .store
-                .unit_by_path("other.rs", None, None)
+                .unit_by_path(retained_path, None, None)
                 .unwrap()
                 .unwrap()
                 .id,
             old.id
         );
-        assert_eq!(context.store.pending_l1_paths().unwrap(), ["source.rs"]);
+        assert_eq!(context.store.pending_l1_paths().unwrap(), [pending_path]);
         let changes = capped.store.writer().unwrap().total_changes();
         let retry = process_branch(&capped, &prepared, &publication, Default::default()).unwrap();
         assert_eq!(retry.processed_files, 0);

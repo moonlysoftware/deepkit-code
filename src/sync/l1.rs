@@ -134,7 +134,7 @@ pub(crate) fn file_fingerprint(
         input["notebook_extractor"] = json!("nbformat4/dkc-notebook-v2-lexical-language");
     }
     if treatment.chunker == crate::treat::Chunker::Office {
-        input["office_extractor"] = json!("office_oxide-0.1.11/dkc-office-v1");
+        input["office_extractor"] = json!("office_oxide-0.1.15/dkc-office-v1");
     }
     match file.kind {
         crate::store::FileKind::Doc => {

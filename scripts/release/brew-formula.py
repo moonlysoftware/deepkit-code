@@ -111,6 +111,13 @@ def generate(directory: Path, version: str, targets: list[str], local_test: bool
         f'  version {quote(version)}',
         '  license any_of: ["MIT", "Apache-2.0"]', '',
     ]
+    if targets == ["aarch64-apple-darwin"]:
+        # Match the native beta's MACOSX_DEPLOYMENT_TARGET=13.0 and avoid
+        # presenting an Apple Silicon-only archive to other platforms.
+        lines.extend([
+            '  depends_on macos: :ventura',
+            '  depends_on arch: :arm64', '',
+        ])
     for (os_block, cpu_block), url, digest in rows:
         lines.extend([
             f'  {os_block} do', f'    {cpu_block} do',

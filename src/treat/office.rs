@@ -117,11 +117,7 @@ mod tests {
     #[test]
     fn formats_preserve_headings_sheet_slide_context_and_text() {
         for (name, phrase, prefix) in [
-            (
-                "handbook.docx",
-                "interrupted update",
-                "**Repository Handbook**",
-            ),
+            ("handbook.docx", "interrupted update", "Repository Handbook"),
             ("inventory.xlsx", "manual.pdf", "sheet 1"),
             ("workflow.pptx", "original source", "slide 1"),
         ] {

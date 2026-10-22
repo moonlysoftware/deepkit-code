@@ -118,6 +118,34 @@ class BrewFormulaTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             formula.generate(Path('/unused'), '0.1.0-beta.1', ['x86_64-unknown-linux-gnu'], False)
 
+    def test_apple_silicon_only_formula_declares_architecture_and_deployment_floor(self):
+        target = 'aarch64-apple-darwin'
+        metadata = {'version': '0.1.0-beta.2', 'diagnostic': False,
+                    'build': {'target': target, 'source_dirty': 'false'}}
+        with tempfile.TemporaryDirectory() as temp:
+            directory = Path(temp)
+            self.archive(directory, build=metadata).rename(
+                directory / f'deepkit-code-{target}.tar.gz')
+            for local_test in (False, True):
+                with self.subTest(local_test=local_test):
+                    value = formula.generate(directory, '0.1.0-beta.2', [target], local_test)
+                    self.assertIn('  depends_on macos: :ventura\n', value)
+                    self.assertIn('  depends_on arch: :arm64\n', value)
+                    self.assertNotIn('on_linux', value)
+                    self.assertEqual('file://' in value, local_test)
+
+    def test_mixed_platform_formula_keeps_its_existing_platform_support(self):
+        with tempfile.TemporaryDirectory() as temp:
+            directory = Path(temp)
+            linux = self.archive(directory)
+            (directory / 'deepkit-code-aarch64-apple-darwin.tar.gz').write_bytes(linux.read_bytes())
+            value = formula.generate(directory, '0.1.0-beta.1',
+                                     ['x86_64-unknown-linux-musl', 'aarch64-apple-darwin'], False)
+            self.assertIn('  on_linux do\n', value)
+            self.assertIn('  on_macos do\n', value)
+            self.assertNotIn('depends_on macos:', value)
+            self.assertNotIn('depends_on arch:', value)
+
 
 if __name__ == '__main__':
     unittest.main()

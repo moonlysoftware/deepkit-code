@@ -2,7 +2,7 @@
 
 [Setup and usage](usage.md) · [Measured results](benchmarks.md)
 
-The candidate version is **0.1.0-beta.1**. This is a Mac/Linux beta, with
+The next candidate version is **0.1.0-beta.2**. This is a Mac/Linux beta, with
 Windows setup, database access and source opening still unqualified. A working
 build does not complete the v1 performance, corpus or installer requirements.
 
@@ -11,6 +11,28 @@ The Homebrew tap and history repository remain private; no public binary release
 is published yet. Use the [current installation instructions](usage.md) for
 source builds or the access-required Homebrew preview. The records below retain
 the earlier preparation and release plan.
+
+## Public Homebrew candidate
+
+The owner requested preparation of public Homebrew distribution. The first
+public formula targets **Apple Silicon macOS**; Linux GNU remains diagnostic.
+Version `0.1.0-beta.2` sorts after the private `0.1.0-beta.1_1` preview.
+
+The candidate updates OfficeOxide to 0.1.15, ZIP to 9.0.5 and rustls-webpki to
+0.103.16 to address the dependency advisories reported by the first public-repo
+CI run. Office extraction fingerprints change so existing Office documents are
+reprocessed with the updated parser. Dependency notices are regenerated from
+the exact lockfile. The native Apple Silicon build now runs on macOS 15; its
+compiled deployment floor remains macOS 13.
+
+Before publication, require passing source checks and a clean native build at
+the exact candidate commit, then verify the archive's provenance, checksums,
+licenses and Homebrew install/upgrade behavior. Generate the public formula
+from those verified bytes using GitHub release URLs. Keep the history repository
+private and the existing preview available until the new release is ready.
+Publishing the prerelease assets and changing the tap's visibility require
+owner approval of the prepared release. Do not advertise anonymous installation
+until the published download and tap work without credentials.
 
 ## Repository split — 21 October 2026
 
@@ -91,10 +113,10 @@ Exact local results and artifact identities are in the
    artifacts whose embedded commit is the exact commit you will tag.
    Record the actual supported target(s), complete archive hashes and install
    results. Do not advertise untested targets.
-4. **Publish the reviewed beta assets.** After approving public history, change
-   repository visibility. Temporarily disable the generated **Release** workflow
+4. **Publish the reviewed beta assets after owner approval.** The source
+   repository is already public. Temporarily disable the generated **Release** workflow
    before creating the beta tag: its default five-platform route still includes
-   unsupported Windows smoke tests. Create `v0.1.0-beta.1` at the exact reviewed
+   unsupported Windows smoke tests. Create `v0.1.0-beta.2` at the exact reviewed
    commit as a GitHub **prerelease**, upload the qualified archives and checksums,
    then re-enable that workflow. This is a manual beta publication; keep the
    full v1 checks intact. GitHub documents [disabling and enabling workflows](https://docs.github.com/en/actions/how-tos/manage-workflow-runs/disable-and-enable-workflows).
@@ -135,7 +157,7 @@ From the DKC checkout, with final uploaded archives downloaded to
 ```sh
 python3 scripts/release/brew-formula.py \
   --artifacts ./release-assets \
-  --version 0.1.0-beta.1 \
+  --version 0.1.0-beta.2 \
   --targets aarch64-apple-darwin \
   --out /tmp/dkc-beta-formula.rb
 ```

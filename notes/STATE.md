@@ -1,5 +1,21 @@
 # Current development state
 
+## Public Homebrew preparation — 22 October 2026
+
+The source repository is public. The owner requested preparation of public
+Homebrew distribution; the tap and history repository remain private. Branch
+`codex/public-homebrew` prepares `0.1.0-beta.2` for Apple Silicon, replacing the
+private preview's authenticated artifact path with a checksum-bound release
+formula after candidate validation. Publication and tap visibility are pending
+owner review of the completed candidate.
+
+Baseline source CI at `203c14c` passed formatting, Clippy, 1,416 Rust tests
+(17 ignored) and 100 tooling tests, then failed the dependency advisory gate.
+The candidate updates OfficeOxide/ZIP and rustls-webpki, refreshes the Office
+extractor fingerprint and complete license bundle, and moves native Mac builds
+to macOS 15. Full candidate checks run on hosted CI to avoid a local Rust rebuild;
+candidate results remain pending until those runs complete.
+
 ## Current handoff — 21 October 2026
 
 The owner requested a fresh private `moonlysoftware/deepkit-code` with one
