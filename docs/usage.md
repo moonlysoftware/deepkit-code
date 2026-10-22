@@ -2,28 +2,60 @@
 
 [Deepkit Code](../README.md) · [Documentation](README.md) · [Beta status](beta-release.md)
 
-This beta targets **macOS and Linux**. Windows setup, checked database access and
-source opening are unfinished. Invited testers can use the private Homebrew
-preview below; public installers are pending. Models are downloaded separately.
+This beta targets **macOS and Linux**. The source repository is public; the
+Homebrew preview still requires private access. Windows remains unsupported.
+Models are downloaded separately.
 
 ## Private Homebrew preview
 
-The [Moonly tap](https://github.com/moonlysoftware/homebrew-tap) has instructions
-for Apple Silicon and an x86-64 GNU Linux diagnostic. It requires access to both
-private repositories, GitHub SSH authentication and an authenticated `gh` download.
-The helper verifies the pinned archive before Homebrew installs it from a local
-cache. This is a tested PR preview (Homebrew revision `0.1.0-beta.1_1`); its
-Actions downloads are retained in the private `moonlysoftware/deepkit-code-history`
-repository and expire on 14 November 2026. See the tap's current validation record
-for installation and upgrade evidence. A final public release remains separate work.
+The [Moonly tap](https://github.com/moonlysoftware/homebrew-tap) provides an
+Apple Silicon build and an x86-64 GNU Linux diagnostic. You need Homebrew,
+Python 3.11+, the GitHub CLI, and permission to read both
+`moonlysoftware/homebrew-tap` and `moonlysoftware/deepkit-code-history`.
+Access to the public source repository alone is not sufficient.
+
+```sh
+gh auth login
+gh auth setup-git
+brew tap moonlysoftware/tap
+python3 "$(brew --repository moonlysoftware/tap)/scripts/prepare-private.py"
+brew install --formula moonlysoftware/tap/dkc
+brew test moonlysoftware/tap/dkc
+dkc --version
+```
+
+`gh auth setup-git` lets Git use your GitHub CLI credentials for the private tap's
+HTTPS clone. If you already use an SSH tap, keep that remote; `brew tap` without
+an explicit URL also accepts the existing setup.
+
+The helper verifies the archive, executable, build identity and licenses before
+placing the download in Homebrew's cache. The current package is
+`0.1.0-beta.1_1`; `dkc --version` reports the upstream version `0.1.0-beta.1`.
+Its downloads remain in the history repository and expire on **14 November 2026**.
+
+### Update the Homebrew preview
+
+```sh
+brew update
+python3 "$(brew --repository moonlysoftware/tap)/scripts/prepare-private.py"
+brew upgrade --formula moonlysoftware/tap/dkc
+brew test moonlysoftware/tap/dkc
+```
+
+Run the helper again if Homebrew's cache has been cleared. For a repair, use
+`brew reinstall --formula moonlysoftware/tap/dkc` after preparing the archive.
+The tap's [validation record](https://github.com/moonlysoftware/homebrew-tap/blob/main/docs/validation.md)
+covers the tested installation and upgrade paths. Public binary releases remain
+separate from the public source repository.
 
 ## Build from source
 
 You need **Rust 1.98+**, Git, a C/C++ toolchain, CMake and Clang/libclang.
-From the DKC checkout:
+Clone the public repository and install:
 
 ```sh
-git submodule update --init --recursive
+git clone https://github.com/moonlysoftware/deepkit-code.git
+cd deepkit-code
 cargo install --path . --locked
 dkc --version
 ```

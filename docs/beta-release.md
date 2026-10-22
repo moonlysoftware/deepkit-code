@@ -6,6 +6,12 @@ The candidate version is **0.1.0-beta.1**. This is a Mac/Linux beta, with
 Windows setup, database access and source opening still unqualified. A working
 build does not complete the v1 performance, corpus or installer requirements.
 
+**22 October 2026:** the owner made the current source repository public.
+The Homebrew tap and history repository remain private; no public binary release
+is published yet. Use the [current installation instructions](usage.md) for
+source builds or the access-required Homebrew preview. The records below retain
+the earlier preparation and release plan.
+
 ## Repository split — 21 October 2026
 
 The original private repository is now `moonlysoftware/deepkit-code-history`.
