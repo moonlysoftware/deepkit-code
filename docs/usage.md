@@ -101,6 +101,7 @@ If a response remains partial or reports `source_unavailable`, finish
 For local embeddings and optional local reranking:
 
 ```sh
+dkc init --profile local
 dkc models list --json
 dkc models pull qwen3-embedding-0.6b-q8_0
 dkc models verify qwen3-embedding-0.6b-q8_0
@@ -125,6 +126,14 @@ dkc init --profile remote --url https://provider.example/v1 --model embedding-mo
 
 Moonly enables remote embedding and enrichment. `--docs moonly` keeps code
 embedding local and adds a remote document tier; it also enables enrichment.
+
+To use Moonly Gateway, [request an API key through Moonly](https://moonlysoftware.com).
+Run `dkc init --profile moonly` interactively to enter it at the hidden prompt,
+or supply it through `MOONLY_GATEWAY_API_KEY`. Add `--codex`, `--claude` or
+`--cursor` to connect your client. Omit `--yes` when you need the key prompt.
+Then run `dkc index` for text/history, embeddings and enabled AI descriptions,
+or `dkc index --level 2` for text/history and embeddings only during that command.
+
 Ollama setup neither starts its server nor pulls models. Custom remote setup
 accepts `--rerank-model`, `--llm-model` and `--vlm-model`; enrichment requires
 both chat and vision models. Remote setup checks advertised model names,
